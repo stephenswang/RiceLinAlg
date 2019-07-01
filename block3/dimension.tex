@@ -75,7 +75,7 @@ of $k$ vectors in $V$ must be linearly dependent.
 
 Recall the proposition we just proved: 
 
-{\keya{\bf{Proposition.}}}  If $\mathcal{B}  = \{v_1; v_2; \ldots ; v_n\}$ is a basis of $V$, and $k>v$, then any list
+{\keya{\bf{Proposition.}}}  If $\mathcal{B}  = \{v_1; v_2; \ldots ; v_n\}$ is a basis of $V$, and $k>n$, then any list
 of $k$ vectors in $V$ must be linearly dependent.  
 
 Now suppose that $\mathcal{B}$ is a basis of $V$ with 5 vectors, and let $\mathcal{C}$ be a list of 7 vectors
@@ -84,7 +84,7 @@ in $V$.  Is it possible for $\mathcal{C}$ to be a basis of $V$?
 
 \edXabox{expect="No" options="Yes","No"}
 
-\edXsolution{
+\edXsolution{No.  Since $V$ has a basis which contains 5 vectors, the list $C$, which contains 7 vectors, must be linearly dependent.  By definition, a linearly dependent list cannot form a basis.
 }
 
 \endedxproblem
@@ -92,12 +92,12 @@ in $V$.  Is it possible for $\mathcal{C}$ to be a basis of $V$?
 
 \beginedxproblem{Two Bases? 2}{\dpa1}
 
-Now suppose that  $\mathcal{C}$ is a basis of $V$ with 7 vectors.  Is it possible for there to be a basis $\mathcal{B}$ of $V$ with 5 vectors?  
+Now suppose that $\mathcal{C}$ is a basis of $V$ with 7 vectors.  Is it possible for there to be a basis $\mathcal{B}$ of $V$ with 5 vectors?  
 
 
 \edXabox{expect="No" options="Yes","No"}
 
-\edXsolution{
+\edXsolution{If $B$ is a list containing 5 vectors and forms a basis for $V$, then the list $C$, which contains 7 vectors, must be linearly dependent.  But, by definition, a linearly dependent list cannot be a basis.  This contradicts the assumption that $C$ formed a basis for $V$.
 }
 
 \endedxproblem
@@ -132,7 +132,7 @@ True or False: If the dimension of $V$ is 4, then every list of 4 vectors in $V$
 
 \edXabox{expect="False" options="True","False"}
 
-\edXsolution{
+\edXsolution{False.  For example, $\R^4$ has basis consisting of the standard unit vectors $\{e_1, e_2, e_3, e_4\}$, and thus $\R^4$ is dimension 4.  The list $\{e_1, 2e_1, 3e_1, 4e_1\}$ contains 4 vectors, but they are all linearly dependent.  This list spans a one-dimensional subspace of $\R^4$, and thus is not a basis of $\R^4$.
 }
 
 \endedxproblem
@@ -145,7 +145,7 @@ True or False: If the dimension of $V$ is 6, then there must exist a basis of $V
 
 \edXabox{expect="True" options="True","False"}
 
-\edXsolution{
+\edXsolution{We are assuming that $V$ has dimension 6.  In order to define the dimension of $V$, there must be a basis of $V$ containing 6 vectors.
 }
 
 \endedxproblem
@@ -156,7 +156,7 @@ Let $V = \R^2$.  What is the dimension of $V$?
 
 \edXabox{type="numerical" expect="2"}
 
-\edXsolution{
+\edXsolution{The list of standard vectors $$\{e_1, e_2\}=\left\{\left[ \begin{array}{c} 1 \\ 0 \end{array} \right], \left[ \begin{array}{c} 0 \\ 1 \end{array} \right]\right\}$$ forms a basis for $\R^2$.  Thus $\R^2$ is 2-dimensional. 
 }
 
 \endedxproblem
@@ -169,12 +169,12 @@ Let $V = \R^2$.  What is the dimension of $V$?
 \includesvg[450]{c3s2dimension}
 \end{center}
 
-Let $W$ be the subspace of $\R^2$ drawn above.  What is the dimension of $V$?  
+Let $W$ be the subspace of $\R^2$ drawn above.  What is the dimension of $W$?  
 
 
 \edXabox{type="numerical" expect="1"}
 
-\edXsolution{
+\edXsolution{If we take $v$ to be a vector of any length that lies in the direction of $W$, then the set of linear combinations of $v$ will be all of $W$.  Then, $\{v\}$ is a linearly independent list that spans $W$, and thus $\{v\}$ is a basis of $W$.  By definition, the dimension of $W$ is the number of vectors in any basis for $W$.  This is 1.
 }
 
 \endedxproblem
