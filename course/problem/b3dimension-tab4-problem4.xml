@@ -4,7 +4,7 @@
       <img src="/static/images/c3s2dimension.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
     </center>
     <p>
-Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline] drawn above. What is the dimension of [mathjaxinline]V[/mathjaxinline]? </p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline] drawn above. What is the dimension of [mathjaxinline]W[/mathjaxinline]? </p>
     <p>
       <numericalresponse answer="1">
         <textline>
@@ -15,7 +15,10 @@ Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+If we take [mathjaxinline]v[/mathjaxinline] to be a vector of any length that lies in the direction of [mathjaxinline]W[/mathjaxinline], then the set of linear combinations of [mathjaxinline]v[/mathjaxinline] will be all of [mathjaxinline]W[/mathjaxinline]. Then, [mathjaxinline]\{ v\}[/mathjaxinline] is a linearly independent list that spans [mathjaxinline]W[/mathjaxinline], and thus [mathjaxinline]\{ v\}[/mathjaxinline] is a basis of [mathjaxinline]W[/mathjaxinline]. By definition, the dimension of [mathjaxinline]W[/mathjaxinline] is the number of vectors in any basis for [mathjaxinline]W[/mathjaxinline]. This is 1.  </p>
+        </font>
       </solution>
     </p>
   </text>

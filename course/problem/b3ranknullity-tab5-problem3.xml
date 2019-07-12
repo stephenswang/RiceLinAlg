@@ -1,4 +1,4 @@
-<problem display_name="Rank-Nullity Question 3" linenum="217" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Rank-Nullity Question 3" linenum="230" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]T: \mathbb R^4 \rightarrow P_6[/mathjaxinline] be a linear transformation which is not into. What is the maximum possible dimension of the image of [mathjaxinline]T[/mathjaxinline]? </p>
@@ -12,7 +12,10 @@ Let [mathjaxinline]T: \mathbb R^4 \rightarrow P_6[/mathjaxinline] be a linear tr
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The transformation [mathjaxinline]T[/mathjaxinline] is into if and only if the dimension of the kernel, and thus the nullity, is 0. By the rank-nullity theorem, the dimension of the image of [mathjaxinline]T[/mathjaxinline] is maximized when the nullity of [mathjaxinline]T[/mathjaxinline] is minimized. Assuming that [mathjaxinline]T[/mathjaxinline] is not into, the minimum nullity of [mathjaxinline]T[/mathjaxinline] is 1. Therefore, the maximum dimension of the image of [mathjaxinline]T[/mathjaxinline] is [mathjaxinline]4-1=3[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

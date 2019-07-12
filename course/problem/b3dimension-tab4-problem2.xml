@@ -10,7 +10,10 @@ True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 6, then t
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+We are assuming that [mathjaxinline]V[/mathjaxinline] has dimension 6. In order to define the dimension of [mathjaxinline]V[/mathjaxinline], there must be a basis of [mathjaxinline]V[/mathjaxinline] containing 6 vectors.  </p>
+        </font>
       </solution>
     </p>
   </text>

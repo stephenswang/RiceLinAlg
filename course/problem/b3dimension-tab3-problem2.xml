@@ -10,7 +10,10 @@ Now suppose that [mathjaxinline]\mathcal{C}[/mathjaxinline] is a basis of [mathj
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+If [mathjaxinline]\mathcal{B}[/mathjaxinline] is a list containing 5 vectors and forms a basis for [mathjaxinline]V[/mathjaxinline], then the list [mathjaxinline]\mathcal{C}[/mathjaxinline], which contains 7 vectors, must be linearly dependent. But, by definition, a linearly dependent list cannot be a basis. This contradicts the assumption that [mathjaxinline]\mathcal{C}[/mathjaxinline] formed a basis for [mathjaxinline]V[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

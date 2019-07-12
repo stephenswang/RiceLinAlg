@@ -1,4 +1,4 @@
-<problem display_name="Basis? 4" linenum="206" tex_filename="./block3/basis.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Basis? 4" linenum="208" tex_filename="./block3/basis.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Consider the vectors [mathjaxinline]u,v,w[/mathjaxinline] in [mathjaxinline]\mathbb R^2[/mathjaxinline] shown below. </p>
@@ -25,7 +25,10 @@ Which of the following statements is true of the list [mathjaxinline]L = \{ u; v
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The list [mathjaxinline]L[/mathjaxinline] contains 3 vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline]. Since [mathjaxinline]3&gt;2[/mathjaxinline], [mathjaxinline]L[/mathjaxinline] must be linearly dependent and cannot be a basis of anything.  </p>
+        </font>
       </solution>
     </p>
   </text>

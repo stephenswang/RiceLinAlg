@@ -1,4 +1,4 @@
-<problem display_name="Basis? 6" linenum="245" tex_filename="./block3/basis.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Basis? 6" linenum="246" tex_filename="./block3/basis.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Consider the vectors [mathjaxinline]v,w[/mathjaxinline] in [mathjaxinline]\mathbb R^2[/mathjaxinline] shown below. </p>
@@ -25,7 +25,10 @@ Which of the following statements is true of the list [mathjaxinline]L = \{ v; w
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Since [mathjaxinline]v[/mathjaxinline] is a scalar multiple of [mathjaxinline]w[/mathjaxinline], [mathjaxinline]L[/mathjaxinline] is not linearly independent. Hence it cannot be a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline] or any subspace of [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p>
+        </font>
       </solution>
     </p>
   </text>

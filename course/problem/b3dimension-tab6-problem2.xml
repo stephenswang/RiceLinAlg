@@ -1,16 +1,21 @@
-<problem display_name="Subspace 2" linenum="329" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Polynomial Dimension 2" linenum="330" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-True or False: If [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline], and both [mathjaxinline]W[/mathjaxinline] and [mathjaxinline]V[/mathjaxinline] are infinite-dimensional, then [mathjaxinline]W=V[/mathjaxinline]. </p>
+If a vector space [mathjaxinline]V[/mathjaxinline] contains [mathjaxinline]\mathbb {P}_4[/mathjaxinline] as a subspace, what is the smallest possible dimension of [mathjaxinline]V[/mathjaxinline]? </p>
     <p>
-      <optionresponse>
-        <optioninput options="('True','False')" correct="False"/>
-      </optionresponse>
+      <numericalresponse answer="5">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+We have shown that the dimension of a subspace can be at most equal to the dimension of the space it is contained in. Note that [mathjaxinline]V[/mathjaxinline] could equal [mathjaxinline]\mathbb {P}_4[/mathjaxinline], which would give us [mathjaxinline]\dim V = 5[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

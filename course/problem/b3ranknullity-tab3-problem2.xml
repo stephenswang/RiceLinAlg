@@ -23,7 +23,10 @@ What is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The image of [mathjaxinline]T[/mathjaxinline] is [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline]. Thus, the image of [mathjaxinline]T[/mathjaxinline] is 0-dimensional. The kernel of [mathjaxinline]T[/mathjaxinline] is the entire domain, so all of [mathjaxinline]\mathbb R^2[/mathjaxinline], which is 2-dimensional.  </p>
+        </font>
       </solution>
     </p>
   </text>

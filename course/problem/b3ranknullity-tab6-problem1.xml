@@ -1,4 +1,4 @@
-<problem display_name="Question" linenum="282" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Question" linenum="300" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]\dim V = 14[/mathjaxinline] and let [mathjaxinline]W[/mathjaxinline] be a subspace of [mathjaxinline]V[/mathjaxinline]. </p>
@@ -12,7 +12,10 @@ True or false: If we construct a linear transformation [mathjaxinline]T: V \righ
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ False. If [mathjaxinline]T[/mathjaxinline] is onto, then the rank of [mathjaxinline]T[/mathjaxinline] is 2 and the dimension of [mathjaxinline]W[/mathjaxinline] must then be [mathjaxinline]14-2 = 12[/mathjaxinline], but there is no reason [mathjaxinline]T[/mathjaxinline] must be onto. For instance, [mathjaxinline]T[/mathjaxinline] could send everything to [mathjaxinline]\mathbf{0}[/mathjaxinline], in which case its kernel would be all of [mathjaxinline]V[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>
