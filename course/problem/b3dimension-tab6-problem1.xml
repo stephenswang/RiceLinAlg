@@ -1,0 +1,17 @@
+<problem display_name="Subspace 1" linenum="317" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline], and the dimension of [mathjaxinline]W[/mathjaxinline] and the dimension of [mathjaxinline]V[/mathjaxinline] are both 8, then [mathjaxinline]W = V[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

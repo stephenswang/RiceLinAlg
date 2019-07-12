@@ -1,4 +1,4 @@
-<html display_name="Dimension Propositions" linenum="195" tex_filename="./block3/dimension.tex">
+<html display_name="Dimension Propositions" linenum="216" tex_filename="./block3/dimension.tex">
   <p><span style="color:#27408C"><b class="bf">Proposition (A).</b></span> If [mathjaxinline]\dim V = n &lt; \infty[/mathjaxinline], and [mathjaxinline]W[/mathjaxinline] is any subspace of [mathjaxinline]V[/mathjaxinline], then any linearly independent list of vectors in [mathjaxinline]W[/mathjaxinline] can be extended to form a basis of [mathjaxinline]W[/mathjaxinline]. </p>
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any linearly independent list of vectors in [mathjaxinline]V[/mathjaxinline] has at most [mathjaxinline]n[/mathjaxinline] vectors. Any linearly independent list of vectors in [mathjaxinline]V[/mathjaxinline] that has exactly [mathjaxinline]n[/mathjaxinline] vectors must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\dim V = n[/mathjaxinline], then any subspace [mathjaxinline]W[/mathjaxinline] of [mathjaxinline]V[/mathjaxinline] has dimension at most [mathjaxinline]n[/mathjaxinline]. If [mathjaxinline]\dim W = n[/mathjaxinline], then [mathjaxinline]W = V[/mathjaxinline]. </p>
@@ -9,7 +9,55 @@
       <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition (A)<span class="icon-caret-down toggleimage"/></h4>
       <div class="hideshowcontent">
         <p>
-stuff </p>
+We will first show that if a linearly independent list of vectors in [mathjaxinline]W[/mathjaxinline] is not a basis of [mathjaxinline]W[/mathjaxinline], then there is a vector in [mathjaxinline]W[/mathjaxinline] which can be added to the list maintaining linear independence. </p>
+        <p>
+Let [mathjaxinline]\mathcal{L} = \{ w_1; w_2; \ldots w_ k\}[/mathjaxinline] be a linearly independent list of vectors in [mathjaxinline]W[/mathjaxinline]. If [mathjaxinline]\mathcal{L}[/mathjaxinline] spans [mathjaxinline]W[/mathjaxinline], then it is a basis of [mathjaxinline]W[/mathjaxinline]. Therefore we assume that [mathjaxinline]\mathcal{L}[/mathjaxinline] is not a basis of [mathjaxinline]W[/mathjaxinline]. In particular, it does not span [mathjaxinline]W[/mathjaxinline], so we can find some vector [mathjaxinline]v\in W[/mathjaxinline] which is not a linear combination of [mathjaxinline]w_1, w_2, \ldots w_ k[/mathjaxinline]. Appending [mathjaxinline]v[/mathjaxinline] to the list [mathjaxinline]\mathcal{L}[/mathjaxinline] yields a new list [mathjaxinline]\mathcal{L'}=\{ w_1; w_2; \ldots w_ k; v\}[/mathjaxinline]; we claim that [mathjaxinline]\mathcal{L'}[/mathjaxinline] is still linearly independent. </p>
+        <p>
+To show this, suppose that we have a linear combination </p>
+        <table id="a0000000122" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k + bv = \mathbf{0}.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ If [mathjaxinline]b\ne 0[/mathjaxinline], then we obtain </p>
+        <table id="a0000000123" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]-bv = a_1w_1 + a_2w_2 + \ldots + a_ k w_ k,[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ and hence </p>
+        <table id="a0000000124" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v = -\frac{a_1}{b}w_1 + -\frac{a_2}{b}w_2 + \ldots + -\frac{a_ k}{b}w_ k.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ But we know that [mathjaxinline]v[/mathjaxinline] is not in the span of [mathjaxinline]\mathcal{L}=\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline], so this is impossible. Hence [mathjaxinline]b = 0[/mathjaxinline]. </p>
+        <p>
+Therefore our linear combination becomes </p>
+        <table id="a0000000125" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k + 0v = \mathbf{0},[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ so we have </p>
+        <table id="a0000000126" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k = \mathbf{0}.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ However, we know that [mathjaxinline]\mathcal{L}=\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline] is linearly independent, so all of the [mathjaxinline]a_ i[/mathjaxinline] must be zero as well. Therefore all of the coefficients of the original linear combination must be zero, and we have shown that the new list [mathjaxinline]\mathcal{L'}[/mathjaxinline] is linearly independent. </p>
+        <p>
+Therefore, we can keep adding vectors to the list, maintaining linear independence, as long as the list does not span [mathjaxinline]W[/mathjaxinline]. This procedure cannot go on forever, though, since we know that no list of more than [mathjaxinline]n[/mathjaxinline] vectors in [mathjaxinline]V[/mathjaxinline] can be linearly independent. Therefore at some point we must reach a linearly independent list which also spans [mathjaxinline]W[/mathjaxinline]; in other words, a basis of [mathjaxinline]W[/mathjaxinline]. This proves the proposition. </p>
       </div>
       <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
         <a href="javascript: {return false;}">Show</a>
@@ -21,7 +69,29 @@ stuff </p>
       <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition (B)<span class="icon-caret-down toggleimage"/></h4>
       <div class="hideshowcontent">
         <p>
-stuff </p>
+We will first show that if a finite, linearly dependent list of vectors spans [mathjaxinline]W[/mathjaxinline], then there is a vector in the list which can be deleted from the list so that the remaining vectors still span [mathjaxinline]W[/mathjaxinline]. </p>
+        <p>
+Suppose that [mathjaxinline]\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline] spans [mathjaxinline]W[/mathjaxinline]. If the list is linearly dependent, then one of the vectors can be written as a linear combination of the others. For ease of notation, suppose that [mathjaxinline]w_1[/mathjaxinline] is that vector, and that [mathjaxinline]w_1 = a_2w_2 + a_3w_3 +\ldots + a_ kw_ k[/mathjaxinline]. </p>
+        <p>
+We claim that [mathjaxinline]\{ w_2; w_3; \ldots w_ k\}[/mathjaxinline] still spans [mathjaxinline]W[/mathjaxinline]. Indeed, let [mathjaxinline]u \in W[/mathjaxinline]. Since the original list spans [mathjaxinline]W[/mathjaxinline], we know that we can write [mathjaxinline]u[/mathjaxinline] as a linear combination </p>
+        <table id="a0000000127" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]u = c_1w_1 + c_2w_2 + \ldots + c_ kw_ k.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ Replacing [mathjaxinline]w_1[/mathjaxinline], we obtain </p>
+        <table id="a0000000128" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} u &amp;  = &amp;  c_1(a_2w_2 + a_3w_3 +\ldots + a_ kw_ k) + c_2w_2 + \ldots + c_ kw_ k \\ &amp;  = &amp;  (c_1a_2+c_2)w_2 + \ldots + (c_1a_ k + c_ k)w_ k. \end{array}[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ Hence [mathjaxinline]u[/mathjaxinline] can be written as a linear combination of just [mathjaxinline]\{ w_2; w_3; \ldots w_ k\} ,[/mathjaxinline] and the smaller list still spans [mathjaxinline]W[/mathjaxinline]. </p>
+        <p>
+Thus, as long as the list remains linearly dependent, we can keep deleting vectors from the list and maintain the property that the list spans [mathjaxinline]W[/mathjaxinline]. Since the initial list is finite, however, this procedure must stop. Thus we eventually have pared the list down to a list which still spans [mathjaxinline]W[/mathjaxinline] but is also linearly independent; in other words, we obtain a basis of [mathjaxinline]W[/mathjaxinline]. This proves the proposition. </p>
       </div>
       <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
         <a href="javascript: {return false;}">Show</a>

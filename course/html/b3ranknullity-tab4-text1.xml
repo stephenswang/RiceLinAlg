@@ -5,7 +5,53 @@
       <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Theorem<span class="icon-caret-down toggleimage"/></h4>
       <div class="hideshowcontent">
         <p>
-stuff </p>
+Suppose that [mathjaxinline]\dim V = n[/mathjaxinline], and that [mathjaxinline]\mathrm{Nullity}(T) = k[/mathjaxinline]. Then we can find a basis of [mathjaxinline]\mathrm{Ker}(T)[/mathjaxinline] consisting of [mathjaxinline]k[/mathjaxinline] vectors [mathjaxinline]\{ v_1; v_2; \ldots v_ k\}[/mathjaxinline]. Since this is a linearly independent list of vectors inside [mathjaxinline]V[/mathjaxinline], we can extend it to form a basis of [mathjaxinline]V[/mathjaxinline]. Since [mathjaxinline]\dim V = n[/mathjaxinline], this means adding [mathjaxinline]n-k[/mathjaxinline] vectors [mathjaxinline]u_1, u_2, \ldots u_{n-k}[/mathjaxinline]. So we have [mathjaxinline]\{ v_1; v_2; \ldots v_ k; u_1; u_2; \ldots u_{n-k} \}[/mathjaxinline] as a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+        <p>
+For [mathjaxinline]i = 1, 2, \ldots , n-k[/mathjaxinline], let [mathjaxinline]w_ i = T(u_ i)[/mathjaxinline]. We claim that the list [mathjaxinline]\{ w_1; w_2; \ldots w_{n-k}\}[/mathjaxinline] is a basis of the image of [mathjaxinline]T[/mathjaxinline]. If so, then the dimension of the image of [mathjaxinline]T[/mathjaxinline] &#x2013; i.e., the rank of [mathjaxinline]T[/mathjaxinline] &#x2013; would be [mathjaxinline]n-k[/mathjaxinline], as desired. </p>
+        <p>
+To show it forms a basis of the image of [mathjaxinline]T[/mathjaxinline], we first show that it is linearly independent. Suppose that a linear combination [mathjaxinline]b_1w_1 + b_2w_2 + \ldots b_{n-k}w_{n-k} = \mathbf{0}[/mathjaxinline]. Then we have </p>
+        <table id="a0000000129" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(b_1u_1 + b_2u_2 + b_{n-k}u_{n-k}) = b_1T(u_1) + b_2T(u_2) + \ldots + b_{n-k}T(u_{n-k}) = \mathbf{0},[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ so [mathjaxinline]b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} \in \mathrm{Ker}(T).[/mathjaxinline] Since [mathjaxinline]\{ v_1; v_2; \ldots v_ k\}[/mathjaxinline] spans the kernel of [mathjaxinline]T[/mathjaxinline], this means that </p>
+        <table id="a0000000130" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} = a_1v_1 + a_2v_2 + \ldots +a_ kv_ k[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ for some scalars [mathjaxinline]a_ i[/mathjaxinline]; alternatively, </p>
+        <table id="a0000000131" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]-a_1v_1 - a_2v_2 - \ldots - a_ kv_ k + b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} = \mathbf{0}.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ However, we know that [mathjaxinline]\{ v_1; v_2; \ldots v_ k; u_1; u_2; \ldots u_{n-k} \}[/mathjaxinline] is linearly independent, so all of these coefficients must be zero. In particular, all [mathjaxinline]b_ i[/mathjaxinline] are zero. This proves that [mathjaxinline]\{ w_1; w_2; \ldots w_{n-k} \}[/mathjaxinline] is linearly independent. </p>
+        <p>
+To show that this list spans the image of [mathjaxinline]T[/mathjaxinline], take an arbitrary vector [mathjaxinline]T(x)[/mathjaxinline] in the image of [mathjaxinline]T[/mathjaxinline], where [mathjaxinline]x\in V[/mathjaxinline]. Since [mathjaxinline]\{ v_1; v_2; \ldots v_ k; u_1; u_2; \ldots u_{n-k} \}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], we must be able to write [mathjaxinline]x[/mathjaxinline] as a linear combination </p>
+        <table id="a0000000132" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]x = a_1v_1 + \ldots + a_ k v_ k + b_1u_1 + \ldots + b_{n-k}u_{n-k}.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ Hence </p>
+        <table id="a0000000133" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} T(x) &amp; = &amp;  a_1T(v_1) + \ldots + a_ kT(v_ k) + b_1 T(u_1) + \ldots + b_{n-k}T(u_{n-k}) \\ &amp;  = &amp;  \mathbf{0}+ \ldots \mathbf{0}+ b_1w_1 + \ldots + b_{n-k}w_{n-k}.\end{array}[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ This shows that [mathjaxinline]T(x)[/mathjaxinline] is a linear combination of the vectors [mathjaxinline]w_ i[/mathjaxinline], so [mathjaxinline]\{ w_1; w_2; \ldots w_{n-k} \}[/mathjaxinline] spans the image of [mathjaxinline]T[/mathjaxinline]. Thus it is a basis of the image of [mathjaxinline]T[/mathjaxinline], and our proof is complete. </p>
       </div>
       <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
         <a href="javascript: {return false;}">Show</a>

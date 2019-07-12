@@ -11,7 +11,6 @@
 At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize} 
-\item Find coordinates of a vector relative to a basis.  
 \item Dimension... 
 \end{itemize}
 
@@ -33,11 +32,11 @@ plus some questions.
 
 
 
-\beginedxvertical{Consequences of Having Coordinates}
+\beginedxvertical{Coordinates Continued}
 
 
 
-\doedxvideo{Consequences of Having Coordinates}{sNoKjBJ9tpE}
+\doedxvideo{Coordinatization}{sNoKjBJ9tpE}
 
 
 \beginedxtext{Coordinatization as Linear Transformation}
@@ -47,10 +46,32 @@ coordinatization map $C: V \rightarrow \R^n$ given by $C(w) = [w]_{\mathcal{B}}$
 which is both into and onto.
 
 \begin{edXshowhide}{Proof of Proposition}
+In the video, we proved that $C$ is into and onto, but we did not show that $C$ is a linear transformation.
+We do that here.  
 
-To show that $C$ is a linear transformation...
+To show that $C$ is a linear transformation, we must show that $C$ respects vector addition and 
+scalar multiplication.  
 
-In the video, we proved that $C$ is into and onto. 
+Let $u, w \in W$.  Suppose that
+\[
+C(u) = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_n \end{array} \right], 
+C(w) = \left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_n \end{array} \right].\]
+Then we must have $u = a_1v_1 + a_2v_2 + \ldots a_n v_n,$ and 
+$w = b_1v_1 + b_2v_2 + \ldots b_n v_n.$  Adding, we see that
+\[u+w = (a_1+b_1)v_1 + (a_2+b_2)v_2 + \ldots + (a_n+b_n)v_n.\]
+In other words, the coordinates of $u+w$ relative to $\mathcal{B}$ are 
+\[C(u+w) = [u+w]_{\mathcal{B}} = \left[ \begin{array}{c} a_1+b_1 \\ a_2+b_2 \\ \vdots \\ a_n+b_n \end{array} \right].\]
+But this is exactly $C(u) + C(w)$.  Thus $C$ respects vector addition.  
+
+Now let $u$ be as above, and let $c$ be any scalar.  Then 
+\[cu = (ca_1)v_1 + (ca_2)v_2 + \ldots + (ca_n)v_n.\]
+Therefore the coordinates of $cu$ are
+\[C(cu) = [cu]_{\mathcal{B}} = \left[ \begin{array}{c} ca_1 \\ ca_2 \\ \vdots \\ ca_n \end{array} \right] =
+cC(u).\]
+Therefore $C$ respects scalar multiplication, and $C$ is a linear transformation.  
+
+
+
 
 \end{edXshowhide}
 
@@ -215,19 +236,107 @@ be a basis of $V$.
 
 \begin{edXshowhide}{Proof of Proposition (A)}
 
-stuff
+We will first show that if a linearly independent list of vectors in $W$ is not a basis of $W$, then
+there is a vector in $W$ which can be added to the list maintaining linear independence.  
+
+Let $\mathcal{L} = \{w_1; w_2; \ldots w_k\}$ be a linearly independent list of vectors in $W$.  If
+$\mathcal{L}$ spans $W$, then it is a basis of $W$.  Therefore we assume that $\mathcal{L}$ is not
+a basis of $W$.  In particular, it does not span $W$, so we can find some vector $v\in W$ which is
+not a linear combination of $w_1, w_2, \ldots w_k$.  Appending $v$ to the list $\mathcal{L}$
+yields a new list $\mathcal{L'}=\{w_1; w_2; \ldots w_k; v\}$; we claim that $\mathcal{L'}$ 
+ is still linearly independent.  
+ 
+To show this, suppose that we have a linear combination
+\[a_1w_1 + a_2w_2 + \ldots + a_k w_k + bv = \veco.\]  
+If $b\ne 0$, then we obtain
+\[ -bv = a_1w_1 + a_2w_2 + \ldots + a_k w_k,\]
+and hence 
+\[v = -\frac{a_1}{b}w_1 + -\frac{a_2}{b}w_2 + \ldots + -\frac{a_k}{b}w_k.\]
+But we know that $v$ is not in the span of $\mathcal{L}=\{w_1; w_2; \ldots w_k\}$, so this is impossible.  
+Hence $b = 0$.  
+
+Therefore our linear combination becomes
+\[a_1w_1 + a_2w_2 + \ldots + a_k w_k + 0v = \veco,\] 
+so we have 
+\[a_1w_1 + a_2w_2 + \ldots + a_k w_k  = \veco.\] 
+However, we know that $\mathcal{L}=\{w_1; w_2; \ldots w_k\}$ is linearly independent, so all
+of the $a_i$ must be zero as well.  Therefore all of the coefficients of the original linear combination
+must be zero, and we have shown that the new list $\mathcal{L'}$ is linearly independent.  
+
+Therefore, we can keep adding vectors to the list, maintaining
+linear independence, as long as the list does not span $W$.  This procedure cannot go on forever, though,
+since we know that no list of more than $n$ vectors in $V$ can be linearly independent.  Therefore
+at some point we must reach a linearly independent list which also spans $W$; in other words, a basis
+of $W$.  This proves the proposition.  
 
 \end{edXshowhide}
 
 
 \begin{edXshowhide}{Proof of Proposition (B)}
 
-stuff
+We will first show that if a finite, linearly dependent list of vectors spans $W$, then
+there is a vector in the list which can be deleted from the list so that the 
+remaining vectors still span $W$.  
+
+Suppose that $\{w_1; w_2; \ldots w_k\}$ spans $W$.  If the list is linearly dependent, then one of the
+vectors can be written as a linear combination of the others.  For ease of notation, suppose that $w_1$
+is that vector, and that $w_1 = a_2w_2 + a_3w_3 +\ldots + a_kw_k$.  
+
+We claim that $\{w_2; w_3; \ldots w_k\}$ still spans $W$.  Indeed, let $u \in W$.  Since the original
+list spans $W$, we know that we can write $u$ as a linear combination
+\[u = c_1w_1 + c_2w_2 + \ldots + c_kw_k.\]
+Replacing $w_1$, we obtain
+\[
+\begin{array}{rcl} u & = & c_1(a_2w_2 + a_3w_3 +\ldots + a_kw_k) + c_2w_2 + \ldots + c_kw_k  \\
+& = & (c_1a_2+c_2)w_2 + \ldots + (c_1a_k + c_k)w_k. 
+\end{array}
+\]
+Hence $u$ can be written as a linear combination of just $\{w_2; w_3; \ldots w_k\},$
+and the smaller list still spans $W$.  
+
+Thus, as long as the list remains linearly dependent, we can keep deleting vectors from the list
+and maintain the property that the list spans $W$.  Since the initial list is finite, however,
+this procedure must stop.  Thus we eventually have pared the list down to a list which still spans
+$W$ but is also linearly independent; in other words, we obtain a basis of $W$.  This proves the
+proposition.
 
 \end{edXshowhide}
 
 
 
 \endedxtext
+
+\endedxvertical
+
+
+
+
+\beginedxvertical{Subspace Questions}
+
+
+\beginedxproblem{Subspace 1}{\dpa1}
+
+True or False: If $W$ is a subspace of $V$, and the dimension of $W$ and the dimension of $V$ are both 8,
+then $W = V$.  
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+\beginedxproblem{Subspace 2}{\dpa1}
+
+True or False: If $W$ is a subspace of $V$, and both $W$ and $V$ are infinite-dimensional,
+then $W=V$.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
 
 \endedxvertical

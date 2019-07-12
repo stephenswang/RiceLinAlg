@@ -71,7 +71,7 @@
     <vertical display_name="Page One" refnum="1" url_name="b3dimension-vertical1">
       <html url_name="b3dimension-tab1-text1"/>
     </vertical>
-    <vertical display_name="Consequences of Having Coordinates" refnum="2" url_name="b3dimension-vertical2">
+    <vertical display_name="Coordinates Continued" refnum="2" url_name="b3dimension-vertical2">
       <video url_name="b3dimension-tab2-video1"/>
       <html url_name="b3dimension-tab2-text1"/>
     </vertical>
@@ -90,6 +90,10 @@
     <vertical display_name="Dimension and Subspaces" refnum="5" url_name="b3dimension-vertical5">
       <video url_name="b3dimension-tab5-video1"/>
       <html url_name="b3dimension-tab5-text1"/>
+    </vertical>
+    <vertical display_name="Subspace Questions" refnum="6" url_name="b3dimension-vertical6">
+      <problem url_name="b3dimension-tab6-problem1"/>
+      <problem url_name="b3dimension-tab6-problem2"/>
     </vertical>
   </sequential>
   <sequential display_name="Rank and Nullity" linenum="647" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3ranknullity-sequential">

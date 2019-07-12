@@ -137,7 +137,40 @@ not onto, what is the largest possible rank of $T$?
 
 \begin{edXshowhide}{Proof of Theorem}
 
-stuff
+Suppose that $\dim V = n$, and that 
+$\mathrm{Nullity}(T) = k$.  Then we can find a basis of $\mathrm{Ker}(T)$ consisting of $k$ vectors
+$\{v_1; v_2; \ldots v_k\}$.  Since this is a linearly independent list of vectors inside $V$, we can extend
+it to form a basis of $V$.  Since $\dim V = n$, this means adding $n-k$ vectors $u_1, u_2, \ldots u_{n-k}$.
+So we have $\{v_1; v_2; \ldots v_k; u_1; u_2; \ldots u_{n-k} \}$ as a basis of $V$.  
+
+For $i  = 1, 2, \ldots, n-k$, let $w_i = T(u_i)$.  We claim that 
+the list $\{w_1; w_2; \ldots w_{n-k}\}$ is a basis of the image of $T$.  If so, then the dimension of the image
+of $T$ -- i.e., the rank of $T$ -- would be
+$n-k$, as desired.  
+
+To show it forms a basis of the image of $T$, we first show that it is linearly independent.  
+Suppose that a linear combination $b_1w_1 + b_2w_2 + \ldots b_{n-k}w_{n-k} = \veco$.  Then we have
+\[ T(b_1u_1 + b_2u_2 + b_{n-k}u_{n-k}) = b_1T(u_1)  + b_2T(u_2) + \ldots + b_{n-k}T(u_{n-k}) = \veco,\]
+so $b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} \in \mathrm{Ker}(T).$  Since  
+$\{v_1; v_2; \ldots v_k\}$ spans the kernel of $T$, this means that 
+\[b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} = a_1v_1 + a_2v_2 + \ldots +a_kv_k\]
+for some scalars $a_i$; alternatively,
+\[ -a_1v_1 - a_2v_2 - \ldots - a_kv_k + b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} = \veco. \]
+However, we know that $\{v_1; v_2; \ldots v_k; u_1; u_2; \ldots u_{n-k} \}$ is linearly independent,
+so all of these coefficients must be zero.  In particular, all $b_i$ are zero.  This proves that $\{w_1; w_2; \ldots
+w_{n-k} \}$ is linearly independent. 
+
+To show that this list spans the image of $T$, take an arbitrary vector $T(x)$ in the image of $T$, where $x\in V$.
+Since $\{v_1; v_2; \ldots v_k; u_1; u_2; \ldots u_{n-k} \}$ is a basis of $V$, we must be able to write
+$x$ as a linear combination
+\[x = a_1v_1 + \ldots + a_k v_k + b_1u_1 + \ldots + b_{n-k}u_{n-k}.\]
+Hence 
+\[
+\begin{array}{rcl} T(x) &= & a_1T(v_1) + \ldots + a_kT(v_k) + b_1 T(u_1) + \ldots + b_{n-k}T(u_{n-k}) \\
+& = & \veco + \ldots \veco + b_1w_1 + \ldots + b_{n-k}w_{n-k}.\end{array}
+\]
+This shows that $T(x)$ is a linear combination of the vectors $w_i$, so $\{w_1; w_2; \ldots
+w_{n-k} \}$ spans the image of $T$.  Thus it is a basis of the image of $T$, and our proof is complete.  
 
 \end{edXshowhide}
 
