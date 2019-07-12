@@ -1,0 +1,17 @@
+<problem display_name="Subspace 2" linenum="329" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline], and both [mathjaxinline]W[/mathjaxinline] and [mathjaxinline]V[/mathjaxinline] are infinite-dimensional, then [mathjaxinline]W=V[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,4 +1,4 @@
-<problem display_name="Dimension Question 2" linenum="142" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Dimension Question 2" linenum="163" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 6, then there must exist a basis of [mathjaxinline]V[/mathjaxinline] with exactly 6 vectors. </p>

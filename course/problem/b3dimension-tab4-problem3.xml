@@ -1,4 +1,4 @@
-<problem display_name="Dimension Question 3" linenum="153" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Dimension Question 3" linenum="174" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]V = \mathbb R^2[/mathjaxinline]. What is the dimension of [mathjaxinline]V[/mathjaxinline]? </p>
