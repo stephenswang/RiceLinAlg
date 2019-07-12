@@ -118,7 +118,7 @@ Now suppose that $\mathcal{C}$ is a basis of $V$ with 7 vectors.  Is it possible
 
 \edXabox{expect="No" options="Yes","No"}
 
-\edXsolution{If $B$ is a list containing 5 vectors and forms a basis for $V$, then the list $C$, which contains 7 vectors, must be linearly dependent.  But, by definition, a linearly dependent list cannot be a basis.  This contradicts the assumption that $C$ formed a basis for $V$.
+\edXsolution{If $\mathcal{B}$ is a list containing 5 vectors and forms a basis for $V$, then the list $\mathcal{C}$, which contains 7 vectors, must be linearly dependent.  But, by definition, a linearly dependent list cannot be a basis.  This contradicts the assumption that $\mathcal{C}$ formed a basis for $V$.
 }
 
 \endedxproblem
@@ -153,7 +153,7 @@ True or False: If the dimension of $V$ is 4, then every list of 4 vectors in $V$
 
 \edXabox{expect="False" options="True","False"}
 
-\edXsolution{False.  For example, $\R^4$ has basis consisting of the standard unit vectors $\{e_1, e_2, e_3, e_4\}$, and thus $\R^4$ is dimension 4.  The list $\{e_1, 2e_1, 3e_1, 4e_1\}$ contains 4 vectors, but they are all linearly dependent.  This list spans a one-dimensional subspace of $\R^4$, and thus is not a basis of $\R^4$.
+\edXsolution{False.  For example,  $\R^4$ has dimension 4.  The list $\{e_1; 2e_1; 3e_1; 4e_1\}$ contains 4 vectors, but they are linearly dependent and thus the list is not a basis of $\R^4$.  
 }
 
 \endedxproblem
@@ -177,7 +177,7 @@ Let $V = \R^2$.  What is the dimension of $V$?
 
 \edXabox{type="numerical" expect="2"}
 
-\edXsolution{The list of standard vectors $$\{e_1, e_2\}=\left\{\left[ \begin{array}{c} 1 \\ 0 \end{array} \right], \left[ \begin{array}{c} 0 \\ 1 \end{array} \right]\right\}$$ forms a basis for $\R^2$.  Thus $\R^2$ is 2-dimensional. 
+\edXsolution{The list of vectors $$\{e_1; e_2\}=\left\{\left[ \begin{array}{c} 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 0 \\ 1 \end{array} \right]\right\}$$ forms a basis for $\R^2$.  Thus $\R^2$ is 2-dimensional. 
 }
 
 \endedxproblem
@@ -311,7 +311,63 @@ proposition.
 
 
 
-\beginedxvertical{Subspace Questions}
+\beginedxvertical{Polynomial Subspace Questions}
+
+\beginedxproblem{Polynomial Dimension 1}{\dpa2}
+The questions on this page will help us figure out the dimension of the space of polynomials $\mathbb{P}$.  
+
+Recall that $\mathbb{P}_n$ is the set of polynomials with real coefficients of degree at most $n$.  
+What is the dimension of $\mathbb{P}_4$?  
+
+\edXabox{type="numerical" expect="5"}
+
+\edXsolution{Recall that the list $\{1; t; t^2; t^3; t^4\}$ forms a basis of $\mathbb{P}_4$, so the
+dimension is 5.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Polynomial Dimension 2}{\dpa2}
+
+If a vector space $V$ contains $\mathbb{P}_4$ as a subspace, what is the smallest possible dimension of $V$?
+
+\edXabox{type="numerical" expect="5"}
+
+\edXsolution{We have shown that the dimension of a subspace can be at most equal to the dimension of the space it is contained in.  Note that $V$ could equal $\mathbb{P}_4$, which would give us $\dim V = 5$.  
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Polynomial Dimension 3}{\dpa2}
+
+Note that, in particular, the space $\mathbb{P}$ contains $\mathbb{P}_4$ as a subspace, so we can arrive
+at the same conclusion about the dimension of $\mathbb{P}$ as we did for $V$ in the previous question.  
+
+However, $\mathbb{P}$ also contains $\mathbb{P}_{40}$, $\mathbb{P}_{400}$, and
+$\mathbb{P}_{4000}$ as subspaces (among others).  What can we conclude about the dimension of
+$\mathbb{P}$?  
+
+\edXabox{expect="It is infinite dimensional" options="It has dimension 5","It has dimension 41","It has dimension 4001","It is infinite dimensional"}
+
+\edXsolution{
+Since $\mathbb{P}$ contains $\mathbb{P}_{4000}$ (a 4001-dimensional space) as a subspace, it must have
+dimension at least 4001.  However, note that we can replace the number 4000 by any positive integer $n$.
+The dimension of $\mathbb{P}$ must be at least $n+1$ for any such $n$.  The only way this is possible if
+if $\mathbb{P}$ has no finite dimension.   
+}
+
+\endedxproblem
+
+
+
+
+\endedxvertical
+
+
+
+
+\beginedxvertical{More Subspace Questions}
 
 
 \beginedxproblem{Subspace 1}{\dpa1}
@@ -322,6 +378,7 @@ then $W = V$.
 \edXabox{expect="True" options="True","False"}
 
 \edXsolution{
+This is a direct consequence of one of the propositions on the previous page.  
 }
 
 \endedxproblem
@@ -334,6 +391,10 @@ then $W=V$.
 \edXabox{expect="False" options="True","False"}
 
 \edXsolution{
+False.  The proposition does not apply to infinite-dimensional spaces.  For instance,
+if $V$ is the vector space of all functions on $\R$, and $W$ is the space of polynomials $\mathbb{P}$ (which
+is a subspace of the space of all functions),
+then both $V$ and $W$ are infinite-dimensional, but $W\ne V$.  
 }
 
 \endedxproblem

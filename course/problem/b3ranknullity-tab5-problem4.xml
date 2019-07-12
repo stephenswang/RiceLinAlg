@@ -1,4 +1,4 @@
-<problem display_name="Rank-Nullity Question 4" linenum="231" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Rank-Nullity Question 4" linenum="244" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Suppose [mathjaxinline]V[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] are vector spaces with the same (finite) dimension [mathjaxinline]n[/mathjaxinline]. </p>
@@ -25,7 +25,12 @@ Therefore, we can conclude that [mathjaxinline]T[/mathjaxinline] must be what? (
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Since [mathjaxinline]T[/mathjaxinline] is onto, the dimension of the image is equal to the dimension of the codomain. Thus, the dimension of the image, and the rank of [mathjaxinline]T[/mathjaxinline], is [mathjaxinline]n[/mathjaxinline]. Since the dimension of the domain is [mathjaxinline]n[/mathjaxinline], by the rank nullity theorem, the nullity of [mathjaxinline]T[/mathjaxinline] is [mathjaxinline]n-n=0[/mathjaxinline]. </p>
+          <p>
+Since the nullity is zero, the kernel of [mathjaxinline]T[/mathjaxinline] is trivial. Thus [mathjaxinline]T[/mathjaxinline] is into.  </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -1,4 +1,4 @@
-<problem display_name="Rank-Nullity Question 1" linenum="187" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Rank-Nullity Question 1" linenum="198" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]T: \mathbb R^9 \rightarrow \mathbb R^3[/mathjaxinline] be a linear transformation. If the image of [mathjaxinline]T[/mathjaxinline] is a two-dimensional subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline], what is the dimension of its kernel? </p>
@@ -12,7 +12,10 @@ Let [mathjaxinline]T: \mathbb R^9 \rightarrow \mathbb R^3[/mathjaxinline] be a l
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The image of [mathjaxinline]T[/mathjaxinline] is two-dimensional, and thus the rank of [mathjaxinline]T[/mathjaxinline] is 2. The dimension of the domain of [mathjaxinline]T[/mathjaxinline] is 9. Therefore, the nullity of [mathjaxinline]T[/mathjaxinline] is [mathjaxinline]9-2=7[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

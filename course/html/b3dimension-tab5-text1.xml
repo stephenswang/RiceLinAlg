@@ -14,7 +14,7 @@ We will first show that if a linearly independent list of vectors in [mathjaxinl
 Let [mathjaxinline]\mathcal{L} = \{ w_1; w_2; \ldots w_ k\}[/mathjaxinline] be a linearly independent list of vectors in [mathjaxinline]W[/mathjaxinline]. If [mathjaxinline]\mathcal{L}[/mathjaxinline] spans [mathjaxinline]W[/mathjaxinline], then it is a basis of [mathjaxinline]W[/mathjaxinline]. Therefore we assume that [mathjaxinline]\mathcal{L}[/mathjaxinline] is not a basis of [mathjaxinline]W[/mathjaxinline]. In particular, it does not span [mathjaxinline]W[/mathjaxinline], so we can find some vector [mathjaxinline]v\in W[/mathjaxinline] which is not a linear combination of [mathjaxinline]w_1, w_2, \ldots w_ k[/mathjaxinline]. Appending [mathjaxinline]v[/mathjaxinline] to the list [mathjaxinline]\mathcal{L}[/mathjaxinline] yields a new list [mathjaxinline]\mathcal{L'}=\{ w_1; w_2; \ldots w_ k; v\}[/mathjaxinline]; we claim that [mathjaxinline]\mathcal{L'}[/mathjaxinline] is still linearly independent. </p>
         <p>
 To show this, suppose that we have a linear combination </p>
-        <table id="a0000000122" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000123" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k + bv = \mathbf{0}.[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -22,7 +22,7 @@ To show this, suppose that we have a linear combination </p>
         </table>
         <p>
  If [mathjaxinline]b\ne 0[/mathjaxinline], then we obtain </p>
-        <table id="a0000000123" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000124" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]-bv = a_1w_1 + a_2w_2 + \ldots + a_ k w_ k,[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -30,7 +30,7 @@ To show this, suppose that we have a linear combination </p>
         </table>
         <p>
  and hence </p>
-        <table id="a0000000124" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000125" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v = -\frac{a_1}{b}w_1 + -\frac{a_2}{b}w_2 + \ldots + -\frac{a_ k}{b}w_ k.[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -40,7 +40,7 @@ To show this, suppose that we have a linear combination </p>
  But we know that [mathjaxinline]v[/mathjaxinline] is not in the span of [mathjaxinline]\mathcal{L}=\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline], so this is impossible. Hence [mathjaxinline]b = 0[/mathjaxinline]. </p>
         <p>
 Therefore our linear combination becomes </p>
-        <table id="a0000000125" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000126" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k + 0v = \mathbf{0},[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -48,7 +48,7 @@ Therefore our linear combination becomes </p>
         </table>
         <p>
  so we have </p>
-        <table id="a0000000126" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000127" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k = \mathbf{0}.[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -74,7 +74,7 @@ We will first show that if a finite, linearly dependent list of vectors spans [m
 Suppose that [mathjaxinline]\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline] spans [mathjaxinline]W[/mathjaxinline]. If the list is linearly dependent, then one of the vectors can be written as a linear combination of the others. For ease of notation, suppose that [mathjaxinline]w_1[/mathjaxinline] is that vector, and that [mathjaxinline]w_1 = a_2w_2 + a_3w_3 +\ldots + a_ kw_ k[/mathjaxinline]. </p>
         <p>
 We claim that [mathjaxinline]\{ w_2; w_3; \ldots w_ k\}[/mathjaxinline] still spans [mathjaxinline]W[/mathjaxinline]. Indeed, let [mathjaxinline]u \in W[/mathjaxinline]. Since the original list spans [mathjaxinline]W[/mathjaxinline], we know that we can write [mathjaxinline]u[/mathjaxinline] as a linear combination </p>
-        <table id="a0000000127" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000128" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]u = c_1w_1 + c_2w_2 + \ldots + c_ kw_ k.[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -82,7 +82,7 @@ We claim that [mathjaxinline]\{ w_2; w_3; \ldots w_ k\}[/mathjaxinline] still sp
         </table>
         <p>
  Replacing [mathjaxinline]w_1[/mathjaxinline], we obtain </p>
-        <table id="a0000000128" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000129" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} u &amp;  = &amp;  c_1(a_2w_2 + a_3w_3 +\ldots + a_ kw_ k) + c_2w_2 + \ldots + c_ kw_ k \\ &amp;  = &amp;  (c_1a_2+c_2)w_2 + \ldots + (c_1a_ k + c_ k)w_ k. \end{array}[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

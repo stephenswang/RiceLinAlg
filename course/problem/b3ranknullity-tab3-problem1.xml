@@ -23,7 +23,10 @@ What is the nullity of [mathjaxinline]T[/mathjaxinline]? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Since [mathjaxinline]T[/mathjaxinline] is a rotation, the image of [mathjaxinline]T[/mathjaxinline] is all of [mathjaxinline]\mathbb R^2[/mathjaxinline], which has dimension 2. Thus, the rank of [mathjaxinline]T[/mathjaxinline] is 2. The only vector that is sent to [mathjaxinline]\mathbf{0}[/mathjaxinline] by a rotation is [mathjaxinline]\mathbf{0}[/mathjaxinline] itself. Thus, the kernel of [mathjaxinline]T[/mathjaxinline] is 0-dimensional.  </p>
+        </font>
       </solution>
     </p>
   </text>

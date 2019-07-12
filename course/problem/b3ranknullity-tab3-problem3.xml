@@ -12,7 +12,22 @@ Suppose [mathjaxinline]\dim V = 5[/mathjaxinline]. Let [mathjaxinline]T: V\right
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+Since [mathjaxinline]T[/mathjaxinline] is not onto, the image of [mathjaxinline]T[/mathjaxinline] is some subspace of [mathjaxinline]V[/mathjaxinline] but cannot be [mathjaxinline]V[/mathjaxinline] itself. Thus, the image must have dimension strictly less than 5. </p>
+          <p>
+To prove that it is possible for the dimension of the image to be 4, we give an example. </p>
+          <p>
+Let [mathjaxinline]V = \mathbb R^5[/mathjaxinline], and let the standard matrix for [mathjaxinline]T[/mathjaxinline] be the matrix </p>
+          <table id="a0000000130" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccccc} 1&amp; 0&amp; 0&amp; 0&amp; 0 \\ 0&amp; 1&amp; 0&amp; 0&amp; 0\\ 0&amp; 0&amp; 1&amp; 0&amp; 0\\ 0&amp; 0&amp; 0&amp; 1&amp; 0\\ 0&amp; 0&amp; 0&amp; 0&amp; 0\\ \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Then [mathjaxinline]\{ e_1;\ldots ; e_4\}[/mathjaxinline] is a linearly independent set that spans the image of [mathjaxinline]T[/mathjaxinline]; i.e., it is a basis of the image of [mathjaxinline]T[/mathjaxinline]. Thus the rank of [mathjaxinline]T[/mathjaxinline] is 4. </p>
+        </font>
       </solution>
     </p>
   </text>

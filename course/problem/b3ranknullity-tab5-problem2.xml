@@ -1,4 +1,4 @@
-<problem display_name="Rank-Nullity Question 2" linenum="200" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Rank-Nullity Question 2" linenum="211" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]T: P_4 \rightarrow \mathbb R^7[/mathjaxinline] be a linear transformation. What is the largest possible rank of [mathjaxinline]T[/mathjaxinline]? </p>
@@ -19,7 +19,12 @@ Is is possible for [mathjaxinline]T[/mathjaxinline] to be onto? </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The rank of [mathjaxinline]T[/mathjaxinline] plus the nullity of [mathjaxinline]T[/mathjaxinline] must equal the dimension of [mathjaxinline]P_4[/mathjaxinline], which is 5. Thus, the largest possible rank of [mathjaxinline]T[/mathjaxinline] is 5, obtained if the nullity is 0 (i.e., if the kernel of [mathjaxinline]T[/mathjaxinline] is trivial). <br/></p>
+          <p>
+The transformation [mathjaxinline]T[/mathjaxinline] is onto if and only if the image is all of [mathjaxinline]\mathbb R^7[/mathjaxinline], which has dimension 7. But, the maximum dimension of the image is 5. Thus [mathjaxinline]T[/mathjaxinline] cannot be onto.  </p>
+        </font>
       </solution>
     </p>
   </text>

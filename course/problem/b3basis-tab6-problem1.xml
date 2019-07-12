@@ -25,7 +25,12 @@ Which of the following statements is true of the list [mathjaxinline]L = \{ v\}[
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+The list [mathjaxinline]L[/mathjaxinline] consists of a single vector in [mathjaxinline]\mathbb R^2[/mathjaxinline]. Thus, [mathjaxinline]L[/mathjaxinline] cannot be a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline], since every such basis has exactly [mathjaxinline]2[/mathjaxinline] vectors.<br/></p>
+          <p>
+Note that the list [mathjaxinline]L[/mathjaxinline] spans a line in [mathjaxinline]\mathbb R^2[/mathjaxinline], and [mathjaxinline]L[/mathjaxinline] is linearly independent, so [mathjaxinline]L[/mathjaxinline] forms a basis of that line. </p>
+        </font>
       </solution>
     </p>
   </text>

@@ -10,7 +10,10 @@ True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 4, then e
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+False. For example, [mathjaxinline]\mathbb R^4[/mathjaxinline] has dimension 4. The list [mathjaxinline]\{ e_1; 2e_1; 3e_1; 4e_1\}[/mathjaxinline] contains 4 vectors, but they are linearly dependent and thus the list is not a basis of [mathjaxinline]\mathbb R^4[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

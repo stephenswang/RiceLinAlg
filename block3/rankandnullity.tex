@@ -114,14 +114,19 @@ not onto, what is the largest possible rank of $T$?
 \edXabox{type="numerical" expect="4"}
 
 
-\edXsolution{Since $T$ is not onto, the image of $T$ is some strict subspace of $V$.  Thus, the image must have dimension less that 5.  To prove that it is possible for the dimension of the image to be 4, we give an example.\\
+\edXsolution{Since $T$ is not onto, the image of $T$ is some subspace of $V$ but cannot be $V$ itself.  Thus, the image must have dimension strictly less than 5.  
 
-Let $B=\{v_1,\ldots, v_5\}$ be a basis for $V$.  Let the standard matrix for $T$ be defined, with respect to this basis, by the following matrix
+
+To prove that it is possible for the dimension of the image to be 4, we give an example.
+
+Let $V = \R^5$, and let the standard matrix for $T$ be the matrix
 $$\left[ \begin{array}{ccccc} 1&0&0&0&0 \\ 0&1&0&0&0\\ 0&0&1&0&0\\
 0&0&0&1&0\\
 0&0&0&0&0\\
 \end{array} \right].$$
-Then, $\{v_1,\ldots, v_4\}$ is a linearly independent set that spans the image of $T$.  Thus, it is a basis for the image of $T$ consisting of 4 vectors.}
+Then $\{e_1;\ldots; e_4\}$ is a linearly independent set that spans the image of $T$; i.e., it is a basis of the
+image of $T$.  Thus the rank of $T$ is
+4.}
 
 \endedxproblem
 
@@ -214,9 +219,9 @@ Is is possible for $T$ to be onto?
 \edXabox{expect="No" options="Yes","No"}
 
 
-\edXsolution{The list $\{1,x,x^2,x^3,x^4\}$ forms a basis for $P_4$.  The image of each element in this list is a vector in $\R^7$.  The dimension of this image is maximixed when all 5 vectors are linearly independent.  Thus, the largest possible rank of $T$ is 5.\\
+\edXsolution{The rank of $T$ plus the nullity of $T$ must equal the dimension of $P_4$, which is 5.  Thus, the largest possible rank of $T$ is 5, obtained if the nullity is 0 (i.e., if the kernel of $T$ is trivial).  \\
 
-The transformation $T$ is onto if and only if the image is all of $\R^7$, which has dimension 7.  But, the maximum dimension of the image is 5.
+The transformation $T$ is onto if and only if the image is all of $\R^7$, which has dimension 7.  But, the maximum dimension of the image is 5.  Thus $T$ cannot be onto.  
 }
 
 \endedxproblem
@@ -252,6 +257,8 @@ Therefore, what is the nullity of $T$?
 Therefore, we can conclude that $T$ must be what?  (Answer yourself.)  
 
 \edXsolution{Since $T$ is onto, the dimension of the image is equal to the dimension of the codomain.  Thus, the dimension of the image, and the rank of $T$, is $n$.  Since the dimension of the domain is $n$, by the rank nullity theorem, the nullity of $T$ is $n-n=0$.
+
+Since the nullity is zero, the kernel of $T$ is trivial.  Thus $T$ is into.  
 }
 
 \endedxproblem
@@ -273,6 +280,9 @@ Therefore, what is the rank of $T$?
 Therefore, we can conclude that $T$ must be what?  (Answer yourself.)  
 
 \edXsolution{Since $T$ is into, the kernel of $T$ is $\{\veco\}$.  Therefore, the dimension of the kernel of $T$, and the nullity of $T$, is 0.  Since the dimension of the domain is $n$, by the rank nullity theorem, the rank of $T$ is $n-0=n$.
+
+This means that the image of $T$ is a subspace of $W$ with dimension $n$.  But since $W$ also has dimension $n$,
+this means that the image of $T$ equals $W$.  In other words, $T$ must be onto.
 }
 
 \endedxproblem
@@ -298,7 +308,10 @@ then $\dim W$ must be 12.
 \edXabox{expect="False" options="True","False"}
 
 
-\edXsolution{We can realize this situation when $W$ has dimension 12, 13 or 14.  This is because the image of a linear transformation $T: V \rightarrow \R^2$ is not necessarily all of $\R^2$.  For example, may construct $T$ which maps every vector in $V$ to $\veco$.  In that case, the nullity of $T$ is 14.  Then, since $W = \mathrm{Ker}(T)$, the dimension of $W$ is 14. 
+\edXsolution{
+False.  If $T$ is onto, then the rank of $T$ is 2 and the dimension of $W$ must then be $14-2 = 12$, but there
+is no reason $T$ must be onto.  For instance, $T$ could send everything to $\veco$, in which case
+its kernel would be all of $V$.  
 }
 
 \endedxproblem
