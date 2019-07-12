@@ -198,7 +198,7 @@ Which of the following statements is true of the list $L = \{v\}$?
 
 \edXsolution{The list $L$ consists of a single vector in $\R^2$.  Thus, $L$ cannot be a basis of $\R^2$, since every such basis has exactly $2$ vectors.\\
 
-Note that linear combinations of $v$ are simply scalar multiples of $v$, and the collection of these form a line in $\R^2$.  Thus, the list $L$ does not span all of $\R^2$. 
+Note that the list $L$ spans a line in $\R^2$, and $L$ is linearly independent, so $L$ forms a basis of that line. 
   
 }
 
@@ -218,8 +218,8 @@ Which of the following statements is true of the list $L = \{u; v; w\}$?
 
 \edXabox{type="multichoice" expect="$L$ is not a basis of any subspace of $\R^2$" options="$L$ is a basis of $\R^2$","$L$ is a basis of some subspace of $\R^2$, but not of $\R^2$ itself","$L$ is not a basis of any subspace of $\R^2$"}
 
-\edXsolution{The list $L$ contains 3 vectors.  Every basis of $\R^2$ contains exactly 2 vectors, and a basis of any strict subspace of $\R^2$ contains less than $2$ vectors.  Since $3>2$, $L$ is not a basis of $\R^2$ or any of its subspaces.
-  
+\edXsolution{The list $L$ contains 3 vectors in $\R^2$.  Since $3>2$, $L$ must be linearly dependent and
+cannot be a basis of anything.  
 }
 
 \endedxproblem
@@ -238,7 +238,6 @@ Which of the following statements is true of the list $L = \{v; w\}$?
 \edXabox{type="multichoice" expect="$L$ is a basis of $\R^2$" options="$L$ is a basis of $\R^2$","$L$ is a basis of some subspace of $\R^2$, but not of $\R^2$ itself","$L$ is not a basis of any subspace of $\R^2$"}
 
 \edXsolution{Two vectors are linearly independent if and only if they are not scalar multiples of one another.  Thus, $v$ and $w$ span all of $\R^2$.  Since the list $L$ consists of exactly 2 linearly independent vectors in $\R^2$, $L$ is a basis of $\R^2$.
-  
 }
 
 \endedxproblem
@@ -257,7 +256,8 @@ Which of the following statements is true of the list $L = \{v; w\}$?
 
 \edXabox{type="multichoice" expect="$L$ is not a basis of any subspace of $\R^2$" options="$L$ is a basis of $\R^2$","$L$ is a basis of some subspace of $\R^2$, but not of $\R^2$ itself","$L$ is not a basis of any subspace of $\R^2$"}
 
-\edXsolution{Since $v$ is a scalar multiple of $w$, $v$ and $w$ span a line in $\R^2$.  This line is a one-dimensional subspace, and so any basis of this line must contain exactly one vector.  But, the list $L$ contains 2 vectors.
+\edXsolution{Since $v$ is a scalar multiple of $w$, $L$ is not linearly independent.  Hence it cannot be a
+basis of $\R^2$ or any subspace of $\R^2$.  
   
 }
 
