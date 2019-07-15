@@ -1,0 +1,48 @@
+<chapter display_name="Inner Products" linenum="686" tex_filename="testcourse.tex" refnum="4" start="2018-01-11T16:00">
+  <sequential display_name="Inner Products" linenum="694" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b4innerprods-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b4innerprods-vertical1">
+      <html url_name="b4innerprods-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Dot Products" refnum="2" url_name="b4innerprods-vertical2">
+      <html url_name="b4innerprods-tab2-text1"/>
+      <problem url_name="b4innerprods-tab2-problem1"/>
+    </vertical>
+    <vertical display_name="Dot Product Properties" refnum="3" url_name="b4innerprods-vertical3">
+      <problem url_name="b4innerprods-tab3-problem1"/>
+      <problem url_name="b4innerprods-tab3-problem2"/>
+      <problem url_name="b4innerprods-tab3-problem3"/>
+      <html url_name="b4innerprods-tab3-text1"/>
+    </vertical>
+    <vertical display_name="Inner Products" refnum="4" url_name="b4innerprods-vertical4">
+      <video url_name="b4innerprods-tab4-video1"/>
+      <problem url_name="b4innerprods-tab4-problem1"/>
+      <problem url_name="b4innerprods-tab4-problem2"/>
+    </vertical>
+    <vertical display_name="Inner Products Defined" refnum="5" url_name="b4innerprods-vertical5">
+      <html url_name="b4innerprods-tab5-text1"/>
+    </vertical>
+    <vertical display_name="Magnitude" refnum="6" url_name="b4innerprods-vertical6">
+      <video url_name="b4innerprods-tab6-video1"/>
+      <html url_name="b4innerprods-tab6-text1"/>
+      <problem url_name="b4innerprods-tab6-problem1"/>
+      <problem url_name="b4innerprods-tab6-problem2"/>
+    </vertical>
+    <vertical display_name="Orthogonality" refnum="7" url_name="b4innerprods-vertical7">
+      <video url_name="b4innerprods-tab7-video1"/>
+      <html url_name="b4innerprods-tab7-text1"/>
+    </vertical>
+    <vertical display_name="Orthogonality Questions" refnum="8" url_name="b4innerprods-vertical8">
+      <problem url_name="b4innerprods-tab8-problem1"/>
+      <problem url_name="b4innerprods-tab8-problem2"/>
+      <problem url_name="b4innerprods-tab8-problem3"/>
+    </vertical>
+    <vertical display_name="Orthogonal Lists" refnum="9" url_name="b4innerprods-vertical9">
+      <video url_name="b4innerprods-tab9-video1"/>
+      <html url_name="b4innerprods-tab9-text1"/>
+    </vertical>
+    <vertical display_name="Orthogonal List Questions" refnum="10" url_name="b4innerprods-vertical10">
+      <problem url_name="b4innerprods-tab10-problem1"/>
+      <problem url_name="b4innerprods-tab10-problem2"/>
+    </vertical>
+  </sequential>
+</chapter>

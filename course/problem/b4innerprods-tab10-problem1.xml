@@ -1,0 +1,20 @@
+<problem display_name="List 1" linenum="376" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or false: If [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are orthogonal, and [mathjaxinline]u[/mathjaxinline] is orthogonal to both [mathjaxinline]v[/mathjaxinline] and to [mathjaxinline]w[/mathjaxinline], then the list [mathjaxinline]\{ u; v; w\}[/mathjaxinline] must be linearly independent. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The list is an orthogonal list, but one of the vectors could be [mathjaxinline]\mathbf{0}[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

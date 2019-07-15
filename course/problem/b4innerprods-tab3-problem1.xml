@@ -1,0 +1,30 @@
+<problem display_name="Property 1" linenum="91" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]v,w \in \mathbb R^ n[/mathjaxinline], and [mathjaxinline]\langle v, w \rangle = 5.[/mathjaxinline] What is [mathjaxinline]\langle w, v \rangle[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="5">
+        <textline>
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If [mathjaxinline]v = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right][/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_ n \end{array} \right][/mathjaxinline], then </p>
+          <table id="a0000000139" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v\dotprod w = a_1b_1 + a_2b_2 + \ldots + a_ nb_ n = b_1a_1 + b_2a_2 + \ldots + b_ na_ n = w \dotprod v.[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ In other words, the dot product is symmetric, and is a commutative operation.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

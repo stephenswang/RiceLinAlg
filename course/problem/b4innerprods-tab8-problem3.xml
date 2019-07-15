@@ -1,0 +1,30 @@
+<problem display_name="Orthogonal or not?" linenum="336" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]f(x) = x[/mathjaxinline], [mathjaxinline]g(x) = 1[/mathjaxinline], and [mathjaxinline]h(x) = 1-x[/mathjaxinline]. Using the inner product on the vector space [mathjaxinline]C[0,2][/mathjaxinline] as described earlier, which pairs of functions are orthogonal? Check all that are. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="false" name="1">
+            <text>f and g</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>f and h</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>g and h</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We can calculate [mathjaxinline]\langle f, g\rangle = 2[/mathjaxinline], [mathjaxinline]\langle f, h\rangle = -2/3[/mathjaxinline], and [mathjaxinline]\langle g,h \rangle = 0[/mathjaxinline]. Hence the only pair which is orthogonal is [mathjaxinline]g[/mathjaxinline] and [mathjaxinline]h[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

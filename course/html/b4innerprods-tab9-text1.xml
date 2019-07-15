@@ -1,0 +1,4 @@
+<html display_name="Orthogonal and Orthonormal Lists" linenum="360" tex_filename="./block4/innerproducts.tex">
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a vector space [mathjaxinline]V[/mathjaxinline] with an inner product, we say a list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">orthogonal</b></span> if [mathjaxinline]\langle v_ i,v_ j\rangle = 0[/mathjaxinline] for [mathjaxinline]i\ne j[/mathjaxinline]. The list is <span style="color:#99182C"><b class="bf">orthonormal</b></span> if it is orthogonal, and [mathjaxinline]\| v_ i\|  = 1[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline]. </p>
+  <p><span style="color:#27408C"><b class="bf">Theorem.</b></span> Any orthogonal list of non-zero vectors is linearly independent. </p>
+</html>

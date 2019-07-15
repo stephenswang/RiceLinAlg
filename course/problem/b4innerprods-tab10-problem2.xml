@@ -1,0 +1,20 @@
+<problem display_name="List 2" linenum="389" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or false: Every orthonormal list is linearly independent. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ In an orthonormal list, all vectors have norm 1, so none are the zero vector. Hence, by the theorem proven on the previous page, the list must be linearly independent.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
