@@ -1,0 +1,21 @@
+<html display_name="Inner Product Definition" linenum="206" tex_filename="./block4/innerproducts.tex">
+  <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a vector space [mathjaxinline]V[/mathjaxinline] over [mathjaxinline]\mathbb R[/mathjaxinline], an <span style="color:#99182C"><b class="bf">inner product</b></span> on [mathjaxinline]V[/mathjaxinline] is any rule that assigns a scalar [mathjaxinline]\langle v,w\rangle \in \mathbb R[/mathjaxinline] to any pair [mathjaxinline]v,w\in V[/mathjaxinline] which satisfies the following properties: </p>
+  <ul class="itemize">
+    <li>
+      <p>
+[mathjaxinline]\langle v,w \rangle = \langle w,v\rangle[/mathjaxinline] for all [mathjaxinline]v,w \in V[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+[mathjaxinline]\langle u+v,w \rangle = \langle u,w\rangle + \langle v,w\rangle[/mathjaxinline] for all [mathjaxinline]u,v,w \in V[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+[mathjaxinline]\langle av, w\rangle = a\langle v,w \rangle[/mathjaxinline] for all [mathjaxinline]v,w\in V[/mathjaxinline] and [mathjaxinline]a\in \mathbb R[/mathjaxinline]. </p>
+    </li>
+    <li>
+      <p>
+[mathjaxinline]\langle v,v\rangle &gt; 0[/mathjaxinline] for all non-zero [mathjaxinline]v \in V[/mathjaxinline]. </p>
+    </li>
+  </ul>
+</html>

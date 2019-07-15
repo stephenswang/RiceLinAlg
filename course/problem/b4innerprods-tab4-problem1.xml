@@ -1,0 +1,20 @@
+<problem display_name="What is it?" linenum="172" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If we have an inner product on [mathjaxinline]V[/mathjaxinline], and vectors [mathjaxinline]v,w \in V[/mathjaxinline], then [mathjaxinline]\langle v, w\rangle[/mathjaxinline] is... </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('a scalar','a vector in V','a matrix','none of these')" correct="a scalar"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The inner product of two vectors must be a scalar.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

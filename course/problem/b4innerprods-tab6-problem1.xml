@@ -1,0 +1,30 @@
+<problem display_name="Calculate it 3" linenum="248" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]v = \left[ \begin{array}{c} 2 \\ 1 \\ 0 \\ 4 \end{array} \right],[/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} 4 \\ -7 \\ -3 \\ 6 \end{array} \right].[/mathjaxinline] What is the distance between [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline]? </p>
+    <p>
+You can type sqrt(2) for [mathjaxinline]\sqrt {2}[/mathjaxinline]. </p>
+    <p>
+      <numericalresponse answer="9">
+        <textline>
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We see that [mathjaxinline]v-w = \left[ \begin{array}{c} -2 \\ 8 \\ 3 \\ -2 \end{array} \right],[/mathjaxinline] so </p>
+          <table id="a0000000145" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| v-w\|  = \sqrt {(v-w)\dotprod (v-w)} = \sqrt {(-2)^2 + 8^2 + 3^2 + (-2)^2} = 9.[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

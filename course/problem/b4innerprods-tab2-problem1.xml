@@ -1,0 +1,24 @@
+<problem display_name="Calculate it" linenum="66" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]v = \left[ \begin{array}{c} 2 \\ 1 \\ 0 \\ -2 \end{array} \right],[/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} 4 \\ -7 \\ -3 \\ 6 \end{array} \right].[/mathjaxinline] </p>
+    <p>
+What is [mathjaxinline]\langle v, w \rangle[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="-11">
+        <textline>
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We calculate [mathjaxinline](2)(4) + (1)(-7) + (0)(-3) + (-2)(6) = -11.[/mathjaxinline]  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

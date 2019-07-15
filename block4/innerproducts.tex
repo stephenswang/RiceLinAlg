@@ -297,7 +297,43 @@ calculate $\|f\|$.
 \endedxtext
 
 
-\beginedxproblem{Orthogonal or not?}{\dpa1}
+\endedxvertical
+
+\beginedxvertical{Orthogonality Questions}
+
+\beginedxproblem{Magnitudes}{\dpa1}
+
+True or false: Given any two vectors $v,w$ in a vector space with an inner product, we have
+\[ \|v+w\|^2 = \|v\|^2 + \|w\|^2.\]
+
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{
+The Pythagorean Theorem holds only when $v$ and $w$ are orthogonal.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Orthogonal in R^3}{\dpa2}
+
+
+Let $v = \left[ \begin{array}{c} -1 \\ 2 \\ 6 \end{array} \right]$
+and $w = \left[ \begin{array}{c} 4 \\ -7 \\ a \end{array} \right]$ be vectors in $\R^3$.  
+For what value of $a$ are $v$ and $w$ orthogonal to one another?  
+
+\edXabox{type="numerical" expect="3" feqin="1"  tolerance=".01"}
+
+\edXsolution{
+We can calculate the inner product 
+\[\langle v, w \rangle = -1(4) + 2(-7) + 6(a) = 6a - 18.\]
+For $v$ and $w$ to be orthogonal, this inner product must equal zero.  This happens when $a=3$.  
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Orthogonal or not?}{\dpa2}
 
 Let $f(x) = x$, $g(x) = 1$, and $h(x) = 1-x$.  
 Using the inner product on the vector space $C[0,2]$ as described earlier, 
@@ -314,6 +350,56 @@ Hence the only pair which is orthogonal is $g$ and $h$.
 
 \endedxvertical
 
+
+
+
+\beginedxvertical{Orthogonal Lists}
+
+\doedxvideo{Orthogonal Lists}{pok4a_MtZgg}
+
+\beginedxtext{Orthogonal and Orthonormal Lists}
+
+{\keya{\bf{Definition.}}} Given a vector space $V$ with an inner product, we say a list $\{v_1; v_2; \ldots v_n\}$ in  $V$ is {\keyb{\bf{orthogonal}}} if $\langle v_i,v_j\rangle = 0$ for $i\ne j$.  
+The list is {\keyb{\bf{orthonormal}}} if it is orthogonal, and $\|v_i\| = 1$ for all $i$.  
+
+
+{\keya{\bf{Theorem.}}} Any orthogonal list of non-zero vectors is linearly independent.  
+
+\endedxtext
+
+
+\endedxvertical
+
+\beginedxvertical{Orthogonal List Questions}
+
+
+\beginedxproblem{List 1}{\dpa1}
+
+True or false: If $v$ and $w$ are orthogonal, and $u$ is orthogonal to both $v$ and to $w$, then the 
+list $\{u; v; w\}$ must be linearly independent.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{
+The list is an orthogonal list, but one of the vectors could be $\veco$.  
+}
+
+\endedxproblem
+
+\beginedxproblem{List 2}{\dpa1}
+
+True or false: Every orthonormal list is linearly independent.  
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{
+In an orthonormal list, all vectors have norm 1, so none are the zero vector.  Hence, by the theorem 
+proven on the previous page, the list must be linearly independent.  
+}
+
+\endedxproblem
+
+\endedxvertical
 
 
 
