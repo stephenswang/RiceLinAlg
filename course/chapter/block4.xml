@@ -45,4 +45,38 @@
       <problem url_name="b4innerprods-tab10-problem2"/>
     </vertical>
   </sequential>
+  <sequential display_name="Projections" linenum="725" tex_filename="testcourse.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b4projections-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b4projections-vertical1">
+      <html url_name="b4projections-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Finding Closest Vectors" refnum="2" url_name="b4projections-vertical2">
+      <problem url_name="b4projections-tab2-problem1"/>
+      <video url_name="b4projections-tab2-video1"/>
+      <problem url_name="b4projections-tab2-problem2"/>
+      <problem url_name="b4projections-tab2-problem3"/>
+    </vertical>
+    <vertical display_name="The Projection Formula Proof" refnum="3" url_name="b4projections-vertical3">
+      <video url_name="b4projections-tab3-video1"/>
+      <problem url_name="b4projections-tab3-problem1"/>
+    </vertical>
+    <vertical display_name="Full Generality" refnum="4" url_name="b4projections-vertical4">
+      <video url_name="b4projections-tab4-video1"/>
+      <html url_name="b4projections-tab4-text1"/>
+    </vertical>
+    <vertical display_name="Projection Practice" refnum="5" url_name="b4projections-vertical5">
+      <problem url_name="b4projections-tab5-problem1"/>
+      <problem url_name="b4projections-tab5-problem2"/>
+    </vertical>
+    <vertical display_name="Orthogonality as Super-Independence" refnum="6" url_name="b4projections-vertical6">
+      <problem url_name="b4projections-tab6-problem1"/>
+      <problem url_name="b4projections-tab6-problem2"/>
+      <video url_name="b4projections-tab6-video1"/>
+      <problem url_name="b4projections-tab6-problem3"/>
+    </vertical>
+    <vertical display_name="Gram-Schmidt Algorithm" refnum="7" url_name="b4projections-vertical7">
+      <video url_name="b4projections-tab7-video1"/>
+      <problem url_name="b4projections-tab7-problem1"/>
+      <problem url_name="b4projections-tab7-problem2"/>
+    </vertical>
+  </sequential>
 </chapter>

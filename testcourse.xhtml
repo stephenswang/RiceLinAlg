@@ -5232,7 +5232,351 @@ True or false: Every orthonormal list is linearly independent. </p><p>
   <optioninput options="('True','False')" correct="True"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- In an orthonormal list, all vectors have norm 1, so none are the zero vector. Hence, by the theorem proven on the previous page, the list must be linearly independent.  </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
+ In an orthonormal list, all vectors have norm 1, so none are the zero vector. Hence, by the theorem proven on the previous page, the list must be linearly independent.  </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
+<sequential display_name="Projections" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b4projections-sequential&quot;" linenum="725" tex_filename="testcourse.tex" refnum="2"><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;b4projections-vertical1&quot;" refnum="1"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b4projections-tab1-text1&quot;" linenum="5" tex_filename="./block4/projections.tex"><p>
+At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
+
+<li><p>
+Recognize the properties of orthogonal projections. </p></li>
+<li><p>
+Be able to compute an orthogonal projection. </p></li>
+</ul><p>
+For time budgeting purposes, this sequence has 3 videos totaling 23 minutes, plus some questions. </p></html></p></vertical>   </p><p>
+<vertical display_name="Finding Closest Vectors" attrib_string="url_name=&quot;b4projections-vertical2&quot;" refnum="2"><p>
+<problem display_name="Closest Vector" attrib_string="url_name=&quot;b4projections-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;4&quot; rerandomize=&quot;per_student&quot;" linenum="33" tex_filename="./block4/projections.tex"><text><p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline] given by </p><table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]W = \left\{  \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right] \  : \  a_1, a_2 \in \mathbb R\right\} .[/mathjax]</td>
+</tr>
+</table><p>
+ (In other words, you can think of [mathjaxinline]W[/mathjaxinline] as the [mathjaxinline]xy[/mathjaxinline] plane inside [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p><p>
+Let [mathjaxinline]v = \left[ \begin{array}{c} 3 \\ 4 \\ 7 \end{array} \right].[/mathjaxinline] What is the vector [mathjaxinline]w\in W[/mathjaxinline] that is closest to [mathjaxinline]v[/mathjaxinline] (i.e., the vector such that the distance from [mathjaxinline]w[/mathjaxinline] to [mathjaxinline]v[/mathjaxinline] is smallest)? </p><center> <edxxml><img src="/static/images/c4s2projection.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+<edxshowhide description="How to Enter a Column Vector in R^n"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[3],[4],[0]]">
+  <textline correct_answer="[[3],[4],[0]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ If [mathjaxinline]w = \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right][/mathjaxinline], then the distance from [mathjaxinline]v[/mathjaxinline] to [mathjaxinline]w[/mathjaxinline] is </p><table id="a0000000151" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\| w-v\|  = \sqrt {(a_1-3)^2 + (a_2-4)^2 + 7^2}.[/mathjax]</td>
+</tr>
+</table><p>
+ At minimum, this distance is [mathjaxinline]\sqrt {49} = 7[/mathjaxinline], and it equals 7 exactly when [mathjaxinline]a_1 = 3[/mathjaxinline] and [mathjaxinline]a_2=4[/mathjaxinline]. In other words, the distance is minimized when [mathjaxinline]w = \begin{array}{c} 3 \\ 4 \\ 0 \end{array} \right].[/mathjaxinline]  </p></font></solution></p></text></problem></p><p>
+<video display_name="Introducing the Orthogonal Projection" youtube_id_1_0="R1XIoRDaAB8" attrib_string="url_name=&quot;b4projections-tab2-video1&quot; "></video><problem display_name="Exploring the formula 1" attrib_string="url_name=&quot;b4projections-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="71" tex_filename="./block4/projections.tex"><text><p>
+The formula given in the video is [mathjaxinline]\displaystyle \sum _{i=1}^ k \langle v, w_ i\rangle w_ i.[/mathjaxinline] Let's examine this a little more closely. </p><p>
+For each [mathjaxinline]i[/mathjaxinline], what kind of object is [mathjaxinline]\langle v, w_ i \rangle[/mathjaxinline]? </p><p>
+<optionresponse>
+  <optioninput options="('a scalar','a vector in V','a matrix','none of these')" correct="a scalar"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The inner product of two vectors must be a scalar.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Exploring the formula 2" attrib_string="url_name=&quot;b4projections-tab2-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="87" tex_filename="./block4/projections.tex"><text><p>
+<p style="display:inline">This means that [mathjaxinline]\displaystyle \sum _{i=1}^ k \langle v, w_ i\rangle w_ i[/mathjaxinline] is</p> <optionresponse inline="1">
+  <optioninput options="('an inner product of','a scalar multiple of','a linear combination of','a linear transformation of','a matrix whose columns are')" correct="a linear combination of" inline="1"/>
+</optionresponse> <optionresponse inline="1">
+  <optioninput options="('v','one of the vectors w_i','the collection of vectors w_1...w_k')" correct="the collection of vectors w_1...w_k" inline="1"/>
+</optionresponse> </p><p>
+<p style="display:inline">Therefore, it is</p> <optionresponse inline="1">
+  <optioninput options="('a scalar','a vector in W','a vector in V but not necessarily in W','a matrix','none of these')" correct="a vector in W" inline="1"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Each [mathjaxinline]\langle v, w_ i\rangle w_ i[/mathjaxinline] is a scalar times a vector [mathjaxinline]w_ i[/mathjaxinline]. When we take the sum of these, it is (by definition) a linear combination of [mathjaxinline]\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline], and thus is a vector. Specifically, it is a vector in [mathjaxinline]W[/mathjaxinline], since all the [mathjaxinline]w_ i[/mathjaxinline] are in [mathjaxinline]W[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="The Projection Formula Proof" attrib_string="url_name=&quot;b4projections-vertical3&quot;" refnum="3"><p>
+<video display_name="Proving the Orthogonal Projection Formula" youtube_id_1_0="V5WPw2C-ixY" attrib_string="url_name=&quot;b4projections-tab3-video1&quot; "></video><problem display_name="Using the Projection Formula?" attrib_string="url_name=&quot;b4projections-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="119" tex_filename="./block4/projections.tex"><text><p>
+Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}[/mathjaxinline], where [mathjaxinline]w_1 = \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]w_2 = \left[ \begin{array}{c} 3 \\ -3 \\ 1 \end{array} \right][/mathjaxinline]. Then, for any [mathjaxinline]v\in \mathbb R^3[/mathjaxinline], </p><table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\mathrm{Proj}_ W(v) = \langle v, w_1 \rangle w_1 + \langle v, w_2 \rangle w_2.[/mathjax]</td>
+</tr>
+</table><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The formula given in the video does not work if [mathjaxinline]\{ w_1; w_2\}[/mathjaxinline] is not an orthonormal basis.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Full Generality" attrib_string="url_name=&quot;b4projections-vertical4&quot;" refnum="4"><p>
+<video display_name="Final Projection Formula" youtube_id_1_0="DzwlyaY4LmY" attrib_string="url_name=&quot;b4projections-tab4-video1&quot; "></video><html display_name="The Orthogonal Projection" attrib_string="url_name=&quot;b4projections-tab4-text1&quot;" linenum="165" tex_filename="./block4/projections.tex"><p>
+If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] with an orthogonal basis [mathjaxinline]\{ u_1; u_2; \ldots u_ k\}[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">orthogonal projection</b></span> of a vector [mathjaxinline]v\in V[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline] is given by the formula </p><table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\mathrm{Proj}_ W(v) = \sum _{i=1}^ k \frac{\langle v, u_ i \rangle }{\langle u_ i, u_ i \rangle } u_ i.[/mathjax]</td>
+</tr>
+</table><p>
+ It is the unique vector [mathjaxinline]\hat{v} \in W[/mathjaxinline] which has the property that [mathjaxinline]v-\hat{v}[/mathjaxinline] is orthogonal to all [mathjaxinline]w\in W[/mathjaxinline]. Additionally, [mathjaxinline]\mathrm{Proj}_ W(v)[/mathjaxinline] is the closest vector in [mathjaxinline]W[/mathjaxinline] to [mathjaxinline]v[/mathjaxinline]. </p></html></p></vertical>   </p><p>
+<vertical display_name="Projection Practice" attrib_string="url_name=&quot;b4projections-vertical5&quot;" refnum="5"><p>
+<problem display_name="Projection Practice 1" attrib_string="url_name=&quot;b4projections-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="187" tex_filename="./block4/projections.tex"><text><p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^4[/mathjaxinline] spanned by the list [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where </p><table id="a0000000154" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ -3 \end{array} \right], w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+ Note that [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline] is an orthogonal list. </p><p>
+Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 1 \\ -3 \\ 4 \end{array} \right].[/mathjaxinline] What is the closest vector to [mathjaxinline]v[/mathjaxinline] in [mathjaxinline]W[/mathjaxinline]? </p><p>
+<edxshowhide description="How to Enter a Column Vector in R^n"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[3],[4],[0]]">
+  <textline correct_answer="[[3],[4],[0]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Projection Practice 2" attrib_string="url_name=&quot;b4projections-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="211" tex_filename="./block4/projections.tex"><text><p>
+Recall that [mathjaxinline]C[0,1][/mathjaxinline] is the vector space of continuous functions on the interval [mathjaxinline][0,1][/mathjaxinline], and that we have an inner product on that vector space given by [mathjaxinline]\langle f, g \rangle = \int _0^1 f(x)g(x) \  dx[/mathjaxinline]. </p><p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]C[0,1][/mathjaxinline] which is the span of a single function [mathjaxinline]f(x) = x[/mathjaxinline]. </p><p>
+Let [mathjaxinline]g(x) = x^2[/mathjaxinline]. What is the orthogonal projection of [mathjaxinline]g[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline]? </p><p>
+(Don't forget to use * for multiplication.) </p><p>
+<formularesponse type="cs" samples="x@1:5#5" answer="0.75*x">
+  <formulaequationinput>
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse><br /></p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Orthogonality as Super-Independence" attrib_string="url_name=&quot;b4projections-vertical6&quot;" refnum="6"><p>
+<problem display_name="Incomplete Basis" attrib_string="url_name=&quot;b4projections-tab6-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="241" tex_filename="./block4/projections.tex"><text><p>
+Suppose that [mathjaxinline]\{ w_1;w_2\}[/mathjaxinline] forms a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline], and let [mathjaxinline]v[/mathjaxinline] be another vector in [mathjaxinline]\mathbb R^2[/mathjaxinline]. We have drawn [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w_1[/mathjaxinline] below, but have deliberately omitted [mathjaxinline]w_2[/mathjaxinline]. </p><center> <edxxml><img src="/static/images/c4s2superind.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+We know that [mathjaxinline]v[/mathjaxinline] can be written as a linear combination [mathjaxinline]v = a_1w_1 + a_2w_2.[/mathjaxinline] From the given information, what are the possibilities for [mathjaxinline]a_1[/mathjaxinline]? Click all that might apply. </p><p>
+<choiceresponse>
+  <checkboxgroup>
+    <choice correct="true" name="1">
+      <text>[mathjaxinline]a_1[/mathjaxinline] could be positive</text>
+    </choice>
+    <choice correct="true" name="2">
+      <text>[mathjaxinline]a_1[/mathjaxinline] could be negative</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text>[mathjaxinline]a_1[/mathjaxinline] could be zero</text>
+    </choice>
+  </checkboxgroup>
+</choiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+Here is a scenario in which [mathjaxinline]a_1[/mathjaxinline] could be positive: </p><center> <edxxml><img src="/static/images/c4s2superindsol1.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+Here is a scenario in which [mathjaxinline]a_1[/mathjaxinline] could be negative: </p><center> <edxxml><img src="/static/images/c4s2superindsol2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+And here is a scenario in which [mathjaxinline]a_1[/mathjaxinline] could be zero: </p><center> <edxxml><img src="/static/images/c4s2superindsol3.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center></font></solution></p></text></problem></p><p>
+<problem display_name="Another Closest Vector?" attrib_string="url_name=&quot;b4projections-tab6-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="285" tex_filename="./block4/projections.tex"><text><p>
+Let [mathjaxinline]v = \left[ \begin{array}{c} 3 \\ 4 \\ 7 \\ 1 \end{array} \right].[/mathjaxinline] What is the vector [mathjaxinline]w\in \mathbb R^4[/mathjaxinline] that is closest to [mathjaxinline]v[/mathjaxinline]? </p><p>
+(You should not need to do any projection calculation!) </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[3],[4],[7],[1]]">
+  <textline correct_answer="[[3],[4],[7],[1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Certainly [mathjaxinline]v[/mathjaxinline] itself is the only vector that is distance zero from [mathjaxinline]v[/mathjaxinline]!  </p></font></solution></p></text></problem></p><p>
+<video display_name="Super-Independence" youtube_id_1_0="Fz_44gpdZfU" attrib_string="url_name=&quot;b4projections-tab6-video1&quot; "></video><problem display_name="Find a Coefficient" attrib_string="url_name=&quot;b4projections-tab6-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="315" tex_filename="./block4/projections.tex"><text>Let [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline] be an <p>
+<em>orthogonal</em>] basis of a subspace [mathjaxinline]W[/mathjaxinline] of [mathjaxinline]\mathbb R^4[/mathjaxinline]. Suppose that [mathjaxinline]w_1 = \left[ \begin{array}{c} 1 \\ -1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline]. </p><p>
+Suppose further that [mathjaxinline]v = \left[ \begin{array}{c} 3 \\ 4 \\ 7 \\ 1 \end{array} \right][/mathjaxinline] is also an element of [mathjaxinline]W[/mathjaxinline]. </p><p>
+Since it is an element of [mathjaxinline]W[/mathjaxinline], we can write [mathjaxinline]v[/mathjaxinline] as a linear combination [mathjaxinline]v = a_1 w_1 + a_2 w_2 + a_3w_3[/mathjaxinline]. What is [mathjaxinline]a_1[/mathjaxinline]? </p><p>
+<numericalresponse answer="-1.75">
+  <textline>
+    <responseparam type="tolerance" default=".01"/>
+  </textline>
+</numericalresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Gram-Schmidt Algorithm" attrib_string="url_name=&quot;b4projections-vertical7&quot;" refnum="7"><p>
+<video display_name="The Gram-Schmidt Algorithm" youtube_id_1_0="Nph2ZJ9WjYs" attrib_string="url_name=&quot;b4projections-tab7-video1&quot; "></video><problem display_name="Gram-Schmidt Practice 1" attrib_string="url_name=&quot;b4projections-tab7-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="350" tex_filename="./block4/projections.tex"><text><p>
+Let [mathjaxinline]u_1 = \left[ \begin{array}{c} 1 \\ -1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline], [mathjaxinline]u_2 = \left[ \begin{array}{c} 1 \\ 4 \\ 3 \\ -2 \end{array} \right][/mathjaxinline], and [mathjaxinline]u_3 = \left[ \begin{array}{c} 0 \\ -7 \\ 2 \\ 3 \end{array} \right][/mathjaxinline]. </p><p>
+If we apply the Gram-Schmidt process (as described in the video) to the basis [mathjaxinline]\{ u_1; u_2; u_3\}[/mathjaxinline], we will get [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where [mathjaxinline]w_1 = u_1[/mathjaxinline]. After the second step, we calculate [mathjaxinline]w_2[/mathjaxinline]. What is it? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[3],[2],[1],[0]]">
+  <textline correct_answer="[[3],[2],[1],[0]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Gram-Schmidt Practice 3" attrib_string="url_name=&quot;b4projections-tab7-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="371" tex_filename="./block4/projections.tex"><text><p>
+Finish the algorithm to calculate [mathjaxinline]w_3[/mathjaxinline]. </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[1],[-3],[5],[1]]">
+  <textline correct_answer="[[1],[-3],[5],[1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
 
 
 

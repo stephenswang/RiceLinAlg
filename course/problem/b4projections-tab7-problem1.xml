@@ -1,0 +1,56 @@
+<problem display_name="Gram-Schmidt Practice 1" linenum="350" tex_filename="./block4/projections.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]u_1 = \left[ \begin{array}{c} 1 \\ -1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline], [mathjaxinline]u_2 = \left[ \begin{array}{c} 1 \\ 4 \\ 3 \\ -2 \end{array} \right][/mathjaxinline], and [mathjaxinline]u_3 = \left[ \begin{array}{c} 0 \\ -7 \\ 2 \\ 3 \end{array} \right][/mathjaxinline]. </p>
+    <p>
+If we apply the Gram-Schmidt process (as described in the video) to the basis [mathjaxinline]\{ u_1; u_2; u_3\}[/mathjaxinline], we will get [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where [mathjaxinline]w_1 = u_1[/mathjaxinline]. After the second step, we calculate [mathjaxinline]w_2[/mathjaxinline]. What is it? </p>
+    <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+    <p>
+      <customresponse cfn="VectorEntry" expect="[[3],[2],[1],[0]]">
+        <textline correct_answer="[[3],[2],[1],[0]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

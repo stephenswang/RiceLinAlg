@@ -1,0 +1,26 @@
+<problem display_name="Projection Practice 2" linenum="211" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Recall that [mathjaxinline]C[0,1][/mathjaxinline] is the vector space of continuous functions on the interval [mathjaxinline][0,1][/mathjaxinline], and that we have an inner product on that vector space given by [mathjaxinline]\langle f, g \rangle = \int _0^1 f(x)g(x) \  dx[/mathjaxinline]. </p>
+    <p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]C[0,1][/mathjaxinline] which is the span of a single function [mathjaxinline]f(x) = x[/mathjaxinline]. </p>
+    <p>
+Let [mathjaxinline]g(x) = x^2[/mathjaxinline]. What is the orthogonal projection of [mathjaxinline]g[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline]? </p>
+    <p>
+(Don't forget to use * for multiplication.) </p>
+    <p>
+      <formularesponse type="cs" samples="x@1:5#5" answer="0.75*x">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+      <br/>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
