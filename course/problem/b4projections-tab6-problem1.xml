@@ -1,0 +1,48 @@
+<problem display_name="Incomplete Basis" linenum="241" tex_filename="./block4/projections.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose that [mathjaxinline]\{ w_1;w_2\}[/mathjaxinline] forms a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline], and let [mathjaxinline]v[/mathjaxinline] be another vector in [mathjaxinline]\mathbb R^2[/mathjaxinline]. We have drawn [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w_1[/mathjaxinline] below, but have deliberately omitted [mathjaxinline]w_2[/mathjaxinline]. </p>
+    <center>
+      <img src="/static/images/c4s2superind.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+We know that [mathjaxinline]v[/mathjaxinline] can be written as a linear combination [mathjaxinline]v = a_1w_1 + a_2w_2.[/mathjaxinline] From the given information, what are the possibilities for [mathjaxinline]a_1[/mathjaxinline]? Click all that might apply. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="true" name="1">
+            <text>[mathjaxinline]a_1[/mathjaxinline] could be positive</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text>[mathjaxinline]a_1[/mathjaxinline] could be negative</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>[mathjaxinline]a_1[/mathjaxinline] could be zero</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+Here is a scenario in which [mathjaxinline]a_1[/mathjaxinline] could be positive: </p>
+          <center>
+            <img src="/static/images/c4s2superindsol1.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+          </center>
+          <p>
+Here is a scenario in which [mathjaxinline]a_1[/mathjaxinline] could be negative: </p>
+          <center>
+            <img src="/static/images/c4s2superindsol2.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+          </center>
+          <p>
+And here is a scenario in which [mathjaxinline]a_1[/mathjaxinline] could be zero: </p>
+          <center>
+            <img src="/static/images/c4s2superindsol3.svg" width="300 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+          </center>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

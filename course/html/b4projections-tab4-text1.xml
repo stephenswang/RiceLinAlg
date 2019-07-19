@@ -1,0 +1,12 @@
+<html display_name="The Orthogonal Projection" linenum="165" tex_filename="./block4/projections.tex">
+  <p>
+If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] with an orthogonal basis [mathjaxinline]\{ u_1; u_2; \ldots u_ k\}[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">orthogonal projection</b></span> of a vector [mathjaxinline]v\in V[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline] is given by the formula </p>
+  <table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <tr>
+      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Proj}_ W(v) = \sum _{i=1}^ k \frac{\langle v, u_ i \rangle }{\langle u_ i, u_ i \rangle } u_ i.[/mathjax]</td>
+      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+    </tr>
+  </table>
+  <p>
+ It is the unique vector [mathjaxinline]\hat{v} \in W[/mathjaxinline] which has the property that [mathjaxinline]v-\hat{v}[/mathjaxinline] is orthogonal to all [mathjaxinline]w\in W[/mathjaxinline]. Additionally, [mathjaxinline]\mathrm{Proj}_ W(v)[/mathjaxinline] is the closest vector in [mathjaxinline]W[/mathjaxinline] to [mathjaxinline]v[/mathjaxinline]. </p>
+</html>

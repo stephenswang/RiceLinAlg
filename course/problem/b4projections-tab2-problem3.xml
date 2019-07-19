@@ -1,0 +1,28 @@
+<problem display_name="Exploring the formula 2" linenum="87" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+      <p style="display:inline">This means that [mathjaxinline]\displaystyle \sum _{i=1}^ k \langle v, w_ i\rangle w_ i[/mathjaxinline] is</p>
+      <optionresponse inline="1">
+        <optioninput options="('an inner product of','a scalar multiple of','a linear combination of','a linear transformation of','a matrix whose columns are')" correct="a linear combination of" inline="1"/>
+      </optionresponse>
+      <optionresponse inline="1">
+        <optioninput options="('v','one of the vectors w_i','the collection of vectors w_1...w_k')" correct="the collection of vectors w_1...w_k" inline="1"/>
+      </optionresponse>
+    </p>
+    <p>
+      <p style="display:inline">Therefore, it is</p>
+      <optionresponse inline="1">
+        <optioninput options="('a scalar','a vector in W','a vector in V but not necessarily in W','a matrix','none of these')" correct="a vector in W" inline="1"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Each [mathjaxinline]\langle v, w_ i\rangle w_ i[/mathjaxinline] is a scalar times a vector [mathjaxinline]w_ i[/mathjaxinline]. When we take the sum of these, it is (by definition) a linear combination of [mathjaxinline]\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline], and thus is a vector. Specifically, it is a vector in [mathjaxinline]W[/mathjaxinline], since all the [mathjaxinline]w_ i[/mathjaxinline] are in [mathjaxinline]W[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

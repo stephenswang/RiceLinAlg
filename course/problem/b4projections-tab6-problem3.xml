@@ -1,0 +1,5 @@
+<problem display_name="Find a Coefficient" linenum="315" tex_filename="./block4/projections.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>Let [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline] be an <p><em>orthogonal</em>] basis of a subspace [mathjaxinline]W[/mathjaxinline] of [mathjaxinline]\mathbb R^4[/mathjaxinline]. Suppose that [mathjaxinline]w_1 = \left[ \begin{array}{c} 1 \\ -1 \\ -1 \\ 1 \end{array} \right][/mathjaxinline]. </p><p>
+Suppose further that [mathjaxinline]v = \left[ \begin{array}{c} 3 \\ 4 \\ 7 \\ 1 \end{array} \right][/mathjaxinline] is also an element of [mathjaxinline]W[/mathjaxinline]. </p><p>
+Since it is an element of [mathjaxinline]W[/mathjaxinline], we can write [mathjaxinline]v[/mathjaxinline] as a linear combination [mathjaxinline]v = a_1 w_1 + a_2 w_2 + a_3w_3[/mathjaxinline]. What is [mathjaxinline]a_1[/mathjaxinline]? </p><p><numericalresponse answer="-1.75"><textline><responseparam type="tolerance" default=".01"/></textline></numericalresponse></p><p><solution><font color="blue">Answer: </font><font color="blue"/></solution></p></text>
+</problem>

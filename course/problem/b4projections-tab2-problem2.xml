@@ -1,0 +1,22 @@
+<problem display_name="Exploring the formula 1" linenum="71" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+The formula given in the video is [mathjaxinline]\displaystyle \sum _{i=1}^ k \langle v, w_ i\rangle w_ i.[/mathjaxinline] Let's examine this a little more closely. </p>
+    <p>
+For each [mathjaxinline]i[/mathjaxinline], what kind of object is [mathjaxinline]\langle v, w_ i \rangle[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('a scalar','a vector in V','a matrix','none of these')" correct="a scalar"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The inner product of two vectors must be a scalar.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
