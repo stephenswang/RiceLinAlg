@@ -1,0 +1,33 @@
+<problem display_name="Orthogonal Columns" linenum="112" tex_filename="./block4/orthogonalmatrices.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose the columns of [mathjaxinline]A[/mathjaxinline] form an orthogonal but not necessarily orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline]. What could we say about [mathjaxinline]A^ t A[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> It is the identity matrix</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> It is a multiple of the identity matrix, but not necessarily the identity</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text> It is a diagonal matrix, but not necessarily a scalar multiple of the identity matrix</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> None of the above</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+The entry in the [mathjaxinline]ij[/mathjaxinline] spot of [mathjaxinline]A^ tA[/mathjaxinline] will be the dot product of the [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline] with the [mathjaxinline]j[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. This will be zero when [mathjaxinline]i\ne j[/mathjaxinline] (i.e., when the entry is off the main diagonal) so the matrix will be diagonal. The entry in the [mathjaxinline]ii[/mathjaxinline] spot will be [mathjaxinline]\langle v_ i, v_ i\rangle = \| v_ i\| ^2[/mathjaxinline], which could be different for the various columns. So the entries along the diagonal are not necessarily the same.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

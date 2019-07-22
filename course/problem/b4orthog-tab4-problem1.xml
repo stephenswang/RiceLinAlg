@@ -1,0 +1,20 @@
+<problem display_name="True or False 2" linenum="146" tex_filename="./block4/orthogonalmatrices.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If the columns of [mathjaxinline]A[/mathjaxinline] form an orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline], and [mathjaxinline]\{ w_1; w_2;\ldots w_ k\}[/mathjaxinline] is an orthogonal list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline], then [mathjaxinline]\{ Aw_1; Aw_2;\ldots Aw_ k\}[/mathjaxinline] is also an orthogonal list of vectors. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ From the video, we can conclude that [mathjaxinline]A[/mathjaxinline] preserves inner products. Thus, if [mathjaxinline]\langle w_ i, w_ j \rangle = 0[/mathjaxinline] for [mathjaxinline]i\ne j[/mathjaxinline], then we also have [mathjaxinline]\langle Aw_ i, Aw_ j \rangle = 0[/mathjaxinline] for [mathjaxinline]i\ne j[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

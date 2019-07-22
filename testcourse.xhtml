@@ -5576,7 +5576,135 @@ def VectorEntry(expect, ans):
 <customresponse cfn="VectorEntry" expect="[[1],[-3],[5],[1]]">
   <textline correct_answer="[[1],[-3],[5],[1]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
+<sequential display_name="Orthogonal Matrices" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b4orthog-sequential&quot;" linenum="758" tex_filename="testcourse.tex" refnum="3"><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;b4orthog-vertical1&quot;" refnum="1"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b4orthog-tab1-text1&quot;" linenum="5" tex_filename="./block4/orthogonalmatrices.tex"><p>
+At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
+
+<li><p>
+Recognize the properties of an orthogonal matrix. </p></li>
+</ul><p>
+For time budgeting purposes, this sequence has 3 videos totaling 17 minutes, plus some questions. </p></html></p></vertical>   </p><p>
+<vertical display_name="Transposes and Inner Products" attrib_string="url_name=&quot;b4orthog-vertical2&quot;" refnum="2"><p>
+<problem display_name="Warm-ups 1" attrib_string="url_name=&quot;b4orthog-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="32" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+Let [mathjaxinline]v = \left[ \begin{array}{c} 3 \\ 4 \\ 7 \end{array} \right][/mathjaxinline], and let [mathjaxinline]w = \left[ \begin{array}{cc} 100 \\ 10 \\ 1 \end{array} \right][/mathjaxinline]. </p><p>
+What is the dot product of [mathjaxinline]v[/mathjaxinline] with [mathjaxinline]w[/mathjaxinline]? </p><p>
+<numericalresponse answer="347">
+  <textline>
+    <responseparam type="tolerance" default=".01"/>
+  </textline>
+</numericalresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Just calculate: [mathjaxinline](3)(100)+(4)(10) + (7)(1) = 347[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Warm-ups 2" attrib_string="url_name=&quot;b4orthog-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="50" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+Using the same [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] as above, treat [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] as [mathjaxinline]3\times 1[/mathjaxinline] matrices. What is the matrix [mathjaxinline]v^ t[/mathjaxinline]? </p><p>
+<edxshowhide description="How to Enter a Matrix"><p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[3,4,7]]">
+  <textline correct_answer="[[3,4,7]]"/>
+</customresponse> </p><p>
+What is the matrix product [mathjaxinline]v^ t w[/mathjaxinline]? </p><p>
+<customresponse cfn="MatrixEntry" expect="[[347]]">
+  <textline correct_answer="[[347]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Since [mathjaxinline]v[/mathjaxinline] is a [mathjaxinline]3\times 1[/mathjaxinline] matrix, its transpose will be a [mathjaxinline]1\times 3[/mathjaxinline] matrix, specifically [mathjaxinline]\left[ \begin{array}{ccc} 3 &amp;  4 &amp;  7 \end{array} \right][/mathjaxinline]. </p><p>
+We will get the [mathjaxinline]1\times 1[/mathjaxinline] matrix [mathjaxinline]\left[ \begin{array}{c} 347 \end{array} \right][/mathjaxinline] when we multiply by [mathjaxinline]w[/mathjaxinline]. </p></font></solution></p></text></problem></p><p>
+<video display_name="Transposes and Inverses" youtube_id_1_0="hu_z5ibA130" attrib_string="url_name=&quot;b4orthog-tab2-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Playing with Transposes" attrib_string="url_name=&quot;b4orthog-vertical3&quot;" refnum="3"><p>
+<problem display_name="True or False" attrib_string="url_name=&quot;b4orthog-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="89" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+If [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] and [mathjaxinline]\langle v, w\rangle = -2[/mathjaxinline], then the matrix product [mathjaxinline]vw^ t[/mathjaxinline] is the matrix [mathjaxinline]\left[ \begin{array}{c} -2 \end{array} \right][/mathjaxinline]. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ False. [mathjaxinline]v[/mathjaxinline] is a [mathjaxinline]n \times 1[/mathjaxinline] matrix, and [mathjaxinline]w^ t[/mathjaxinline] is a [mathjaxinline]1\times n[/mathjaxinline] matrix, so [mathjaxinline]vw^ t[/mathjaxinline] is an [mathjaxinline]n\times n[/mathjaxinline] matrix. To get [mathjaxinline]\left[ \begin{array}{c} -2 \end{array} \right][/mathjaxinline], we would need to take [mathjaxinline]w^ tv[/mathjaxinline] or [mathjaxinline]v^ tw[/mathjaxinline] (both would give the same result; note that [mathjaxinline]\langle v,w\rangle = \langle w, v\rangle[/mathjaxinline]). </p></font></solution></p></text></problem></p><p>
+<problem display_name="Orthogonal Columns" attrib_string="url_name=&quot;b4orthog-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="112" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+Suppose the columns of [mathjaxinline]A[/mathjaxinline] form an orthogonal but not necessarily orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline]. What could we say about [mathjaxinline]A^ t A[/mathjaxinline]? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> It is the identity matrix</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> It is a multiple of the identity matrix, but not necessarily the identity</text>
+    </choice>
+    <choice correct="true" name="3">
+      <text> It is a diagonal matrix, but not necessarily a scalar multiple of the identity matrix</text>
+    </choice>
+    <choice correct="false" name="4">
+      <text> None of the above</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+The entry in the [mathjaxinline]ij[/mathjaxinline] spot of [mathjaxinline]A^ tA[/mathjaxinline] will be the dot product of the [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline] with the [mathjaxinline]j[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. This will be zero when [mathjaxinline]i\ne j[/mathjaxinline] (i.e., when the entry is off the main diagonal) so the matrix will be diagonal. The entry in the [mathjaxinline]ii[/mathjaxinline] spot will be [mathjaxinline]\langle v_ i, v_ i\rangle = \| v_ i\| ^2[/mathjaxinline], which could be different for the various columns. So the entries along the diagonal are not necessarily the same.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Preserving Inner Products and Norms" attrib_string="url_name=&quot;b4orthog-vertical4&quot;" refnum="4"><p>
+<video display_name="Preserving Inner Products and Norms" youtube_id_1_0="AwKwv0S5s2o" attrib_string="url_name=&quot;b4orthog-tab4-video1&quot; "></video><problem display_name="True or False 2" attrib_string="url_name=&quot;b4orthog-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="146" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+If the columns of [mathjaxinline]A[/mathjaxinline] form an orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline], and [mathjaxinline]\{ w_1; w_2;\ldots w_ k\}[/mathjaxinline] is an orthogonal list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline], then [mathjaxinline]\{ Aw_1; Aw_2;\ldots Aw_ k\}[/mathjaxinline] is also an orthogonal list of vectors. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ From the video, we can conclude that [mathjaxinline]A[/mathjaxinline] preserves inner products. Thus, if [mathjaxinline]\langle w_ i, w_ j \rangle = 0[/mathjaxinline] for [mathjaxinline]i\ne j[/mathjaxinline], then we also have [mathjaxinline]\langle Aw_ i, Aw_ j \rangle = 0[/mathjaxinline] for [mathjaxinline]i\ne j[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="True or False 3" attrib_string="url_name=&quot;b4orthog-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="164" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+If the columns of [mathjaxinline]A[/mathjaxinline] form an orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline], and [mathjaxinline]\{ w_1; w_2;\ldots w_ k\}[/mathjaxinline] is an orthonormal list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline], then [mathjaxinline]\{ Aw_1; Aw_2;\ldots Aw_ k\}[/mathjaxinline] is also an orthonormal list of vectors. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ From the video, we can conclude that [mathjaxinline]A[/mathjaxinline] preserves norms. Therefore, since [mathjaxinline]\| w_ i\|  = 1[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline], we also have [mathjaxinline]\| Aw_ i\|  = 1[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline]. Hence the list is orthonormal, not just orthogonal.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="True or False 4" attrib_string="url_name=&quot;b4orthog-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="183" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+If the columns of [mathjaxinline]A[/mathjaxinline] form an orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline], then [mathjaxinline]\langle Av, w\rangle = \langle v, Aw \rangle[/mathjaxinline] for all [mathjaxinline]v,w\in \mathbb R^ n[/mathjaxinline]. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ That is not what we mean when we say [mathjaxinline]A[/mathjaxinline] preserves inner products! Rather, we mean that [mathjaxinline]\langle Av,Aw\rangle = \langle v,w\rangle[/mathjaxinline] for all [mathjaxinline]v,w\in \mathbb R^ n[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Orthogonal Matrices" attrib_string="url_name=&quot;b4orthog-vertical5&quot;" refnum="5"><p>
+<video display_name="Orthogonal Matrices" youtube_id_1_0="6zVVf0rzOdQ" attrib_string="url_name=&quot;b4orthog-tab5-video1&quot; "></video><html display_name="Orthogonal Matrix Definition" attrib_string="url_name=&quot;b4orthog-tab5-text1&quot;" linenum="212" tex_filename="./block4/orthogonalmatrices.tex"><p>
+<span style="color:#27408C"><b class="bf">Theorem/Definition</b></span>. </p><p>
+Given an [mathjaxinline]n\times n[/mathjaxinline] real matrix [mathjaxinline]A[/mathjaxinline], the following four conditions are all equivalent. </p><ul class="itemize">
+
+<li><p>
+The columns of [mathjaxinline]A[/mathjaxinline] form an orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p></li>
+<li><p>
+[mathjaxinline]A^ t = A^{-1}[/mathjaxinline]. </p></li>
+<li><p>
+[mathjaxinline]A[/mathjaxinline] preserves inner products; i.e., [mathjaxinline]\langle Av,Aw\rangle = \langle v,w\rangle[/mathjaxinline] for all [mathjaxinline]v,w\in \mathbb R^ n[/mathjaxinline]. </p></li>
+<li><p>
+[mathjaxinline]A[/mathjaxinline] preserves norms; i.e., [mathjaxinline]\|  Av\|  = \| v\|[/mathjaxinline] for all [mathjaxinline]v\in \mathbb R^ n[/mathjaxinline]. </p></li>
+</ul><p>
+If any/all of them are true, we say that [mathjaxinline]A[/mathjaxinline] is an <span style="color:#99182C"><b class="bf">orthogonal matrix</b></span>. </p></html></p><p>
+<problem display_name="True or False 5" attrib_string="url_name=&quot;b4orthog-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="235" tex_filename="./block4/orthogonalmatrices.tex"><text><p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a reflection across some plane through the origin, and let [mathjaxinline]A[/mathjaxinline] be its standard matrix. Then the columns of [mathjaxinline]A[/mathjaxinline] must form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We can see that [mathjaxinline]T[/mathjaxinline] preserves distances and thus norms, so [mathjaxinline]A[/mathjaxinline] does as well. Hence [mathjaxinline]A[/mathjaxinline] is an orthogonal matrix and its columns form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
 
 
 

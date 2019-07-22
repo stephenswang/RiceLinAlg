@@ -1,0 +1,20 @@
+<problem display_name="True or False 5" linenum="235" tex_filename="./block4/orthogonalmatrices.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a reflection across some plane through the origin, and let [mathjaxinline]A[/mathjaxinline] be its standard matrix. Then the columns of [mathjaxinline]A[/mathjaxinline] must form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We can see that [mathjaxinline]T[/mathjaxinline] preserves distances and thus norms, so [mathjaxinline]A[/mathjaxinline] does as well. Hence [mathjaxinline]A[/mathjaxinline] is an orthogonal matrix and its columns form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

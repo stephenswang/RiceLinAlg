@@ -1,0 +1,66 @@
+<problem display_name="Warm-ups 2" linenum="50" tex_filename="./block4/orthogonalmatrices.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Using the same [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] as above, treat [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] as [mathjaxinline]3\times 1[/mathjaxinline] matrices. What is the matrix [mathjaxinline]v^ t[/mathjaxinline]? </p>
+    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+          <p>
+Use decimals only. </p>
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[3,4,7]]">
+        <textline correct_answer="[[3,4,7]]"/>
+      </customresponse>
+    </p>
+    <p>
+What is the matrix product [mathjaxinline]v^ t w[/mathjaxinline]? </p>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[347]]">
+        <textline correct_answer="[[347]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Since [mathjaxinline]v[/mathjaxinline] is a [mathjaxinline]3\times 1[/mathjaxinline] matrix, its transpose will be a [mathjaxinline]1\times 3[/mathjaxinline] matrix, specifically [mathjaxinline]\left[ \begin{array}{ccc} 3 &amp;  4 &amp;  7 \end{array} \right][/mathjaxinline]. </p>
+          <p>
+We will get the [mathjaxinline]1\times 1[/mathjaxinline] matrix [mathjaxinline]\left[ \begin{array}{c} 347 \end{array} \right][/mathjaxinline] when we multiply by [mathjaxinline]w[/mathjaxinline]. </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+</problem>
