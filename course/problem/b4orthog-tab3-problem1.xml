@@ -1,0 +1,20 @@
+<problem display_name="True or False" linenum="89" tex_filename="./block4/orthogonalmatrices.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline] and [mathjaxinline]\langle v, w\rangle = -2[/mathjaxinline], then the matrix product [mathjaxinline]vw^ t[/mathjaxinline] is the matrix [mathjaxinline]\left[ \begin{array}{c} -2 \end{array} \right][/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ False. [mathjaxinline]v[/mathjaxinline] is a [mathjaxinline]n \times 1[/mathjaxinline] matrix, and [mathjaxinline]w^ t[/mathjaxinline] is a [mathjaxinline]1\times n[/mathjaxinline] matrix, so [mathjaxinline]vw^ t[/mathjaxinline] is an [mathjaxinline]n\times n[/mathjaxinline] matrix. To get [mathjaxinline]\left[ \begin{array}{c} -2 \end{array} \right][/mathjaxinline], we would need to take [mathjaxinline]w^ tv[/mathjaxinline] or [mathjaxinline]v^ tw[/mathjaxinline] (both would give the same result; note that [mathjaxinline]\langle v,w\rangle = \langle w, v\rangle[/mathjaxinline]). </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

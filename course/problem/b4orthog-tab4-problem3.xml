@@ -1,0 +1,20 @@
+<problem display_name="True or False 4" linenum="183" tex_filename="./block4/orthogonalmatrices.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If the columns of [mathjaxinline]A[/mathjaxinline] form an orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline], then [mathjaxinline]\langle Av, w\rangle = \langle v, Aw \rangle[/mathjaxinline] for all [mathjaxinline]v,w\in \mathbb R^ n[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ That is not what we mean when we say [mathjaxinline]A[/mathjaxinline] preserves inner products! Rather, we mean that [mathjaxinline]\langle Av,Aw\rangle = \langle v,w\rangle[/mathjaxinline] for all [mathjaxinline]v,w\in \mathbb R^ n[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

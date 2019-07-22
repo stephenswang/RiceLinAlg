@@ -1,0 +1,20 @@
+<problem display_name="True or False 3" linenum="164" tex_filename="./block4/orthogonalmatrices.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+If the columns of [mathjaxinline]A[/mathjaxinline] form an orthonormal basis of [mathjaxinline]\mathbb R^ n[/mathjaxinline], and [mathjaxinline]\{ w_1; w_2;\ldots w_ k\}[/mathjaxinline] is an orthonormal list of vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline], then [mathjaxinline]\{ Aw_1; Aw_2;\ldots Aw_ k\}[/mathjaxinline] is also an orthonormal list of vectors. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ From the video, we can conclude that [mathjaxinline]A[/mathjaxinline] preserves norms. Therefore, since [mathjaxinline]\| w_ i\|  = 1[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline], we also have [mathjaxinline]\| Aw_ i\|  = 1[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline]. Hence the list is orthonormal, not just orthogonal.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
