@@ -348,6 +348,33 @@ Hence the only pair which is orthogonal is $g$ and $h$.
 
 \endedxproblem
 
+
+\beginedxproblem{Orthogonal or not? 2}{\dpa}
+
+Let $f(x) = 1$ and let $g(x) = \sin x$.  
+
+In the vector space $C[0,\pi]$ with inner product $\langle f,g\rangle = \int_0^{\pi} f(x)g(x) \ dx$,
+are $f$ and $g$ orthogonal?   
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+In the vector space $C[-\pi,\pi]$ with inner product $\langle f,g\rangle = \int_{-\pi}^{\pi} f(x)g(x) \ dx$,
+are $f$ and $g$ orthogonal?   
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+\edXsolution{
+In the first space $C[0,\pi]$, we calculate \[\langle f, g\rangle = \int_0^\pi \sin x \ dx = 2,\] 
+so $f$ and $g$ are not orthogonal.  However, in the second space, we have
+\[\langle f, h\rangle = \int_{-\pi}^\pi \sin x \ dx = 0,\]
+so $f$ and $g$ {\emph{are}} orthogonal in $C[-\pi,\pi]$.  
+}
+
+\endedxproblem
+
+
+
 \endedxvertical
 
 

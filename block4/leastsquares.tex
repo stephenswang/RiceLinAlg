@@ -1,0 +1,150 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}
+\item Compute the least-squares solution to matrix-vector equations.
+\item Apply the least-squares technique to 
+\end{itemize}
+
+For time budgeting purposes, this sequence has 3 videos totaling 14 minutes, 
+plus some questions.  
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+\beginedxvertical{Introducing the Question}
+
+
+\beginedxproblem{Matrix-Vector Solutions}{\dpa1}
+
+Let $A$ be a  real  $m\times n$ matrix.  The set of vectors $v$ for which the equation $Ax=v$ has a solution...
+
+\edXabox{type="multichoice" expect="is some subspace of $\R^m$ but not necessarily all of it" options="is all of $\R^m$","is some subspace of $\R^m$ but not necessarily all of it","is a subset of $\R^m$ but not necessarily a subspace of it"}
+
+
+\edXsolution{ 
+The equation $Ax = v$ has a solution if and only if $v$ is in the span of the columns of $A$.  The span of 
+the columns of $A$ might not be all of $\R^m$, but it is a subspace of $\R^m$.  
+}
+
+
+\endedxproblem
+
+\doedxvideo{What is Least-Squares?}{RLHQocdvsZs}
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Finding the Least-Squares Solution}
+
+\doedxvideo{Finding the Least-Squares Solution}{B_-rVbHJSSc}
+
+
+\beginedxtext{Least-Squares Theorem}
+
+
+{\keya{\bf{Theorem.}}}  
+Let $A$ be an $m\times n$ matrix and let $v\in \R^m$.  Then the equation
+$A^tAx = A^tv$ is consistent, and any of its solutions will be a least-squares solution 
+to the equation $Ax = v$.  
+
+\endedxtext
+
+
+
+\beginedxproblem{Least-Squares Practice}{\dpa3}
+
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Orthogonal Projections in Full Generality}
+
+
+\beginedxproblem{Projection Practice 1}{\dpa1}
+
+
+Let $W$ be the subspace of $\R^4$ spanned by the list $\{w_1; w_2; w_3\}$, where 
+$w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 1 \\ -2 
+\end{array} \right]$, $w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 
+\end{array} \right], $ and $w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 
+\end{array} \right]. $  Note that $\{w_1; w_2; w_3\}$ is an orthogonal list.  
+
+Let $v = \left[\begin{array}{c} 2 \\ 2 \\ -3 \\ 4 
+\end{array} \right].$  What is the closest vector to $v$ in $W$?  
+
+\input{vectorentry.tex}
+
+\edXabox{expect="Placeholder" options="Placeholder"}
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Projection Practice 2}{\dpa1}
+
+Recall that $C[0,1]$ is the vector space of continuous functions on the interval $[0,1]$, and that
+we have an inner product on that vector space given by $\langle f, g \rangle = \int_0^1 f(x)g(x) \ dx$.  
+
+
+Let $W$ be the subspace of $C[0,1]$ which is the span of a single function 
+$f(x) = x$.  
+
+Let $g(x) = x^2$.  What is the orthogonal projection of $g$ onto $W$?  
+
+
+\edXabox{type="formula" expect="" samples="x@1:5#5" feqin="1" tolerance=".01"}\\
+
+
+\edXsolution{ 
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Fourier Approximations}
+
+\doedxvideo{Fourier Approximations}{???}
+
+\endedxvertical
+

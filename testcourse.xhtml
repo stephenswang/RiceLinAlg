@@ -5213,20 +5213,42 @@ Let [mathjaxinline]f(x) = x[/mathjaxinline], [mathjaxinline]g(x) = 1[/mathjaxinl
   </checkboxgroup>
 </choiceresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- We can calculate [mathjaxinline]\langle f, g\rangle = 2[/mathjaxinline], [mathjaxinline]\langle f, h\rangle = -2/3[/mathjaxinline], and [mathjaxinline]\langle g,h \rangle = 0[/mathjaxinline]. Hence the only pair which is orthogonal is [mathjaxinline]g[/mathjaxinline] and [mathjaxinline]h[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+ We can calculate [mathjaxinline]\langle f, g\rangle = 2[/mathjaxinline], [mathjaxinline]\langle f, h\rangle = -2/3[/mathjaxinline], and [mathjaxinline]\langle g,h \rangle = 0[/mathjaxinline]. Hence the only pair which is orthogonal is [mathjaxinline]g[/mathjaxinline] and [mathjaxinline]h[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Orthogonal or not? 2" attrib_string="url_name=&quot;b4innerprods-tab8-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;&quot; rerandomize=&quot;per_student&quot;" linenum="352" tex_filename="./block4/innerproducts.tex"><text><p>
+Let [mathjaxinline]f(x) = 1[/mathjaxinline] and let [mathjaxinline]g(x) = \sin x[/mathjaxinline]. </p><p>
+In the vector space [mathjaxinline]C[0,\pi ][/mathjaxinline] with inner product [mathjaxinline]\langle f,g\rangle = \int _0^{\pi } f(x)g(x) \  dx[/mathjaxinline], are [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] orthogonal? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+In the vector space [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline] with inner product [mathjaxinline]\langle f,g\rangle = \int _{-\pi }^{\pi } f(x)g(x) \  dx[/mathjaxinline], are [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] orthogonal? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="Yes"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ In the first space [mathjaxinline]C[0,\pi ][/mathjaxinline], we calculate </p><table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\langle f, g\rangle = \int _0^\pi \sin x \  dx = 2,[/mathjax]</td>
+</tr>
+</table><p>
+ so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are not orthogonal. However, in the second space, we have </p><table id="a0000000151" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\langle f, h\rangle = \int _{-\pi }^\pi \sin x \  dx = 0,[/mathjax]</td>
+</tr>
+</table><p>
+ so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] <em>are</em> orthogonal in [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Orthogonal Lists" attrib_string="url_name=&quot;b4innerprods-vertical9&quot;" refnum="9"><p>
-<video display_name="Orthogonal Lists" youtube_id_1_0="pok4a_MtZgg" attrib_string="url_name=&quot;b4innerprods-tab9-video1&quot; "></video><html display_name="Orthogonal and Orthonormal Lists" attrib_string="url_name=&quot;b4innerprods-tab9-text1&quot;" linenum="360" tex_filename="./block4/innerproducts.tex"><p>
+<video display_name="Orthogonal Lists" youtube_id_1_0="pok4a_MtZgg" attrib_string="url_name=&quot;b4innerprods-tab9-video1&quot; "></video><html display_name="Orthogonal and Orthonormal Lists" attrib_string="url_name=&quot;b4innerprods-tab9-text1&quot;" linenum="387" tex_filename="./block4/innerproducts.tex"><p>
 <span style="color:#27408C"><b class="bf">Definition.</b></span> Given a vector space [mathjaxinline]V[/mathjaxinline] with an inner product, we say a list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">orthogonal</b></span> if [mathjaxinline]\langle v_ i,v_ j\rangle = 0[/mathjaxinline] for [mathjaxinline]i\ne j[/mathjaxinline]. The list is <span style="color:#99182C"><b class="bf">orthonormal</b></span> if it is orthogonal, and [mathjaxinline]\| v_ i\|  = 1[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline]. </p><p>
 <span style="color:#27408C"><b class="bf">Theorem.</b></span> Any orthogonal list of non-zero vectors is linearly independent. </p></html></p></vertical>   </p><p>
 <vertical display_name="Orthogonal List Questions" attrib_string="url_name=&quot;b4innerprods-vertical10&quot;" refnum="10"><p>
-<problem display_name="List 1" attrib_string="url_name=&quot;b4innerprods-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="376" tex_filename="./block4/innerproducts.tex"><text><p>
+<problem display_name="List 1" attrib_string="url_name=&quot;b4innerprods-tab10-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="403" tex_filename="./block4/innerproducts.tex"><text><p>
 True or false: If [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are orthogonal, and [mathjaxinline]u[/mathjaxinline] is orthogonal to both [mathjaxinline]v[/mathjaxinline] and to [mathjaxinline]w[/mathjaxinline], then the list [mathjaxinline]\{ u; v; w\}[/mathjaxinline] must be linearly independent. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="False"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
  The list is an orthogonal list, but one of the vectors could be [mathjaxinline]\mathbf{0}[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
-<problem display_name="List 2" attrib_string="url_name=&quot;b4innerprods-tab10-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="389" tex_filename="./block4/innerproducts.tex"><text><p>
+<problem display_name="List 2" attrib_string="url_name=&quot;b4innerprods-tab10-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="416" tex_filename="./block4/innerproducts.tex"><text><p>
 True or false: Every orthonormal list is linearly independent. </p><p>
 <optionresponse>
   <optioninput options="('True','False')" correct="True"/>
@@ -5246,7 +5268,7 @@ Be able to compute an orthogonal projection. </p></li>
 For time budgeting purposes, this sequence has 3 videos totaling 23 minutes, plus some questions. </p></html></p></vertical>   </p><p>
 <vertical display_name="Finding Closest Vectors" attrib_string="url_name=&quot;b4projections-vertical2&quot;" refnum="2"><p>
 <problem display_name="Closest Vector" attrib_string="url_name=&quot;b4projections-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;4&quot; rerandomize=&quot;per_student&quot;" linenum="33" tex_filename="./block4/projections.tex"><text><p>
-Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline] given by </p><table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline] given by </p><table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]W = \left\{  \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right] \  : \  a_1, a_2 \in \mathbb R\right\} .[/mathjax]</td>
 </tr>
@@ -5302,7 +5324,7 @@ def VectorEntry(expect, ans):
   <textline correct_answer="[[3],[4],[0]]"/>
 </customresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- If [mathjaxinline]w = \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right][/mathjaxinline], then the distance from [mathjaxinline]v[/mathjaxinline] to [mathjaxinline]w[/mathjaxinline] is </p><table id="a0000000151" class="equation" width="100%" cellspacing="0" cellpadding="7">
+ If [mathjaxinline]w = \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right][/mathjaxinline], then the distance from [mathjaxinline]v[/mathjaxinline] to [mathjaxinline]w[/mathjaxinline] is </p><table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\| w-v\|  = \sqrt {(a_1-3)^2 + (a_2-4)^2 + 7^2}.[/mathjax]</td>
 </tr>
@@ -5329,7 +5351,7 @@ For each [mathjaxinline]i[/mathjaxinline], what kind of object is [mathjaxinline
  Each [mathjaxinline]\langle v, w_ i\rangle w_ i[/mathjaxinline] is a scalar times a vector [mathjaxinline]w_ i[/mathjaxinline]. When we take the sum of these, it is (by definition) a linear combination of [mathjaxinline]\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline], and thus is a vector. Specifically, it is a vector in [mathjaxinline]W[/mathjaxinline], since all the [mathjaxinline]w_ i[/mathjaxinline] are in [mathjaxinline]W[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="The Projection Formula Proof" attrib_string="url_name=&quot;b4projections-vertical3&quot;" refnum="3"><p>
 <video display_name="Proving the Orthogonal Projection Formula" youtube_id_1_0="V5WPw2C-ixY" attrib_string="url_name=&quot;b4projections-tab3-video1&quot; "></video><problem display_name="Using the Projection Formula?" attrib_string="url_name=&quot;b4projections-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="119" tex_filename="./block4/projections.tex"><text><p>
-Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}[/mathjaxinline], where [mathjaxinline]w_1 = \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]w_2 = \left[ \begin{array}{c} 3 \\ -3 \\ 1 \end{array} \right][/mathjaxinline]. Then, for any [mathjaxinline]v\in \mathbb R^3[/mathjaxinline], </p><table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}[/mathjaxinline], where [mathjaxinline]w_1 = \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]w_2 = \left[ \begin{array}{c} 3 \\ -3 \\ 1 \end{array} \right][/mathjaxinline]. Then, for any [mathjaxinline]v\in \mathbb R^3[/mathjaxinline], </p><table id="a0000000154" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\mathrm{Proj}_ W(v) = \langle v, w_1 \rangle w_1 + \langle v, w_2 \rangle w_2.[/mathjax]</td>
 </tr>
@@ -5341,7 +5363,7 @@ Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}
  The formula given in the video does not work if [mathjaxinline]\{ w_1; w_2\}[/mathjaxinline] is not an orthonormal basis.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
 <vertical display_name="Full Generality" attrib_string="url_name=&quot;b4projections-vertical4&quot;" refnum="4"><p>
 <video display_name="Final Projection Formula" youtube_id_1_0="DzwlyaY4LmY" attrib_string="url_name=&quot;b4projections-tab4-video1&quot; "></video><html display_name="The Orthogonal Projection" attrib_string="url_name=&quot;b4projections-tab4-text1&quot;" linenum="165" tex_filename="./block4/projections.tex"><p>
-If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] with an orthogonal basis [mathjaxinline]\{ u_1; u_2; \ldots u_ k\}[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">orthogonal projection</b></span> of a vector [mathjaxinline]v\in V[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline] is given by the formula </p><table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7">
+If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] with an orthogonal basis [mathjaxinline]\{ u_1; u_2; \ldots u_ k\}[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">orthogonal projection</b></span> of a vector [mathjaxinline]v\in V[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline] is given by the formula </p><table id="a0000000155" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]\mathrm{Proj}_ W(v) = \sum _{i=1}^ k \frac{\langle v, u_ i \rangle }{\langle u_ i, u_ i \rangle } u_ i.[/mathjax]</td>
 </tr>
@@ -5349,7 +5371,7 @@ If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and
  It is the unique vector [mathjaxinline]\hat{v} \in W[/mathjaxinline] which has the property that [mathjaxinline]v-\hat{v}[/mathjaxinline] is orthogonal to all [mathjaxinline]w\in W[/mathjaxinline]. Additionally, [mathjaxinline]\mathrm{Proj}_ W(v)[/mathjaxinline] is the closest vector in [mathjaxinline]W[/mathjaxinline] to [mathjaxinline]v[/mathjaxinline]. </p></html></p></vertical>   </p><p>
 <vertical display_name="Projection Practice" attrib_string="url_name=&quot;b4projections-vertical5&quot;" refnum="5"><p>
 <problem display_name="Projection Practice 1" attrib_string="url_name=&quot;b4projections-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="187" tex_filename="./block4/projections.tex"><text><p>
-Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^4[/mathjaxinline] spanned by the list [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where </p><table id="a0000000154" class="equation" width="100%" cellspacing="0" cellpadding="7">
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^4[/mathjaxinline] spanned by the list [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where </p><table id="a0000000156" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
     <td class="equation">[mathjax]w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ -3 \end{array} \right], w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 \end{array} \right].[/mathjax]</td>
 </tr>

@@ -9274,16 +9274,61 @@ Let [mathjaxinline]f(x) = x[/mathjaxinline], [mathjaxinline]g(x) = 1[/mathjaxinl
               </p>
             </text>
           </problem>
+          <problem display_name="Orthogonal or not? 2" linenum="352" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab8-problem4" showanswer="finished" attempts="" rerandomize="per_student">
+            <text>
+              <p>
+Let [mathjaxinline]f(x) = 1[/mathjaxinline] and let [mathjaxinline]g(x) = \sin x[/mathjaxinline]. </p>
+              <p>
+In the vector space [mathjaxinline]C[0,\pi ][/mathjaxinline] with inner product [mathjaxinline]\langle f,g\rangle = \int _0^{\pi } f(x)g(x) \  dx[/mathjaxinline], are [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] orthogonal? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="No"/>
+                </optionresponse>
+              </p>
+              <p>
+In the vector space [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline] with inner product [mathjaxinline]\langle f,g\rangle = \int _{-\pi }^{\pi } f(x)g(x) \  dx[/mathjaxinline], are [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] orthogonal? </p>
+              <p>
+                <optionresponse>
+                  <optioninput options="('Yes','No')" correct="Yes"/>
+                </optionresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+ In the first space [mathjaxinline]C[0,\pi ][/mathjaxinline], we calculate </p>
+                    <table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle f, g\rangle = \int _0^\pi \sin x \  dx = 2,[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                    <p>
+ so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are not orthogonal. However, in the second space, we have </p>
+                    <table id="a0000000151" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                      <tr>
+                        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle f, h\rangle = \int _{-\pi }^\pi \sin x \  dx = 0,[/mathjax]</td>
+                        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                      </tr>
+                    </table>
+                    <p>
+ so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] <em>are</em> orthogonal in [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline].  </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
         </vertical>
         <vertical display_name="Orthogonal Lists" refnum="9" url_name="b4innerprods-vertical9">
           <video display_name="Orthogonal Lists" youtube_id_1_0="pok4a_MtZgg" url_name="b4innerprods-tab9-video1"/>
-          <html display_name="Orthogonal and Orthonormal Lists" linenum="360" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab9-text1">
+          <html display_name="Orthogonal and Orthonormal Lists" linenum="387" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab9-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a vector space [mathjaxinline]V[/mathjaxinline] with an inner product, we say a list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] in [mathjaxinline]V[/mathjaxinline] is <span style="color:#99182C"><b class="bf">orthogonal</b></span> if [mathjaxinline]\langle v_ i,v_ j\rangle = 0[/mathjaxinline] for [mathjaxinline]i\ne j[/mathjaxinline]. The list is <span style="color:#99182C"><b class="bf">orthonormal</b></span> if it is orthogonal, and [mathjaxinline]\| v_ i\|  = 1[/mathjaxinline] for all [mathjaxinline]i[/mathjaxinline]. </p>
             <p><span style="color:#27408C"><b class="bf">Theorem.</b></span> Any orthogonal list of non-zero vectors is linearly independent. </p>
           </html>
         </vertical>
         <vertical display_name="Orthogonal List Questions" refnum="10" url_name="b4innerprods-vertical10">
-          <problem display_name="List 1" linenum="376" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab10-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 1" linenum="403" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab10-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are orthogonal, and [mathjaxinline]u[/mathjaxinline] is orthogonal to both [mathjaxinline]v[/mathjaxinline] and to [mathjaxinline]w[/mathjaxinline], then the list [mathjaxinline]\{ u; v; w\}[/mathjaxinline] must be linearly independent. </p>
@@ -9303,7 +9348,7 @@ True or false: If [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjax
               </p>
             </text>
           </problem>
-          <problem display_name="List 2" linenum="389" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab10-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="List 2" linenum="416" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab10-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: Every orthonormal list is linearly independent. </p>
@@ -9349,7 +9394,7 @@ For time budgeting purposes, this sequence has 3 videos totaling 23 minutes, plu
             <text>
               <p>
 Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline] given by </p>
-              <table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]W = \left\{  \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right] \  : \  a_1, a_2 \in \mathbb R\right\} .[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9434,7 +9479,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">
                     <p>
  If [mathjaxinline]w = \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right][/mathjaxinline], then the distance from [mathjaxinline]v[/mathjaxinline] to [mathjaxinline]w[/mathjaxinline] is </p>
-                    <table id="a0000000151" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| w-v\|  = \sqrt {(a_1-3)^2 + (a_2-4)^2 + 7^2}.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9507,7 +9552,7 @@ For each [mathjaxinline]i[/mathjaxinline], what kind of object is [mathjaxinline
             <text>
               <p>
 Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}[/mathjaxinline], where [mathjaxinline]w_1 = \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]w_2 = \left[ \begin{array}{c} 3 \\ -3 \\ 1 \end{array} \right][/mathjaxinline]. Then, for any [mathjaxinline]v\in \mathbb R^3[/mathjaxinline], </p>
-              <table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000154" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Proj}_ W(v) = \langle v, w_1 \rangle w_1 + \langle v, w_2 \rangle w_2.[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9535,7 +9580,7 @@ Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}
           <html display_name="The Orthogonal Projection" linenum="165" tex_filename="./block4/projections.tex" url_name="b4projections-tab4-text1">
             <p>
 If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] with an orthogonal basis [mathjaxinline]\{ u_1; u_2; \ldots u_ k\}[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">orthogonal projection</b></span> of a vector [mathjaxinline]v\in V[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline] is given by the formula </p>
-            <table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000155" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Proj}_ W(v) = \sum _{i=1}^ k \frac{\langle v, u_ i \rangle }{\langle u_ i, u_ i \rangle } u_ i.[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9550,7 +9595,7 @@ If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and
             <text>
               <p>
 Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^4[/mathjaxinline] spanned by the list [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where </p>
-              <table id="a0000000154" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000156" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ -3 \end{array} \right], w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
