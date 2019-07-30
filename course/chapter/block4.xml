@@ -105,4 +105,28 @@
       <problem url_name="b4orthog-tab5-problem1"/>
     </vertical>
   </sequential>
+  <sequential display_name="Least Squares" linenum="793" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b4leastsquares-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="b4leastsquares-vertical1">
+      <html url_name="b4leastsquares-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Introducing the Question" refnum="2" url_name="b4leastsquares-vertical2">
+      <problem url_name="b4leastsquares-tab2-problem1"/>
+      <video url_name="b4leastsquares-tab2-video1"/>
+    </vertical>
+    <vertical display_name="Finding the Least-Squares Solution" refnum="3" url_name="b4leastsquares-vertical3">
+      <video url_name="b4leastsquares-tab3-video1"/>
+      <html url_name="b4leastsquares-tab3-text1"/>
+      <problem url_name="b4leastsquares-tab3-problem1"/>
+    </vertical>
+    <vertical display_name="Least-Squares Regression" refnum="4" url_name="b4leastsquares-vertical4">
+      <problem url_name="b4leastsquares-tab4-problem1"/>
+      <video url_name="b4leastsquares-tab4-video1"/>
+      <problem url_name="b4leastsquares-tab4-problem2"/>
+    </vertical>
+    <vertical display_name="Least-Squares Questions" refnum="5" url_name="b4leastsquares-vertical5">
+      <problem url_name="b4leastsquares-tab5-problem1"/>
+      <problem url_name="b4leastsquares-tab5-problem2"/>
+      <problem url_name="b4leastsquares-tab5-problem3"/>
+    </vertical>
+  </sequential>
 </chapter>

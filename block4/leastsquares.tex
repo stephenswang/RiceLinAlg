@@ -63,7 +63,7 @@ the columns of $A$ might not be all of $\R^m$, but it is a subspace of $\R^m$.
 
 {\keya{\bf{Theorem.}}}  
 Let $A$ be an $m\times n$ matrix and let $v\in \R^m$.  Then the equation
-$A^tAx = A^tv$ is consistent, and any of its solutions will be a least-squares solution 
+$A^t Ax = A^t v$ is consistent, and any of its solutions will be a least-squares solution 
 to the equation $Ax = v$.  
 
 \endedxtext
@@ -72,42 +72,14 @@ to the equation $Ax = v$.
 
 \beginedxproblem{Least-Squares Practice}{\dpa3}
 
-
-
-\edXsolution{ 
-}
-
-\endedxproblem
-
-
-
-
-
-\endedxvertical
-
-
-
-
-
-\beginedxvertical{Orthogonal Projections in Full Generality}
-
-
-\beginedxproblem{Projection Practice 1}{\dpa1}
-
-
-Let $W$ be the subspace of $\R^4$ spanned by the list $\{w_1; w_2; w_3\}$, where 
-$w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 1 \\ -2 
-\end{array} \right]$, $w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 
-\end{array} \right], $ and $w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 
-\end{array} \right]. $  Note that $\{w_1; w_2; w_3\}$ is an orthogonal list.  
-
-Let $v = \left[\begin{array}{c} 2 \\ 2 \\ -3 \\ 4 
-\end{array} \right].$  What is the closest vector to $v$ in $W$?  
+Let $A = \left[\begin{array}{cc} 1 & 1 \\ 1 & 0 \\ -1 & -1 \\ 0 & -1 \end{array} \right].$
+Find the least squares solution to 
+\[ Ax = \left[\begin{array}{c} 3 & -1 & 1 & 2 \end{array} \right]. \]
 
 \input{vectorentry.tex}
 
-\edXabox{expect="Placeholder" options="Placeholder"}
 
+\edXabox{type="custom" cfn="VectorEntry" expect="[[1.4],[-1.6]]"}
 
 \edXsolution{ 
 }
@@ -115,22 +87,148 @@ Let $v = \left[\begin{array}{c} 2 \\ 2 \\ -3 \\ 4
 \endedxproblem
 
 
-\beginedxproblem{Projection Practice 2}{\dpa1}
-
-Recall that $C[0,1]$ is the vector space of continuous functions on the interval $[0,1]$, and that
-we have an inner product on that vector space given by $\langle f, g \rangle = \int_0^1 f(x)g(x) \ dx$.  
 
 
-Let $W$ be the subspace of $C[0,1]$ which is the span of a single function 
-$f(x) = x$.  
-
-Let $g(x) = x^2$.  What is the orthogonal projection of $g$ onto $W$?  
+\endedxvertical
 
 
-\edXabox{type="formula" expect="" samples="x@1:5#5" feqin="1" tolerance=".01"}\\
 
 
-\edXsolution{ 
+
+\beginedxvertical{Least-Squares Regression}
+
+
+\beginedxproblem{Find a Parabola?}{\dpa1}
+
+Consider the points $(0,1), (1,1), (2,2),$ and $(3,5)$.  
+
+Is there an equation $y = cx^2 + ax + b,$ with $c,a,b$ all real, satisfied by all four points?  
+
+\edXabox{expect="No" options="Yes","No"}
+
+
+\edXsolution{
+For a set of parameters $c,a,b$ to work, we would need the following system of equations to
+be satisfied:
+\[
+\begin{array}{rcl}
+1 & = &c\cdot 0^2 + a\cdot 0 + b \\
+1 & = &c\cdot 1^2 + a\cdot 1 + b \\
+2 & = &c\cdot 2^2 + a\cdot 2 + b \\
+5 & = &c\cdot 3^2 + a\cdot 3 + b 
+\end{array}
+\]
+This is a system of linear equations in $c,a,b$ given by the augmented matrix
+\[
+\left[\begin{array}{ccc:c}
+0 & 0 & 1 & 1 \\
+1 & 1 & 1 & 1 \\
+4 & 2 & 1 & 2 \\
+9 & 3 & 1 & 5
+\end{array} \right]. \]
+Row-reducing this matrix reveals that the system is inconsistent: there is no such equation
+satisfied by all four points.  
+}
+
+\endedxproblem
+
+
+\doedxvideo{Least-Squares Regression}{Aip0artsTD8}
+
+
+\beginedxproblem{Closest Parabola}{\dpa3}
+
+Finish the problem from above (and from the video) by finding the least-squares parabola of the form
+$y = cx^2 + ax + b$ for the
+data points $(0,1), (1,1), (2,2),$ and $(3,5)$.  
+
+
+Enter the correct formula in the form $c*x^2 + a*x + b$, either exactly or to two decimal places.  (Remember to use * for multiplication.)    
+
+\edXinline{$y=$ }
+\edXabox{type="formula" expect="0.75*x^2-0.95*x+1.05" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+
+\endedxvertical
+
+
+
+
+
+\beginedxvertical{Least-Squares Questions}
+
+
+\beginedxproblem{Closest Parabola}{\dpa3}
+
+Finish the problem from the previous page (and from the video) by finding the least-squares parabola of the form
+$y = cx^2 + ax + b$ for the
+data points $(0,1), (1,1), (2,2),$ and $(3,5)$.  
+
+
+Enter the correct formula in the form $c*x^2 + a*x + b$, either exactly or to two decimal places.  (Remember to use * for multiplication.)    
+
+\edXinline{$y=$ }
+\edXabox{type="formula" expect="0.75*x^2-0.95*x+1.05" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Sine Function}{\dpa5}
+
+We wish to find the function of the form $y = a + b\sin x$ that is the least-squares fit for the  data points $(0,3), (\frac{\pi}{2},1), (\pi, 5), (\frac{3\pi}{2},6),(2\pi, 2).$
+
+This is equivalent to finding the least-squares solution to a matrix-vector equation
+$
+A\left[ \begin{array}{c} a \\ b\end{array} \right] = v.$
+
+What is $A$?  (Make sure your rows are in order, corresponding to the order of the given data points.)  
+
+\input{matrixentry.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,0],[1,1],[1,0],[1,-1],[1,0]]"}
+
+What is $v$?  
+
+
+\input{vectorentry.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[3],[1],[5],[6],[2]]"}
+
+
+
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Sine Function Continued}{\dpa3}
+
+Finish the analysis.  Find $a$ and $b$ giving the least-squares solution for the previous question.  
+
+\edXinline{$a=$ }
+\edXabox{type="numerical" expect="3.4" inline="1" tolerance=".01"}
+
+
+\edXinline{$b=$ }
+\edXabox{type="numerical" expect="-2.5" inline="1" tolerance=".01"}
+
+
+
+\edXsolution{
 }
 
 \endedxproblem
@@ -140,11 +238,4 @@ Let $g(x) = x^2$.  What is the orthogonal projection of $g$ onto $W$?
 
 
 
-
-
-\beginedxvertical{Fourier Approximations}
-
-\doedxvideo{Fourier Approximations}{???}
-
-\endedxvertical
 

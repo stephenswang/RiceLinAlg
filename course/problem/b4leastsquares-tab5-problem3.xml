@@ -1,0 +1,28 @@
+<problem display_name="Sine Function Continued" linenum="218" tex_filename="./block4/leastsquares.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Finish the analysis. Find [mathjaxinline]a[/mathjaxinline] and [mathjaxinline]b[/mathjaxinline] giving the least-squares solution for the previous question. </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]a=[/mathjaxinline] </p>
+      <numericalresponse inline="1" answer="3.4">
+        <textline inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]b=[/mathjaxinline] </p>
+      <numericalresponse inline="1" answer="-2.5">
+        <textline inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

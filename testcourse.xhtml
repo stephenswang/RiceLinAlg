@@ -5726,7 +5726,226 @@ Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be a r
   <optioninput options="('True','False')" correct="True"/>
 </optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"><p>
- We can see that [mathjaxinline]T[/mathjaxinline] preserves distances and thus norms, so [mathjaxinline]A[/mathjaxinline] does as well. Hence [mathjaxinline]A[/mathjaxinline] is an orthogonal matrix and its columns form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
+ We can see that [mathjaxinline]T[/mathjaxinline] preserves distances and thus norms, so [mathjaxinline]A[/mathjaxinline] does as well. Hence [mathjaxinline]A[/mathjaxinline] is an orthogonal matrix and its columns form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p><p>
+<sequential display_name="Least Squares" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;b4leastsquares-sequential&quot;" linenum="793" tex_filename="testcourse.tex" refnum="4"><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;b4leastsquares-vertical1&quot;" refnum="1"><p>
+<html display_name="Preliminaries" attrib_string="url_name=&quot;b4leastsquares-tab1-text1&quot;" linenum="5" tex_filename="./block4/leastsquares.tex"><p>
+At the end of this sequence, and after some practice, you should be able to: </p><ul class="itemize">
+
+<li><p>
+Compute the least-squares solution to matrix-vector equations. </p></li>
+<li><p>
+Apply the least-squares technique to </p></li>
+</ul><p>
+For time budgeting purposes, this sequence has 3 videos totaling 14 minutes, plus some questions. </p></html></p></vertical>   </p><p>
+<vertical display_name="Introducing the Question" attrib_string="url_name=&quot;b4leastsquares-vertical2&quot;" refnum="2"><p>
+<problem display_name="Matrix-Vector Solutions" attrib_string="url_name=&quot;b4leastsquares-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="32" tex_filename="./block4/leastsquares.tex"><text><p>
+Let [mathjaxinline]A[/mathjaxinline] be a real [mathjaxinline]m\times n[/mathjaxinline] matrix. The set of vectors [mathjaxinline]v[/mathjaxinline] for which the equation [mathjaxinline]Ax=v[/mathjaxinline] has a solution... </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> is all of [mathjaxinline]\mathbb R^ m[/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="2">
+      <text> is some subspace of [mathjaxinline]\mathbb R^ m[/mathjaxinline] but not necessarily all of it</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text> is a subset of [mathjaxinline]\mathbb R^ m[/mathjaxinline] but not necessarily a subspace of it</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution if and only if [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline]. The span of the columns of [mathjaxinline]A[/mathjaxinline] might not be all of [mathjaxinline]\mathbb R^ m[/mathjaxinline], but it is a subspace of [mathjaxinline]\mathbb R^ m[/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<video display_name="What is Least-Squares?" youtube_id_1_0="RLHQocdvsZs" attrib_string="url_name=&quot;b4leastsquares-tab2-video1&quot; "></video></p></vertical>   </p><p>
+<vertical display_name="Finding the Least-Squares Solution" attrib_string="url_name=&quot;b4leastsquares-vertical3&quot;" refnum="3"><p>
+<video display_name="Finding the Least-Squares Solution" youtube_id_1_0="B_-rVbHJSSc" attrib_string="url_name=&quot;b4leastsquares-tab3-video1&quot; "></video><html display_name="Least-Squares Theorem" attrib_string="url_name=&quot;b4leastsquares-tab3-text1&quot;" linenum="61" tex_filename="./block4/leastsquares.tex"><p>
+<span style="color:#27408C"><b class="bf">Theorem.</b></span> Let [mathjaxinline]A[/mathjaxinline] be an [mathjaxinline]m\times n[/mathjaxinline] matrix and let [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline]. Then the equation [mathjaxinline]A^ t Ax = A^ t v[/mathjaxinline] is consistent, and any of its solutions will be a least-squares solution to the equation [mathjaxinline]Ax = v[/mathjaxinline]. </p></html></p><p>
+<problem display_name="Least-Squares Practice" attrib_string="url_name=&quot;b4leastsquares-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="73" tex_filename="./block4/leastsquares.tex"><text><p>
+Let [mathjaxinline]A = \left[\begin{array}{cc} 1 &amp;  1 \\ 1 &amp;  0 \\ -1 &amp;  -1 \\ 0 &amp;  -1 \end{array} \right].[/mathjaxinline] Find the least squares solution to </p><table id="a0000000157" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]Ax = \left[\begin{array}{c} 3 &amp;  -1 &amp;  1 &amp;  2 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+<edxshowhide description="How to Enter a Column Vector in R^n"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[1.4],[-1.6]]">
+  <textline correct_answer="[[1.4],[-1.6]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Least-Squares Regression" attrib_string="url_name=&quot;b4leastsquares-vertical4&quot;" refnum="4"><p>
+<problem display_name="Find a Parabola?" attrib_string="url_name=&quot;b4leastsquares-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="101" tex_filename="./block4/leastsquares.tex"><text><p>
+Consider the points [mathjaxinline](0,1), (1,1), (2,2),[/mathjaxinline] and [mathjaxinline](3,5)[/mathjaxinline]. </p><p>
+Is there an equation [mathjaxinline]y = cx^2 + ax + b,[/mathjaxinline] with [mathjaxinline]c,a,b[/mathjaxinline] all real, satisfied by all four points? </p><p>
+<optionresponse>
+  <optioninput options="('Yes','No')" correct="No"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ For a set of parameters [mathjaxinline]c,a,b[/mathjaxinline] to work, we would need the following system of equations to be satisfied: </p><table id="a0000000158" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\begin{array}{rcl} 1 &amp;  = &amp; c\cdot 0^2 + a\cdot 0 + b \\ 1 &amp;  = &amp; c\cdot 1^2 + a\cdot 1 + b \\ 2 &amp;  = &amp; c\cdot 2^2 + a\cdot 2 + b \\ 5 &amp;  = &amp; c\cdot 3^2 + a\cdot 3 + b \end{array}[/mathjax]</td>
+</tr>
+</table><p>
+ This is a system of linear equations in [mathjaxinline]c,a,b[/mathjaxinline] given by the augmented matrix </p><table id="a0000000159" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{ccc:c} 0 &amp;  0 &amp;  1 &amp;  1 \\ 1 &amp;  1 &amp;  1 &amp;  1 \\ 4 &amp;  2 &amp;  1 &amp;  2 \\ 9 &amp;  3 &amp;  1 &amp;  5 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+ Row-reducing this matrix reveals that the system is inconsistent: there is no such equation satisfied by all four points.  </p></font></solution></p></text></problem></p><p>
+<video display_name="Least-Squares Regression" youtube_id_1_0="Aip0artsTD8" attrib_string="url_name=&quot;b4leastsquares-tab4-video1&quot; "></video><problem display_name="Closest Parabola" attrib_string="url_name=&quot;b4leastsquares-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="139" tex_filename="./block4/leastsquares.tex"><text><p>
+Finish the problem from above (and from the video) by finding the least-squares parabola of the form [mathjaxinline]y = cx^2 + ax + b[/mathjaxinline] for the data points [mathjaxinline](0,1), (1,1), (2,2),[/mathjaxinline] and [mathjaxinline](3,5)[/mathjaxinline]. </p><p>
+Enter the correct formula in the form [mathjaxinline]c*x^2 + a*x + b[/mathjaxinline], either exactly or to two decimal places. (Remember to use * for multiplication.) </p><p>
+<p style="display:inline">[mathjaxinline]y=[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="0.75*x^2-0.95*x+1.05">
+  <formulaequationinput inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Least-Squares Questions" attrib_string="url_name=&quot;b4leastsquares-vertical5&quot;" refnum="5"><p>
+<problem display_name="Closest Parabola" attrib_string="url_name=&quot;b4leastsquares-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="168" tex_filename="./block4/leastsquares.tex"><text><p>
+Finish the problem from the previous page (and from the video) by finding the least-squares parabola of the form [mathjaxinline]y = cx^2 + ax + b[/mathjaxinline] for the data points [mathjaxinline](0,1), (1,1), (2,2),[/mathjaxinline] and [mathjaxinline](3,5)[/mathjaxinline]. </p><p>
+Enter the correct formula in the form [mathjaxinline]c*x^2 + a*x + b[/mathjaxinline], either exactly or to two decimal places. (Remember to use * for multiplication.) </p><p>
+<p style="display:inline">[mathjaxinline]y=[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="0.75*x^2-0.95*x+1.05">
+  <formulaequationinput inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Sine Function" attrib_string="url_name=&quot;b4leastsquares-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="187" tex_filename="./block4/leastsquares.tex"><text><p>
+We wish to find the function of the form [mathjaxinline]y = a + b\sin x[/mathjaxinline] that is the least-squares fit for the data points [mathjaxinline](0,3), (\frac{\pi }{2},1), (\pi , 5), (\frac{3\pi }{2},6),(2\pi , 2).[/mathjaxinline] </p><p>
+This is equivalent to finding the least-squares solution to a matrix-vector equation [mathjaxinline]A\left[ \begin{array}{c} a \\ b\end{array} \right] = v.[/mathjaxinline] </p><p>
+What is [mathjaxinline]A[/mathjaxinline]? (Make sure your rows are in order, corresponding to the order of the given data points.) </p><p>
+<edxshowhide description="How to Enter a Matrix"><p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[1,0],[1,1],[1,0],[1,-1],[1,0]]">
+  <textline correct_answer="[[1,0],[1,1],[1,0],[1,-1],[1,0]]"/>
+</customresponse> </p><p>
+What is [mathjaxinline]v[/mathjaxinline]? </p><p>
+<edxshowhide description="How to Enter a Column Vector in R^n"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[3],[1],[5],[6],[2]]">
+  <textline correct_answer="[[3],[1],[5],[6],[2]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Sine Function Continued" attrib_string="url_name=&quot;b4leastsquares-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="218" tex_filename="./block4/leastsquares.tex"><text><p>
+Finish the analysis. Find [mathjaxinline]a[/mathjaxinline] and [mathjaxinline]b[/mathjaxinline] giving the least-squares solution for the previous question. </p><p>
+<p style="display:inline">[mathjaxinline]a=[/mathjaxinline] </p> <numericalresponse inline="1" answer="3.4">
+  <textline inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </textline>
+</numericalresponse> </p><p>
+<p style="display:inline">[mathjaxinline]b=[/mathjaxinline] </p> <numericalresponse inline="1" answer="-2.5">
+  <textline inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </textline>
+</numericalresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
 
 
 

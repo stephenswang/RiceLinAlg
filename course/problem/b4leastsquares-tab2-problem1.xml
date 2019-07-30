@@ -1,0 +1,30 @@
+<problem display_name="Matrix-Vector Solutions" linenum="32" tex_filename="./block4/leastsquares.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]A[/mathjaxinline] be a real [mathjaxinline]m\times n[/mathjaxinline] matrix. The set of vectors [mathjaxinline]v[/mathjaxinline] for which the equation [mathjaxinline]Ax=v[/mathjaxinline] has a solution... </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> is all of [mathjaxinline]\mathbb R^ m[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> is some subspace of [mathjaxinline]\mathbb R^ m[/mathjaxinline] but not necessarily all of it</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> is a subset of [mathjaxinline]\mathbb R^ m[/mathjaxinline] but not necessarily a subspace of it</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution if and only if [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline]. The span of the columns of [mathjaxinline]A[/mathjaxinline] might not be all of [mathjaxinline]\mathbb R^ m[/mathjaxinline], but it is a subspace of [mathjaxinline]\mathbb R^ m[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
