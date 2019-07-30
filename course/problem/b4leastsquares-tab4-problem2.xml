@@ -1,0 +1,22 @@
+<problem display_name="Closest Parabola" linenum="139" tex_filename="./block4/leastsquares.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Finish the problem from above (and from the video) by finding the least-squares parabola of the form [mathjaxinline]y = cx^2 + ax + b[/mathjaxinline] for the data points [mathjaxinline](0,1), (1,1), (2,2),[/mathjaxinline] and [mathjaxinline](3,5)[/mathjaxinline]. </p>
+    <p>
+Enter the correct formula in the form [mathjaxinline]c*x^2 + a*x + b[/mathjaxinline], either exactly or to two decimal places. (Remember to use * for multiplication.) </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]y=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="0.75*x^2-0.95*x+1.05">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

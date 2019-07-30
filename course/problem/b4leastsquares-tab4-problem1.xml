@@ -1,0 +1,38 @@
+<problem display_name="Find a Parabola?" linenum="101" tex_filename="./block4/leastsquares.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Consider the points [mathjaxinline](0,1), (1,1), (2,2),[/mathjaxinline] and [mathjaxinline](3,5)[/mathjaxinline]. </p>
+    <p>
+Is there an equation [mathjaxinline]y = cx^2 + ax + b,[/mathjaxinline] with [mathjaxinline]c,a,b[/mathjaxinline] all real, satisfied by all four points? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ For a set of parameters [mathjaxinline]c,a,b[/mathjaxinline] to work, we would need the following system of equations to be satisfied: </p>
+          <table id="a0000000158" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} 1 &amp;  = &amp; c\cdot 0^2 + a\cdot 0 + b \\ 1 &amp;  = &amp; c\cdot 1^2 + a\cdot 1 + b \\ 2 &amp;  = &amp; c\cdot 2^2 + a\cdot 2 + b \\ 5 &amp;  = &amp; c\cdot 3^2 + a\cdot 3 + b \end{array}[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ This is a system of linear equations in [mathjaxinline]c,a,b[/mathjaxinline] given by the augmented matrix </p>
+          <table id="a0000000159" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 0 &amp;  0 &amp;  1 &amp;  1 \\ 1 &amp;  1 &amp;  1 &amp;  1 \\ 4 &amp;  2 &amp;  1 &amp;  2 \\ 9 &amp;  3 &amp;  1 &amp;  5 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Row-reducing this matrix reveals that the system is inconsistent: there is no such equation satisfied by all four points.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

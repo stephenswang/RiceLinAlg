@@ -1,0 +1,3 @@
+<html display_name="Least-Squares Theorem" linenum="61" tex_filename="./block4/leastsquares.tex">
+  <p><span style="color:#27408C"><b class="bf">Theorem.</b></span> Let [mathjaxinline]A[/mathjaxinline] be an [mathjaxinline]m\times n[/mathjaxinline] matrix and let [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline]. Then the equation [mathjaxinline]A^ t Ax = A^ t v[/mathjaxinline] is consistent, and any of its solutions will be a least-squares solution to the equation [mathjaxinline]Ax = v[/mathjaxinline]. </p>
+</html>
