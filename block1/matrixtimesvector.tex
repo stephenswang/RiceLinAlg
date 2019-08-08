@@ -13,11 +13,11 @@ At the end of this sequence, and after some practice, you should be able to:
 \begin{itemize}
 \item Compute the product of a matrix with a vector in $\R^n$.   
 \item Solve matrix-vector equations.
-\item Relate matrix-vector equations with span and linear combinations.  
+\item Relate matrix-vector equations to spans and linear combinations.  
 \end{itemize}
 
 
-For time budgeting purposes, this sequence has X videos totaling X minutes, 
+For time budgeting purposes, this sequence has 4 videos totaling 29 minutes, 
 plus some questions.  
 
 
@@ -27,6 +27,22 @@ plus some questions.
 
 \endedxvertical
 
+\beginedxvertical{Row-Reduction Tools}
+
+\beginedxtext{Row-Reduction Tools}
+
+From this point forward, you should feel free to use technology to do row reduction of matrices.  
+
+Here are a couple of websites that will do row reduction for you:
+
+\edXgitlink{http://www.math.odu.edu/~bogacki/cgi-bin/lat.cgi}{Linear Algebra Toolkit}
+
+\edXgitlink{https://www.wolframalpha.com/}{Wolfram Alpha}
+
+
+\endedxtext
+
+\endedxvertical
 
 \beginedxvertical{Defining Matrix-Vector Multiplication}
 
@@ -53,6 +69,32 @@ the product $Ax$ is defined to be
 
 
 \beginedxvertical{Multiplication Practice}
+
+
+
+
+\beginedxproblem{Where does it live?}{\dpa1}
+
+Suppose $A$ is a $6\times 4$ real matrix.  In order for the product $Ax$ to be defined, the vector $x$ must live
+in what space?  
+
+
+\edXabox{type="multichoice" expect="$\R^4$" options="$\R^4$","$\R^6$","Either of these is fine"}
+
+The resulting product $Ax$ will be an element of which space?  
+
+\edXabox{type="multichoice" expect="$\R^6$" options="$\R^4$","$\R^6$","Either of these is fine"}
+
+\edXsolution{ 
+
+For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix $A$ has 4 columns, so $x$ must then live in $\R^4$. \\
+Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product $Ax$ will therefore  be a vector living in $\R^6$. 
+
+ }
+
+\endedxproblem
+
+
 
 \beginedxproblem{Products}{\dpa3}
 
@@ -107,29 +149,6 @@ Note the special nature of vector $y$. We can see that the product $Ay$ will equ
 	
 }
 
-
-\endedxproblem
-
-
-
-\beginedxproblem{Where does it live?}{\dpa1}
-
-Suppose $A$ is a $6\times 4$ real matrix.  In order for the product $Ax$ to be defined, the vector $x$ must live
-in what space?  
-
-
-\edXabox{type="multichoice" expect="$\R^4$" options="$\R^4$","$\R^6$","Either of these is fine"}
-
-The resulting product $Ax$ will be an element of which space?  
-
-\edXabox{type="multichoice" expect="$\R^6$" options="$\R^4$","$\R^6$","Either of these is fine"}
-
-\edXsolution{ 
-
-For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix $A$ has 4 columns, so $x$ must then live in $\R^4$. \\
-Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product $Ax$ will therefore  be a vector living in $\R^6$. 
-
- }
 
 \endedxproblem
 
