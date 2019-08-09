@@ -1,18 +1,37 @@
-<html display_name="Properties of Matrix Multiplication" linenum="451" tex_filename="./block1/matrixtimesvector.tex">
+<html display_name="Solution Sets Summary" linenum="396" tex_filename="./block1/matrixtimesvector.tex">
+  <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the set of solutions to [mathjaxinline]Ax = v[/mathjaxinline] is a translation of the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
   <p>
-For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
-  <table id="a0000000057" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-    <tr>
-      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(w+x) = Aw + Ax[/mathjax]</td>
-      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-    </tr>
-  </table>
-  <p>
- and </p>
-  <table id="a0000000058" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-    <tr>
-      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(ax) = a(Ax).[/mathjax]</td>
-      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-    </tr>
-  </table>
+    <div class="hideshowbox">
+      <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition<span class="icon-caret-down toggleimage"/></h4>
+      <div class="hideshowcontent">
+        <p>
+Let [mathjaxinline]S[/mathjaxinline] be the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], and suppose that [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Then there is some solution [mathjaxinline]x=x_0[/mathjaxinline]. We claim that the solution set to [mathjaxinline]Ax = v[/mathjaxinline] is exactly [mathjaxinline]x_0 + S[/mathjaxinline]. </p>
+        <p>
+First we show that every vector in the translation [mathjaxinline]x_0 + S[/mathjaxinline] is a solution to [mathjaxinline]Ax=v.[/mathjaxinline] Let [mathjaxinline]w \in x_0+S[/mathjaxinline]. Then [mathjaxinline]w = x_0 + y[/mathjaxinline] for some [mathjaxinline]y \in S[/mathjaxinline], so </p>
+        <table id="a0000000057" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Aw = A(x_0 + y) = Ax_0 + Ay.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ We know that [mathjaxinline]Ax_0 = v[/mathjaxinline] and, since [mathjaxinline]y \in S[/mathjaxinline], we also know that [mathjaxinline]Ay = \mathbf{0}[/mathjaxinline]. Hence [mathjaxinline]Aw = v[/mathjaxinline], so [mathjaxinline]w[/mathjaxinline] is a solution to [mathjaxinline]Ax = v.[/mathjaxinline] </p>
+        <p>
+Now we show that every solution to [mathjaxinline]Ax = v[/mathjaxinline] is an element of [mathjaxinline]x_0 + S.[/mathjaxinline] Indeed, suppose that [mathjaxinline]w[/mathjaxinline] satisfies [mathjaxinline]Aw = v[/mathjaxinline], and consider the vector [mathjaxinline]y = w-x_0.[/mathjaxinline] We have </p>
+        <table id="a0000000058" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <tr>
+            <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Ay = A(w-x_0) = Aw - Ax_0 = v-v = \mathbf{0}.[/mathjax]</td>
+            <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+          </tr>
+        </table>
+        <p>
+ Hence [mathjaxinline]y \in S[/mathjaxinline]. Therefore [mathjaxinline]w = x_0 + y \in x_0 + S.[/mathjaxinline] This proves the proposition. </p>
+      </div>
+      <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+        <a href="javascript: {return false;}">Show</a>
+      </p>
+    </div>
+  </p>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
 </html>

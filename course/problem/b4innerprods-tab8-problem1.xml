@@ -2,7 +2,7 @@
   <text>
     <p>
 True or false: Given any two vectors [mathjaxinline]v,w[/mathjaxinline] in a vector space with an inner product, we have </p>
-    <table id="a0000000148" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| v+w\| ^2 = \| v\| ^2 + \| w\| ^2.[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

@@ -163,16 +163,19 @@
       <problem url_name="b1matrixvector-tab6-problem2"/>
       <problem url_name="b1matrixvector-tab6-problem3"/>
     </vertical>
-    <vertical display_name="Spans and Matrix-Vector Equations" refnum="7" url_name="b1matrixvector-vertical7">
-      <problem url_name="b1matrixvector-tab7-problem1"/>
-      <problem url_name="b1matrixvector-tab7-problem2"/>
-      <problem url_name="b1matrixvector-tab7-problem3"/>
+    <vertical display_name="Solution Sets Summary" refnum="7" url_name="b1matrixvector-vertical7">
+      <html url_name="b1matrixvector-tab7-text1"/>
     </vertical>
-    <vertical display_name="Multiplication Properties" refnum="8" url_name="b1matrixvector-vertical8">
-      <video url_name="b1matrixvector-tab8-video1"/>
-      <html url_name="b1matrixvector-tab8-text1"/>
+    <vertical display_name="Spans and Matrix-Vector Equations" refnum="8" url_name="b1matrixvector-vertical8">
       <problem url_name="b1matrixvector-tab8-problem1"/>
       <problem url_name="b1matrixvector-tab8-problem2"/>
+      <problem url_name="b1matrixvector-tab8-problem3"/>
+    </vertical>
+    <vertical display_name="Multiplication Properties" refnum="9" url_name="b1matrixvector-vertical9">
+      <video url_name="b1matrixvector-tab9-video1"/>
+      <html url_name="b1matrixvector-tab9-text1"/>
+      <problem url_name="b1matrixvector-tab9-problem1"/>
+      <problem url_name="b1matrixvector-tab9-problem2"/>
     </vertical>
   </sequential>
   <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">

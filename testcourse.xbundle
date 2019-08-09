@@ -2210,7 +2210,7 @@ From this point forward, you should feel free to use technology to do row reduct
             <p>
 Here are a couple of websites that will do row reduction for you: </p>
             <p>
-              <a href="http://www.math.odu.edu/&#xA0;bogacki/cgi-bin/lat.cgi" target="_blank">Linear Algebra Toolkit</a>
+              <a href="https://tinyurl.com/3xr6ed" target="_blank">Linear Algebra Toolkit</a>
             </p>
             <p>
               <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a>
@@ -2568,30 +2568,6 @@ def VectorEntry(expect, ans):
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
-              <p>
-                <div class="hideshowbox">
-                  <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
-                  <div class="hideshowcontent">
-                    <p>
-To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
-                    <ul class="itemize">
-                      <li>
-                        <p>
-enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
-                      </li>
-                      <li>
-                        <p>
-or, you can enter it as &lt;1,2,3&gt; </p>
-                      </li>
-                    </ul>
-                    <p>
-Use decimals only. </p>
-                  </div>
-                  <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
-                    <a href="javascript: {return false;}">Show</a>
-                  </p>
-                </div>
-              </p>
               <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast
@@ -2644,16 +2620,14 @@ The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least 
                 </solution>
               </p>
             </text>
-            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
-            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
         </vertical>
         <vertical display_name="Solution Sets" refnum="6" url_name="b1matrixvector-vertical6">
-          <video display_name="Solving Ax = 0" youtube_id_1_0="VreiYQU_GTA" url_name="b1matrixvector-tab6-video1"/>
+          <video display_name="Solution Sets to Matrix-Vector Equations" youtube_id_1_0="VreiYQU_GTA" url_name="b1matrixvector-tab6-video1"/>
           <problem display_name="Non-trivial Solutions" linenum="298" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
-Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
+Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solution, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
               <p>
                 <numericalresponse answer="4">
                   <textline>
@@ -2706,7 +2680,7 @@ Hence the general solution is </p>
                       </tr>
                     </table>
                     <p>
- for any [mathjaxinline]x_3,\x _4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\} .[/mathjaxinline] </p>
+ for any [mathjaxinline]x_3,x_4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\right\} .[/mathjaxinline] </p>
                     <p>
 (Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.) </p>
                   </font>
@@ -2737,8 +2711,47 @@ If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set wi
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Spans and Matrix-Vector Equations" refnum="7" url_name="b1matrixvector-vertical7">
-          <problem display_name="Span as Noun" linenum="401" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+        <vertical display_name="Solution Sets Summary" refnum="7" url_name="b1matrixvector-vertical7">
+          <html display_name="Solution Sets Summary" linenum="396" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-text1">
+            <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the set of solutions to [mathjaxinline]Ax = v[/mathjaxinline] is a translation of the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
+            <p>
+              <div class="hideshowbox">
+                <h4 onclick="hideshow(this);" style="margin: 0px">Proof of Proposition<span class="icon-caret-down toggleimage"/></h4>
+                <div class="hideshowcontent">
+                  <p>
+Let [mathjaxinline]S[/mathjaxinline] be the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], and suppose that [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Then there is some solution [mathjaxinline]x=x_0[/mathjaxinline]. We claim that the solution set to [mathjaxinline]Ax = v[/mathjaxinline] is exactly [mathjaxinline]x_0 + S[/mathjaxinline]. </p>
+                  <p>
+First we show that every vector in the translation [mathjaxinline]x_0 + S[/mathjaxinline] is a solution to [mathjaxinline]Ax=v.[/mathjaxinline] Let [mathjaxinline]w \in x_0+S[/mathjaxinline]. Then [mathjaxinline]w = x_0 + y[/mathjaxinline] for some [mathjaxinline]y \in S[/mathjaxinline], so </p>
+                  <table id="a0000000057" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <tr>
+                      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Aw = A(x_0 + y) = Ax_0 + Ay.[/mathjax]</td>
+                      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                    </tr>
+                  </table>
+                  <p>
+ We know that [mathjaxinline]Ax_0 = v[/mathjaxinline] and, since [mathjaxinline]y \in S[/mathjaxinline], we also know that [mathjaxinline]Ay = \mathbf{0}[/mathjaxinline]. Hence [mathjaxinline]Aw = v[/mathjaxinline], so [mathjaxinline]w[/mathjaxinline] is a solution to [mathjaxinline]Ax = v.[/mathjaxinline] </p>
+                  <p>
+Now we show that every solution to [mathjaxinline]Ax = v[/mathjaxinline] is an element of [mathjaxinline]x_0 + S.[/mathjaxinline] Indeed, suppose that [mathjaxinline]w[/mathjaxinline] satisfies [mathjaxinline]Aw = v[/mathjaxinline], and consider the vector [mathjaxinline]y = w-x_0.[/mathjaxinline] We have </p>
+                  <table id="a0000000058" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <tr>
+                      <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Ay = A(w-x_0) = Aw - Ax_0 = v-v = \mathbf{0}.[/mathjax]</td>
+                      <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+                    </tr>
+                  </table>
+                  <p>
+ Hence [mathjaxinline]y \in S[/mathjaxinline]. Therefore [mathjaxinline]w = x_0 + y \in x_0 + S.[/mathjaxinline] This proves the proposition. </p>
+                </div>
+                <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+                  <a href="javascript: {return false;}">Show</a>
+                </p>
+              </div>
+            </p>
+            <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+            <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+          </html>
+        </vertical>
+        <vertical display_name="Spans and Matrix-Vector Equations" refnum="8" url_name="b1matrixvector-vertical8">
+          <problem display_name="Span as Noun" linenum="434" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. A vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if and only the equation [mathjaxinline]Ax = v[/mathjaxinline] has: </p>
@@ -2752,13 +2765,13 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- The vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if there is at least one way to write it as a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], or in other words if there is at least one [mathjaxinline]x[/mathjaxinline] which satisfies [mathjaxinline]Ax = v[/mathjaxinline]. </p>
+ The vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if there is at least one way to write it as a linear combination of the columns of [mathjaxinline]A[/mathjaxinline], or in other words if there is at least one [mathjaxinline]x[/mathjaxinline] which satisfies [mathjaxinline]Ax = v[/mathjaxinline].  </p>
                   </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Span as Verb" linenum="420" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Span as Verb" linenum="452" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if: </p>
@@ -2774,15 +2787,6 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
                     <choice correct="false" name="3">
                       <text> For every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at most one solution</text>
                     </choice>
-                    <choice correct="false" name="4">
-                      <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has exactly one solution</text>
-                    </choice>
-                    <choice correct="false" name="5">
-                      <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at least one solution</text>
-                    </choice>
-                    <choice correct="false" name="6">
-                      <text> For some vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline], the equation [mathjaxinline]Ax = v[/mathjaxinline] has at most one solution</text>
-                    </choice>
                   </choicegroup>
                 </multiplechoiceresponse>
               </p>
@@ -2791,13 +2795,13 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- In order for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline], every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline] needs to be in the span of the columns. By the previous problem, this is equivalent to having at least one solution to the equation [mathjaxinline]Ax=v[/mathjaxinline] for every vector [mathjaxinline]v \in \mathbb R^ m[/mathjaxinline]. </p>
+ In order for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^ m[/mathjaxinline], every vector [mathjaxinline]v\in \mathbb R^ m[/mathjaxinline] needs to be in the span of the columns. By the previous problem, this is equivalent to having at least one solution to the equation [mathjaxinline]Ax=v[/mathjaxinline] for every vector [mathjaxinline]v \in \mathbb R^ m[/mathjaxinline].  </p>
                   </font>
                 </solution>
               </p>
             </text>
           </problem>
-          <problem display_name="Always has Solutions" linenum="439" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Always has Solutions" linenum="469" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/mathjaxinline] would it be impossible for [mathjaxinline]Ax = v[/mathjaxinline] to have at least one solution for every [mathjaxinline]v \in \mathbb R^5[/mathjaxinline]? Click all that apply. </p>
@@ -2824,19 +2828,21 @@ In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/ma
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
- If there are fewer than 5 columns, then it is impossible for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^5[/mathjaxinline]. Therefore, by the previous problem, the equation [mathjaxinline]Ax=v[/mathjaxinline] cannot be consistent for every [mathjaxinline]v\in \mathbb R^5[/mathjaxinline]; there must be some vectors [mathjaxinline]v\in \mathbb R^5[/mathjaxinline] for which it is inconsistent. </p>
+ If there are fewer than 5 columns, then it is impossible for the columns of [mathjaxinline]A[/mathjaxinline] to span [mathjaxinline]\mathbb R^5[/mathjaxinline]. In that case, by the previous problem, the equation [mathjaxinline]Ax=v[/mathjaxinline] cannot be consistent for every [mathjaxinline]v\in \mathbb R^5[/mathjaxinline]; there must be some vectors [mathjaxinline]v\in \mathbb R^5[/mathjaxinline] for which it is inconsistent. </p>
+                    <p>
+The two cases in which there are fewer columns than rows are the answer.  </p>
                   </font>
                 </solution>
               </p>
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Multiplication Properties" refnum="8" url_name="b1matrixvector-vertical8">
-          <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab8-video1"/>
-          <html display_name="Properties of Matrix Multiplication" linenum="470" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-text1">
+        <vertical display_name="Multiplication Properties" refnum="9" url_name="b1matrixvector-vertical9">
+          <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab9-video1"/>
+          <html display_name="Properties of Matrix Multiplication" linenum="506" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-text1">
             <p>
 For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
-            <table id="a0000000057" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000059" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(w+x) = Aw + Ax[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -2844,14 +2850,14 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
             </table>
             <p>
  and </p>
-            <table id="a0000000058" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000060" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A(ax) = a(Ax).[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
               </tr>
             </table>
           </html>
-          <problem display_name="Consistent Matrix-Vector Equations" linenum="479" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations" linenum="515" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
@@ -2910,7 +2916,7 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="510" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="546" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>
@@ -3056,7 +3062,7 @@ def test_ld_1(expect,ans):
 </script>
               <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
-              <table id="a0000000059" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000061" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], v_2 = \left[\begin{array}{c} 2 \\ -1 \\ 3 \\ 5 \end{array} \right], v_3 = \left[\begin{array}{c} -3 \\ 3 \\ 0 \\ 0 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -3126,7 +3132,7 @@ def test_ld_12(expect,ans):
 </script>
               <p>
 Consider the list of vectors [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline], where </p>
-              <table id="a0000000060" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000062" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 3 \\ 4 \\ 5 \end{array} \right], v_2 = \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \\ 0 \end{array} \right], v_3 = \left[\begin{array}{c} -3 \\ 3 \\ 3 \\ 5 \\ 1 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -3357,7 +3363,7 @@ Is the linear independence of a list of vectors an existence question, or a uniq
             <text>
               <p>
 Use row reduction to determine how many solutions the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has, where </p>
-              <table id="a0000000061" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ -1 &amp;  1 &amp;  3 \\ 3 &amp;  3 &amp;  3 \\ 4 &amp;  1 &amp;  -2 \\ 5 &amp;  3 &amp;  1 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -3370,7 +3376,7 @@ Use row reduction to determine how many solutions the equation [mathjaxinline]Ax
               </p>
               <p>
 Is the list [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] linearly independent, where the [mathjaxinline]v_ i[/mathjaxinline] are given below? </p>
-              <table id="a0000000062" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000064" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v_1 = \left[\begin{array}{c} 1 \\ -1 \\ 3 \\ 4 \\ 5 \end{array} \right], v_2 = \left[\begin{array}{c} 2 \\ 1 \\ 3 \\ 1 \\ 3 \end{array} \right], v_3 = \left[\begin{array}{c} 3 \\ 3 \\ 3 \\ -2 \\ 1 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -3910,7 +3916,7 @@ If [mathjaxinline]j \in \mathbb {P}[/mathjaxinline] is the polynomial given by [
                   <font color="blue">
                     <p>
  We are assured that [mathjaxinline]T[/mathjaxinline] is a linear transformation, so we have: </p>
-                    <table id="a0000000063" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000065" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(h) = T(-2t^2) = -2T(t^2) = -2T(f) = -2\left[\begin{array}{c} 1 \\ 2 \end{array} \right] = \left[\begin{array}{c} -2 \\ -4 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -3918,7 +3924,7 @@ If [mathjaxinline]j \in \mathbb {P}[/mathjaxinline] is the polynomial given by [
                     </table>
                     <p>
 Also, </p>
-                    <table id="a0000000064" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000066" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(j) = T(3t^2-t) = T(3t^2) + T(-t) = 3T(t^2) + -T(t) = 3T(f) - T(g) = 3\left[\begin{array}{c} 1 \\ 2 \end{array} \right] - \left[\begin{array}{c} 2 \\ -1 \end{array} \right] = \left[\begin{array}{c} 1 \\ 7 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4009,7 +4015,7 @@ When we apply the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarro
                   <font color="blue">
                     <p>
 We see that </p>
-                    <table id="a0000000065" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000067" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\Bigg(\left[ \begin{array}{c} a\\ b\end{array} \right]\Bigg)=\left[ \begin{array}{cc} 0.5 &amp;  0 \\ 0 &amp;  2 \end{array} \right]\left[ \begin{array}{c} a\\ b\end{array}\right]=\left[ \begin{array}{c} 0.5a\\ 2b\end{array}\right],[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4029,7 +4035,7 @@ We see that </p>
             <text>
               <p>
 Suppose [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline] is given by [mathjaxinline]T(x) = Ax[/mathjaxinline] where </p>
-              <table id="a0000000066" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000068" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4109,7 +4115,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">
                     <p>
  Since [mathjaxinline]T: \mathbb R^4\rightarrow \mathbb R^3[/mathjaxinline], we know from context that [mathjaxinline]e_3=\left[ \begin{array}{c} 0 &amp;  0 &amp;  1 &amp;  0 \end{array} \right].[/mathjaxinline] Then </p>
-                    <table id="a0000000067" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000069" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(e_3)=\left[ \begin{array}{cccc} 1 &amp;  3 &amp;  5 &amp;  7 \\ 2 &amp;  0 &amp;  -1 &amp;  -1 \\ 1 &amp;  1 &amp;  3 &amp;  -2 \end{array} \right]\left[ \begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right] = \left[ \begin{array}{c} 5 \\ -1 \\ 3 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4128,7 +4134,7 @@ Alternatively, if the four columns of [mathjaxinline]A[/mathjaxinline] are [math
             <text>
               <p>
 Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathjaxinline] is given by </p>
-              <table id="a0000000068" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000070" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right][/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4191,7 +4197,7 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
                   <font color="blue">
                     <p>
  We see that </p>
-                    <table id="a0000000069" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000071" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right][/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4269,7 +4275,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">
                     <p>
  Since [mathjaxinline]T[/mathjaxinline] is a linear transformation, </p>
-                    <table id="a0000000070" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000072" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left( \left[ \begin{array}{c} 4 \\ 0 \end{array} \right] \right)=4 T\left( \left[ \begin{array}{c} 1 \\ 0 \end{array} \right] \right)=4 T(e_1)=4\left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right]= \left[ \begin{array}{c} 2\sqrt {2} \\ 2\sqrt {2} \end{array} \right]\approx \left[ \begin{array}{c} 2.83 \\ 2.83 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4332,7 +4338,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">
                     <p>
  Since [mathjaxinline]T[/mathjaxinline] is a linear transformation, </p>
-                    <table id="a0000000071" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000073" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)=T(4e_1+e_2)=4T(e_1)+T(e_2)=4\cdot \left[ \begin{array}{c} \frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right]+\left[ \begin{array}{c} -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} \end{array} \right] \approx \left[ \begin{array}{c} 2.12 \\ 3.54 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4396,7 +4402,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">
                     <p>
 We could do this using linearity properties, but it is easier to just use the matrix [mathjaxinline]A = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right][/mathjaxinline] we found in the video. We know that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x \in \mathbb R^2[/mathjaxinline], so </p>
-                    <table id="a0000000072" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000074" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right) = \left[ \begin{array}{cc} \frac{\sqrt {2}}{2} &amp;  -\frac{\sqrt {2}}{2} \\ \frac{\sqrt {2}}{2} &amp;  \frac{\sqrt {2}}{2} \end{array} \right] \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] = \left[ \begin{array}{c} 4\\ 2 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4412,7 +4418,7 @@ We could do this using linearity properties, but it is easier to just use the ma
           <video display_name="The Standard Matrix for a Linear Transformation" youtube_id_1_0="aPUQJWsg9Vw" url_name="b1lintrans2-tab5-video1"/>
           <html display_name="Standard Matrix" linenum="288" tex_filename="./block1/lineartransformationsinRn.tex" url_name="b1lintrans2-tab5-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition/Definition.</b></span> If [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline] is a linear transformation, then there is a unique [mathjaxinline]m \times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] such that [mathjaxinline]T(x) = Ax[/mathjaxinline] for all [mathjaxinline]x\in \mathbb R^ n[/mathjaxinline]. This matrix [mathjaxinline]A[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">standard matrix</b></span> for [mathjaxinline]T[/mathjaxinline], and must be given by the formula </p>
-            <table id="a0000000073" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000075" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ T(e_1) &amp;  T(e_2) &amp;  \cdots &amp;  T(e_ n) \\ | &amp;  | &amp; &amp;  | \end{array} \right],[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4607,7 +4613,7 @@ def MatrixEntry(expect, ans):
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> The standard matrix for the identity transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ n[/mathjaxinline] is denoted by the symbol [mathjaxinline]I_ n[/mathjaxinline] and is called the [mathjaxinline]n\times n[/mathjaxinline] <span style="color:#27408C"><b class="bf">identity matrix</b></span>. Often we simply use [mathjaxinline]I[/mathjaxinline] to denote the identity matrix when the [mathjaxinline]n[/mathjaxinline] is understood. </p>
             <p>
 As in the previous problem, we see that </p>
-            <table id="a0000000074" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000076" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]I_ n = \left[ \begin{array}{cccc} | &amp;  | &amp; &amp;  | \\ e_1 &amp;  e_2 &amp;  \cdots &amp;  e_ n \\ | &amp;  | &amp; &amp;  | \end{array} \right] = \left[\begin{array}{cccc} 1 &amp;  0 &amp; \cdots &amp;  0 \\ 0 &amp;  1 &amp;  \cdots 0 \\ \vdots &amp;  \vdots &amp;  \ddots &amp;  \vdots \\ 0 &amp;  0 &amp;  \cdots &amp;  1 \end{array} \right].[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4700,7 +4706,7 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
         <vertical display_name="Image Definition" refnum="3" url_name="b1intoonto-vertical3">
           <html display_name="Image Definition and Relation with Span" linenum="46" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab3-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">image</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
-            <table id="a0000000075" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000077" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Image}(T) = \left\{  T(v) \  : \  v \in V\right\} .[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4732,7 +4738,7 @@ This is equivalent to asking whether there exists [mathjaxinline]v\in V[/mathjax
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
-              <table id="a0000000076" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000078" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4755,7 +4761,7 @@ Is the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \ri
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue">The first question is equivalent to asking if there is a solution to [mathjaxinline]Ax=\left[\begin{array}{c} 1 \\ -1 \\ -7 \end{array} \right][/mathjaxinline]. Since the augmented matrix <table id="a0000000077" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  2 &amp;  3&amp; 1 \\ 0 &amp;  1 &amp;  1&amp; -1 \\ -1 &amp;  4 &amp;  3 &amp; -7 \end{array} \right][/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> row reduces to <table id="a0000000078" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  0 &amp;  1&amp; 3\\ 0 &amp;  1&amp;  1 &amp; -1 \\ 0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right],[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> we see that the system is consistent, so a solution exists.<br/>The second question is equivalent to asking if there is a solution to [mathjaxinline]Ax=\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \right][/mathjaxinline]. Since the augmented matrix <table id="a0000000079" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  2 &amp;  3&amp; 2 \\ 0 &amp;  1 &amp;  1&amp; -1 \\ -1 &amp;  4 &amp;  3 &amp; 0 \end{array} \right][/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> row reduces to <table id="a0000000080" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  0 &amp;  1&amp; 0\\ 0 &amp;  1&amp;  1 &amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  1 \end{array} \right],[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> we see that the system is inconsistent, so no solution exists.  </font>
+                  <font color="blue">The first question is equivalent to asking if there is a solution to [mathjaxinline]Ax=\left[\begin{array}{c} 1 \\ -1 \\ -7 \end{array} \right][/mathjaxinline]. Since the augmented matrix <table id="a0000000079" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  2 &amp;  3&amp; 1 \\ 0 &amp;  1 &amp;  1&amp; -1 \\ -1 &amp;  4 &amp;  3 &amp; -7 \end{array} \right][/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> row reduces to <table id="a0000000080" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  0 &amp;  1&amp; 3\\ 0 &amp;  1&amp;  1 &amp; -1 \\ 0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right],[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> we see that the system is consistent, so a solution exists.<br/>The second question is equivalent to asking if there is a solution to [mathjaxinline]Ax=\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \right][/mathjaxinline]. Since the augmented matrix <table id="a0000000081" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  2 &amp;  3&amp; 2 \\ 0 &amp;  1 &amp;  1&amp; -1 \\ -1 &amp;  4 &amp;  3 &amp; 0 \end{array} \right][/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> row reduces to <table id="a0000000082" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 1 &amp;  0 &amp;  1&amp; 0\\ 0 &amp;  1&amp;  1 &amp; 0 \\ 0 &amp;  0 &amp;  0 &amp;  1 \end{array} \right],[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> we see that the system is inconsistent, so no solution exists.  </font>
                 </solution>
               </p>
             </text>
@@ -4770,7 +4776,7 @@ Is the vector [mathjaxinline]\left[\begin{array}{c} 2 \\ -1 \\ 0 \end{array} \ri
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] be the linear transformation with standard matrix </p>
-              <table id="a0000000081" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000083" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4894,7 +4900,7 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p>
         <vertical display_name="Kernel Definition and Questions" refnum="8" url_name="b1intoonto-vertical8">
           <html display_name="Kernel Definition" linenum="236" tex_filename="./block1/intoonto.tex" url_name="b1intoonto-tab8-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a linear transformation [mathjaxinline]T: V\rightarrow W[/mathjaxinline], the <span style="color:#99182C"><b class="bf">kernel</b></span> of [mathjaxinline]T[/mathjaxinline] is the set </p>
-            <table id="a0000000082" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000084" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Ker}(T) = \left\{  v\in V \  : T(v) = \mathbf{0}\right\} .[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4926,7 +4932,7 @@ Suppose [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformat
             <text>
               <p>
 Let [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^4[/mathjaxinline] be the linear transformation with standard matrix </p>
-              <table id="a0000000083" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000085" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  5 \\ 0 &amp;  1 &amp;  2 \\ -1 &amp;  1 &amp;  1 \\ 2 &amp;  -1 &amp;  0 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -4956,7 +4962,7 @@ Is [mathjaxinline]T[/mathjaxinline] into? </p>
               <p>
                 <solution>
                   <font color="blue">Answer: </font>
-                  <font color="blue"> Matrix [mathjaxinline]A[/mathjaxinline] row reduces to <table id="a0000000084" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  1 \\ 0 &amp;  1 &amp;  2 \\ 0&amp; 0&amp; 0 \\ 0&amp; 0&amp; 0 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Thus, when augmented with the zero vector, there are infinitely many solutions. This also tells us that [mathjaxinline]\mathbf{0}[/mathjaxinline] is not the only solution to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline], and thus [mathjaxinline]\mathrm{Ker}(T) \neq \{ \mathbf{0}\}[/mathjaxinline]. Since [mathjaxinline]T[/mathjaxinline] sends multiple vectors to [mathjaxinline]\mathbf{0}[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] does not satisfy the definition of into.  </font>
+                  <font color="blue"> Matrix [mathjaxinline]A[/mathjaxinline] row reduces to <table id="a0000000086" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc} 1 &amp;  0 &amp;  1 \\ 0 &amp;  1 &amp;  2 \\ 0&amp; 0&amp; 0 \\ 0&amp; 0&amp; 0 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Thus, when augmented with the zero vector, there are infinitely many solutions. This also tells us that [mathjaxinline]\mathbf{0}[/mathjaxinline] is not the only solution to [mathjaxinline]Ax=\mathbf{0}[/mathjaxinline], and thus [mathjaxinline]\mathrm{Ker}(T) \neq \{ \mathbf{0}\}[/mathjaxinline]. Since [mathjaxinline]T[/mathjaxinline] sends multiple vectors to [mathjaxinline]\mathbf{0}[/mathjaxinline], [mathjaxinline]T[/mathjaxinline] does not satisfy the definition of into.  </font>
                 </solution>
               </p>
             </text>
@@ -5260,7 +5266,7 @@ The previous problems show the following: </p>
             <text>
               <p>
 Consider the matrices </p>
-              <table id="a0000000085" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000087" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C = \left[\begin{array}{cc} 1 &amp;  -1 \\ 0 &amp;  2 \\ -1 &amp;  1 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -5268,7 +5274,7 @@ Consider the matrices </p>
               </table>
               <p>
  and </p>
-              <table id="a0000000086" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000088" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]D = \left[\begin{array}{ccc} 1 &amp;  2 &amp;  3 \\ 0 &amp;  1 &amp;  1 \\ -1 &amp;  4 &amp;  3 \end{array} \right][/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -5342,7 +5348,7 @@ def MatrixEntry(expect, ans):
                   <font color="blue">
                     <p>
 We find </p>
-                    <table id="a0000000087" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000089" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]DC = \left[\begin{array}{cc} 1+0-3 &amp;  -1+4+3 \\ 0+0-1&amp;  0+2+1 \\ -1+0-3 &amp;  1+8+3 \end{array} \right] = \left[\begin{array}{cc} -2 &amp;  6 \\ -1&amp;  3 \\ -4 &amp;  12 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -5419,7 +5425,7 @@ Is [mathjaxinline]AB[/mathjaxinline] the same as [mathjaxinline]BA[/mathjaxinlin
                 <solution>
                   <font color="blue">Answer: </font>
                   <font color="blue">
-                    <table id="a0000000088" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000090" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]AB = \left[\begin{array}{cc} 0+-1 &amp;  3-2 \\ 0+0 &amp;  6+0 \end{array} \right] = \left[\begin{array}{cc} -1 &amp;  1 \\ 0 &amp;  6 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -5428,7 +5434,7 @@ Is [mathjaxinline]AB[/mathjaxinline] the same as [mathjaxinline]BA[/mathjaxinlin
                     <p>
                       <br/>
                     </p>
-                    <table id="a0000000089" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000091" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]BA = \left[\begin{array}{cc} 0+6 &amp;  0+0 \\ 1+4 &amp;  -1+0 \end{array} \right] = \left[\begin{array}{cc} 6 &amp;  0 \\ 5 &amp;  -1 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -5674,8 +5680,8 @@ For time budgeting purposes, this sequence has X videos totaling X minutes, plus
             <text>
               <p>
 If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [mathjaxinline]\  f[/mathjaxinline]: </p>
-              <table id="a0000000090" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
-                <tr id="a0000000091">
+              <table id="a0000000092" cellpadding="7" width="100%" cellspacing="0" class="eqnarray" style="table-layout:auto">
+                <tr id="a0000000093">
                   <td style="width:40%; border:none">&#xA0;</td>
                   <td style="vertical-align:middle;                                    text-align:right; border:none">
 	    [mathjaxinline]\displaystyle  f(-11)[/mathjaxinline]
@@ -5686,7 +5692,7 @@ If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [m
                   <td style="width:40%; border:none">&#xA0;</td>
                   <td style="width:20%; border:none" class="eqnnum"/>
                 </tr>
-                <tr id="a0000000092">
+                <tr id="a0000000094">
                   <td style="width:40%; border:none">&#xA0;</td>
                   <td style="vertical-align:middle;                                    text-align:right; border:none">
 	    [mathjaxinline]\displaystyle f(12)[/mathjaxinline]
@@ -5697,7 +5703,7 @@ If [mathjaxinline]\  f(x) = x^3[/mathjaxinline], then here are some values of [m
                   <td style="width:40%; border:none">&#xA0;</td>
                   <td style="width:20%; border:none" class="eqnnum"/>
                 </tr>
-                <tr id="a0000000093">
+                <tr id="a0000000095">
                   <td style="width:40%; border:none">&#xA0;</td>
                   <td style="vertical-align:middle;                                    text-align:right; border:none">
 	    [mathjaxinline]\displaystyle f(-13)[/mathjaxinline]
@@ -5948,7 +5954,7 @@ Let [mathjaxinline]A = \left[ \begin{array}{cc} 1 &amp;  2 \\ 2 &amp;  5 \end{ar
             <text>
               <p>
 The following [mathjaxinline]3\times 3[/mathjaxinline] matrix is invertible: </p>
-              <table id="a0000000094" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000096" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  1 &amp;  2 \\ 3 &amp;  0 &amp;  -2 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6118,7 +6124,7 @@ Is it possible for a [mathjaxinline]2\times 3[/mathjaxinline] matrix to be inver
             <text>
               <p>
 Given </p>
-              <table id="a0000000095" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000097" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6338,7 +6344,7 @@ True or false: It is possible for two non-invertible matrices to have an inverti
  The proposition proven on the previous pages states that if the product of two <span style="color:#99182C"><b class="bf">square</b></span> matrices is invertible, then each individual matrix is. However, this problem does not indicate that the matrices are square. </p>
                     <p>
 For instance, given </p>
-                    <table id="a0000000096" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 0 &amp;  1 &amp;  1 \end{array} \right], \   \mathrm{and} \  B = \left[ \begin{array}{cc} 1 &amp;  0 \\ 0 &amp;  0 \\ 0 &amp;  1 \end{array} \right],[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6388,7 +6394,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
                   <font color="blue">
                     <p>
  If we multiply on both sides of the equation by [mathjaxinline]D^{-1}[/mathjaxinline] from the left, we obtain </p>
-                    <table id="a0000000097" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^{-1}B^{-1}= D^{-1}C^{-1}.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6396,7 +6402,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
                     </table>
                     <p>
  Multiplying by [mathjaxinline]B[/mathjaxinline] on the right yields </p>
-                    <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^{-1}= D^{-1}C^{-1}B.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6404,7 +6410,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
                     </table>
                     <p>
  Finally, we invert both sides: </p>
-                    <table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = (D^{-1}C^{-1}B)^{-1}= B^{-1}CD.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6421,7 +6427,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
             <text>
               <p>
 Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p>
-              <table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]EA = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ 4a_{31} &amp;  4a_{32} \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6473,7 +6479,7 @@ def MatrixEntry(expect, ans):
                   <font color="blue">
                     <p>
  We need a [mathjaxinline]3\times 3[/mathjaxinline] matrix that scales the third row of [mathjaxinline]A[/mathjaxinline] by 4. The matrix </p>
-                    <table id="a0000000101" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 1 &amp;  0 &amp;  0 \\ 0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  4 \end{array} \right][/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6493,7 +6499,7 @@ def MatrixEntry(expect, ans):
             <text>
               <p>
 Find a matrix [mathjaxinline]E[/mathjaxinline] such that, for any matrix [mathjaxinline]A = \left[ \begin{array}{cc} a_{11} &amp;  a_{12} \\ a_{21} &amp;  a_{22} \\ a_{31} &amp;  a_{32} \end{array} \right],[/mathjaxinline] we get </p>
-              <table id="a0000000102" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000104" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]EA = \left[ \begin{array}{cc} a_{21} &amp;  a_{22} \\ a_{11} &amp;  a_{12} \\ a_{31} &amp;  a_{32} \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6531,7 +6537,7 @@ def MatrixEntry(expect, ans):
                   <font color="blue">
                     <p>
  We need a [mathjaxinline]3\times 3[/mathjaxinline] matrix that moves the first row to the second and vice versa. The matrix </p>
-                    <table id="a0000000103" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000105" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc} 0 &amp;  1 &amp;  0 \\ 1 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  1 \end{array} \right][/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6551,7 +6557,7 @@ def MatrixEntry(expect, ans):
             <p>
               <div class="hideshowbox">
                 <h4 onclick="hideshow(this);" style="margin: 0px">Elementary Matrix of the First Type<span class="icon-caret-down toggleimage"/></h4>
-                <div class="hideshowcontent">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000104" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </div>
+                <div class="hideshowcontent">An elementary matrix of the first type is one obtained from the identity matrix by changing the diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and column to a number [mathjaxinline]c[/mathjaxinline], where [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000106" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_1 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  c &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_1[/mathjaxinline] (where [mathjaxinline]E_1[/mathjaxinline] is on the left) has the same effect as scaling row [mathjaxinline]i[/mathjaxinline] of [mathjaxinline]A[/mathjaxinline] by the scalar [mathjaxinline]c[/mathjaxinline]. </div>
                 <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
                   <a href="javascript: {return false;}">Show</a>
                 </p>
@@ -6560,7 +6566,7 @@ def MatrixEntry(expect, ans):
             <p>
               <div class="hideshowbox">
                 <h4 onclick="hideshow(this);" style="margin: 0px">Elementary Matrix of the Second Type<span class="icon-caret-down toggleimage"/></h4>
-                <div class="hideshowcontent">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000105" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </div>
+                <div class="hideshowcontent">An elementary matrix of the second type is one obtained from the identity matrix by changing the non-diagonal entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column ([mathjaxinline]i\ne j[/mathjaxinline]) to a number [mathjaxinline]c \ne 0[/mathjaxinline]: <table id="a0000000107" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_2 = \left[ \begin{array}{ccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  \ddots &amp; &amp; &amp; \\ &amp; &amp;  c &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_2[/mathjaxinline] (where [mathjaxinline]E_2[/mathjaxinline] is on the left) has the same effect as adding [mathjaxinline]c[/mathjaxinline] times the [mathjaxinline]j[/mathjaxinline]th row of [mathjaxinline]A[/mathjaxinline] to row [mathjaxinline]i[/mathjaxinline]. </div>
                 <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
                   <a href="javascript: {return false;}">Show</a>
                 </p>
@@ -6569,7 +6575,7 @@ def MatrixEntry(expect, ans):
             <p>
               <div class="hideshowbox">
                 <h4 onclick="hideshow(this);" style="margin: 0px">Elementary Matrix of the Third Type<span class="icon-caret-down toggleimage"/></h4>
-                <div class="hideshowcontent">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000106" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_3[/mathjaxinline] (where [mathjaxinline]E_3[/mathjaxinline] is on the left) has the same effect as swapping the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th rows of [mathjaxinline]A[/mathjaxinline]. </div>
+                <div class="hideshowcontent">An elementary matrix of the third type is one obtained from the identity matrix by changing the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th diagonal entries to 0, and changing the entries in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column, and the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column, to 1: <table id="a0000000108" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E_3 = \left[ \begin{array}{ccccccccccc} 1 &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp;  \ddots &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp;  1&amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  0 &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp;  \ddots &amp; &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp; \\ &amp; &amp; &amp;  1 &amp; &amp; &amp; &amp;  0 &amp; &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 &amp; &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  \ddots &amp; \\ &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp; &amp;  1 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> Multiplying a matrix [mathjaxinline]A[/mathjaxinline] by [mathjaxinline]E_3[/mathjaxinline] (where [mathjaxinline]E_3[/mathjaxinline] is on the left) has the same effect as swapping the [mathjaxinline]i[/mathjaxinline]th and [mathjaxinline]j[/mathjaxinline]th rows of [mathjaxinline]A[/mathjaxinline]. </div>
                 <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
                   <a href="javascript: {return false;}">Show</a>
                 </p>
@@ -6589,7 +6595,7 @@ The last matrix operation we will introduce in this section is the transpose. Th
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given an [mathjaxinline]m\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline], the <span style="color:#99182C"><b class="bf">transpose</b></span> of [mathjaxinline]A[/mathjaxinline] is the [mathjaxinline]n\times m[/mathjaxinline] matrix denoted [mathjaxinline]A^ t[/mathjaxinline] whose entry in the [mathjaxinline]i[/mathjaxinline]th row and [mathjaxinline]j[/mathjaxinline]th column is the same as the entry in the [mathjaxinline]j[/mathjaxinline]th row and [mathjaxinline]i[/mathjaxinline]th column of [mathjaxinline]A[/mathjaxinline]. </p>
             <p>
 For instance, if </p>
-            <table id="a0000000107" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000109" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccc} 1 &amp;  2 &amp;  0 \\ 3 &amp;  4 &amp;  -1 \end{array} \right],[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6597,7 +6603,7 @@ For instance, if </p>
             </table>
             <p>
  then </p>
-            <table id="a0000000108" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000110" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^ t = \left[ \begin{array}{cc} 1 &amp;  3 \\ 2 &amp;  4 \\ 0 &amp;  -1 \end{array} \right].[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6810,7 +6816,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
                   <font color="blue">
                     <p>
  One possible procedure: left-multiply on both sides of the equation by [mathjaxinline](B^ t)^{-1}[/mathjaxinline] to obtain </p>
-                    <table id="a0000000109" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000111" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax](A^{-1})^ t = (B^ t)^{-1}D^ t C^{-1}.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6818,7 +6824,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
                     </table>
                     <p>
  Take the transpose of both sides: </p>
-                    <table id="a0000000110" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000112" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A^{-1}= ((B^ t)^{-1}D^ t C^{-1})^ t = (C^{-1})^ t D ((B^ t)^{-1})^ t = (C^ t)^{-1}D B^{-1}.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6826,7 +6832,7 @@ Suppose that [mathjaxinline]A,B,C,D[/mathjaxinline] are all invertible [mathjaxi
                     </table>
                     <p>
  Now we can take the inverse of both sides, and we get </p>
-                    <table id="a0000000111" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000113" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = B D^{-1}C^ t.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -6998,7 +7004,7 @@ Elements of [mathjaxinline]\mathbb R^4[/mathjaxinline] are column vectors with 4
             <text>
               <p>
 Let [mathjaxinline]W[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant. That is, </p>
-              <table id="a0000000112" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000114" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]W = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0\right\} .[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7050,7 +7056,7 @@ Is [mathjaxinline]W[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/ma
             <text>
               <p>
 Let [mathjaxinline]U[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie in (or on the boundary of) the first quadrant or the third quadrant. That is, </p>
-              <table id="a0000000113" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000115" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]U = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \end{array} \right] : x_1, x_2 \ge 0 \  \mathrm{or} \  x_1,x_2 \le 0\right\} .[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7102,7 +7108,7 @@ Is [mathjaxinline]U[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/ma
             <text>
               <p>
 Let [mathjaxinline]Y[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] which lie on the line [mathjaxinline]x_1 = x_2[/mathjaxinline] That is, </p>
-              <table id="a0000000114" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000116" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Y = \left\{  \left[ \begin{array}{c} c \\ c \end{array} \right] : c \in \mathbb R\right\} .[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7154,7 +7160,7 @@ Is [mathjaxinline]Y[/mathjaxinline] a subspace of [mathjaxinline]\mathbb R^2[/ma
             <text>
               <p>
 Let [mathjaxinline]Z[/mathjaxinline] be the set of vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline] whose third coordinate is -1. That is, </p>
-              <table id="a0000000115" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000117" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Z = \left\{  \left[ \begin{array}{c} x_1 \\ x_2 \\ -1 \end{array} \right] : x_1, x_2 \in \mathbb R\right\} .[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7577,7 +7583,7 @@ Suppose [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots v_9\}[/mathjaxinline] i
           <html display_name="Subspaces" linenum="297" tex_filename="./block3/basis.tex" url_name="b3basis-tab8-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], then every [mathjaxinline]w\in V[/mathjaxinline] can be written as a linear combination of [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in exactly one way. </p>
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of a vector space [mathjaxinline]V[/mathjaxinline] over the field [mathjaxinline]F[/mathjaxinline], and [mathjaxinline]w\in V[/mathjaxinline] can be written as [mathjaxinline]w = a_1v_1 + a_2v_2 + \ldots + a_ n v_ n[/mathjaxinline] for scalars [mathjaxinline]a_ i[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">coordinates of [mathjaxinline]w[/mathjaxinline] relative to [mathjaxinline]\mathcal{B}[/mathjaxinline]</b></span> is the vector [mathjaxinline][w]_{\mathcal{B}} \in F^ n[/mathjaxinline] given by </p>
-            <table id="a0000000116" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000118" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax][w]_{\mathcal{B}} = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right].[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7947,7 +7953,7 @@ In the video, we proved that [mathjaxinline]C[/mathjaxinline] is into and onto, 
 To show that [mathjaxinline]C[/mathjaxinline] is a linear transformation, we must show that [mathjaxinline]C[/mathjaxinline] respects vector addition and scalar multiplication. </p>
                   <p>
 Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
-                  <table id="a0000000117" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000119" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C(u) = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right], C(w) = \left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_ n \end{array} \right].[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7955,7 +7961,7 @@ Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
                   </table>
                   <p>
  Then we must have [mathjaxinline]u = a_1v_1 + a_2v_2 + \ldots a_ n v_ n,[/mathjaxinline] and [mathjaxinline]w = b_1v_1 + b_2v_2 + \ldots b_ n v_ n.[/mathjaxinline] Adding, we see that </p>
-                  <table id="a0000000118" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000120" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]u+w = (a_1+b_1)v_1 + (a_2+b_2)v_2 + \ldots + (a_ n+b_ n)v_ n.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7963,7 +7969,7 @@ Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
                   </table>
                   <p>
  In other words, the coordinates of [mathjaxinline]u+w[/mathjaxinline] relative to [mathjaxinline]\mathcal{B}[/mathjaxinline] are </p>
-                  <table id="a0000000119" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000121" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C(u+w) = [u+w]_{\mathcal{B}} = \left[ \begin{array}{c} a_1+b_1 \\ a_2+b_2 \\ \vdots \\ a_ n+b_ n \end{array} \right].[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7973,7 +7979,7 @@ Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
  But this is exactly [mathjaxinline]C(u) + C(w)[/mathjaxinline]. Thus [mathjaxinline]C[/mathjaxinline] respects vector addition. </p>
                   <p>
 Now let [mathjaxinline]u[/mathjaxinline] be as above, and let [mathjaxinline]c[/mathjaxinline] be any scalar. Then </p>
-                  <table id="a0000000120" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000122" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]cu = (ca_1)v_1 + (ca_2)v_2 + \ldots + (ca_ n)v_ n.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -7981,7 +7987,7 @@ Now let [mathjaxinline]u[/mathjaxinline] be as above, and let [mathjaxinline]c[/
                   </table>
                   <p>
  Therefore the coordinates of [mathjaxinline]cu[/mathjaxinline] are </p>
-                  <table id="a0000000121" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000123" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C(cu) = [cu]_{\mathcal{B}} = \left[ \begin{array}{c} ca_1 \\ ca_2 \\ \vdots \\ ca_ n \end{array} \right] = cC(u).[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8108,7 +8114,7 @@ Let [mathjaxinline]V = \mathbb R^2[/mathjaxinline]. What is the dimension of [ma
                   <font color="blue">
                     <p>
 The list of vectors </p>
-                    <table id="a0000000122" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000124" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\{ e_1; e_2\} =\left\{ \left[ \begin{array}{c} 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 0 \\ 1 \end{array} \right]\right\}[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8165,7 +8171,7 @@ We will first show that if a linearly independent list of vectors in [mathjaxinl
 Let [mathjaxinline]\mathcal{L} = \{ w_1; w_2; \ldots w_ k\}[/mathjaxinline] be a linearly independent list of vectors in [mathjaxinline]W[/mathjaxinline]. If [mathjaxinline]\mathcal{L}[/mathjaxinline] spans [mathjaxinline]W[/mathjaxinline], then it is a basis of [mathjaxinline]W[/mathjaxinline]. Therefore we assume that [mathjaxinline]\mathcal{L}[/mathjaxinline] is not a basis of [mathjaxinline]W[/mathjaxinline]. In particular, it does not span [mathjaxinline]W[/mathjaxinline], so we can find some vector [mathjaxinline]v\in W[/mathjaxinline] which is not a linear combination of [mathjaxinline]w_1, w_2, \ldots w_ k[/mathjaxinline]. Appending [mathjaxinline]v[/mathjaxinline] to the list [mathjaxinline]\mathcal{L}[/mathjaxinline] yields a new list [mathjaxinline]\mathcal{L'}=\{ w_1; w_2; \ldots w_ k; v\}[/mathjaxinline]; we claim that [mathjaxinline]\mathcal{L'}[/mathjaxinline] is still linearly independent. </p>
                   <p>
 To show this, suppose that we have a linear combination </p>
-                  <table id="a0000000123" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000125" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k + bv = \mathbf{0}.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8173,7 +8179,7 @@ To show this, suppose that we have a linear combination </p>
                   </table>
                   <p>
  If [mathjaxinline]b\ne 0[/mathjaxinline], then we obtain </p>
-                  <table id="a0000000124" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000126" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]-bv = a_1w_1 + a_2w_2 + \ldots + a_ k w_ k,[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8181,7 +8187,7 @@ To show this, suppose that we have a linear combination </p>
                   </table>
                   <p>
  and hence </p>
-                  <table id="a0000000125" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000127" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v = -\frac{a_1}{b}w_1 + -\frac{a_2}{b}w_2 + \ldots + -\frac{a_ k}{b}w_ k.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8191,7 +8197,7 @@ To show this, suppose that we have a linear combination </p>
  But we know that [mathjaxinline]v[/mathjaxinline] is not in the span of [mathjaxinline]\mathcal{L}=\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline], so this is impossible. Hence [mathjaxinline]b = 0[/mathjaxinline]. </p>
                   <p>
 Therefore our linear combination becomes </p>
-                  <table id="a0000000126" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000128" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k + 0v = \mathbf{0},[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8199,7 +8205,7 @@ Therefore our linear combination becomes </p>
                   </table>
                   <p>
  so we have </p>
-                  <table id="a0000000127" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000129" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]a_1w_1 + a_2w_2 + \ldots + a_ k w_ k = \mathbf{0}.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8225,7 +8231,7 @@ We will first show that if a finite, linearly dependent list of vectors spans [m
 Suppose that [mathjaxinline]\{ w_1; w_2; \ldots w_ k\}[/mathjaxinline] spans [mathjaxinline]W[/mathjaxinline]. If the list is linearly dependent, then one of the vectors can be written as a linear combination of the others. For ease of notation, suppose that [mathjaxinline]w_1[/mathjaxinline] is that vector, and that [mathjaxinline]w_1 = a_2w_2 + a_3w_3 +\ldots + a_ kw_ k[/mathjaxinline]. </p>
                   <p>
 We claim that [mathjaxinline]\{ w_2; w_3; \ldots w_ k\}[/mathjaxinline] still spans [mathjaxinline]W[/mathjaxinline]. Indeed, let [mathjaxinline]u \in W[/mathjaxinline]. Since the original list spans [mathjaxinline]W[/mathjaxinline], we know that we can write [mathjaxinline]u[/mathjaxinline] as a linear combination </p>
-                  <table id="a0000000128" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000130" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]u = c_1w_1 + c_2w_2 + \ldots + c_ kw_ k.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8233,7 +8239,7 @@ We claim that [mathjaxinline]\{ w_2; w_3; \ldots w_ k\}[/mathjaxinline] still sp
                   </table>
                   <p>
  Replacing [mathjaxinline]w_1[/mathjaxinline], we obtain </p>
-                  <table id="a0000000129" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000131" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} u &amp;  = &amp;  c_1(a_2w_2 + a_3w_3 +\ldots + a_ kw_ k) + c_2w_2 + \ldots + c_ kw_ k \\ &amp;  = &amp;  (c_1a_2+c_2)w_2 + \ldots + (c_1a_ k + c_ k)w_ k. \end{array}[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8487,7 +8493,7 @@ Since [mathjaxinline]T[/mathjaxinline] is not onto, the image of [mathjaxinline]
 To prove that it is possible for the dimension of the image to be 4, we give an example. </p>
                     <p>
 Let [mathjaxinline]V = \mathbb R^5[/mathjaxinline], and let the standard matrix for [mathjaxinline]T[/mathjaxinline] be the matrix </p>
-                    <table id="a0000000130" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000132" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccccc} 1&amp; 0&amp; 0&amp; 0&amp; 0 \\ 0&amp; 1&amp; 0&amp; 0&amp; 0\\ 0&amp; 0&amp; 1&amp; 0&amp; 0\\ 0&amp; 0&amp; 0&amp; 1&amp; 0\\ 0&amp; 0&amp; 0&amp; 0&amp; 0\\ \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8515,7 +8521,7 @@ Suppose that [mathjaxinline]\dim V = n[/mathjaxinline], and that [mathjaxinline]
 For [mathjaxinline]i = 1, 2, \ldots , n-k[/mathjaxinline], let [mathjaxinline]w_ i = T(u_ i)[/mathjaxinline]. We claim that the list [mathjaxinline]\{ w_1; w_2; \ldots w_{n-k}\}[/mathjaxinline] is a basis of the image of [mathjaxinline]T[/mathjaxinline]. If so, then the dimension of the image of [mathjaxinline]T[/mathjaxinline] &#x2013; i.e., the rank of [mathjaxinline]T[/mathjaxinline] &#x2013; would be [mathjaxinline]n-k[/mathjaxinline], as desired. </p>
                   <p>
 To show it forms a basis of the image of [mathjaxinline]T[/mathjaxinline], we first show that it is linearly independent. Suppose that a linear combination [mathjaxinline]b_1w_1 + b_2w_2 + \ldots b_{n-k}w_{n-k} = \mathbf{0}[/mathjaxinline]. Then we have </p>
-                  <table id="a0000000131" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000133" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(b_1u_1 + b_2u_2 + b_{n-k}u_{n-k}) = b_1T(u_1) + b_2T(u_2) + \ldots + b_{n-k}T(u_{n-k}) = \mathbf{0},[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8523,7 +8529,7 @@ To show it forms a basis of the image of [mathjaxinline]T[/mathjaxinline], we fi
                   </table>
                   <p>
  so [mathjaxinline]b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} \in \mathrm{Ker}(T).[/mathjaxinline] Since [mathjaxinline]\{ v_1; v_2; \ldots v_ k\}[/mathjaxinline] spans the kernel of [mathjaxinline]T[/mathjaxinline], this means that </p>
-                  <table id="a0000000132" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000134" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} = a_1v_1 + a_2v_2 + \ldots +a_ kv_ k[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8531,7 +8537,7 @@ To show it forms a basis of the image of [mathjaxinline]T[/mathjaxinline], we fi
                   </table>
                   <p>
  for some scalars [mathjaxinline]a_ i[/mathjaxinline]; alternatively, </p>
-                  <table id="a0000000133" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000135" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]-a_1v_1 - a_2v_2 - \ldots - a_ kv_ k + b_1u_1 + b_2u_2 + b_{n-k}u_{n-k} = \mathbf{0}.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8541,7 +8547,7 @@ To show it forms a basis of the image of [mathjaxinline]T[/mathjaxinline], we fi
  However, we know that [mathjaxinline]\{ v_1; v_2; \ldots v_ k; u_1; u_2; \ldots u_{n-k} \}[/mathjaxinline] is linearly independent, so all of these coefficients must be zero. In particular, all [mathjaxinline]b_ i[/mathjaxinline] are zero. This proves that [mathjaxinline]\{ w_1; w_2; \ldots w_{n-k} \}[/mathjaxinline] is linearly independent. </p>
                   <p>
 To show that this list spans the image of [mathjaxinline]T[/mathjaxinline], take an arbitrary vector [mathjaxinline]T(x)[/mathjaxinline] in the image of [mathjaxinline]T[/mathjaxinline], where [mathjaxinline]x\in V[/mathjaxinline]. Since [mathjaxinline]\{ v_1; v_2; \ldots v_ k; u_1; u_2; \ldots u_{n-k} \}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], we must be able to write [mathjaxinline]x[/mathjaxinline] as a linear combination </p>
-                  <table id="a0000000134" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000136" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]x = a_1v_1 + \ldots + a_ k v_ k + b_1u_1 + \ldots + b_{n-k}u_{n-k}.[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8549,7 +8555,7 @@ To show that this list spans the image of [mathjaxinline]T[/mathjaxinline], take
                   </table>
                   <p>
  Hence </p>
-                  <table id="a0000000135" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                  <table id="a0000000137" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                     <tr>
                       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} T(x) &amp; = &amp;  a_1T(v_1) + \ldots + a_ kT(v_ k) + b_1 T(u_1) + \ldots + b_{n-k}T(u_{n-k}) \\ &amp;  = &amp;  \mathbf{0}+ \ldots \mathbf{0}+ b_1w_1 + \ldots + b_{n-k}w_{n-k}.\end{array}[/mathjax]</td>
                       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8774,7 +8780,7 @@ Let [mathjaxinline]T: \mathbb R^{8}\rightarrow \mathbb R^{11}[/mathjaxinline] be
             <text>
               <p>
 Suppose [mathjaxinline]T[/mathjaxinline] has a standard matrix [mathjaxinline]A[/mathjaxinline] which row reduces to the matrix </p>
-              <table id="a0000000136" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000138" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]R = \left[\begin{array}{ccccc} 1 &amp;  2 &amp;  0 &amp;  0 &amp;  -3 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  -2 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  2 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8782,7 +8788,7 @@ Suppose [mathjaxinline]T[/mathjaxinline] has a standard matrix [mathjaxinline]A[
               </table>
               <p>
 True or False: We can conclude that the list </p>
-              <table id="a0000000137" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000139" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\{  \left[\begin{array}{c} 1 \\ 0 \\ 0 \\ 0 \end{array} \right]; \left[\begin{array}{c} 0 \\ 1 \\ 0 \\ 0 \end{array} \right]; \left[\begin{array}{c} 0 \\ 0 \\ 1 \\ 0 \end{array} \right] \right\}[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8848,7 +8854,7 @@ For time budgeting purposes, this sequence has 3 videos totaling 18 minutes, plu
             <p>
 So far in this course, we have only worked with two vector operations: vector addition and scalar multiplication. In this chapter, we will introduce inner products. The easiest example of an inner product is the dot product in [mathjaxinline]\mathbb R^ n[/mathjaxinline]. </p>
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> If [mathjaxinline]v = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right][/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_ n \end{array} \right][/mathjaxinline] are two vectors in [mathjaxinline]\mathbb R^ n[/mathjaxinline], we define the <span style="color:#99182C"><b class="bf">dot product</b></span> of [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] to be </p>
-            <table id="a0000000138" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000140" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v\dotprod w = a_1b_1 + a_2b_2 + \ldots + a_ nb_ n.[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8900,7 +8906,7 @@ Suppose [mathjaxinline]v,w \in \mathbb R^ n[/mathjaxinline], and [mathjaxinline]
                   <font color="blue">
                     <p>
  If [mathjaxinline]v = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right][/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_ n \end{array} \right][/mathjaxinline], then </p>
-                    <table id="a0000000139" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000141" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v\dotprod w = a_1b_1 + a_2b_2 + \ldots + a_ nb_ n = b_1a_1 + b_2a_2 + \ldots + b_ na_ n = w \dotprod v.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -8930,7 +8936,7 @@ Suppose [mathjaxinline]v,w \in \mathbb R^ n[/mathjaxinline], and [mathjaxinline]
                   <font color="blue">
                     <p>
  If [mathjaxinline]v = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right][/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_ n \end{array} \right][/mathjaxinline], then </p>
-                    <table id="a0000000140" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000142" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle 3v, w \rangle = (3a_1)b_1 + (3a_2)b_2 + \ldots + (3a_ n)b_ n = 3\langle v, w \rangle .[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9028,7 +9034,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">
                     <p>
  If [mathjaxinline]v = \left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right][/mathjaxinline], then </p>
-                    <table id="a0000000141" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000143" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]v\dotprod v = a_1^2 + a_2^2 + a_3^2.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9046,7 +9052,7 @@ def VectorEntry(expect, ans):
           <html display_name="Property 4" linenum="150" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab3-text1">
             <p>
 One last property of the dot product is that it distributes over addition. In other words, </p>
-            <table id="a0000000142" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000144" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle u+v, w \rangle = \langle u, w\rangle + \langle v, w \rangle[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9093,7 +9099,7 @@ Let [mathjaxinline]f(x) = 1[/mathjaxinline] and [mathjaxinline]g(x) = x^3[/mathj
                 <solution>
                   <font color="blue">Answer: </font>
                   <font color="blue">
-                    <table id="a0000000143" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000145" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle f, g \rangle = \int _0^2 f(x) g(x) \  dx = \int _0^2 x^3 \  dx = \left. \frac{x^4}{4} \right|_0^2 = 4.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9132,7 +9138,7 @@ Let [mathjaxinline]f(x) = 1[/mathjaxinline] and [mathjaxinline]g(x) = x^3[/mathj
           <video display_name="Magnitude" youtube_id_1_0="rNLDG-XjIGA" url_name="b4innerprods-tab6-video1"/>
           <html display_name="Magnitude Definition" linenum="235" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab6-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a vector space [mathjaxinline]V[/mathjaxinline] with an inner product, the <span style="color:#99182C"><b class="bf">norm</b></span> or <span style="color:#99182C"><b class="bf">magnitude</b></span> of a vector [mathjaxinline]v\in V[/mathjaxinline] is defined to be </p>
-            <table id="a0000000144" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000146" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\|  v\|  = \sqrt {\langle v, v \rangle }.[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9159,7 +9165,7 @@ You can type sqrt(2) for [mathjaxinline]\sqrt {2}[/mathjaxinline]. </p>
                   <font color="blue">
                     <p>
  We see that [mathjaxinline]v-w = \left[ \begin{array}{c} -2 \\ 8 \\ 3 \\ -2 \end{array} \right],[/mathjaxinline] so </p>
-                    <table id="a0000000145" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000147" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| v-w\|  = \sqrt {(v-w)\dotprod (v-w)} = \sqrt {(-2)^2 + 8^2 + 3^2 + (-2)^2} = 9.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9185,7 +9191,7 @@ Let [mathjaxinline]f(x) = 1[/mathjaxinline]. Using the inner product on the vect
                 <solution>
                   <font color="blue">Answer: </font>
                   <font color="blue">
-                    <table id="a0000000146" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000148" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| f\|  = \sqrt {\langle f, f\rangle } = \sqrt {\int _0^2 f(x)^2 \  dx} = \sqrt {\int _0^2 1 \  dx} = \sqrt {2}.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9202,7 +9208,7 @@ Let [mathjaxinline]f(x) = 1[/mathjaxinline]. Using the inner product on the vect
           <html display_name="Orthogonal Definition" linenum="290" tex_filename="./block4/innerproducts.tex" url_name="b4innerprods-tab7-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> Given a vector space [mathjaxinline]V[/mathjaxinline] with an inner product, we say two vectors [mathjaxinline]v,w\in V[/mathjaxinline] are <span style="color:#99182C"><b class="bf">orthogonal</b></span> if [mathjaxinline]\langle v,w\rangle = 0[/mathjaxinline]. </p>
             <p><span style="color:#27408C"><b class="bf">Theorem.</b></span> Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are orthogonal if and only if </p>
-            <table id="a0000000147" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000149" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| v\| ^2 + \| w\| ^2 = \| v+w\| ^2.[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9215,7 +9221,7 @@ Let [mathjaxinline]f(x) = 1[/mathjaxinline]. Using the inner product on the vect
             <text>
               <p>
 True or false: Given any two vectors [mathjaxinline]v,w[/mathjaxinline] in a vector space with an inner product, we have </p>
-              <table id="a0000000148" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| v+w\| ^2 = \| v\| ^2 + \| w\| ^2.[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9254,7 +9260,7 @@ Let [mathjaxinline]v = \left[ \begin{array}{c} -1 \\ 2 \\ 6 \end{array} \right][
                   <font color="blue">
                     <p>
  We can calculate the inner product </p>
-                    <table id="a0000000149" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000151" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle v, w \rangle = -1(4) + 2(-7) + 6(a) = 6a - 18.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9321,7 +9327,7 @@ In the vector space [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline] with inner prod
                   <font color="blue">
                     <p>
  In the first space [mathjaxinline]C[0,\pi ][/mathjaxinline], we calculate </p>
-                    <table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle f, g\rangle = \int _0^\pi \sin x \  dx = 2,[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9329,7 +9335,7 @@ In the vector space [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline] with inner prod
                     </table>
                     <p>
  so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are not orthogonal. However, in the second space, we have </p>
-                    <table id="a0000000151" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle f, h\rangle = \int _{-\pi }^\pi \sin x \  dx = 0,[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9417,7 +9423,7 @@ For time budgeting purposes, this sequence has 3 videos totaling 23 minutes, plu
             <text>
               <p>
 Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline] given by </p>
-              <table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000154" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]W = \left\{  \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right] \  : \  a_1, a_2 \in \mathbb R\right\} .[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9502,7 +9508,7 @@ def VectorEntry(expect, ans):
                   <font color="blue">
                     <p>
  If [mathjaxinline]w = \left[ \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right][/mathjaxinline], then the distance from [mathjaxinline]v[/mathjaxinline] to [mathjaxinline]w[/mathjaxinline] is </p>
-                    <table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000155" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\| w-v\|  = \sqrt {(a_1-3)^2 + (a_2-4)^2 + 7^2}.[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9575,7 +9581,7 @@ For each [mathjaxinline]i[/mathjaxinline], what kind of object is [mathjaxinline
             <text>
               <p>
 Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}[/mathjaxinline], where [mathjaxinline]w_1 = \left[ \begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] and [mathjaxinline]w_2 = \left[ \begin{array}{c} 3 \\ -3 \\ 1 \end{array} \right][/mathjaxinline]. Then, for any [mathjaxinline]v\in \mathbb R^3[/mathjaxinline], </p>
-              <table id="a0000000154" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000156" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Proj}_ W(v) = \langle v, w_1 \rangle w_1 + \langle v, w_2 \rangle w_2.[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9603,7 +9609,7 @@ Let [mathjaxinline]W[/mathjaxinline] be the span of [mathjaxinline]\{ w_1; w_2\}
           <html display_name="The Orthogonal Projection" linenum="165" tex_filename="./block4/projections.tex" url_name="b4projections-tab4-text1">
             <p>
 If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline] with an orthogonal basis [mathjaxinline]\{ u_1; u_2; \ldots u_ k\}[/mathjaxinline], then the <span style="color:#99182C"><b class="bf">orthogonal projection</b></span> of a vector [mathjaxinline]v\in V[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline] is given by the formula </p>
-            <table id="a0000000155" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <table id="a0000000157" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
                 <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\mathrm{Proj}_ W(v) = \sum _{i=1}^ k \frac{\langle v, u_ i \rangle }{\langle u_ i, u_ i \rangle } u_ i.[/mathjax]</td>
                 <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -9618,7 +9624,7 @@ If [mathjaxinline]V[/mathjaxinline] is a vector space with an inner product, and
             <text>
               <p>
 Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^4[/mathjaxinline] spanned by the list [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where </p>
-              <table id="a0000000156" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000158" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ -3 \end{array} \right], w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -10296,7 +10302,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a real [mathjaxinline]m\times n[/mathjax
             <text>
               <p>
 Let [mathjaxinline]A = \left[\begin{array}{cc} 1 &amp;  1 \\ 1 &amp;  0 \\ -1 &amp;  -1 \\ 0 &amp;  -1 \end{array} \right].[/mathjaxinline] Find the least squares solution to </p>
-              <table id="a0000000157" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+              <table id="a0000000159" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                 <tr>
                   <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]Ax = \left[\begin{array}{c} 3 &amp;  -1 &amp;  1 &amp;  2 \end{array} \right].[/mathjax]</td>
                   <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -10397,7 +10403,7 @@ Is there an equation [mathjaxinline]y = cx^2 + ax + b,[/mathjaxinline] with [mat
                   <font color="blue">
                     <p>
  For a set of parameters [mathjaxinline]c,a,b[/mathjaxinline] to work, we would need the following system of equations to be satisfied: </p>
-                    <table id="a0000000158" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000160" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} 1 &amp;  = &amp; c\cdot 0^2 + a\cdot 0 + b \\ 1 &amp;  = &amp; c\cdot 1^2 + a\cdot 1 + b \\ 2 &amp;  = &amp; c\cdot 2^2 + a\cdot 2 + b \\ 5 &amp;  = &amp; c\cdot 3^2 + a\cdot 3 + b \end{array}[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -10405,7 +10411,7 @@ Is there an equation [mathjaxinline]y = cx^2 + ax + b,[/mathjaxinline] with [mat
                     </table>
                     <p>
  This is a system of linear equations in [mathjaxinline]c,a,b[/mathjaxinline] given by the augmented matrix </p>
-                    <table id="a0000000159" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+                    <table id="a0000000161" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
                       <tr>
                         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{ccc:c} 0 &amp;  0 &amp;  1 &amp;  1 \\ 1 &amp;  1 &amp;  1 &amp;  1 \\ 4 &amp;  2 &amp;  1 &amp;  2 \\ 9 &amp;  3 &amp;  1 &amp;  5 \end{array} \right].[/mathjax]</td>
                         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

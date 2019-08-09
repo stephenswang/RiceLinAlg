@@ -32,7 +32,7 @@ Hence the general solution is </p>
             </tr>
           </table>
           <p>
- for any [mathjaxinline]x_3,\x _4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\} .[/mathjaxinline] </p>
+ for any [mathjaxinline]x_3,x_4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\right\} .[/mathjaxinline] </p>
           <p>
 (Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.) </p>
         </font>
