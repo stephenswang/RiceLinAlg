@@ -1,4 +1,4 @@
-<problem display_name="Vector entry" linenum="37" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="5" rerandomize="per_student">
+<problem display_name="Vector entry" linenum="38" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="5" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>

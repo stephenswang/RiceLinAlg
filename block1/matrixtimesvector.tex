@@ -35,9 +35,9 @@ From this point forward, you should feel free to use technology to do row reduct
 
 Here are a couple of websites that will do row reduction for you:
 
-\edXgitlink{http://www.math.odu.edu/~bogacki/cgi-bin/lat.cgi}{Linear Algebra Toolkit}
+\href{http://www.math.odu.edu/\~bogacki/cgi-bin/lat.cgi}{Linear Algebra Toolkit}
 
-\edXgitlink{https://www.wolframalpha.com/}{Wolfram Alpha}
+\href{https://www.wolframalpha.com/}{Wolfram Alpha}
 
 
 \endedxtext
@@ -265,7 +265,7 @@ Let $A$ be a $4\times 3$ matrix.  There is a specific
 vector $v$ for which you can conclude the equation $Ax = v$ has a solution, even without knowing
 anything else about $A$.  What is this vector $v$?  
 
-\input{vectorentry.tex}
+\input{vectorentry2.tex}
 
 \edXabox{type="custom" cfn="VectorEntry" expect="[[0],[0],[0],[0]]"}
 
@@ -290,7 +290,7 @@ The equation $Ax = \veco$ always has at least one solution, namely $x = \veco$. 
 
 \beginedxvertical{Solution Sets}
 
-\doedxvideo{Solving Ax = 0}{VreiYQU_GTA}
+\doedxvideo{Solution Sets to Matrix-Vector Equations}{VreiYQU_GTA}
 
 
 
@@ -298,7 +298,7 @@ The equation $Ax = \veco$ always has at least one solution, namely $x = \veco$. 
 \beginedxproblem{Non-trivial Solutions}{\dpa1}
 
 Let $A$ be a $6\times 4$ matrix.  The equation $Ax = \veco$ has the solution $x = \veco$, which we
-call the  {\keyb{\bf trivial solution.}}  If there are no solutions other than the trivial solutions,
+call the  {\keyb{\bf trivial solution.}}  If there are no solutions other than the trivial solution,
 how many pivots must $A$ have when row-reduced?  
 
 
@@ -354,9 +354,9 @@ Hence the general solution is \[
 x_3 \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array}\right] + 
 x_4 \left[ \begin{array}{c} 7 \\ - 6 \\ 0 \\ 1 \end{array}\right],
 \]
-for any $x_3,\x_4 \in \R$.  Hence the set of solutions is the span of  
+for any $x_3,x_4 \in \R$.  Hence the set of solutions is the span of  
 $\left\{ \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; 
-\left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\}.$
+\left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\right\}.$
 
 (Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.)
 
@@ -391,6 +391,39 @@ If $Ax = v$ is consistent, then the solution set will be a translation of $S$.
 
 \endedxvertical
 
+\beginedxvertical{Solution Sets Summary}
+
+\beginedxtext{Solution Sets Summary}
+
+
+
+{\keya{\bf{Proposition.}}}  If $Ax = v$ is consistent, then the set of solutions to $Ax = v$ is a translation
+of the set of solutions to $Ax = \veco$.   
+
+\begin{edXshowhide}{Proof of Proposition}
+
+Let $S$ be the solution set to $Ax = \veco$, and 
+suppose that $Ax = v$ is consistent.  Then there is some solution $x=x_0$. We claim that the solution set to 
+$Ax = v$ is exactly $x_0 + S$.  
+
+First we show that every vector in the translation $x_0 + S$ is a solution to $Ax=v.$  Let $w \in x_0+S$.  Then
+$w = x_0 + y$ for some $y \in S$, so 
+\[ Aw = A(x_0 + y) = Ax_0 + Ay.\]
+We know that $Ax_0 = v$ and, since $y \in S$, we also know that $Ay = \veco$.  Hence $Aw = v$, so $w$ 
+is a solution to $Ax = v.$  
+
+Now we show that every solution to $Ax = v$ is an element of $x_0 + S.$   Indeed, suppose that 
+$w$ satisfies $Aw = v$, and consider the vector $y = w-x_0.$  We have
+\[Ay = A(w-x_0) = Aw - Ax_0 = v-v = \veco.\]
+Hence $y \in S$.  Therefore $w = x_0 + y \in x_0 + S.$  This proves the proposition.  
+
+\end{edXshowhide}
+
+
+\endedxtext
+
+\endedxvertical
+
 
 
 
@@ -412,8 +445,7 @@ than one solution"}
 \edXsolution{ 
 The vector $v$ is in the span of the columns of $A$ if there is at least one way to write it as a linear
 combination of the columns of $A$, or in other words if there is at least one $x$ which satisfies $Ax = v$.  
-
- }
+}
 
 \endedxproblem
 
@@ -421,7 +453,7 @@ combination of the columns of $A$, or in other words if there is at least one $x
 
 Let $A$ be a $m\times n$ matrix.  The columns of $A$ span $\R^m$ if and only if:
 
-\edXabox{type="multichoice" expect="For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution" options="For every vector $v\in \R^m$, the equation $Ax = v$ has exactly one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at most one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has exactly one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has at least one solution","For some vector $v\in \R^m$, the equation $Ax = v$ has at most one solution"}
+\edXabox{type="multichoice" expect="For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution" options="For every vector $v\in \R^m$, the equation $Ax = v$ has exactly one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at least one solution","For every vector $v\in \R^m$, the equation $Ax = v$ has at most one solution"}
 
 
 
@@ -429,9 +461,7 @@ Let $A$ be a $m\times n$ matrix.  The columns of $A$ span $\R^m$ if and only if:
 In order for the columns of $A$ to span $\R^m$, every vector $v\in \R^m$ needs to be in the span of 
 the columns.  By the previous problem, this is equivalent to having at least one solution to 
 the equation $Ax=v$ for every vector $v \in \R^m$.  
-
-
- }
+}
 
 \endedxproblem
 
@@ -447,15 +477,21 @@ $v \in \R^5$?  Click all that apply.
 
 
 \edXsolution{ 
-If there are fewer than 5 columns, then it is impossible for the columns of $A$ to span $\R^5$.  Therefore,
+If there are fewer than 5 columns, then it is impossible for the columns of $A$ to span $\R^5$. 
+In that case, 
 by the previous problem, the equation $Ax=v$ cannot be consistent for every $v\in \R^5$; there must be some
 vectors $v\in \R^5$ for which it is inconsistent.  
 
+The two cases in which there are fewer columns than rows are the answer.  
  }
 
 \endedxproblem
 
 \endedxvertical
+
+
+
+
 
 
 
@@ -476,7 +512,7 @@ For any $m\times n$ vector $A$, vectors $w,x \in \R^n$, and scalar $a$, we have 
 \endedxtext
 
 
-\beginedxproblem{Consistent Matrix-Vector Equations}{\dpa1}
+\beginedxproblem{Consistent Matrix-Vector Equations}{\dpa3}
 
 
 Let $A$ be a $4\times 3$ matrix.  Suppose that $x = \left[\begin{array}{c} 1 \\ 2 \\ 3 

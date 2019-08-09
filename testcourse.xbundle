@@ -18,7 +18,7 @@ Apply elementary <span style="color:#99182C"><b class="bf">row operations</b></s
               </li>
             </ul>
             <p>
-For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 2 videos totaling 11 minutes, plus some questions. </p>
           </html>
         </vertical>
         <vertical display_name="Introduction" refnum="2" url_name="b1lineareqns-vertical2">
@@ -543,16 +543,20 @@ Use elementary <span style="color:#99182C"><b class="bf">row operations</b></spa
                 <p>
 Interpret RREF matrices to determine <span style="color:#99182C"><b class="bf">existence and uniqueness</b></span> of solutions. </p>
               </li>
+              <li>
+                <p>
+Describe the set of all solutions to a consistent system of linear equations. </p>
+              </li>
             </ul>
             <p>
-For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 4 videos totaling 19 minutes, plus some questions. </p>
           </html>
         </vertical>
         <vertical display_name="Row-Reduced Echelon Form" refnum="2" url_name="b1rowreduced-vertical2">
           <video display_name="RREF" youtube_id_1_0="Qi3O6iLhZ0E" url_name="b1rowreduced-tab2-video1"/>
         </vertical>
         <vertical display_name="RREF Defined" refnum="3" url_name="b1rowreduced-vertical3">
-          <html display_name="Row-Reduced Echelon Form" linenum="41" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-text1">
+          <html display_name="Row-Reduced Echelon Form" linenum="42" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> A matrix is in Row-Reduced Echelon Form (RREF) if it satisfies the following conditions: </p>
             <ul class="itemize">
               <li>
@@ -573,7 +577,7 @@ A pivot in a lower row is to the right of any pivot in a higher row. </p>
               </li>
             </ul>
           </html>
-          <problem display_name="RREF or not?" linenum="58" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="RREF or not?" linenum="59" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Consider the following matrices. </p>
@@ -636,7 +640,7 @@ The pivots in matrix [mathjaxinline]F[/mathjaxinline] do not go down and right. 
               </p>
             </text>
           </problem>
-          <problem display_name="Make it RREF" linenum="118" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Make it RREF" linenum="119" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 The following matrix is not in RREF. </p>
@@ -699,7 +703,7 @@ Note that the matrix currently satisfies all conditions except &#x201C;Each pivo
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
-          <problem display_name="Pivots vs. Rows" linenum="147" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Pivots vs. Rows" linenum="148" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab3-problem3" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 True or False: If a matrix that is in RREF has 6 rows, then it must have 6 pivots. </p>
@@ -722,7 +726,7 @@ In fact, a matrix with [mathjaxinline]6[/mathjaxinline] rows may have any number
         </vertical>
         <vertical display_name="Row Reduction Algorithm" refnum="4" url_name="b1rowreduced-vertical4">
           <video display_name="The Row Reduction Algorithm" youtube_id_1_0="oXO9Iw9KyPo" url_name="b1rowreduced-tab4-video1"/>
-          <html display_name="The Row-Reduction Algorithm" linenum="174" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab4-text1">
+          <html display_name="The Row-Reduction Algorithm" linenum="175" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab4-text1">
             <p>
 The following algorithm will always work to reduce a matrix into Row-Reduced Echelon Form. </p>
             <ul class="itemize">
@@ -748,7 +752,7 @@ This is sometimes called <span style="color:#99182C"><b class="bf">Gaussian elim
           </html>
         </vertical>
         <vertical display_name="Row-Reducing Practice" refnum="5" url_name="b1rowreduced-vertical5">
-          <problem display_name="Row-reduction Practice" linenum="197" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Row-reduction Practice" linenum="198" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -883,7 +887,7 @@ Finally, we clear the non-zero entries above and below that pivot by replacing R
               </p>
             </text>
           </problem>
-          <problem display_name="Linear System 1" linenum="245" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Linear System 1" linenum="246" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider the augmented matrix </p>
@@ -966,7 +970,7 @@ This represents the equations [mathjaxinline]x_1 = 2[/mathjaxinline], [mathjaxin
         </vertical>
         <vertical display_name="Interpretations" refnum="6" url_name="b1rowreduced-vertical6">
           <video display_name="Interpreting a RREF matrix" youtube_id_1_0="cdAGco8RsOI" url_name="b1rowreduced-tab6-video1"/>
-          <problem display_name="Matrix 1" linenum="304" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix 1" linenum="305" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
@@ -1006,7 +1010,7 @@ The second row corresponds to an equation of the form [mathjaxinline]0x+0y=1[/ma
               </p>
             </text>
           </problem>
-          <problem display_name="Matrix 2" linenum="324" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix 2" linenum="325" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
@@ -1046,7 +1050,7 @@ The original system corresponds to 3 equations in 2 variables. Since there are t
               </p>
             </text>
           </problem>
-          <problem display_name="Matrix 3" linenum="345" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix 3" linenum="346" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose you do some row operations to an augmented matrix, and the result is the following augmented matrix: </p>
@@ -1086,7 +1090,7 @@ The original system corresponds to 3 equations in 4 variables. Since there are 2
               </p>
             </text>
           </problem>
-          <problem display_name="Free Variables" linenum="369" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Free Variables" linenum="370" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab6-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a system of linear equations has free variables when row-reduced, is it possible for the system to be inconsistent? </p>
@@ -1116,7 +1120,7 @@ We previously saw a system of 3 linear equations in 2 variables with the followi
           </problem>
         </vertical>
         <vertical display_name="Finding Solutions" refnum="7" url_name="b1rowreduced-vertical7">
-          <problem display_name="Solutions to a System" linenum="389" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab7-problem1" showanswer="finished" attempts="8" rerandomize="per_student">
+          <problem display_name="Solutions to a System" linenum="390" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab7-problem1" showanswer="finished" attempts="8" rerandomize="per_student">
             <text>
               <p>
 Recall the augmented matrix from the last problem: </p>
@@ -1173,7 +1177,7 @@ Working from right to left, we first see that there is not a pivot in the column
           </problem>
         </vertical>
         <vertical display_name="Going Further" refnum="8" url_name="b1rowreduced-vertical8">
-          <html display_name="The Size of a Matrix" linenum="424" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-text1">
+          <html display_name="The Size of a Matrix" linenum="425" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-text1">
             <p>
 If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline] rows and [mathjaxinline]n[/mathjaxinline] columns, we say that [mathjaxinline]M[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix. For instance, </p>
             <table id="a0000000043" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -1185,7 +1189,7 @@ If a matrix [mathjaxinline]M[/mathjaxinline] has [mathjaxinline]m[/mathjaxinline
             <p>
 is a [mathjaxinline]3\times 5[/mathjaxinline] augmented matrix, since it has 3 rows and 5 columns. The coefficient matrix of the above system would be a [mathjaxinline]3\times 4[/mathjaxinline] matrix. </p>
           </html>
-          <problem display_name="Matrix Size" linenum="440" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Matrix Size" linenum="441" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -1208,7 +1212,7 @@ We see that [mathjaxinline]A[/mathjaxinline] has 4 rows and 3 columns. The first
               </p>
             </text>
           </problem>
-          <problem display_name="Maximum pivots" linenum="455" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Maximum pivots" linenum="456" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 What is the maximum number of pivots in a [mathjaxinline]6\times 3[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -1230,7 +1234,7 @@ There aren't any non-zero entries above or below a pivot. Thus, there is at most
               </p>
             </text>
           </problem>
-          <problem display_name="Maximum pivots 2" linenum="467" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Maximum pivots 2" linenum="468" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 What is the maximum number of pivots in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -1252,7 +1256,7 @@ By definition, there is at most one pivot in each row. So there can be at most 4
               </p>
             </text>
           </problem>
-          <problem display_name="Number of Free Variables" linenum="480" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Number of Free Variables" linenum="481" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem4" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 What is the strongest statement you can make about the number of free variables in a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix, when row-reduced? </p>
@@ -1278,7 +1282,7 @@ We know that a [mathjaxinline]4\times 6[/mathjaxinline] coefficient matrix corre
               </p>
             </text>
           </problem>
-          <problem display_name="4 Equations, 6 Variables" linenum="491" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="4 Equations, 6 Variables" linenum="492" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab8-problem5" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Given the answer to the previous question, which of the following results are possible for a system of 4 linear equations in 6 variables? </p>
@@ -1310,7 +1314,7 @@ The existence of free variables rules out the possibility for unique solutions. 
           </problem>
         </vertical>
         <vertical display_name="Fields" refnum="9" url_name="b1rowreduced-vertical9">
-          <problem display_name="Real Numbers" linenum="511" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Real Numbers" linenum="512" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a matrix has real number entries, will the entries stay real numbers when you row-reduce it? </p>
@@ -1330,7 +1334,7 @@ Yes. The only acceptable row operations are multiplication by a scalar, addition
               </p>
             </text>
           </problem>
-          <problem display_name="Rational Numbers" linenum="523" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Rational Numbers" linenum="524" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a matrix has rational number entries, will the entries stay rational numbers when you row-reduce it? (Recall that rational numbers are those that can be written as fractions [mathjaxinline]\frac{p}{q}[/mathjaxinline], where [mathjaxinline]p,q[/mathjaxinline] are integers.) </p>
@@ -1350,7 +1354,7 @@ Yes. The only acceptable row operations are multiplication by a scalar, addition
               </p>
             </text>
           </problem>
-          <problem display_name="Integers" linenum="537" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Integers" linenum="538" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab9-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 If a matrix has integer entries, will the entries stay integers when you row-reduce it? </p>
@@ -1381,7 +1385,7 @@ No. For example, to put </p>
           <video display_name="Fields" youtube_id_1_0="3e74wlqpAf4" url_name="b1rowreduced-tab9-video1"/>
         </vertical>
         <vertical display_name="Fields Defined" refnum="10" url_name="b1rowreduced-vertical10">
-          <html display_name="Fields" linenum="559" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab10-text1">
+          <html display_name="Fields" linenum="560" tex_filename="./block1/rref.tex" url_name="b1rowreduced-tab10-text1">
             <p>
 A <span style="color:#99182C"><b class="bf">field</b></span> is, essentially, a set in which one can add, subtract, multiply, and divide any two elements (other than dividing by zero). The formal definition is below. </p>
             <p>
@@ -1447,14 +1451,18 @@ Compute elementary vector operations in [mathjaxinline]\mathbb R^ n[/mathjaxinli
                 <p>
 Describe the geometry of vector operations. </p>
               </li>
+              <li>
+                <p>
+Recognize vector spaces over the field [mathjaxinline]\mathbb R[/mathjaxinline]. </p>
+              </li>
             </ul>
             <p>
-For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 3 videos totaling 13 minutes, plus some questions. </p>
           </html>
         </vertical>
         <vertical display_name="The Template Vector Space" refnum="2" url_name="b1vectors-vertical2">
           <video display_name="R^n" youtube_id_1_0="3QM3Lg15Hi8" url_name="b1vectors-tab2-video1"/>
-          <problem display_name="Vector entry" linenum="37" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem1" showanswer="finished" attempts="5" rerandomize="per_student">
+          <problem display_name="Vector entry" linenum="38" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem1" showanswer="finished" attempts="5" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]v = \left[\begin{array}{c} 2 \\ 3 \\ 4 \end{array} \right][/mathjaxinline] and let [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \end{array} \right].[/mathjaxinline] </p>
@@ -1537,7 +1545,7 @@ What is [mathjaxinline]2w-3v[/mathjaxinline]? </p>
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
-          <problem display_name="Where does it live?" linenum="82" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Where does it live?" linenum="83" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab2-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 The vector [mathjaxinline]w = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right][/mathjaxinline] is an element of which of the following vector spaces? Click all that apply. </p>
@@ -1574,7 +1582,7 @@ It is not an element of (for instance) [mathjaxinline]\mathbb R^2[/mathjaxinline
           </problem>
         </vertical>
         <vertical display_name="R^n and the Zero Vector" refnum="3" url_name="b1vectors-vertical3">
-          <html display_name="R^n" linenum="107" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-text1">
+          <html display_name="R^n" linenum="108" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-text1">
             <p><span style="color:#27408C"><b class="bf">Definition.</b></span> For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p>
             <table id="a0000000046" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
               <tr>
@@ -1583,20 +1591,20 @@ It is not an element of (for instance) [mathjaxinline]\mathbb R^2[/mathjaxinline
               </tr>
             </table>
             <p>
- With addition and scalar multiplication as defined previously, [mathjaxinline]\mathbb R^ n[/mathjaxinline] is an example of a vector space over the field [mathjaxinline]\mathbb R[/mathjaxinline]. </p>
+ With addition and scalar multiplication as defined previously, [mathjaxinline]\mathbb R^ n[/mathjaxinline] is an example of a vector space over the field [mathjaxinline]\mathbb R.[/mathjaxinline] </p>
           </html>
-          <html display_name="Notes on Notation" linenum="123" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-text2">
+          <html display_name="Notes on Notation" linenum="124" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab3-text2">
             <p>
 The vector [mathjaxinline]\left[\begin{array}{c} 0 \\ 0 \\ \vdots \\ 0 \end{array} \right] \in \mathbb R^ n[/mathjaxinline] is called the <span style="color:#99182C"><b class="bf">zero vector</b></span>. (In fact, every vector space, not just [mathjaxinline]\mathbb R^ n[/mathjaxinline], has a zero vector.) </p>
             <p>
-To distinguish it from the scalar 0, in print we will denote the zero vector by [mathjaxinline]\mathbf{0}[/mathjaxinline]. When handwritten, we will usually write the zero vector as a zero with an arrow over it, like [mathjaxinline]\vec{0}[/mathjaxinline]. Other letters that represent vectors will not have the arrow notation, however; we will typically use letters like [mathjaxinline]u,v,w,x[/mathjaxinline] for vectors, while letters like [mathjaxinline]a,b,c[/mathjaxinline] will represent scalars. </p>
+To distinguish it from the scalar 0, in print we will denote the zero vector by [mathjaxinline]\mathbf{0}[/mathjaxinline]. When handwritten, we will usually write the zero vector as a zero with an arrow over it, like [mathjaxinline]\vec{0}[/mathjaxinline]. Other letters that represent vectors will not have the arrow notation, however; we will typically use letters like [mathjaxinline]u,v,w,x[/mathjaxinline] for vectors, while letters like [mathjaxinline]a[/mathjaxinline] or [mathjaxinline]c[/mathjaxinline] will represent scalars. </p>
             <p>
 Be careful! The zero vector in the space [mathjaxinline]\mathbb R^3[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \end{array} \right],[/mathjaxinline] whereas the zero vector in the space [mathjaxinline]\mathbb R^4[/mathjaxinline] is [mathjaxinline]\mathbf{0}= \left[\begin{array}{c} 0 \\ 0 \\ 0 \\ 0 \end{array} \right].[/mathjaxinline] Even though we use the same symbol, these are different objects! One has to judge from context which space any given [mathjaxinline]\mathbf{0}[/mathjaxinline] lies in. </p>
           </html>
         </vertical>
         <vertical display_name="Points and Arrows" refnum="4" url_name="b1vectors-vertical4">
           <video display_name="Geometry of R^n" youtube_id_1_0="4P4qoU2s1Rs" url_name="b1vectors-tab4-video1"/>
-          <problem display_name="Picture Problem" linenum="156" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Picture Problem" linenum="157" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab4-problem1" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are given. </p>
@@ -1630,7 +1638,10 @@ Which vector is equal to [mathjaxinline]-v[/mathjaxinline]? </p>
                   <font color="blue">Answer: </font>
                   <font color="blue">
                     <p>
-If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjaxinline]v[/mathjaxinline], we obtain [mathjaxinline]g[/mathjaxinline]. Now, [mathjaxinline]-w[/mathjaxinline] swaps the tip and tail of [mathjaxinline]w[/mathjaxinline], so to find [mathjaxinline]v-w[/mathjaxinline], we fix [mathjaxinline]v[/mathjaxinline], align the tip of [mathjaxinline]w[/mathjaxinline] with the tip of [mathjaxinline]v[/mathjaxinline] and draw a vector from the tail of [mathjaxinline]v[/mathjaxinline] to the tail of [mathjaxinline]w[/mathjaxinline]. To find [mathjaxinline]w-v[/mathjaxinline], we repeat the above with the roles of [mathjaxinline]w[/mathjaxinline] and [mathjaxinline]v[/mathjaxinline] swapped. Or, we can note that [mathjaxinline]w-v=-(v-w)[/mathjaxinline] and [mathjaxinline]-d=a[/mathjaxinline]. Finally, [mathjaxinline]-v[/mathjaxinline] is the vector with the same magnitude as [mathjaxinline]v[/mathjaxinline], but opposite direction to [mathjaxinline]v[/mathjaxinline]. </p>
+If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjaxinline]v[/mathjaxinline] to get [mathjaxinline]v+w[/mathjaxinline], we obtain [mathjaxinline]g[/mathjaxinline]. </p>
+                    <p><br/>Now, [mathjaxinline]-w[/mathjaxinline] swaps the tip and tail of [mathjaxinline]w[/mathjaxinline], so to find [mathjaxinline]v-w[/mathjaxinline], we fix [mathjaxinline]v[/mathjaxinline], align the tip of [mathjaxinline]w[/mathjaxinline] with the tip of [mathjaxinline]v[/mathjaxinline] and draw a vector from the tail of [mathjaxinline]v[/mathjaxinline] to the tail of [mathjaxinline]w[/mathjaxinline]. That gives us [mathjaxinline]d[/mathjaxinline]. </p>
+                    <p><br/>To find [mathjaxinline]w-v[/mathjaxinline], we repeat the above with the roles of [mathjaxinline]w[/mathjaxinline] and [mathjaxinline]v[/mathjaxinline] swapped, to give [mathjaxinline]a[/mathjaxinline]. Alternatively, we can note that [mathjaxinline]w-v=-(v-w)=-d=a.[/mathjaxinline] </p>
+                    <p><br/>Finally, [mathjaxinline]-v[/mathjaxinline] is the vector with the same magnitude as [mathjaxinline]v[/mathjaxinline], but opposite direction to [mathjaxinline]v[/mathjaxinline]. This is [mathjaxinline]c.[/mathjaxinline] </p>
                   </font>
                 </solution>
               </p>
@@ -1641,7 +1652,7 @@ If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjax
           <video display_name="Other Vector Spaces" youtube_id_1_0="P0vitfigkm4" url_name="b1vectors-tab5-video1"/>
         </vertical>
         <vertical display_name="Vector Spaces" refnum="6" url_name="b1vectors-vertical6">
-          <html display_name="Vector Spaces" linenum="196" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-text1">
+          <html display_name="Vector Spaces" linenum="206" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-text1">
             <p>
 A <span style="color:#99182C"><b class="bf">vector space</b></span> over a field [mathjaxinline]F[/mathjaxinline] is, essentially, a (non-empty) set [mathjaxinline]V[/mathjaxinline] in which one can do vector addition and scalar multiplication. For a more formal definition, see below. </p>
             <p>
@@ -1653,31 +1664,31 @@ A vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/m
                   <ul class="itemize">
                     <li>
                       <p>
-Addition in [mathjaxinline]V[/mathjaxinline] is associative and commutative; that is, for all [mathjaxinline]u,v,w \in V[/mathjaxinline], we have [mathjaxinline]u+(v+w) = (u+v)+w[/mathjaxinline] and [mathjaxinline]u+v = v+u[/mathjaxinline]. </p>
+Addition in [mathjaxinline]V[/mathjaxinline] is associative and commutative; that is, for all [mathjaxinline]u,v,w \in V,[/mathjaxinline] we have [mathjaxinline]u+(v+w) = (u+v)+w[/mathjaxinline] and [mathjaxinline]u+v = v+u.[/mathjaxinline] </p>
                     </li>
                     <li>
                       <p>
-There is an element [mathjaxinline]\mathbf{0}\in V[/mathjaxinline] such that [mathjaxinline]v+\mathbf{0}= v[/mathjaxinline] for all [mathjaxinline]v \in V[/mathjaxinline]. </p>
+There is an element [mathjaxinline]\mathbf{0}\in V[/mathjaxinline] such that [mathjaxinline]v+\mathbf{0}= v[/mathjaxinline] for all [mathjaxinline]v \in V.[/mathjaxinline] </p>
                     </li>
                     <li>
                       <p>
-For every [mathjaxinline]v\in V[/mathjaxinline], there is an element [mathjaxinline]-v \in V[/mathjaxinline] such that [mathjaxinline]-v + v = \mathbf{0}[/mathjaxinline]. </p>
+For every [mathjaxinline]v\in V[/mathjaxinline], there is an element [mathjaxinline]-v \in V[/mathjaxinline] such that [mathjaxinline]-v + v = \mathbf{0}.[/mathjaxinline] </p>
                     </li>
                     <li>
                       <p>
-[mathjaxinline]1v = v[/mathjaxinline] for all [mathjaxinline]v \in V[/mathjaxinline]. </p>
+[mathjaxinline]1v = v[/mathjaxinline] for all [mathjaxinline]v \in V.[/mathjaxinline] </p>
                     </li>
                     <li>
                       <p>
-Scalar multiplication distributes over addition; that is, for all [mathjaxinline]a \in F[/mathjaxinline] and [mathjaxinline]u,v \in V[/mathjaxinline], , [mathjaxinline]a(u+v) = au + av[/mathjaxinline]. </p>
+Scalar multiplication distributes over vector addition; that is, for all [mathjaxinline]a \in F[/mathjaxinline] and [mathjaxinline]u,v \in V[/mathjaxinline], [mathjaxinline]a(u+v) = au + av.[/mathjaxinline] </p>
                     </li>
                     <li>
                       <p>
-Scalar addition distributes as well; that is, for all [mathjaxinline]a,b \in F[/mathjaxinline] and [mathjaxinline]v \in V[/mathjaxinline], , [mathjaxinline](a+b)v = av + bv[/mathjaxinline]. </p>
+Scalar multiplication distributes over scalar addition as well; that is, for all [mathjaxinline]a,b \in F[/mathjaxinline] and [mathjaxinline]v \in V[/mathjaxinline], [mathjaxinline](a+b)v = av + bv.[/mathjaxinline] </p>
                     </li>
                     <li>
                       <p>
-For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mathjaxinline], we have [mathjaxinline]a(bv) = (ab)v[/mathjaxinline]. </p>
+For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mathjaxinline], we have [mathjaxinline]a(bv) = (ab)v.[/mathjaxinline] </p>
                     </li>
                   </ul>
                 </div>
@@ -1689,7 +1700,7 @@ For all [mathjaxinline]a,b \in F[/mathjaxinline], and [mathjaxinline]v\in V[/mat
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </html>
-          <problem display_name="Vector Spaces" linenum="227" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Vector Spaces" linenum="237" tex_filename="./block1/vectors.tex" url_name="b1vectors-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or False: The only vector spaces over the scalar field [mathjaxinline]\mathbb R[/mathjaxinline] are the spaces [mathjaxinline]\mathbb R^ n[/mathjaxinline] for [mathjaxinline]n&gt; 0[/mathjaxinline]. </p>
@@ -1727,7 +1738,7 @@ Determine whether a list of vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinlin
               </li>
             </ul>
             <p>
-For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 4 videos totaling 24 minutes, plus some questions. </p>
           </html>
         </vertical>
         <vertical display_name="Introduction to Linear Combinations" refnum="2" url_name="b1lincombos-vertical2">
@@ -1863,9 +1874,7 @@ Given the picture above in [mathjaxinline]\mathbb R^2[/mathjaxinline], can you w
           <problem display_name="Linear Combo 5" linenum="138" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab3-problem5" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
-Let [mathjaxinline]f[/mathjaxinline] denote the polynomial [mathjaxinline]t^3 + 1[/mathjaxinline], and let [mathjaxinline]g[/mathjaxinline] denote the </p>
-              <p>
-polynomial [mathjaxinline]t^2 - t[/mathjaxinline]. Recall that the set of polynomials is a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are vectors in that vector space. </p>
+Let [mathjaxinline]f[/mathjaxinline] denote the polynomial [mathjaxinline]t^3 + 1[/mathjaxinline], and let [mathjaxinline]g[/mathjaxinline] denote the polynomial [mathjaxinline]t^2 - t[/mathjaxinline]. Recall that the set of polynomials is a vector space over [mathjaxinline]\mathbb R[/mathjaxinline], so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are vectors in that vector space. </p>
               <p>
 Let [mathjaxinline]h[/mathjaxinline] denote [mathjaxinline]17t^3 + 2t^2 - 2t + 17[/mathjaxinline]. Can you write [mathjaxinline]h[/mathjaxinline] as a linear combination [mathjaxinline]h = a_1 f + a_2 g[/mathjaxinline]? If so, enter possible values for [mathjaxinline]a_1[/mathjaxinline] and [mathjaxinline]a_2[/mathjaxinline]. If not, enter No in both boxes. </p>
               <p>
@@ -1916,7 +1925,7 @@ Let [mathjaxinline]j[/mathjaxinline] denote [mathjaxinline]3t^4 + 3t[/mathjaxinl
         </vertical>
         <vertical display_name="Is it a linear combination?" refnum="4" url_name="b1lincombos-vertical4">
           <video display_name="Linear Combinations in R^n" youtube_id_1_0="v8XhmvbzIEU" url_name="b1lincombos-tab4-video1"/>
-          <problem display_name="Linear Combo 6" linenum="200" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Linear Combo 6" linenum="199" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 1 \\ 3 \\ 1 \end{array} \right][/mathjaxinline] and [mathjaxinline]v_2 = \left[\begin{array}{c} 3 \\ 10 \\ 2 \end{array} \right][/mathjaxinline] be vectors in [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
@@ -1954,7 +1963,7 @@ With the vectors [mathjaxinline]v_1[/mathjaxinline], [mathjaxinline]v_2[/mathjax
           <video display_name="Span as a Noun" youtube_id_1_0="BhyIFSpOcRs" url_name="b1lincombos-tab5-video1"/>
         </vertical>
         <vertical display_name="Span Questions" refnum="6" url_name="b1lincombos-vertical6">
-          <html display_name="Span (Noun)" linenum="266" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab6-text1">
+          <html display_name="Span (Noun)" linenum="265" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab6-text1">
             <p>
 Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline], we define the <span style="color:#99182C"><b class="bf">span</b></span> of [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] to be the set of all linear combinations of [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline]. In other words, </p>
             <table id="a0000000047" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -1966,7 +1975,7 @@ Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector s
             <p>
 The span of the list with no vectors in it is defined to be [mathjaxinline]\{ \mathbf{0}\}[/mathjaxinline]. </p>
           </html>
-          <problem display_name="Span Question" linenum="281" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Span Question" linenum="280" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]v_1 = \left[\begin{array}{c} 1 \\ 1 \\ 0 \end{array} \right][/mathjaxinline], [mathjaxinline]v_2 = \left[\begin{array}{c} 0 \\ -1 \\ 2 \end{array} \right][/mathjaxinline], [mathjaxinline]v_3 = \left[\begin{array}{c} -1 \\ -2 \\ 3 \end{array} \right][/mathjaxinline], and [mathjaxinline]v_4 = \left[\begin{array}{c} -2 \\ -5 \\ 8 \end{array} \right][/mathjaxinline]. </p>
@@ -1988,7 +1997,7 @@ Use row reduction to determine if [mathjaxinline]w = \left[\begin{array}{c} 3 \\
               </p>
             </text>
           </problem>
-          <problem display_name="Span Question 2" linenum="337" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Span Question 2" linenum="336" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Now determine if [mathjaxinline]u = \left[\begin{array}{c} 301.34 \\ -234.8 \\ \pi \end{array} \right][/mathjaxinline] is in the span of [mathjaxinline]\{ v_1; v_2; v_3; v_4 \}[/mathjaxinline]. Try to avoid doing any additional calculation! </p>
@@ -2015,11 +2024,11 @@ However, we don't need to do any new row-reduction &#x2013; from our previous ca
         </vertical>
         <vertical display_name="Span as Verb" refnum="7" url_name="b1lincombos-vertical7">
           <video display_name="Span as a Verb" youtube_id_1_0="SNkX6dX7MKo" url_name="b1lincombos-tab7-video1"/>
-          <html display_name="Span (Verb)" linenum="371" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab7-text1">
+          <html display_name="Span (Verb)" linenum="370" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab7-text1">
             <p>
 Given vectors [mathjaxinline]v_1, v_2, \ldots v_ n[/mathjaxinline] in a vector space [mathjaxinline]V[/mathjaxinline] over a field [mathjaxinline]F[/mathjaxinline], we say that the list [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] <span style="color:#99182C"><b class="bf">spans</b></span> [mathjaxinline]V[/mathjaxinline] if the span of the list of vectors is all of [mathjaxinline]V[/mathjaxinline]. </p>
           </html>
-          <html display_name="Spanning in R^m" linenum="382" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab7-text2">
+          <html display_name="Spanning in R^m" linenum="381" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab7-text2">
             <p>
 If [mathjaxinline]\{ v_1; v_2; \ldots v_ n\}[/mathjaxinline] is a list of vectors in [mathjaxinline]\mathbb R^ m[/mathjaxinline], the list spans [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if the matrix </p>
             <table id="a0000000048" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -2035,7 +2044,7 @@ If [mathjaxinline]n&lt;m[/mathjaxinline], then it is impossible for the list [ma
           </html>
         </vertical>
         <vertical display_name="Questions about spanning" refnum="8" url_name="b1lincombos-vertical8">
-          <problem display_name="Spanning Question" linenum="405" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Spanning Question" linenum="404" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Consider the following vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p>
@@ -2081,7 +2090,7 @@ Does the list [mathjaxinline]\{ v_1; v_2\}[/mathjaxinline] span [mathjaxinline]\
               </p>
             </text>
           </problem>
-          <problem display_name="Spanning Question 2" linenum="441" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Spanning Question 2" linenum="440" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Does every list of two non-zero vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] span [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
@@ -2104,7 +2113,7 @@ Does every list of two non-zero vectors in [mathjaxinline]\mathbb R^2[/mathjaxin
               </p>
             </text>
           </problem>
-          <problem display_name="Does the list span?" linenum="465" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Does the list span?" linenum="464" tex_filename="./block1/lincombos.tex" url_name="b1lincombos-tab8-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <ul class="itemize">
                 <li>
@@ -2187,16 +2196,30 @@ Solve matrix-vector equations. </p>
               </li>
               <li>
                 <p>
-Relate matrix-vector equations with span and linear combinations. </p>
+Relate matrix-vector equations to spans and linear combinations. </p>
               </li>
             </ul>
             <p>
-For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 4 videos totaling 29 minutes, plus some questions. </p>
           </html>
         </vertical>
-        <vertical display_name="Defining Matrix-Vector Multiplication" refnum="2" url_name="b1matrixvector-vertical2">
-          <video display_name="Matrix-Vector Multiplication" youtube_id_1_0="RsoteOVSoh4" url_name="b1matrixvector-tab2-video1"/>
-          <html display_name="Matrix times Vector" linenum="36" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab2-text1">
+        <vertical display_name="Row-Reduction Tools" refnum="2" url_name="b1matrixvector-vertical2">
+          <html display_name="Row-Reduction Tools" linenum="32" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab2-text1">
+            <p>
+From this point forward, you should feel free to use technology to do row reduction of matrices. </p>
+            <p>
+Here are a couple of websites that will do row reduction for you: </p>
+            <p>
+              <a href="http://www.math.odu.edu/&#xA0;bogacki/cgi-bin/lat.cgi" target="_blank">Linear Algebra Toolkit</a>
+            </p>
+            <p>
+              <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a>
+            </p>
+          </html>
+        </vertical>
+        <vertical display_name="Defining Matrix-Vector Multiplication" refnum="3" url_name="b1matrixvector-vertical3">
+          <video display_name="Matrix-Vector Multiplication" youtube_id_1_0="RsoteOVSoh4" url_name="b1matrixvector-tab3-video1"/>
+          <html display_name="Matrix times Vector" linenum="52" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-text1">
             <p>
 If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
             <table id="a0000000049" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -2215,8 +2238,55 @@ If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinlin
             </table>
           </html>
         </vertical>
-        <vertical display_name="Multiplication Practice" refnum="3" url_name="b1matrixvector-vertical3">
-          <problem display_name="Products" linenum="57" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+        <vertical display_name="Multiplication Practice" refnum="4" url_name="b1matrixvector-vertical4">
+          <problem display_name="Where does it live?" linenum="76" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+            <text>
+              <p>
+Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] real matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="true" name="1">
+                      <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="2">
+                      <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> Either of these is fine</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+The resulting product [mathjaxinline]Ax[/mathjaxinline] will be an element of which space? </p>
+              <p>
+                <multiplechoiceresponse>
+                  <choicegroup direction="vertical">
+                    <choice correct="false" name="1">
+                      <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="true" name="2">
+                      <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
+                    </choice>
+                    <choice correct="false" name="3">
+                      <text> Either of these is fine</text>
+                    </choice>
+                  </choicegroup>
+                </multiplechoiceresponse>
+              </p>
+              <p>
+                <solution>
+                  <font color="blue">Answer: </font>
+                  <font color="blue">
+                    <p>
+For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix [mathjaxinline]A[/mathjaxinline] has 4 columns, so [mathjaxinline]x[/mathjaxinline] must then live in [mathjaxinline]\mathbb R^4[/mathjaxinline]. <br/>Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product [mathjaxinline]Ax[/mathjaxinline] will therefore be a vector living in [mathjaxinline]\mathbb R^6[/mathjaxinline]. </p>
+                  </font>
+                </solution>
+              </p>
+            </text>
+          </problem>
+          <problem display_name="Products" linenum="99" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2326,54 +2396,7 @@ Note the special nature of vector [mathjaxinline]y[/mathjaxinline]. We can see t
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
-          <problem display_name="Where does it live?" linenum="115" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
-            <text>
-              <p>
-Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] real matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p>
-              <p>
-                <multiplechoiceresponse>
-                  <choicegroup direction="vertical">
-                    <choice correct="true" name="1">
-                      <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
-                    </choice>
-                    <choice correct="false" name="2">
-                      <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
-                    </choice>
-                    <choice correct="false" name="3">
-                      <text> Either of these is fine</text>
-                    </choice>
-                  </choicegroup>
-                </multiplechoiceresponse>
-              </p>
-              <p>
-The resulting product [mathjaxinline]Ax[/mathjaxinline] will be an element of which space? </p>
-              <p>
-                <multiplechoiceresponse>
-                  <choicegroup direction="vertical">
-                    <choice correct="false" name="1">
-                      <text> [mathjaxinline]\mathbb R^4[/mathjaxinline]</text>
-                    </choice>
-                    <choice correct="true" name="2">
-                      <text> [mathjaxinline]\mathbb R^6[/mathjaxinline]</text>
-                    </choice>
-                    <choice correct="false" name="3">
-                      <text> Either of these is fine</text>
-                    </choice>
-                  </choicegroup>
-                </multiplechoiceresponse>
-              </p>
-              <p>
-                <solution>
-                  <font color="blue">Answer: </font>
-                  <font color="blue">
-                    <p>
-For the matrix-vector product to be defined, the number of columns of the first matrix must equal the number of entries in the vector (otherwise, the mechanics just don't work). Our matrix [mathjaxinline]A[/mathjaxinline] has 4 columns, so [mathjaxinline]x[/mathjaxinline] must then live in [mathjaxinline]\mathbb R^4[/mathjaxinline]. <br/>Furthermore, if a matrix-vector product is defined, the result will have the same number of rows as the matrix. Our product [mathjaxinline]Ax[/mathjaxinline] will therefore be a vector living in [mathjaxinline]\mathbb R^6[/mathjaxinline]. </p>
-                  </font>
-                </solution>
-              </p>
-            </text>
-          </problem>
-          <problem display_name="Products and Spans" linenum="138" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Products and Spans" linenum="157" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
@@ -2402,9 +2425,9 @@ The span of a list of vectors is the set of all linear combinations of those vec
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Matrix-Vector Equations" refnum="4" url_name="b1matrixvector-vertical4">
-          <video display_name="Matrix-Vector Equations" youtube_id_1_0="HeeVmk25QNU" url_name="b1matrixvector-tab4-video1"/>
-          <problem display_name="Solving Matrix-Vector Equations" linenum="173" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+        <vertical display_name="Matrix-Vector Equations" refnum="5" url_name="b1matrixvector-vertical5">
+          <video display_name="Matrix-Vector Equations" youtube_id_1_0="HeeVmk25QNU" url_name="b1matrixvector-tab5-video1"/>
+          <problem display_name="Solving Matrix-Vector Equations" linenum="192" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2476,7 +2499,7 @@ Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[
               </p>
             </text>
           </problem>
-          <problem display_name="Another Matrix-Vector Equation" linenum="217" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Another Matrix-Vector Equation" linenum="236" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
@@ -2541,7 +2564,7 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Always Consistent?" linenum="242" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Always Consistent?" linenum="261" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
@@ -2625,9 +2648,9 @@ The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least 
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
         </vertical>
-        <vertical display_name="Solution Sets" refnum="5" url_name="b1matrixvector-vertical5">
-          <video display_name="Solving Ax = 0" youtube_id_1_0="VreiYQU_GTA" url_name="b1matrixvector-tab5-video1"/>
-          <problem display_name="Non-trivial Solutions" linenum="279" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+        <vertical display_name="Solution Sets" refnum="6" url_name="b1matrixvector-vertical6">
+          <video display_name="Solving Ax = 0" youtube_id_1_0="VreiYQU_GTA" url_name="b1matrixvector-tab6-video1"/>
+          <problem display_name="Non-trivial Solutions" linenum="298" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solutions, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
@@ -2649,7 +2672,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinlin
               </p>
             </text>
           </problem>
-          <problem display_name="Find a Solution Set" linenum="305" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Find a Solution Set" linenum="324" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2691,7 +2714,7 @@ Hence the general solution is </p>
               </p>
             </text>
           </problem>
-          <problem display_name="Other Solution Sets" linenum="352" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Other Solution Sets" linenum="371" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
@@ -2714,8 +2737,8 @@ If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set wi
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Spans and Matrix-Vector Equations" refnum="6" url_name="b1matrixvector-vertical6">
-          <problem display_name="Span as Noun" linenum="382" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+        <vertical display_name="Spans and Matrix-Vector Equations" refnum="7" url_name="b1matrixvector-vertical7">
+          <problem display_name="Span as Noun" linenum="401" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. A vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if and only the equation [mathjaxinline]Ax = v[/mathjaxinline] has: </p>
@@ -2735,7 +2758,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
               </p>
             </text>
           </problem>
-          <problem display_name="Span as Verb" linenum="401" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Span as Verb" linenum="420" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if: </p>
@@ -2774,7 +2797,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
               </p>
             </text>
           </problem>
-          <problem display_name="Always has Solutions" linenum="420" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Always has Solutions" linenum="439" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/mathjaxinline] would it be impossible for [mathjaxinline]Ax = v[/mathjaxinline] to have at least one solution for every [mathjaxinline]v \in \mathbb R^5[/mathjaxinline]? Click all that apply. </p>
@@ -2808,9 +2831,9 @@ In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/ma
             </text>
           </problem>
         </vertical>
-        <vertical display_name="Multiplication Properties" refnum="7" url_name="b1matrixvector-vertical7">
-          <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab7-video1"/>
-          <html display_name="Properties of Matrix Multiplication" linenum="451" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-text1">
+        <vertical display_name="Multiplication Properties" refnum="8" url_name="b1matrixvector-vertical8">
+          <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab8-video1"/>
+          <html display_name="Properties of Matrix Multiplication" linenum="470" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-text1">
             <p>
 For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
             <table id="a0000000057" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -2828,7 +2851,7 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
               </tr>
             </table>
           </html>
-          <problem display_name="Consistent Matrix-Vector Equations" linenum="460" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations" linenum="479" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
@@ -2887,7 +2910,7 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="491" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="510" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>

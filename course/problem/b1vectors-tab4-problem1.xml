@@ -1,4 +1,4 @@
-<problem display_name="Picture Problem" linenum="156" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Picture Problem" linenum="157" tex_filename="./block1/vectors.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Vectors [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] are given. </p>
@@ -32,7 +32,10 @@ Which vector is equal to [mathjaxinline]-v[/mathjaxinline]? </p>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
-If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjaxinline]v[/mathjaxinline], we obtain [mathjaxinline]g[/mathjaxinline]. Now, [mathjaxinline]-w[/mathjaxinline] swaps the tip and tail of [mathjaxinline]w[/mathjaxinline], so to find [mathjaxinline]v-w[/mathjaxinline], we fix [mathjaxinline]v[/mathjaxinline], align the tip of [mathjaxinline]w[/mathjaxinline] with the tip of [mathjaxinline]v[/mathjaxinline] and draw a vector from the tail of [mathjaxinline]v[/mathjaxinline] to the tail of [mathjaxinline]w[/mathjaxinline]. To find [mathjaxinline]w-v[/mathjaxinline], we repeat the above with the roles of [mathjaxinline]w[/mathjaxinline] and [mathjaxinline]v[/mathjaxinline] swapped. Or, we can note that [mathjaxinline]w-v=-(v-w)[/mathjaxinline] and [mathjaxinline]-d=a[/mathjaxinline]. Finally, [mathjaxinline]-v[/mathjaxinline] is the vector with the same magnitude as [mathjaxinline]v[/mathjaxinline], but opposite direction to [mathjaxinline]v[/mathjaxinline]. </p>
+If we align the tip of [mathjaxinline]w[/mathjaxinline] and the tail of [mathjaxinline]v[/mathjaxinline] to get [mathjaxinline]v+w[/mathjaxinline], we obtain [mathjaxinline]g[/mathjaxinline]. </p>
+          <p><br/>Now, [mathjaxinline]-w[/mathjaxinline] swaps the tip and tail of [mathjaxinline]w[/mathjaxinline], so to find [mathjaxinline]v-w[/mathjaxinline], we fix [mathjaxinline]v[/mathjaxinline], align the tip of [mathjaxinline]w[/mathjaxinline] with the tip of [mathjaxinline]v[/mathjaxinline] and draw a vector from the tail of [mathjaxinline]v[/mathjaxinline] to the tail of [mathjaxinline]w[/mathjaxinline]. That gives us [mathjaxinline]d[/mathjaxinline]. </p>
+          <p><br/>To find [mathjaxinline]w-v[/mathjaxinline], we repeat the above with the roles of [mathjaxinline]w[/mathjaxinline] and [mathjaxinline]v[/mathjaxinline] swapped, to give [mathjaxinline]a[/mathjaxinline]. Alternatively, we can note that [mathjaxinline]w-v=-(v-w)=-d=a.[/mathjaxinline] </p>
+          <p><br/>Finally, [mathjaxinline]-v[/mathjaxinline] is the vector with the same magnitude as [mathjaxinline]v[/mathjaxinline], but opposite direction to [mathjaxinline]v[/mathjaxinline]. This is [mathjaxinline]c.[/mathjaxinline] </p>
         </font>
       </solution>
     </p>

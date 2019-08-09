@@ -1,4 +1,4 @@
-<problem display_name="Spanning Question 2" linenum="441" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Spanning Question 2" linenum="440" tex_filename="./block1/lincombos.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Does every list of two non-zero vectors in [mathjaxinline]\mathbb R^2[/mathjaxinline] span [mathjaxinline]\mathbb R^2[/mathjaxinline]? </p>
