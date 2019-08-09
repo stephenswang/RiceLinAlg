@@ -10,7 +10,7 @@ In the video, we proved that [mathjaxinline]C[/mathjaxinline] is into and onto, 
 To show that [mathjaxinline]C[/mathjaxinline] is a linear transformation, we must show that [mathjaxinline]C[/mathjaxinline] respects vector addition and scalar multiplication. </p>
         <p>
 Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
-        <table id="a0000000117" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000119" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C(u) = \left[ \begin{array}{c} a_1 \\ a_2 \\ \vdots \\ a_ n \end{array} \right], C(w) = \left[ \begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_ n \end{array} \right].[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -18,7 +18,7 @@ Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
         </table>
         <p>
  Then we must have [mathjaxinline]u = a_1v_1 + a_2v_2 + \ldots a_ n v_ n,[/mathjaxinline] and [mathjaxinline]w = b_1v_1 + b_2v_2 + \ldots b_ n v_ n.[/mathjaxinline] Adding, we see that </p>
-        <table id="a0000000118" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000120" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]u+w = (a_1+b_1)v_1 + (a_2+b_2)v_2 + \ldots + (a_ n+b_ n)v_ n.[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -26,7 +26,7 @@ Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
         </table>
         <p>
  In other words, the coordinates of [mathjaxinline]u+w[/mathjaxinline] relative to [mathjaxinline]\mathcal{B}[/mathjaxinline] are </p>
-        <table id="a0000000119" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000121" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C(u+w) = [u+w]_{\mathcal{B}} = \left[ \begin{array}{c} a_1+b_1 \\ a_2+b_2 \\ \vdots \\ a_ n+b_ n \end{array} \right].[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -36,7 +36,7 @@ Let [mathjaxinline]u, w \in W[/mathjaxinline]. Suppose that </p>
  But this is exactly [mathjaxinline]C(u) + C(w)[/mathjaxinline]. Thus [mathjaxinline]C[/mathjaxinline] respects vector addition. </p>
         <p>
 Now let [mathjaxinline]u[/mathjaxinline] be as above, and let [mathjaxinline]c[/mathjaxinline] be any scalar. Then </p>
-        <table id="a0000000120" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000122" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]cu = (ca_1)v_1 + (ca_2)v_2 + \ldots + (ca_ n)v_ n.[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -44,7 +44,7 @@ Now let [mathjaxinline]u[/mathjaxinline] be as above, and let [mathjaxinline]c[/
         </table>
         <p>
  Therefore the coordinates of [mathjaxinline]cu[/mathjaxinline] are </p>
-        <table id="a0000000121" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+        <table id="a0000000123" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
           <tr>
             <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C(cu) = [cu]_{\mathcal{B}} = \left[ \begin{array}{c} ca_1 \\ ca_2 \\ \vdots \\ ca_ n \end{array} \right] = cC(u).[/mathjax]</td>
             <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

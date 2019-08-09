@@ -1,4 +1,4 @@
-<html display_name="R^n" linenum="107" tex_filename="./block1/vectors.tex">
+<html display_name="R^n" linenum="108" tex_filename="./block1/vectors.tex">
   <p><span style="color:#27408C"><b class="bf">Definition.</b></span> For a non-negative integer [mathjaxinline]n[/mathjaxinline], [mathjaxinline]\mathbb R^ n[/mathjaxinline] is defined to be the set </p>
   <table id="a0000000046" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
@@ -7,5 +7,5 @@
     </tr>
   </table>
   <p>
- With addition and scalar multiplication as defined previously, [mathjaxinline]\mathbb R^ n[/mathjaxinline] is an example of a vector space over the field [mathjaxinline]\mathbb R[/mathjaxinline]. </p>
+ With addition and scalar multiplication as defined previously, [mathjaxinline]\mathbb R^ n[/mathjaxinline] is an example of a vector space over the field [mathjaxinline]\mathbb R.[/mathjaxinline] </p>
 </html>

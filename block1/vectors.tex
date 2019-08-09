@@ -13,10 +13,11 @@ At the end of this sequence, and after some practice, you should be able to:
 \begin{itemize}
 \item Compute elementary vector operations in $\R^n$.  
 \item Describe the geometry of vector operations.
+\item Recognize vector spaces over the field $\R$.  
 \end{itemize}
 
 
-For time budgeting purposes, this sequence has X videos totaling X minutes, 
+For time budgeting purposes, this sequence has 3 videos totaling 13 minutes, 
 plus some questions.  
 
 
@@ -113,7 +114,7 @@ For a non-negative integer $n$, $\R^n$ is defined to be the set
 \end{array} \right] \ : \ a_1, a_2, \ldots a_n \in \R \right\}. \]  
 With addition and scalar multiplication as defined previously, 
 $\R^n$ is an example of a vector
-space over the field $\R$.  
+space over the field $\R.$  
 
 
 \endedxtext
@@ -130,7 +131,7 @@ To distinguish it from the scalar 0, in print we will denote the zero vector
 by $\veco$.  When handwritten, we will usually write the zero vector as a 
 zero with an arrow over it, like $\vec{0}$.  Other letters that represent vectors will
 not have the arrow notation, however; we will typically use letters like $u,v,w,x$ for 
-vectors, while letters like $a,b,c$ will represent scalars.  
+vectors, while letters like $a$ or $c$ will represent scalars.  
 
   
 Be careful!  The zero vector in the space $\R^3$ is 
@@ -176,7 +177,16 @@ Which vector is equal to $-v$?
 
 \edXabox{expect="c" options="a","b","c","d","e","f","g","h"}
 
-\edXsolution{If we align the tip of $w$ and the tail of $v$, we obtain $g$.  Now, $-w$ swaps the tip and tail of $w$, so to find $v-w$, we fix $v$, align the tip of $w$ with the tip of $v$ and draw a vector from the tail of $v$ to the tail of $w$.  To find $w-v$, we repeat the above with the roles of $w$ and $v$ swapped.  Or, we can note that $w-v=-(v-w)$ and $-d=a$.  Finally, $-v$ is the vector with the same magnitude as $v$, but opposite direction to $v$.}
+\edXsolution{If we align the tip of $w$ and the tail of $v$ to get $v+w$, we obtain $g$.  
+
+\\
+Now, $-w$ swaps the tip and tail of $w$, so to find $v-w$, we fix $v$, align the tip of $w$ with the tip of $v$ and draw a vector from the tail of $v$ to the tail of $w$.  That gives us $d$.  
+
+\\
+To find $w-v$, we repeat the above with the roles of $w$ and $v$ swapped, to give $a$.  Alternatively, we can note that $w-v=-(v-w)=-d=a.$  
+
+\\
+Finally, $-v$ is the vector with the same magnitude as $v$, but opposite direction to $v$.  This is $c.$}
 
 \endedxproblem
 
@@ -202,18 +212,18 @@ do vector addition and scalar multiplication.  For a more formal definition, see
 
 
 A vector space $V$ over a field $F$ is a set, together with an addition operation on $V$
-and a scalar multiplication of elements of $F$ on elements of $V$, that satisfies
+and a scalar multiplication  of elements of $F$ on elements of $V$, that satisfies
 the following conditions:
 
 \begin{itemize}
-\item Addition in $V$ is associative and commutative; that is, for all $u,v,w \in V$, we have
-$u+(v+w) = (u+v)+w$ and $u+v  = v+u$.  
-\item There is an element $\veco \in V$ such that $v+\veco = v$ for all $v \in V$.
-\item For every $v\in V$, there is an element $-v \in V$ such that $-v + v = \veco$.  
-\item $1v = v$ for all $v \in V$.  
-\item Scalar multiplication distributes over addition; that is, for all $a \in F$ and $u,v \in V$, , $a(u+v) = au + av$.  
-\item Scalar addition distributes as well; that is, for all $a,b \in F$ and $v \in V$, , $(a+b)v = av + bv$.  
-\item For all $a,b \in F$, and $v\in V$, we have $a(bv) = (ab)v$.  
+\item Addition in $V$ is associative and commutative; that is, for all $u,v,w \in V,$ we have
+$u+(v+w) = (u+v)+w$ and $u+v  = v+u.$  
+\item There is an element $\veco \in V$ such that $v+\veco = v$ for all $v \in V.$
+\item For every $v\in V$, there is an element $-v \in V$ such that $-v + v = \veco.$  
+\item $1v = v$ for all $v \in V.$  
+\item Scalar multiplication distributes over vector addition; that is, for all $a \in F$ and $u,v \in V$, $a(u+v) = au + av.$  
+\item Scalar multiplication distributes over scalar addition as well; that is, for all $a,b \in F$ and $v \in V$, $(a+b)v = av + bv.$  
+\item For all $a,b \in F$, and $v\in V$, we have $a(bv) = (ab)v.$  
 \end{itemize}
 
 \end{edXshowhide}
