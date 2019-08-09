@@ -4,13 +4,25 @@ At the end of this sequence, and after some practice, you should be able to: </p
   <ul class="itemize">
     <li>
       <p>
+Determine whether a vector is in the kernel or image of a linear transformation; </p>
+    </li>
+    <li>
+      <p>
 Determine whether a linear transformation is into or onto; </p>
     </li>
     <li>
       <p>
-Understand the connection between the kernel/image of a linear transformation, and into/onto. </p>
+Describe the kernel of a linear transformation that is into; </p>
+    </li>
+    <li>
+      <p>
+Describe the image of a linear transformation that is onto. </p>
+    </li>
+    <li>
+      <p>
+Relate the concepts of into and onto with linear independence and span. </p>
     </li>
   </ul>
   <p>
-For time budgeting purposes, this sequence has X videos totaling X minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 5 videos totaling 31 minutes, plus some questions. </p>
 </html>

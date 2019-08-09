@@ -1,4 +1,4 @@
-<problem display_name="Linear Transformation? 1" linenum="106" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation? 1" linenum="102" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Define [mathjaxinline]T: \mathbb R^3 \rightarrow \mathbb R^3[/mathjaxinline] by [mathjaxinline]T(v) = 2v[/mathjaxinline]. </p>
