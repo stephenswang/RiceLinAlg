@@ -1,4 +1,4 @@
-<problem display_name="Rotation 2" linenum="226" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Rotation 2" linenum="226" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 What is [mathjaxinline]T\left( \left[ \begin{array}{c} 4 \\ 1 \end{array} \right] \right)[/mathjaxinline]? </p>

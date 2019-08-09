@@ -1,4 +1,4 @@
-<problem display_name="Rotation 3" linenum="247" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Rotation 3" linenum="247" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 If [mathjaxinline]T[/mathjaxinline] is still rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline], what is [mathjaxinline]T\left( \left[ \begin{array}{c} 3\sqrt {2} \\ -\sqrt {2} \end{array} \right] \right)[/mathjaxinline]? </p>

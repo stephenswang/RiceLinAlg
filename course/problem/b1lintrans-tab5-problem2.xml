@@ -1,4 +1,4 @@
-<problem display_name="Linear Transformation? 2" linenum="141" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation? 2" linenum="137" tex_filename="./block1/lineartransformations.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Define [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] by [mathjaxinline]T(v) = \mathbf{0}[/mathjaxinline]. </p>

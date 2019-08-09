@@ -1,4 +1,4 @@
-<problem display_name="Rotation" linenum="192" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Rotation" linenum="192" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 For the next two problems, we will be considering the linear transformation [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] given by rotation counterclockwise by [mathjaxinline]45^\circ[/mathjaxinline]. </p>

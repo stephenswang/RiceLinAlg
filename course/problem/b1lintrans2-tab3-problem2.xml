@@ -1,4 +1,4 @@
-<problem display_name="Find a Matrix" linenum="146" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Find a Matrix" linenum="146" tex_filename="./block1/lineartransformationsinRn.tex" showanswer="finished" attempts="5" rerandomize="per_student">
   <text>
     <p>
 Suppose the function [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^2[/mathjaxinline] is given by </p>
@@ -67,12 +67,12 @@ Is [mathjaxinline]T[/mathjaxinline] a linear transformation? </p>
  We see that </p>
           <table id="a0000000071" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
-              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right][/mathjax]</td>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T\left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right] = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right] \left[ \begin{array}{c} a_1 \\ a_2 \\ a_3 \end{array} \right],[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
             </tr>
           </table>
           <p>
-, so [mathjaxinline]A = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] works. </p>
+ so [mathjaxinline]A = \left[ \begin{array}{ccc} 2 &amp;  0 &amp;  -1 \\ -1 &amp;  1 &amp;  0 \end{array} \right][/mathjaxinline] works. </p>
           <p>
 Since [mathjaxinline]T[/mathjaxinline] is multiplication by a matrix, it is a linear transformation. </p>
         </font>
