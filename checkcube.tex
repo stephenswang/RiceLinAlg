@@ -1,0 +1,52 @@
+
+\begin{edXscript}
+def cubing(expect,ans):
+    import ast
+    import numpy as np
+    res={'ok':False}
+    if MatrixEntry(expect,ans)['ok']!=True:
+        res['msg']=(MatrixEntry(expect,ans))['msg']
+    else:
+        hold=np.array(eval(ans))
+        mat=hold
+        I=np.identity(2)
+        mat_c=np.linalg.matrix_power(mat,3)
+        diff1=np.subtract(mat_c,I)
+    
+        adiff1=np.absolute(diff1)
+        check1=(adiff1>0.02).any()
+        diff2=np.subtract(mat,I)
+        adiff2=np.absolute(diff2)
+        check2=(adiff2>0.01).any()
+    
+
+        if check2==False:
+            res['msg']='Answer too close to the identity'
+            
+        elif check1==True:
+            res['msg']='Answer does not cube to the identity'
+            
+        else:
+            res['ok']=True
+    return res
+  
+def MatrixEntry(expect, ans):
+    import ast
+    import numpy as np
+    ret= {'ok':False}
+    
+    
+    try:
+        list_ans = ast.literal_eval(ans)
+        list_expect = ast.literal_eval(expect)
+        matrix_ans = np.matrix(list_ans)
+        matrix_expect = np.matrix(list_expect)
+        if matrix_ans.shape != matrix_expect.shape:
+            ret['msg'] = 'Wrong shape of matrix'
+        
+        else:
+            ret['ok'] = True
+    except SyntaxError:
+        ret['msg'] = 'Wrong input format'
+    return ret
+\end{edXscript}

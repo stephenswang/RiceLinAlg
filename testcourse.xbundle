@@ -2206,7 +2206,7 @@ For time budgeting purposes, this sequence has 4 videos totaling 29 minutes, plu
         <vertical display_name="Row-Reduction Tools" refnum="2" url_name="b1matrixvector-vertical2">
           <html display_name="Row-Reduction Tools" linenum="32" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab2-text1">
             <p>
-From this point forward, you should feel free to use technology to do row reduction of matrices. </p>
+From this point forward, you should feel free to use technology to do row reduction of matrices. All other computations should still be done by hand, for now. </p>
             <p>
 Here are a couple of websites that will do row reduction for you: </p>
             <p>
@@ -2219,7 +2219,7 @@ Here are a couple of websites that will do row reduction for you: </p>
         </vertical>
         <vertical display_name="Defining Matrix-Vector Multiplication" refnum="3" url_name="b1matrixvector-vertical3">
           <video display_name="Matrix-Vector Multiplication" youtube_id_1_0="RsoteOVSoh4" url_name="b1matrixvector-tab3-video1"/>
-          <html display_name="Matrix times Vector" linenum="52" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-text1">
+          <html display_name="Matrix times Vector" linenum="53" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab3-text1">
             <p>
 If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
             <table id="a0000000049" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -2239,7 +2239,7 @@ If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinlin
           </html>
         </vertical>
         <vertical display_name="Multiplication Practice" refnum="4" url_name="b1matrixvector-vertical4">
-          <problem display_name="Where does it live?" linenum="76" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Where does it live?" linenum="77" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Suppose [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] real matrix. In order for the product [mathjaxinline]Ax[/mathjaxinline] to be defined, the vector [mathjaxinline]x[/mathjaxinline] must live in what space? </p>
@@ -2286,7 +2286,7 @@ For the matrix-vector product to be defined, the number of columns of the first 
               </p>
             </text>
           </problem>
-          <problem display_name="Products" linenum="99" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Products" linenum="100" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem2" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2396,7 +2396,7 @@ Note the special nature of vector [mathjaxinline]y[/mathjaxinline]. We can see t
             <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
             <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
           </problem>
-          <problem display_name="Products and Spans" linenum="157" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Products and Spans" linenum="158" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab4-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]A[/mathjaxinline] is an [mathjaxinline]m\times n[/mathjaxinline] matrix </p>
@@ -2427,7 +2427,7 @@ The span of a list of vectors is the set of all linear combinations of those vec
         </vertical>
         <vertical display_name="Matrix-Vector Equations" refnum="5" url_name="b1matrixvector-vertical5">
           <video display_name="Matrix-Vector Equations" youtube_id_1_0="HeeVmk25QNU" url_name="b1matrixvector-tab5-video1"/>
-          <problem display_name="Solving Matrix-Vector Equations" linenum="192" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Solving Matrix-Vector Equations" linenum="193" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2499,7 +2499,7 @@ Let [mathjaxinline]w = \left[\begin{array}{c} 3 \\ -4 \\ 7 \end{array} \right].[
               </p>
             </text>
           </problem>
-          <problem display_name="Another Matrix-Vector Equation" linenum="236" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
+          <problem display_name="Another Matrix-Vector Equation" linenum="237" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem2" showanswer="finished" attempts="2" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]3\times 4[/mathjaxinline] matrix with columns [mathjaxinline]v_1, v_2, v_3, v_4[/mathjaxinline]. That is, </p>
@@ -2564,7 +2564,7 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Always Consistent?" linenum="261" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Always Consistent?" linenum="262" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab5-problem3" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. There is a specific vector [mathjaxinline]v[/mathjaxinline] for which you can conclude the equation [mathjaxinline]Ax = v[/mathjaxinline] has a solution, even without knowing anything else about [mathjaxinline]A[/mathjaxinline]. What is this vector [mathjaxinline]v[/mathjaxinline]? </p>
@@ -2624,7 +2624,7 @@ The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] always has at least 
         </vertical>
         <vertical display_name="Solution Sets" refnum="6" url_name="b1matrixvector-vertical6">
           <video display_name="Solution Sets to Matrix-Vector Equations" youtube_id_1_0="VreiYQU_GTA" url_name="b1matrixvector-tab6-video1"/>
-          <problem display_name="Non-trivial Solutions" linenum="298" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Non-trivial Solutions" linenum="299" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinline] matrix. The equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] has the solution [mathjaxinline]x = \mathbf{0}[/mathjaxinline], which we call the <span style="color:#99182C"><b class="bf">trivial solution.</b></span> If there are no solutions other than the trivial solution, how many pivots must [mathjaxinline]A[/mathjaxinline] have when row-reduced? </p>
@@ -2646,7 +2646,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]6\times 4[/mathjaxinlin
               </p>
             </text>
           </problem>
-          <problem display_name="Find a Solution Set" linenum="324" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Find a Solution Set" linenum="327" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem2" showanswer="finished" attempts="7" rerandomize="per_student">
             <text>
               <p>
 Let </p>
@@ -2660,10 +2660,98 @@ Let </p>
  Find a list of vectors whose span is the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
               <p>
 Enter the list of vectors below, separated by semicolons. For instance, to enter the list [mathjaxinline]\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \right\}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p>
+              <script linenum="2" filename="./solutionsetcheck.tex" type="text/python" system_path="python_lib">
+
+def VectorEntry(ans):
+    import numpy as np
+    import ast
+    test={'ok':False}
+    try:
+        ans=ans.split(";")
+        hold=[]
+        for a in ans:
+            a=a.split(",")
+            sub=[]
+            for i in range(len(a)):
+                if i==0:
+                    sub.append(float(a[i][1:]))
+                elif i==len(a)-1:
+                    sub.append(float(a[i][:-1]))
+                else:
+                    sub.append(float(a[i]))
+            assert len(sub)==4
+            hold.append(np.array(sub))
+        test['ok']=True
+    except AssertionError:
+        test['msg']='One of your vectors is not a 4-tuple'
+    except:
+        test['msg']='Wrong input format'
+    return test  
+def span2(a,b):
+    import numpy as np
+    import ast
+    non=np.nonzero(a)
+    first=non[0][0]
+    den=a[first]
+    num=b[first]
+    quot=num//den
+    if np.array_equal(np.multiply(a,quot),b):
+        return(-1)
+    else:
+        return(1)
+        
+def spangrader(expect,ans):
+    import numpy as np
+    import ast
+    mata=np.array([[1,1,0,-1],[5,6,-1,1]])
+    res={'ok':False}
+    if VectorEntry(ans)['ok']!=True:
+        return(VectorEntry(ans))
+    else:
+        ans=ans.split(";")
+        hold=[]
+        for a in ans:
+            a=a.split(",")
+            sub=[]
+            for i in range(len(a)):
+                if i==0:
+                    sub.append(float(a[i][1:]))
+                elif i==len(a)-1:
+                    sub.append(float(a[i][:-1]))
+                else:
+                    sub.append(float(a[i]))
+            hold.append(np.array(sub))
+        check_len=True
+        check_zero=True
+        check_lin=False
+        veco=np.array([0,0,0,0])
+        new=[]
+        for item in hold:
+            mul=np.dot(mata,item)
+            if np.array_equal(np.dot(mata,item),np.array([0,0])) and not np.array_equal(item,veco):
+                new.append(item)
+            elif not np.array_equal(np.dot(mata,item),np.array([0,0])):
+                check_zero=False
+                res['msg']='At least one of the vectors is not in the solution set'
+        if len(new)==1 or len(new)==0 and check_zero==True:
+            res['msg']='The set of vectors given does not span the solution set'
+        else:
+            for i in range(len(new)-1):
+                for j in range(i+1,len(new)):
+                    if span2(new[i],new[j])==1:
+                        check_lin=True
+                        break
+            if check_lin==True:
+                res['ok']=True
+            elif check_zero==True and len(new)&gt;=2:
+                res['msg']='You may be missing a vector'
+        return res
+
+</script>
               <p>
-                <optionresponse>
-                  <optioninput options="('Placeholder')" correct="Placeholder"/>
-                </optionresponse>
+                <customresponse cfn="spangrader" expect="&amp;lt;-1,1,1,0&amp;gt;;&amp;lt;7,-6,0,1&amp;gt;">
+                  <textline correct_answer="&amp;lt;-1,1,1,0&amp;gt;;&amp;lt;7,-6,0,1&amp;gt;"/>
+                </customresponse>
               </p>
               <p>
                 <solution>
@@ -2688,7 +2776,7 @@ Hence the general solution is </p>
               </p>
             </text>
           </problem>
-          <problem display_name="Other Solution Sets" linenum="371" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Other Solution Sets" linenum="379" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab6-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 True or false: If [mathjaxinline]S[/mathjaxinline] is the solution set to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline], then the solution set to [mathjaxinline]Ax = v[/mathjaxinline] must be a translation of [mathjaxinline]S[/mathjaxinline]. </p>
@@ -2712,7 +2800,7 @@ If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the solution set wi
           </problem>
         </vertical>
         <vertical display_name="Solution Sets Summary" refnum="7" url_name="b1matrixvector-vertical7">
-          <html display_name="Solution Sets Summary" linenum="396" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-text1">
+          <html display_name="Solution Sets Summary" linenum="404" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab7-text1">
             <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the set of solutions to [mathjaxinline]Ax = v[/mathjaxinline] is a translation of the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
             <p>
               <div class="hideshowbox">
@@ -2751,7 +2839,7 @@ Now we show that every solution to [mathjaxinline]Ax = v[/mathjaxinline] is an e
           </html>
         </vertical>
         <vertical display_name="Spans and Matrix-Vector Equations" refnum="8" url_name="b1matrixvector-vertical8">
-          <problem display_name="Span as Noun" linenum="434" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Span as Noun" linenum="442" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem1" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. A vector [mathjaxinline]v[/mathjaxinline] is in the span of the columns of [mathjaxinline]A[/mathjaxinline] if and only the equation [mathjaxinline]Ax = v[/mathjaxinline] has: </p>
@@ -2771,7 +2859,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
               </p>
             </text>
           </problem>
-          <problem display_name="Span as Verb" linenum="452" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Span as Verb" linenum="460" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinline] matrix. The columns of [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ m[/mathjaxinline] if and only if: </p>
@@ -2801,7 +2889,7 @@ Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]m\times n[/mathjaxinlin
               </p>
             </text>
           </problem>
-          <problem display_name="Always has Solutions" linenum="469" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Always has Solutions" linenum="477" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab8-problem3" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 In light of the previous problem, for which sizes of matrix [mathjaxinline]A[/mathjaxinline] would it be impossible for [mathjaxinline]Ax = v[/mathjaxinline] to have at least one solution for every [mathjaxinline]v \in \mathbb R^5[/mathjaxinline]? Click all that apply. </p>
@@ -2839,7 +2927,7 @@ The two cases in which there are fewer columns than rows are the answer.  </p>
         </vertical>
         <vertical display_name="Multiplication Properties" refnum="9" url_name="b1matrixvector-vertical9">
           <video display_name="Why do we call it multiplication?" youtube_id_1_0="e67R6kfSRo4" url_name="b1matrixvector-tab9-video1"/>
-          <html display_name="Properties of Matrix Multiplication" linenum="506" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-text1">
+          <html display_name="Properties of Matrix Multiplication" linenum="514" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-text1">
             <p>
 For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathjaxinline], vectors [mathjaxinline]w,x \in \mathbb R^ n[/mathjaxinline], and scalar [mathjaxinline]a[/mathjaxinline], we have that </p>
             <table id="a0000000059" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
@@ -2857,7 +2945,7 @@ For any [mathjaxinline]m\times n[/mathjaxinline] vector [mathjaxinline]A[/mathja
               </tr>
             </table>
           </html>
-          <problem display_name="Consistent Matrix-Vector Equations" linenum="515" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations" linenum="523" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-problem1" showanswer="finished" attempts="3" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that [mathjaxinline]x = \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = v[/mathjaxinline], and suppose that [mathjaxinline]x = \left[\begin{array}{c} 2 \\ -1 \\ 4 \end{array} \right][/mathjaxinline] is a solution to the equation [mathjaxinline]Ax = w[/mathjaxinline]. </p>
@@ -2916,7 +3004,7 @@ def VectorEntry(expect, ans):
               </p>
             </text>
           </problem>
-          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="546" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
+          <problem display_name="Consistent Matrix-Vector Equations 2" linenum="554" tex_filename="./block1/matrixtimesvector.tex" url_name="b1matrixvector-tab9-problem2" showanswer="finished" attempts="1" rerandomize="per_student">
             <text>
               <p>
 Let [mathjaxinline]A[/mathjaxinline] be a [mathjaxinline]4\times 3[/mathjaxinline] matrix. Suppose that the equation [mathjaxinline]Ax = v[/mathjaxinline] is consistent. Must the equation [mathjaxinline]Ax = 4v[/mathjaxinline] be consistent? </p>

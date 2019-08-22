@@ -1,0 +1,24 @@
+<problem display_name="Traffic" linenum="120" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="5" rerandomize="per_student">
+  <text>
+    <p>
+A set of roads and intersections is shown below. The rate of cars per hour is shown for some roads. Assume that at each of the six intersections, the flow of traffic into the intersection equals the flow of traffic out of the intersection. This gives a set of linear equations in the seven unknown traffic rates. </p>
+    <center>
+      <img src="/static/images/h1traffic.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+Solve the system in full generality. Assuming that all rates are non-negative, what is the minimum possible value of [mathjaxinline]x_7[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="60">
+        <textline>
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
