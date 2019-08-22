@@ -2,14 +2,90 @@
 
 \beginedxvertical{Page One}
 
-\beginedxtext{Preliminaries}
+\beginedxtext{Row-Reduction Tools}
+
+For this homework, you should feel free to use technology to do row reduction of matrices.  All other
+computations should still be done by hand, for now.  
+
+Here are a couple of websites that will do row reduction for you:
+
+\href{https://tinyurl.com/3xr6ed}{Linear Algebra Toolkit}
+
+\href{https://www.wolframalpha.com/}{Wolfram Alpha}
 
 
 \endedxtext
 
+
 \endedxvertical
 
-\beginedxvertical{Introduction}
+\beginedxvertical{Homework Page 1}
+
+
+
+\beginedxproblem{Parabola}{\dpa3}
+
+Is there a quadratic equation of the form
+$y = a + bx + cx^2 $ satisfied by the four points 
+$(-2,11), (0,4), (1,2),$ and $(2,1)$?
+
+
+Enter the correct formula in the form a + b*x + c*x^2  (either exactly or to two decimal places).  Remember to use * for multiplication.  If there is no such equation, enter the number 0.  
+
+\edXinline{$y=$ }
+\edXabox{type="formula" expect="4-2.5*x+0.5*x^2" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Parabola 2}{\dpa3}
+
+Is there a quadratic equation of the form
+$y = a + bx + cx^2 $ satisfied by the four points 
+$(-2,11), (0,4), (1,2),$ and $(3,0)$?
+
+
+Enter the correct formula in the form $a + b*x + c*x^2$, either exactly or to two decimal places.  (Remember to use * for multiplication.)  If there is no such equation, enter the number 0.  
+
+\edXinline{$y=$ }
+\edXabox{type="formula" expect="0" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+\beginedxproblem{Plate Temperature}{\dpa3}
+
+An elliptical metal plate is shown below.  We can measure the temperature at six points along its edge.  
+
+\begin{center}
+\includesvg[450]{h1plate}
+\end{center}
+
+We wish to determine the temperature at some internal points, labelled A, B, C, D.  Assuming that the temperature at each
+of the points is the average of the temperatures at its four neighboring points (as given by the
+dotted lines), set up a system of linear equations for the temperatures, and then solve it.  
+
+\edXinline{$A=$ }
+\edXabox{type="numerical" expect="8" feqin="1" inline="1" tolerance=".01"}
+
+\edXinline{$B=$ }
+\edXabox{type="numerical" expect="12" feqin="1" inline="1" tolerance=".01"}
+
+\edXinline{$C=$ }
+\edXabox{type="numerical" expect="9" feqin="1" inline="1" tolerance=".01"}
+
+\edXinline{$D=$ }
+\edXabox{type="numerical" expect="10" feqin="1" inline="1" tolerance=".01"}
+
+\edXsolution{
+}
+
+\endedxproblem
 
 
 % \beginedxproblem{Find the Matrix}{\dpa1}
@@ -32,7 +108,66 @@
 
 % \endedxproblem
 
-5\times 7matrix, columns span $\R^5$, then all solutions sets to $Ax= v$ are translates of 
+% K5\times 7matrix, columns span $\R^5$, then all solutions sets to $Ax= v$ are translates of 
+
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 2}
+
+
+\beginedxproblem{Traffic}{\dpa5}
+
+A set of roads and intersections is shown below.  The rate of cars per hour is shown for some roads.  
+Assume that at each of the six intersections, 
+the flow of traffic into the intersection equals the flow of traffic
+out of the intersection.  This gives a set of linear equations in the seven unknown traffic rates.  
+
+
+\begin{center}
+\includesvg[450]{h1traffic}
+\end{center}
+
+
+Solve the system in full generality.  Assuming that all rates are non-negative, what is the minimum possible value of $x_7$?  
+
+\edXabox{type="numerical" expect="60" feqin="1" tolerance=".01"}
+
+\edXsolution{
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 3}
+
+
+\beginedxproblem{Cube to Identity}{\dpa7}
+
+Find a $2\times 2$ matrix $A$ which is not the identity matrix, but which has the property
+that $A^3 = I_2$.  Enter your answer to within two decimal places.  
+
+(Hint: Don't try to solve for the entries of $A$ with algebra.  Think about what you might want $A$ to do geometrically first.)
+
+\input{checkcube.tex}
+
+\edXabox{type="custom" cfn="cubing" expect="[[-0.5,-0.866],[0.866,-0.5]]"}
+
+\edXsolution{
+
+}
+
+
+\endedxproblem
+
+
+
+
+
+
 
 \endedxvertical
 

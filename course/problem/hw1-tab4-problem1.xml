@@ -1,0 +1,70 @@
+<problem display_name="Cube to Identity" linenum="148" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="7" rerandomize="per_student">
+  <text>
+    <p>
+Find a [mathjaxinline]2\times 2[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] which is not the identity matrix, but which has the property that [mathjaxinline]A^3 = I_2[/mathjaxinline]. Enter your answer to within two decimal places. </p>
+    <p>
+(Hint: Don't try to solve for the entries of [mathjaxinline]A[/mathjaxinline] with algebra. Think about what you might want [mathjaxinline]A[/mathjaxinline] to do geometrically first.) </p>
+    <script linenum="2" filename="./checkcube.tex" type="text/python" system_path="python_lib">
+def cubing(expect,ans):
+    import ast
+    import numpy as np
+    res={'ok':False}
+    if MatrixEntry(expect,ans)['ok']!=True:
+        res['msg']=(MatrixEntry(expect,ans))['msg']
+    else:
+        hold=np.array(eval(ans))
+        mat=hold
+        I=np.identity(2)
+        mat_c=np.linalg.matrix_power(mat,3)
+        diff1=np.subtract(mat_c,I)
+    
+        adiff1=np.absolute(diff1)
+        check1=(adiff1&gt;0.02).any()
+        diff2=np.subtract(mat,I)
+        adiff2=np.absolute(diff2)
+        check2=(adiff2&gt;0.01).any()
+    
+
+        if check2==False:
+            res['msg']='Answer too close to the identity'
+            
+        elif check1==True:
+            res['msg']='Answer does not cube to the identity'
+            
+        else:
+            res['ok']=True
+    return res
+  
+def MatrixEntry(expect, ans):
+    import ast
+    import numpy as np
+    ret= {'ok':False}
+    
+    
+    try:
+        list_ans = ast.literal_eval(ans)
+        list_expect = ast.literal_eval(expect)
+        matrix_ans = np.matrix(list_ans)
+        matrix_expect = np.matrix(list_expect)
+        if matrix_ans.shape != matrix_expect.shape:
+            ret['msg'] = 'Wrong shape of matrix'
+        
+        else:
+            ret['ok'] = True
+    except SyntaxError:
+        ret['msg'] = 'Wrong input format'
+    return ret
+</script>
+    <p>
+      <customresponse cfn="cubing" expect="[[-0.5,-0.866],[0.866,-0.5]]">
+        <textline correct_answer="[[-0.5,-0.866],[0.866,-0.5]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

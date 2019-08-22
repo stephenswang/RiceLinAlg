@@ -1,4 +1,4 @@
-<html display_name="Solution Sets Summary" linenum="396" tex_filename="./block1/matrixtimesvector.tex">
+<html display_name="Solution Sets Summary" linenum="404" tex_filename="./block1/matrixtimesvector.tex">
   <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]Ax = v[/mathjaxinline] is consistent, then the set of solutions to [mathjaxinline]Ax = v[/mathjaxinline] is a translation of the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
   <p>
     <div class="hideshowbox">

@@ -1,0 +1,49 @@
+<problem display_name="Plate Temperature" linenum="61" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+An elliptical metal plate is shown below. We can measure the temperature at six points along its edge. </p>
+    <center>
+      <img src="/static/images/h1plate.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
+    <p>
+We wish to determine the temperature at some internal points, labelled A, B, C, D. Assuming that the temperature at each of the points is the average of the temperatures at its four neighboring points (as given by the dotted lines), set up a system of linear equations for the temperatures, and then solve it. </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]A=[/mathjaxinline] </p>
+      <numericalresponse inline="1" answer="8">
+        <textline inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]B=[/mathjaxinline] </p>
+      <numericalresponse inline="1" answer="12">
+        <textline inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]C=[/mathjaxinline] </p>
+      <numericalresponse inline="1" answer="9">
+        <textline inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]D=[/mathjaxinline] </p>
+      <numericalresponse inline="1" answer="10">
+        <textline inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>
