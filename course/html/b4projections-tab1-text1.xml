@@ -8,9 +8,13 @@ Recognize the properties of orthogonal projections. </p>
     </li>
     <li>
       <p>
-Be able to compute an orthogonal projection. </p>
+Compute an orthogonal projection. </p>
+    </li>
+    <li>
+      <p>
+Use the Gram-Schmidt algorithm to produce an orthogonal basis. </p>
     </li>
   </ul>
   <p>
-For time budgeting purposes, this sequence has 3 videos totaling 23 minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 5 videos totaling 40 minutes, plus some questions. </p>
 </html>

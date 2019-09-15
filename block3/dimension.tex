@@ -11,11 +11,12 @@
 At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize} 
-\item Dimension... 
+\item Identify what the dimension of a vector space tells us about bases, linear independence, and spanning.  
+\item Relate the dimension of a vector space to the dimensions of its subspaces.   
 \end{itemize}
 
 
-For time budgeting purposes, this sequence has x videos totaling X minutes, 
+For time budgeting purposes, this sequence has 3 videos totaling 20 minutes, 
 plus some questions.  
 
 
@@ -36,8 +37,35 @@ plus some questions.
 
 
 
+\beginedxproblem{Review Question}{\dpa3}
+
+Suppose $\mathcal{B} = \{v_1; v_2; v_3; v_4\}$ is a basis of a vector space $V$ (over $\R$).  
+
+Let $w = 3v_1 + 2v_3 - v_4.$  What is $[w]_{\mathcal{B}}$?  
+
+\input{vectorentry.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[3],[0],[2],[-1]]"}
+
+
+\edXsolution{
+We can write $w$ as a linear combination of the basis vectors in order:
+$w =  3v_1  + 0v_2 + 2v_3 - v_4.$  Hence $[w]_{\mathcal{B}} =\left[\begin{array}{c} 3 \\ 0 \\ 2  \\ -1 \end{array} \right]$.  
+
+}
+
+\endedxproblem
+
 \doedxvideo{Coordinatization}{sNoKjBJ9tpE}
 
+
+\endedxvertical
+
+
+
+
+\beginedxvertical{Coordinatization}
 
 \beginedxtext{Coordinatization as Linear Transformation}
 

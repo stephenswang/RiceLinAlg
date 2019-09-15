@@ -1,5 +1,5 @@
-<chapter display_name="Basis and Dimension" linenum="536" tex_filename="testcourse.tex" refnum="3" start="2018-01-11T16:00">
-  <sequential display_name="Subspaces" linenum="544" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3subspaces-sequential">
+<chapter display_name="Basis and Dimension" linenum="728" tex_filename="testcourse.tex" refnum="4" start="2019-10-14T05:00">
+  <sequential display_name="Subspaces" linenum="736" tex_filename="testcourse.tex" refnum="1" due="2019-11-04T05:59" graded="true" format="Exercises" url_name="b3subspaces-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b3subspaces-vertical1">
       <html url_name="b3subspaces-tab1-text1"/>
     </vertical>
@@ -19,10 +19,20 @@
     </vertical>
     <vertical display_name="Span" refnum="5" url_name="b3subspaces-vertical5">
       <video url_name="b3subspaces-tab5-video1"/>
-      <problem url_name="b3subspaces-tab5-problem1"/>
+    </vertical>
+    <vertical display_name="Other Important Subspaces" refnum="6" url_name="b3subspaces-vertical6">
+      <problem url_name="b3subspaces-tab6-problem1"/>
+      <html url_name="b3subspaces-tab6-text1"/>
+    </vertical>
+    <vertical display_name="Review Question" refnum="7" url_name="b3subspaces-vertical7">
+      <problem url_name="b3subspaces-tab7-problem1"/>
+    </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="8" url_name="b3subspaces-vertical8">
+      <html url_name="b3subspaces-tab8-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxxxxxx"/>
     </vertical>
   </sequential>
-  <sequential display_name="Bases and Coordinates" linenum="579" tex_filename="testcourse.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3basis-sequential">
+  <sequential display_name="Bases and Coordinates" linenum="780" tex_filename="testcourse.tex" refnum="2" due="2019-11-04T05:59" graded="true" format="Exercises" url_name="b3basis-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b3basis-vertical1">
       <html url_name="b3basis-tab1-text1"/>
     </vertical>
@@ -66,42 +76,53 @@
       <problem url_name="b3basis-tab10-problem3"/>
       <problem url_name="b3basis-tab10-problem4"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="11" url_name="b3basis-vertical11">
+      <html url_name="b3basis-tab11-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxxxxxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Dimension" linenum="612" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3dimension-sequential">
+  <sequential display_name="Dimension" linenum="820" tex_filename="testcourse.tex" refnum="3" due="2019-11-11T05:59" graded="true" format="Exercises" url_name="b3dimension-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b3dimension-vertical1">
       <html url_name="b3dimension-tab1-text1"/>
     </vertical>
     <vertical display_name="Coordinates Continued" refnum="2" url_name="b3dimension-vertical2">
+      <problem url_name="b3dimension-tab2-problem1"/>
       <video url_name="b3dimension-tab2-video1"/>
-      <html url_name="b3dimension-tab2-text1"/>
     </vertical>
-    <vertical display_name="Further Consequences" refnum="3" url_name="b3dimension-vertical3">
-      <problem url_name="b3dimension-tab3-problem1"/>
-      <problem url_name="b3dimension-tab3-problem2"/>
+    <vertical display_name="Coordinatization" refnum="3" url_name="b3dimension-vertical3">
+      <html url_name="b3dimension-tab3-text1"/>
     </vertical>
-    <vertical display_name="Dimension" refnum="4" url_name="b3dimension-vertical4">
-      <video url_name="b3dimension-tab4-video1"/>
-      <html url_name="b3dimension-tab4-text1"/>
+    <vertical display_name="Further Consequences" refnum="4" url_name="b3dimension-vertical4">
       <problem url_name="b3dimension-tab4-problem1"/>
       <problem url_name="b3dimension-tab4-problem2"/>
-      <problem url_name="b3dimension-tab4-problem3"/>
-      <problem url_name="b3dimension-tab4-problem4"/>
     </vertical>
-    <vertical display_name="Dimension and Subspaces" refnum="5" url_name="b3dimension-vertical5">
+    <vertical display_name="Dimension" refnum="5" url_name="b3dimension-vertical5">
       <video url_name="b3dimension-tab5-video1"/>
       <html url_name="b3dimension-tab5-text1"/>
+      <problem url_name="b3dimension-tab5-problem1"/>
+      <problem url_name="b3dimension-tab5-problem2"/>
+      <problem url_name="b3dimension-tab5-problem3"/>
+      <problem url_name="b3dimension-tab5-problem4"/>
     </vertical>
-    <vertical display_name="Polynomial Subspace Questions" refnum="6" url_name="b3dimension-vertical6">
-      <problem url_name="b3dimension-tab6-problem1"/>
-      <problem url_name="b3dimension-tab6-problem2"/>
-      <problem url_name="b3dimension-tab6-problem3"/>
+    <vertical display_name="Dimension and Subspaces" refnum="6" url_name="b3dimension-vertical6">
+      <video url_name="b3dimension-tab6-video1"/>
+      <html url_name="b3dimension-tab6-text1"/>
     </vertical>
-    <vertical display_name="More Subspace Questions" refnum="7" url_name="b3dimension-vertical7">
+    <vertical display_name="Polynomial Subspace Questions" refnum="7" url_name="b3dimension-vertical7">
       <problem url_name="b3dimension-tab7-problem1"/>
       <problem url_name="b3dimension-tab7-problem2"/>
+      <problem url_name="b3dimension-tab7-problem3"/>
+    </vertical>
+    <vertical display_name="More Subspace Questions" refnum="8" url_name="b3dimension-vertical8">
+      <problem url_name="b3dimension-tab8-problem1"/>
+      <problem url_name="b3dimension-tab8-problem2"/>
+    </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="9" url_name="b3dimension-vertical9">
+      <html url_name="b3dimension-tab9-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxxxxxxxx"/>
     </vertical>
   </sequential>
-  <sequential display_name="Rank and Nullity" linenum="647" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b3ranknullity-sequential">
+  <sequential display_name="Rank and Nullity" linenum="862" tex_filename="testcourse.tex" refnum="4" due="2019-11-11T05:59" graded="true" format="Exercises" url_name="b3ranknullity-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b3ranknullity-vertical1">
       <html url_name="b3ranknullity-tab1-text1"/>
     </vertical>
@@ -139,6 +160,40 @@
     </vertical>
     <vertical display_name="Summary" refnum="9" url_name="b3ranknullity-vertical9">
       <html url_name="b3ranknullity-tab9-text1"/>
+    </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="10" url_name="b3ranknullity-vertical10">
+      <html url_name="b3ranknullity-tab10-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxxxxxxxxx"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Homework 3" linenum="904" tex_filename="testcourse.tex" refnum="5" due="2019-11-11T05:59" graded="true" format="Homework" url_name="hw3-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="hw3-vertical1">
+      <html url_name="hw3-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Homework Page 1" refnum="2" url_name="hw3-vertical2">
+      <problem url_name="hw3-tab2-problem1"/>
+      <problem url_name="hw3-tab2-problem2"/>
+      <problem url_name="hw3-tab2-problem3"/>
+    </vertical>
+    <vertical display_name="Homework Page 2" refnum="3" url_name="hw3-vertical3">
+      <problem url_name="hw3-tab3-problem1"/>
+      <problem url_name="hw3-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Homework Page 3" refnum="4" url_name="hw3-vertical4">
+      <problem url_name="hw3-tab4-problem1"/>
+      <problem url_name="hw3-tab4-problem2"/>
+      <problem url_name="hw3-tab4-problem3"/>
+      <problem url_name="hw3-tab4-problem4"/>
+      <problem url_name="hw3-tab4-problem5"/>
+      <problem url_name="hw3-tab4-problem6"/>
+    </vertical>
+    <vertical display_name="Homework Page 4" refnum="5" url_name="hw3-vertical5">
+      <problem url_name="hw3-tab5-problem1"/>
+      <problem url_name="hw3-tab5-problem2"/>
+    </vertical>
+    <vertical display_name="Discussion" refnum="6" url_name="hw3-vertical6">
+      <html url_name="hw3-tab6-text1"/>
+      <discussion url_name="Discuss_Homework_3"/>
     </vertical>
   </sequential>
 </chapter>

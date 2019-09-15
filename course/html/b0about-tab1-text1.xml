@@ -1,0 +1,8 @@
+<html display_name="Welcome" linenum="6" tex_filename="./block0/about.tex">
+  <p>
+Welcome to Rice Math 355.1x: Linear Algebra, Part 1! </p>
+  <p>
+Linear algebra is at the core of all of modern mathematics, and is used everywhere from statistics and data science, to economics, physics and electrical engineering. In this 8-week course, you'll learn about topics such as: the relationships between linear equations, matrices, and linear transformations; the principles of vector and matrix operations; the significance of basis and dimension of a vector space; and the applications of inner products and orthogonality. </p>
+  <p>
+This covers about half of the material of a typical semester-long linear algebra course. Stay tuned for Part 2, which will discuss determinants, eigenvectors and eigenvalues, and the Spectral Theorem and Singular Value Decomposition! </p>
+</html>

@@ -1,18 +1,22 @@
-<problem display_name="Subspace 1" linenum="373" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Polynomial Dimension 1" linenum="344" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
-True or False: If [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline], and the dimension of [mathjaxinline]W[/mathjaxinline] and the dimension of [mathjaxinline]V[/mathjaxinline] are both 8, then [mathjaxinline]W = V[/mathjaxinline]. </p>
+The questions on this page will help us figure out the dimension of the space of polynomials [mathjaxinline]\mathbb {P}[/mathjaxinline]. </p>
     <p>
-      <optionresponse>
-        <optioninput options="('True','False')" correct="True"/>
-      </optionresponse>
+Recall that [mathjaxinline]\mathbb {P}_ n[/mathjaxinline] is the set of polynomials with real coefficients of degree at most [mathjaxinline]n[/mathjaxinline]. What is the dimension of [mathjaxinline]\mathbb {P}_4[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="5">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- This is a direct consequence of one of the propositions on the previous page.  </p>
+Recall that the list [mathjaxinline]\{ 1; t; t^2; t^3; t^4\}[/mathjaxinline] forms a basis of [mathjaxinline]\mathbb {P}_4[/mathjaxinline], so the dimension is 5.  </p>
         </font>
       </solution>
     </p>

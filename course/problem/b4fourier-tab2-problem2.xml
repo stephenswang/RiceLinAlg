@@ -1,0 +1,20 @@
+<problem display_name="Shortest Distance" linenum="52" tex_filename="./block4/fourier.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]V[/mathjaxinline] has an inner product, and [mathjaxinline]W[/mathjaxinline] is a finite-dimensional subspace of [mathjaxinline]V[/mathjaxinline], and [mathjaxinline]v\in V[/mathjaxinline], then there is a vector [mathjaxinline]w\in W[/mathjaxinline] which is closer to [mathjaxinline]v[/mathjaxinline] than any other vector in [mathjaxinline]W[/mathjaxinline] is. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ True! We can find an orthogonal basis of [mathjaxinline]W[/mathjaxinline] (e.g., via Gram-Schmidt) and take the orthogonal projection of [mathjaxinline]v[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline]. We have proven that the projection is closer to [mathjaxinline]v[/mathjaxinline] than any other vector in [mathjaxinline]W[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -18,7 +18,7 @@
 \def\defaultproblemattributes{attempts="1" showanswer="attempted" rerandomize="per_student"}
 
 % edXcourse: {course_number}{course display_name}[optional arguments like semester]
-\begin{edXcourse}{Test}{Test LinAlg}[semester="2018_Summer" info_sidebar_name="Other Documents" start="2018-01-11T12:00" end="2019-12-18T18:00" course_image="rice-logo.jpg" display_coursenumber="TestLinAlg" course_organization="TestRice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true"  org="Rice"]
+\begin{edXcourse}{355x}{RiceX Linear Algebra}[semester="2019_Fall" info_sidebar_name="Other Documents" start="2019-10-01T05:00" end="2019-12-31T23:00" course_image="355x-0.jpg" display_coursenumber="RiceX355.1" course_organization="Rice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true"  org="Rice"]
  
 % \begin{edXchapter}{Getting started}[url_name="cyca" start="2015-08-23T18:00"]
 %  
@@ -35,30 +35,44 @@
 
 
 
+\begin{edXchapter}{About the Course}[url_name="block0" start="2019-09-30T16:00"]
 
-\begin{edXchapter}{Vectors and Matrices}[url_name="block1" start="2018-01-11T16:00"]
+
+\def\edxbaseoutputname{b0about}
+
+
+
+\beginedxsequential{About the Course}{due="2019-12-31T04:59" graded="false" format="Exercises"}
+
+\input{block0/about.tex}
+
+\endedxsequential
+
+\end{edXchapter}
+
+\begin{edXchapter}{Vectors and Matrices}[url_name="block1" start="2019-09-30T16:00"]
 
 \def\edxbaseoutputname{b1lineareqns}
 
 
 
-\beginedxsequential{Systems of Linear Equations}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Systems of Linear Equations}{due="2019-10-14T04:59" graded="true" format="Exercises"}
 
 
 
 
 \input{block1/linearequations.tex}
 
-% \input{comingsoon.tex}
 
-
-
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_1"}
+\endedxvertical
 
 \endedxsequential
 
 \def\edxbaseoutputname{b1rowreduced}
 
-\beginedxsequential{Row-Reduced Form}{due="2019-12-15T14:15" graded="true" format="Lab"}
+\beginedxsequential{Row-Reduced Form}{due="2019-10-14T04:59" graded="true" format="Exercises"}
 
 % \input{comingsoon.tex}
 
@@ -66,19 +80,25 @@
 \input{block1/rref.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_2"}
+\endedxvertical
 
 
 \endedxsequential
 
 \def\edxbaseoutputname{b1vectors}
 
-\beginedxsequential{Vectors}{due="2019-12-18T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Vectors}{due="2019-10-14T04:59" graded="true" format="Exercises"}
 
 % \input{comingsoon.tex}
 
 \input{block1/vectors.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_3"}
+\endedxvertical
 
 \endedxsequential
 
@@ -86,7 +106,7 @@
 
 \def\edxbaseoutputname{b1lincombos}
 
-\beginedxsequential{Linear Combinations and Span}{due="2019-12-18T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Linear Combinations and Span}{due="2019-10-14T04:59" graded="true" format="Exercises"}
 
 
 % \input{comingsoon.tex}
@@ -94,6 +114,9 @@
 \input{block1/lincombos.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_4"}
+\endedxvertical
 
 % \input{lastpage.tex}
 
@@ -102,16 +125,14 @@
 
 \def\edxbaseoutputname{b1matrixvector}
 
-\beginedxsequential{Matrix-Vector Multiplication}{due="2019-12-18T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Matrix-Vector Multiplication}{due="2019-10-14T04:59" graded="true" format="Exercises"}
 
 
 \input{block1/matrixtimesvector.tex}
 
-% \input{comingsoon.tex}
-
-
-
-% \input{lastpage.tex}
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_5"}
+\endedxvertical
 
 \endedxsequential
 
@@ -119,7 +140,7 @@
 
 \def\edxbaseoutputname{b1linind}
 
-\beginedxsequential{Linear Independence}{due="2019-12-18T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Linear Independence}{due="2019-10-21T04:59" graded="true" format="Exercises"}
 
 
 % \input{comingsoon.tex}
@@ -127,6 +148,9 @@
 \input{block1/linearindependence.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_6"}
+\endedxvertical
 
 % \input{lastpage.tex}
 
@@ -135,13 +159,16 @@
 
 \def\edxbaseoutputname{b1lintrans}
 
-\beginedxsequential{Linear Transformations}{due="2019-12-18T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Linear Transformations}{due="2019-10-21T04:59" graded="true" format="Exercises"}
 
 % \input{comingsoon.tex}
 
 \input{block1/lineartransformations.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_7"}
+\endedxvertical
 
 % \input{lastpage.tex}
 
@@ -149,13 +176,16 @@
 
 \def\edxbaseoutputname{b1lintrans2}
 
-\beginedxsequential{Linear Transformations in R^n}{due="2019-12-18T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Linear Transformations in R^n}{due="2019-10-21T04:59" graded="true" format="Exercises"}
 
 % \input{comingsoon.tex}
 
 \input{block1/lineartransformationsinRn.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_8"}
+\endedxvertical
 
 % \input{lastpage.tex}
 
@@ -164,9 +194,14 @@
 
 \def\edxbaseoutputname{b1intoonto}
 
-\beginedxsequential{Into and Onto}{due="2019-12-18T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Into and Onto}{due="2019-10-21T04:59" graded="true" format="Exercises"}
 
 \input{block1/intoonto.tex}
+
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 1: Vectors and Matrices" discussion_topic="xxx" discussion_id="LS1_9"}
+\endedxvertical
 
 % \input{comingsoon.tex}
 
@@ -178,18 +213,38 @@
 
 
 
+
+\def\edxbaseoutputname{hw1}
+
+\beginedxsequential{Homework 1}{due="2019-10-21T04:59" graded="true" format="Homework"}
+
+
+
+
+\input{hw/hw1.tex}
+
+% \input{comingsoon.tex}
+
+
+
+
+\endedxsequential
+
+
+
+
 \end{edXchapter}
 
 
 
 
-\begin{edXchapter}{Matrix Operations}[url_name="block2" start="2018-01-11T16:00"]
+\begin{edXchapter}{Matrix Operations}[url_name="block2" start="2019-10-07T05:00"]
 
 \def\edxbaseoutputname{b2matrixmult}
 
 
 
-\beginedxsequential{Matrix Multiplication}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Matrix Multiplication}{due="2019-10-28T04:59" graded="true" format="Exercises"}
 
 
 
@@ -199,6 +254,9 @@
 % \input{comingsoon.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 2: Matrix Operations" discussion_topic="xxx" discussion_id="LS2_1"}
+\endedxvertical
 
 
 \endedxsequential
@@ -207,13 +265,17 @@
 
 
 
-\beginedxsequential{Matrix Inverses}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Matrix Inverses}{due="2019-10-28T04:59" graded="true" format="Exercises"}
 
 
 
 
 \input{block2/matrixinv.tex}
 
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 2: Matrix Operations" discussion_topic="xxx" discussion_id="LS2_2"}
+\endedxvertical
 
 
 
@@ -225,13 +287,17 @@
 
 
 
-\beginedxsequential{More Matrix Operations}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{More Matrix Operations}{due="2019-10-28T04:59" graded="true" format="Exercises"}
 
 
 
 
 \input{block2/morematrixops.tex}
 
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 2: Matrix Operations" discussion_topic="xxx" discussion_id="LS2_3"}
+\endedxvertical
 
 
 
@@ -242,12 +308,34 @@
 \def\edxbaseoutputname{b2leontief}
 
 
-\beginedxsequential{Leontief Input-Output System}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Leontief Input-Output System}{due="2019-10-28T04:59" graded="true" format="Exercises"}
 
 
 
 
 \input{block2/leontief.tex}
+
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 2: Matrix Operations" discussion_topic="xxx" discussion_id="LS2_4"}
+\endedxvertical
+
+
+
+\endedxsequential
+
+
+
+\def\edxbaseoutputname{hw2}
+
+\beginedxsequential{Homework 2}{due="2019-10-28T04:59" graded="true" format="Homework"}
+
+
+
+
+\input{hw/hw2.tex}
+
+% \input{comingsoon.tex}
 
 
 
@@ -259,11 +347,11 @@
 
 
 
-\begin{edXchapter}{Basis and Dimension}[url_name="block3" start="2018-01-11T16:00"]
+\begin{edXchapter}{Basis and Dimension}[url_name="block3" start="2019-10-14T05:00"]
 
 \def\edxbaseoutputname{b3subspaces}
 
-\beginedxsequential{Subspaces}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Subspaces}{due="2019-11-04T05:59" graded="true" format="Exercises"}
 
 
 
@@ -273,6 +361,10 @@
 % \input{comingsoon.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 3: Basis and Dimension" discussion_topic="xxx" discussion_id="LS3_1"}
+\endedxvertical
+
 
 
 \endedxsequential
@@ -280,7 +372,7 @@
 
 \def\edxbaseoutputname{b3basis}
 
-\beginedxsequential{Bases and Coordinates}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Bases and Coordinates}{due="2019-11-04T05:59" graded="true" format="Exercises"}
 
 
 
@@ -290,13 +382,16 @@
 % \input{comingsoon.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 3: Basis and Dimension" discussion_topic="xxx" discussion_id="LS3_2"}
+\endedxvertical
 
 
 \endedxsequential
 
 \def\edxbaseoutputname{b3dimension}
 
-\beginedxsequential{Dimension}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Dimension}{due="2019-11-11T05:59" graded="true" format="Exercises"}
 
 
 
@@ -306,6 +401,9 @@
 % \input{comingsoon.tex}
 
 
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 3: Basis and Dimension" discussion_topic="xxx" discussion_id="LS3_3"}
+\endedxvertical
 
 
 \endedxsequential
@@ -313,12 +411,149 @@
 
 \def\edxbaseoutputname{b3ranknullity}
 
-\beginedxsequential{Rank and Nullity}{due="2019-12-13T14:15" graded="true" format="Exercises"}
+\beginedxsequential{Rank and Nullity}{due="2019-11-11T05:59" graded="true" format="Exercises"}
 
 
 
 
 \input{block3/rankandnullity.tex}
+
+% \input{comingsoon.tex}
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 3: Basis and Dimension" discussion_topic="xxx" discussion_id="LS3_4"}
+\endedxvertical
+
+
+
+\endedxsequential
+
+
+\def\edxbaseoutputname{hw3}
+
+\beginedxsequential{Homework 3}{due="2019-11-11T05:59" graded="true" format="Homework"}
+
+
+
+
+\input{hw/hw3.tex}
+
+% \input{comingsoon.tex}
+
+
+
+
+\endedxsequential
+
+\end{edXchapter}
+
+
+
+\begin{edXchapter}{Inner Products}[url_name="block4" start="2019-10-28T04:59"]
+
+\def\edxbaseoutputname{b4innerprods}
+
+\beginedxsequential{Introducing Inner Products}{due="2019-11-18T05:59" graded="true" format="Exercises"}
+
+
+
+
+\input{block4/innerproducts.tex}
+
+
+
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 4: Inner Products" discussion_topic="xxx" discussion_id="LS4_1"}
+\endedxvertical
+
+\endedxsequential
+
+\def\edxbaseoutputname{b4projections}
+
+\beginedxsequential{Projections}{due="2019-11-18T05:59" graded="true" format="Exercises"}
+
+
+
+
+\input{block4/projections.tex}
+
+
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 4: Inner Products" discussion_topic="xxx" discussion_id="LS4_2"}
+\endedxvertical
+
+
+\endedxsequential
+
+
+
+\def\edxbaseoutputname{b4fourier}
+
+\beginedxsequential{Fourier Approximation}{due="2019-11-18T05:59" graded="true" format="Exercises"}
+
+
+\input{block4/fourier.tex}
+
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 4: Inner Products" discussion_topic="xxx" discussion_id="LS4_5"}
+\endedxvertical
+
+
+
+\endedxsequential
+
+\def\edxbaseoutputname{b4orthog}
+
+\beginedxsequential{Orthogonal Matrices}{due="2019-11-18T05:59" graded="true" format="Exercises"}
+
+
+
+
+\input{block4/orthogonalmatrices.tex}
+
+
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 4: Inner Products" discussion_topic="xxx" discussion_id="LS4_3"}
+\endedxvertical
+
+
+\endedxsequential
+
+
+
+\def\edxbaseoutputname{b4leastsquares}
+
+\beginedxsequential{Least Squares}{due="2019-11-18T05:59" graded="true" format="Exercises"}
+
+
+
+
+\input{block4/leastsquares.tex}
+
+
+\input{discussiontab.tex}
+\edXdiscussion{Discuss this Section}{discussion_category="Chapter 4: Inner Products" discussion_topic="xxx" discussion_id="LS4_4"}
+\endedxvertical
+
+
+
+\endedxsequential
+
+
+
+
+\def\edxbaseoutputname{hw4}
+
+\beginedxsequential{Homework 4}{due="2019-11-18T05:59" graded="true" format="Homework"}
+
+
+
+
+\input{hw/hw4.tex}
 
 % \input{comingsoon.tex}
 
@@ -332,72 +567,23 @@
 
 
 
-\begin{edXchapter}{Inner Products}[url_name="block4" start="2018-01-11T16:00"]
+\begin{edXchapter}{Final Exam}[url_name="final" start="2019-11-04T06:00"]
 
-\def\edxbaseoutputname{b4innerprods}
+\def\edxbaseoutputname{Final}
 
-\beginedxsequential{Inner Products}{due="2019-12-13T14:15" graded="true" format="Exercises"}
-
-
-
-
-\input{block4/innerproducts.tex}
+\beginedxsequential{Final Exam}{due="2019-11-25T05:59" graded="true" format="Final"}
 
 
 
 
+\input{hw/final.tex}
 
-\endedxsequential
-
-\def\edxbaseoutputname{b4projections}
-
-\beginedxsequential{Projections}{due="2019-12-13T14:15" graded="true" format="Exercises"}
-
-
-
-
-\input{block4/projections.tex}
-
+% \input{comingsoon.tex}
 
 
 
 
 \endedxsequential
-
-
-\def\edxbaseoutputname{b4orthog}
-
-\beginedxsequential{Orthogonal Matrices}{due="2019-12-13T14:15" graded="true" format="Exercises"}
-
-
-
-
-\input{block4/orthogonalmatrices.tex}
-
-
-
-
-
-\endedxsequential
-
-
-
-\def\edxbaseoutputname{b4leastsquares}
-
-\beginedxsequential{Least Squares}{due="2019-12-13T14:15" graded="true" format="Exercises"}
-
-
-
-
-\input{block4/leastsquares.tex}
-
-
-
-
-
-\endedxsequential
-
-
 
 
 \end{edXchapter}

@@ -1,0 +1,20 @@
+<problem display_name="Implies Invertible? 3" linenum="216" tex_filename="./hw/hw2.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If the columns of an [mathjaxinline]n\times n[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] span [mathjaxinline]\mathbb R^ n[/mathjaxinline], then [mathjaxinline]A^ tA[/mathjaxinline] must be invertible. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Since [mathjaxinline]A[/mathjaxinline] is square, if its columns span [mathjaxinline]\mathbb R^ n[/mathjaxinline], it must be invertible by the Invertible Matrix Theorem. Therefore [mathjaxinline]A^ t[/mathjaxinline] is invertible. The product of two invertible matrices is invertible, so [mathjaxinline]A^ tA[/mathjaxinline] is invertible.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

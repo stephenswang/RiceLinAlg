@@ -1,0 +1,61 @@
+<problem display_name="Invertible?" linenum="294" tex_filename="./hw/hw2.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Use the same [mathjaxinline]T[/mathjaxinline] as in the previous problem. </p>
+    <p>
+Will [mathjaxinline]T[/mathjaxinline] necessarily be invertible, will it necessarily be non-invertible, or is there not enough information? Think about how you would prove your answer, or find a counterexample. </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="true" name="1">
+            <text> [mathjaxinline]T[/mathjaxinline] must be invertible</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]T[/mathjaxinline] must be non-invertible</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> There is not enough information to determine</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+What is the significance of the [mathjaxinline]3\times 3[/mathjaxinline] matrix whose columns (in order) are [mathjaxinline]\left[ \begin{array}{c} 1 \\ 7 \\ 0\end{array} \right], \left[ \begin{array}{c} 3 \\ 2 \\ 1\end{array} \right],[/mathjaxinline] and [mathjaxinline]\left[ \begin{array}{c} 0 \\ 5 \\ 3\end{array} \right][/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> It is the standard matrix for [mathjaxinline]T[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> It is the standard matrix for [mathjaxinline]T^{-1}[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> Neither of the above</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The argument in the previous problem will work no matter what vector is on the right side of the equation; [mathjaxinline]T(w) = u[/mathjaxinline] always has a solution, for every [mathjaxinline]u[/mathjaxinline]. In other words, [mathjaxinline]T[/mathjaxinline] is onto. </p>
+          <p>
+By the Invertible Matrix Theorem, [mathjaxinline]T[/mathjaxinline] is therefore invertible. </p>
+          <p>
+Note that </p>
+          <table id="a0000000144" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} T^{-1}(e_1) &amp; =&amp;  \left[ \begin{array}{c} 1 \\ 7 \\ 0\end{array} \right]\\ T^{-1}(e_2) &amp; =&amp;  \left[ \begin{array}{c} 3 \\ 2 \\ 1\end{array} \right]\\ T^{-1}(e_3) &amp; =&amp;  \left[ \begin{array}{c} 0 \\ 5 \\ 3\end{array} \right] \end{array}[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ so these three vectors form the columns of the standard matrix for [mathjaxinline]T^{-1}[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

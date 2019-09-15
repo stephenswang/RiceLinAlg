@@ -1,0 +1,76 @@
+<problem display_name="Quick Picks" linenum="104" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Without doing any row-reduction, you should be able to pick out five of the following lists of vectors that are <span style="color:#99182C"><b class="bf">not</b></span> a basis of [mathjaxinline]\mathbb R^4[/mathjaxinline]. Which five? </p>
+    <ul class="itemize">
+      <li>
+        <p>
+List A: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 3 \\ 1 \\ 4 \end{array} \right]; \left[ \begin{array}{c} 1 \\ 1 \\ 0 \\ 1 \end{array} \right]; \left[ \begin{array}{c} 2 \\ -1 \\ 3 \\ 1 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List B: [mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right] ; \left[ \begin{array}{c} 3 \\ 1 \\ 3 \\ 1\end{array} \right] ; \left[ \begin{array}{c} 0 \\ 0 \\ 0 \\ 0\end{array} \right] ; \left[ \begin{array}{c} 2 \\ 5 \\ 7 \\ 10 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List C: [mathjaxinline]\left\{  \left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right] ; \left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 5 \end{array} \right] ; \left[ \begin{array}{c} 1 \\ 3 \\ 4 \\ 5 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 3 \\ 4 \\ 5 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List D: [mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 2 \\ 1 \\ 4\end{array} \right] ; \left[ \begin{array}{c} 2 \\ 13 \\ 3 \\ 7\end{array} \right] ; \left[ \begin{array}{c} 0 \\ 1 \\ 5 \\ -3\end{array} \right] ; \left[ \begin{array}{c} 15 \\ -2 \\ 6 \\ 2\end{array} \right] ; \left[ \begin{array}{c} 5 \\ 3 \\ 8 \\ 11\end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List E: [mathjaxinline]\left\{ \left[ \begin{array}{c} 0 \\ 1 \\ 1 \\ 1 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 0 \\ 1 \\ 1 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 3 \\ 0 \\ 1 \end{array} \right] ; \left[ \begin{array}{c} 0 \\ 0 \\ 4 \\ 0 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List F: [mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 1 \\ 1 \\ 1 \end{array} \right] ; \left[ \begin{array}{c} 5 \\ 2 \\ -8 \\ 4 \end{array} \right] ; \left[ \begin{array}{c} -2 \\ -2 \\ -2 \\ -2 \end{array} \right] ; \left[ \begin{array}{c} 1 \\ 3 \\ 1 \\ 5 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+      <li>
+        <p>
+List G: [mathjaxinline]\left\{ \left[ \begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array} \right] ; \left[ \begin{array}{c} 3 \\ 0 \\ 1 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} 1 \\ 0 \\ 2 \\ 4 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 0 \\ -3 \\ 5 \end{array} \right] \right\}[/mathjaxinline] </p>
+      </li>
+    </ul>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="true" name="1">
+            <text>A</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text>B</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text>C</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text>D</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text>E</text>
+          </choice>
+          <choice correct="true" name="6">
+            <text>F</text>
+          </choice>
+          <choice correct="true" name="7">
+            <text>G</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Any basis of [mathjaxinline]\mathbb R^4[/mathjaxinline] must have exactly 4 vectors. That rules out A and D as bases. </p>
+          <p>
+A list containing the zero vector cannot be linearly independent. This rules out B. Similarly, list F has one vector which is a scalar multiple of another, so it too is linearly dependent. </p>
+          <p>
+Finally, list G does not span [mathjaxinline]\mathbb R^4[/mathjaxinline], as you cannot get a vector with a non-zero second coordinate as a linear combination. So G is not a basis of [mathjaxinline]\mathbb R^4[/mathjaxinline] either.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

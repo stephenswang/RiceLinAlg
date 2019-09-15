@@ -1,0 +1,19 @@
+<problem display_name="Least Squared Quadratic" linenum="393" tex_filename="./hw/final.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Consider all functions of the form [mathjaxinline]f(x) = ax^2 + c[/mathjaxinline], where [mathjaxinline]a[/mathjaxinline] and [mathjaxinline]c[/mathjaxinline] are real numbers. Find a function of that form which achieves the least squared vertical distance to the data points [mathjaxinline](-1, 1), (0,1), (1, 2),[/mathjaxinline] and [mathjaxinline](2, -1)[/mathjaxinline]. </p>
+    <p>
+      <formularesponse type="cs" samples="x@1:5#5" answer="-x^2/18+4/3">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

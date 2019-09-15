@@ -1,0 +1,75 @@
+
+
+\beginedxvertical{Page One}
+
+\beginedxtext{Preliminaries}
+
+
+
+
+The goal of this sequence is to introduce Fourier approximations.  This is an application of orthogonal projections that is useful in a number of areas, such as audio compression.  This will not be covered on the final exam.  
+
+
+For time budgeting purposes, this sequence has 1 video totaling 10 minutes, 
+plus some questions.  
+
+
+
+
+\endedxtext
+
+\endedxvertical
+
+
+
+\beginedxvertical{Some Review}
+
+\beginedxproblem{Distance Between Functions}{\dpa4}
+
+The vector space $C[0,1]$ of continuous functions on the interval $[0,1]$ is given the inner product $\langle f,g\rangle = \int_0^1 f(t)g(t) \ dt.$
+In this space, what is the distance between the functions $f(t) = t^2$ and $g(t) = t$?  
+
+
+You can type sqrt(2) for $\sqrt{2}$.
+
+\edXabox{type="numerical" expect="sqrt(1/30)" feqin="1" tolerance=".01"}
+
+\edXsolution{
+Recall that the distance between $f$ and $g$ is given by $\|f-g\|$, or, equivalently, 
+$\sqrt{\langle f-g, f-g \rangle }$.  
+
+We can calculate 
+\[
+\langle f-g, f-g \rangle = \int_0^1 (t^2-t)^2 \ dt = \frac{1}{30}.\]
+
+Hence the distance is $\sqrt{\frac{1}{30}}$.  
+These functions are pretty close to one another on the interval  $[0,1]$! 
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Shortest Distance}{\dpa1}
+
+True or False: If $V$ has an inner product, and $W$ is a finite-dimensional subspace of $V$, and $v\in V$, then
+there is a vector $w\in W$ which is closer to $v$ than any other vector in $W$ is.  
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{ True!  We can find an orthogonal basis of $W$ (e.g., via Gram-Schmidt) and take the orthogonal
+projection of 
+$v$ onto $W$.  We have proven that the projection is closer to $v$ than any other vector in $W$.  
+ }
+ 
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Fourier Approximation}
+
+
+\doedxvideo{Fourier Approximation}{PJHFbE31BG4}
+
+
+\endedxvertical

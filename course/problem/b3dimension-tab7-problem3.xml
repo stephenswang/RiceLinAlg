@@ -1,0 +1,22 @@
+<problem display_name="Polynomial Dimension 3" linenum="370" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Note that, in particular, the space [mathjaxinline]\mathbb {P}[/mathjaxinline] contains [mathjaxinline]\mathbb {P}_4[/mathjaxinline] as a subspace, so we can arrive at the same conclusion about the dimension of [mathjaxinline]\mathbb {P}[/mathjaxinline] as we did for [mathjaxinline]V[/mathjaxinline] in the previous question. </p>
+    <p>
+However, [mathjaxinline]\mathbb {P}[/mathjaxinline] also contains [mathjaxinline]\mathbb {P}_{40}[/mathjaxinline], [mathjaxinline]\mathbb {P}_{400}[/mathjaxinline], and [mathjaxinline]\mathbb {P}_{4000}[/mathjaxinline] as subspaces (among others). What can we conclude about the dimension of [mathjaxinline]\mathbb {P}[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('It has dimension 5','It has dimension 41','It has dimension 4001','It is infinite dimensional')" correct="It is infinite dimensional"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Since [mathjaxinline]\mathbb {P}[/mathjaxinline] contains [mathjaxinline]\mathbb {P}_{4000}[/mathjaxinline] (a 4001-dimensional space) as a subspace, it must have dimension at least 4001. However, note that we can replace the number 4000 by any positive integer [mathjaxinline]n[/mathjaxinline]. The dimension of [mathjaxinline]\mathbb {P}[/mathjaxinline] must be at least [mathjaxinline]n+1[/mathjaxinline] for any such [mathjaxinline]n[/mathjaxinline]. The only way this is possible if if [mathjaxinline]\mathbb {P}[/mathjaxinline] has no finite dimension.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

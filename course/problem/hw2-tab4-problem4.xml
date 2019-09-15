@@ -1,0 +1,20 @@
+<problem display_name="Solutions?" linenum="230" tex_filename="./hw/hw2.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]4\times 4[/mathjaxinline] matrix, and the equation [mathjaxinline]Ax = e_1[/mathjaxinline] has exactly one solution, then [mathjaxinline]Ax = e_4[/mathjaxinline] must have at least one solution. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If [mathjaxinline]Ax = e_1[/mathjaxinline] has exactly one solution, then [mathjaxinline]A[/mathjaxinline] must be invertible by the Invertible Matrix Theorem. Therefore [mathjaxinline]Ax = v[/mathjaxinline] has a (unique) solution for every [mathjaxinline]v \in \mathbb R^4[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

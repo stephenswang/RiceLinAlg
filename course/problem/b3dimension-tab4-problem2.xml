@@ -1,10 +1,10 @@
-<problem display_name="Dimension Question 2" linenum="163" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Two Bases? 2" linenum="142" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 6, then there must exist a basis of [mathjaxinline]V[/mathjaxinline] with exactly 6 vectors. </p>
+Now suppose that [mathjaxinline]\mathcal{C}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline] with 7 vectors. Is it possible for there to be a basis [mathjaxinline]\mathcal{B}[/mathjaxinline] of [mathjaxinline]V[/mathjaxinline] with 5 vectors? </p>
     <p>
       <optionresponse>
-        <optioninput options="('True','False')" correct="True"/>
+        <optioninput options="('Yes','No')" correct="No"/>
       </optionresponse>
     </p>
     <p>
@@ -12,7 +12,7 @@ True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 6, then t
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
-We are assuming that [mathjaxinline]V[/mathjaxinline] has dimension 6. In order to define the dimension of [mathjaxinline]V[/mathjaxinline], there must be a basis of [mathjaxinline]V[/mathjaxinline] containing 6 vectors.  </p>
+If [mathjaxinline]\mathcal{B}[/mathjaxinline] is a list containing 5 vectors and forms a basis for [mathjaxinline]V[/mathjaxinline], then the list [mathjaxinline]\mathcal{C}[/mathjaxinline], which contains 7 vectors, must be linearly dependent. But, by definition, a linearly dependent list cannot be a basis. This contradicts the assumption that [mathjaxinline]\mathcal{C}[/mathjaxinline] formed a basis for [mathjaxinline]V[/mathjaxinline].  </p>
         </font>
       </solution>
     </p>

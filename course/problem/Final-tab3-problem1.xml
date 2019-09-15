@@ -1,0 +1,125 @@
+<problem display_name="Row-Reduced Matrix Continued" linenum="107" tex_filename="./hw/final.tex" showanswer="finished" attempts="5" rerandomize="per_student">
+  <text>
+    <p>
+Take the same set-up as the previous problem. Suppose [mathjaxinline]T: \mathbb R^5 \rightarrow \mathbb R^4[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. When you row-reduce [mathjaxinline]A[/mathjaxinline], the result is the matrix </p>
+    <table id="a0000000219" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]R = \left[ \begin{array}{ccccc} 1 &amp;  2 &amp;  0 &amp;  0 &amp;  3 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+What is the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <numericalresponse answer="3">
+        <textline>
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p>
+Find a basis for the kernel of [mathjaxinline]T[/mathjaxinline]. Enter the list of vectors forming the basis below, separated by semicolons. For instance, to enter the list [mathjaxinline]\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \right\}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p>
+    <script linenum="2" filename="./solutionsetcheck5.tex" type="text/python" system_path="python_lib">
+
+def VectorEntry(ans):
+    import numpy as np
+    import ast
+    test={'ok':False}
+    try:
+        ans=ans.split(";")
+        hold=[]
+        for a in ans:
+            a=a.split(",")
+            sub=[]
+            for i in range(len(a)):
+                if i==0:
+                    sub.append(float(a[i][1:]))
+                elif i==len(a)-1:
+                    sub.append(float(a[i][:-1]))
+                else:
+                    sub.append(float(a[i]))
+            assert len(sub)==5
+            hold.append(np.array(sub))
+        if len(hold)==2:
+            test['ok']=True
+        else:
+            test['msg']='You gave the wrong number of vectors'        
+    except AssertionError:
+        test['msg']='One of your vectors is not a 5-tuple'
+    except:
+        test['msg']='Wrong input format'
+    return test  
+def span2(a,b):
+    import numpy as np
+    import ast
+    non=np.nonzero(a)
+    first=non[0][0]
+    den=a[first]
+    num=b[first]
+    quot=num//den
+    if np.array_equal(np.multiply(a,quot),b):
+        return(-1)
+    else:
+        return(1)
+        
+def spangrader(expect,ans):
+    import numpy as np
+    import ast
+    mata=np.array([[1,2,0,0,3],[0,0,1,0,-1],[0,0,0,1,0],[0,0,0,0,0]])
+    res={'ok':False}
+    if VectorEntry(ans)['ok']!=True:
+        return(VectorEntry(ans))
+    else:
+        ans=ans.split(";")
+        hold=[]
+        for a in ans:
+            a=a.split(",")
+            sub=[]
+            for i in range(len(a)):
+                if i==0:
+                    sub.append(float(a[i][1:]))
+                elif i==len(a)-1:
+                    sub.append(float(a[i][:-1]))
+                else:
+                    sub.append(float(a[i]))
+            hold.append(np.array(sub))
+        check_len=True
+        check_zero=True
+        check_lin=False
+        veco=np.array([0,0,0,0,0])
+        new=[]
+        for item in hold:
+            mul=np.dot(mata,item)
+            if np.array_equal(np.dot(mata,item),np.array([0,0,0,0])) and not np.array_equal(item,veco):
+                new.append(item)
+            elif not np.array_equal(np.dot(mata,item),np.array([0,0,0,0])):
+                check_zero=False
+                res['msg']='At least one of the vectors is not in the kernel'
+        if (len(new)==1 or len(new)==0) and check_zero==True:
+            res['msg']='The set of vectors given does not span the kernel'
+        else:
+            for i in range(len(new)-1):
+                for j in range(i+1,len(new)):
+                    if span2(new[i],new[j])==1:
+                        check_lin=True
+                        break
+            if check_lin==True:
+                res['ok']=True
+            elif check_zero==True and len(new)&gt;=2:
+                res['msg']='You may have linearly dependent vectors'
+        return res
+
+</script>
+    <p>
+      <customresponse cfn="spangrader" expect="&amp;lt;-2,1,0,0,0&amp;gt;;&amp;lt;-3,0,1,0,1&amp;gt;">
+        <textline correct_answer="&amp;lt;-2,1,0,0,0&amp;gt;;&amp;lt;-3,0,1,0,1&amp;gt;"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,334 @@
+
+
+\beginedxvertical{Page One}
+
+
+\beginedxtext{Row-Reduction Tools}
+
+For this homework, you should feel free to use technology to do row reduction, multiplication, and inversion of matrices.  All other
+computations should still be done by hand, for now.  
+
+Here are a couple of websites that will do some of this for you:
+
+\href{https://tinyurl.com/3xr6ed}{Linear Algebra Toolkit}
+
+\href{https://www.wolframalpha.com/}{Wolfram Alpha}
+
+
+
+\endedxtext
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 1}
+
+
+\beginedxproblem{Subspace?}{\dpa1}
+
+Let $V$ be a space with an inner product, and let $v\in V$ be a non-zero vector.  Define $W$ to be
+the set of all vectors $w\in V$ with the property that $\langle v,w\rangle = 0$.  
+
+True or false: $W$ is a subspace of $V$.  Prove your answer, or come up with a counterexample showing that it is not.  
+
+\edXabox{expect="I have proven it" options="I have proven it","I found a counterexample"}
+
+\edXsolution{ 
+$W$ is in fact a subspace of $V$.  We can check the three criteria: 
+
+We know $\langle v, \veco\rangle  = 0$, so  $\veco \in W$.  
+
+If $w_1, w_2 \in W$, then 
+\[ \langle v, w_1 + w_2 \rangle = \langle v, w_1 \rangle + \langle v, w_2 \rangle = 0 + 0 = 0,\]
+so $w_1 + w_2 \in W$ and $W$ is closed under addition.  
+
+If $w\in W$ and $a$ is a scalar, then
+\[ \langle v, aw\rangle = a\langle v, w \rangle = a0 = 0,\]
+so $aw \in W$ and $W$ is closed under scalar multiplication.
+
+Hence $W$ is a subspace of $V$.  
+}
+ 
+\endedxproblem
+
+
+\beginedxproblem{Decomposition}{\dpa3}
+
+
+
+
+Let $v = \left[ \begin{array}{c} -1 \\ 7 \\ 2 \\ 10 \end{array} \right]$ and 
+$w = \left[ \begin{array}{c} -1 \\ 0 \\ 1 \\ 3 \end{array} \right]$.  
+
+Find vectors $u_1$ and $u_2$ such that $u_1$ is a scalar multiple of $w$, 
+$u_2$ is orthogonal to $w$, and $v = u_1 + u_2.$  
+
+
+\input{vectorentry.tex}
+
+What is $u_1$?
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[-3],[0],[3],[9]]"}
+
+What is $u_2$?
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[2],[7],[-1],[1]]"}
+
+
+\edXsolution{
+If we set $W$ to be the span of $w$, then the desired $u_1$ will be the projection of 
+$v$ onto $W$, since the difference $v-u_1$ would be orthogonal to $w$ and hence orthogonal to $W$.  
+
+Since $\{w\}$ is an orthogonal basis of $W$, we have
+\[ u_1 = \frac{\langle v, w\rangle}{\langle w, w\rangle} w = \frac{33}{11}w = 
+\left[ \begin{array}{c} -3 \\ 0 \\ 3 \\ 9 \end{array} \right].\] 
+
+Therefore 
+\[ u_2 = v - u_1 = \left[ \begin{array}{c} 2 \\ 7 \\ -1 \\ 1 \end{array} \right]. \]
+
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Orthonormal Basis}{\dpa5}
+
+
+Recall that $\mathbb{P}_1$ is the space of polynomials of degree at most one.  
+Use the inner product $\langle f, g \rangle = \int_0^1 f(t)g(t) \ dt.$
+
+The polynomial $f(t) = 1$ has norm 1 under this inner product.  Find a polynomial $g \in \mathbb{P}_1$ such that
+$\{f; g\}$ forms an orthonormal basis of $\mathbb{P}_1$.  
+
+There are multiple possibilities for the linear function $g$; enter one that has a positive slope.  
+
+Remember to type * for multiplication.  You can type sqrt(3) for $\sqrt{3}$.  
+
+
+
+\edXinline{$g(t)=$ }
+\edXabox{type="formula" expect="sqrt(6)*t - sqrt(6)/2" samples="t@1:5#5" feqin="1" inline="1" tolerance=".01"}
+
+
+\edXsolution{ 
+The list $\{1; t\}$ forms a basis of $\mathbb{P}_1$.  It isn't orthonormal, however.  To find an orthogonal
+basis, we can use Gram-Schmidt.  Projecting $t$ onto the span of 1 gives 
+$\frac{\langle t, 1\rangle}{\langle 1, 1\rangle} 1 = \int_0^1 t \ dt = \frac{1}{2},$ so 
+$t-\frac{1}{2}$ is orthogonal to 1.  
+
+However, it does not have norm 1.  We can 
+calculate that
+\[\left\|t-\frac{1}{2}\right\|^2 = \int_0^1 \left(t-\frac{1}{2}\right)^2 \ dt = \frac{1}{6},\]
+so the norm of $t-\frac{1}{2}$ is $\frac{1}{\sqrt{6}}$.  Thus, multiplying by $\sqrt{6}$ then gives us
+something with norm 1.  
+}
+
+\endedxproblem
+
+
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 2}
+
+\beginedxproblem{Closest Solution}{\dpa4}
+
+Let $A = \left[\begin{array}{cc}
+-2 & 1 \\
+1 & -1 \\
+1 & 2 \end{array} \right].$  
+
+Find the vector $x$ for which $Ax$ comes closest to $v=\left[ \begin{array}{c} 2 \\  -3 \\ 2 \end{array} \right].$
+
+
+\input{vectorentry2.tex}
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[-.6],[1.4]]"}
+
+
+\edXsolution{
+We seek the least-squared solution to $Ax = v$.  
+We first calculate \[A^tA = \left[\begin{array}{cc}
+6 & -1 \\
+-1 & 6 \end{array} \right],\]
+and  $A^tv = \left[ \begin{array}{c} -5   \\ 9 \end{array} \right].$
+
+The least-squared solution is then $(A^tA)\inv A^tv = \left[ \begin{array}{c} -0.6   \\ 1.4 \end{array} \right].$
+
+}
+
+\endedxproblem
+
+\beginedxproblem{Orthogonal Matrices}{\dpa2}
+
+Let $v_1 = \left[ \begin{array}{c} 0.8 \\ 0.6 \\ 0 \end{array} \right],$ and
+$v_2 = \left[ \begin{array}{c} 0.3 \\ -0.4 \\ \sqrt{3}{2} \end{array} \right].$
+
+How many $3\times 3$ orthogonal matrices have $v_1$ as their first column and $v_2$ as their second column?
+Enter 'infinite' if you think there are infinitely many.  
+(Hint: Think geometrically!)
+
+
+\edXabox{type="formula" expect="2" samples="infinite@1:5#5" feqin="1" tolerance=".01"}
+
+\edXsolution{ 
+A $3\times 3$ matrix is orthogonal if and only if its columns form an orthonormal basis of $\R^3$.  
+Thus, the question 
+is equivalent to asking, how many vectors $v_3$ are there such that 
+$\{v_1; v_2; v_3\}$ is an orthonormal basis of $\R^3$.  
+
+Notice that $\|v_1\| = \|v_2\| = 1$, and that $\langle v_1, v_2 \rangle = 0.$  So we are two-thirds of the way
+to forming an orthonormal basis of $\R^3$.  If $\{v_1; v_2; v_3\}$ is to be orthonormal, we must
+have $v_3$ of norm 1, and orthogonal to the plane spanned by $v_1$ and $v_2$.  There are exactly two unit vectors
+orthogonal to a given plane (one on each side).  Thus there are exactly two ways to fill out the third column to make the matrix orthogonal.  
+}
+
+\endedxproblem
+
+
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 3}
+
+
+
+
+
+\beginedxproblem{Least Squared Line}{\dpa5}
+
+
+Find the equation of the line $y=mx + b$ that gives the least squared vertical distance to the data points
+$(-1, 1), (0, 5), (1, 3), (2, 8), (3, 11), (5, 12)$.  
+
+
+
+Remember to type * for multiplication.  
+
+
+
+\edXinline{$y=$ }
+\edXabox{type="formula" expect="1.9*x + 3.5" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
+
+
+\edXsolution{ 
+Finding $m,b$ which fit the data exactly would entail solving the matrix-vector equation
+\[
+\left[\begin{array}{cc}
+-1 & 1 \\
+0 & 1 \\
+1 & 1 \\
+2 & 1 \\
+3 & 1 \\
+5 & 1 \end{array} \right]
+\left[\begin{array}{c}
+m \\ b \end{array} \right]
+ = 
+\left[\begin{array}{c}
+1 \\ 5 \\ 3 \\ 8 \\ 11 \\ 12 \end{array} \right].
+\]
+Let $A$ be the matrix on the left, and let $v$ be the vector on the right.  
+In order to find the least-squares best fit, we solve $A^tAx = A^tv$.  We can calculate
+$(A^tA)\inv$ and $A^tv$.  We can therefore find the least squares solution
+\[x = (A^tA)\inv A^tv =  \left[\begin{array}{c}
+1.9 \\ 3.5 \end{array} \right].\]
+Therefore the desired equation is $y = 1.9x + 3.5.$
+}
+
+\endedxproblem
+
+
+
+
+
+
+
+\beginedxproblem{Least Squared in Two Variables}{\dpa5}
+
+
+A scientist conjectures that a quantity $J$ is equal to a combination of a quadratic function of $x$ and a linear
+function of $y$, where $x$ and $y$ are independent variables.  She gathers the following data:
+
+
+\[
+\begin{array}{c|c|c}
+x & y & J \\
+\hline 
+0 & 0 & 5 \\
+0 & 1 & 8 \\
+1 & 1 & 9 \\
+1 & 2 & 10 \\
+2 & 0 & 10 \\
+3 & 2 & 20
+\end{array}
+\]
+ 
+
+Consider all equations of the form $J = ax^2 + bx + cy + d$, where $a,b,c,d$ are real numbers.  
+Find a function of that form which is the least-squares best fit for the given data.  
+
+[You will probably not want to do these calculations by hand!]
+
+Remember to type * for multiplication.  
+
+
+
+\edXinline{$J=$ }
+\edXabox{type="formula" expect="5*x^2/4-x/4+2*y+5.5" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
+
+
+\edXsolution{ 
+Finding $a,b,c,d$ which fit the data exactly would entail solving the matrix-vector equation
+\[
+\left[\begin{array}{cccc}
+0 & 0 & 0 & 1 \\
+0 & 0 & 1 & 1 \\
+1 & 1 & 1 & 1 \\
+1 & 1 & 2 & 1 \\
+4 & 2 & 0 & 1 \\
+9 & 3 & 2 & 1 \end{array} \right]
+\left[\begin{array}{c}
+a \\ b \\ c \\ d \end{array} \right]
+ = 
+\left[\begin{array}{c}
+5 \\ 8 \\ 9 \\ 10 \\ 10 \\ 20 \end{array} \right].
+\]
+Let $A$ be the matrix on the left, and let $v$ be the vector on the right.  
+In order to find the least-squares best fit, we solve $A^tAx = A^tv$.  We can calculate
+$(A^tA)\inv$ and $A^tv$.  We can therefore find the least squares solution
+\[x = (A^tA)\inv A^tv =  \left[\begin{array}{c}
+1.25 \\ -0.25 \\ 2 \\ 5.5 \end{array} \right].\]
+Therefore the desired equation is $J = 1.25x^2 - 0.25 x + 2y + 5.5.$
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Discussion}
+
+
+\beginedxtext{Discussion}
+
+Feel free to discuss the homework questions in the forum.  Before creating a new post, please first check to see if there is already a question
+or discussion addressing your topic.  
+
+Also, please do not give away the answers!  
+
+\endedxtext
+
+\edXdiscussion{Discuss Homework 4}{discussion_category="Homework" discussion_topic="HW4" discussion_id="HW4"}
+
+\endedxvertical
+
+
+
+
+

@@ -1,0 +1,65 @@
+<problem display_name="Kernel" linenum="260" tex_filename="./block3/subspaces.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose that [mathjaxinline]T: V\rightarrow W[/mathjaxinline] is a linear transformation. </p>
+    <p>
+Does the kernel of [mathjaxinline]T[/mathjaxinline] contain the zero vector of [mathjaxinline]V[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+Prove (on your own) that the kernel of [mathjaxinline]T[/mathjaxinline] is closed under addition. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('I have proven it')" correct="I have proven it"/>
+      </optionresponse>
+    </p>
+    <p>
+Prove (on your own) that the kernel of [mathjaxinline]T[/mathjaxinline] is closed under scalar multiplication. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('I have proven it')" correct="I have proven it"/>
+      </optionresponse>
+    </p>
+    <p>
+Is the kernel of [mathjaxinline]T[/mathjaxinline] a subspace of [mathjaxinline]V[/mathjaxinline]? </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="Yes"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We know [mathjaxinline]T(\mathbf{0}) = \mathbf{0}[/mathjaxinline], so [mathjaxinline]\mathbf{0}\in \mathrm{Ker}(T).[/mathjaxinline] </p>
+          <p>
+If [mathjaxinline]v_1, v_2 \in \mathrm{Ker}(T)[/mathjaxinline], then [mathjaxinline]T(v_1) = T(v_2) = \mathbf{0}[/mathjaxinline]. Therefore, </p>
+          <table id="a0000000149" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(v_1+v_2) = T(v_1) + T(v_2) = \mathbf{0}+ \mathbf{0}= \mathbf{0}.[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ We conclude that [mathjaxinline]v_1+v_2 \in \mathrm{Ker}(T),[/mathjaxinline] so the kernel is closed under addition. </p>
+          <p>
+Similarly, for any scalar [mathjaxinline]a[/mathjaxinline], </p>
+          <table id="a0000000150" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]T(av_1) = aT(v_1)= a\mathbf{0}= \mathbf{0},[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ so the kernel is closed under scalar multiplication. </p>
+          <p>
+Hence it is a subspace of the domain.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

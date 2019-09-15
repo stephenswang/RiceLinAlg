@@ -1,128 +1,29 @@
-<problem display_name="Find a Solution Set" linenum="169" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Linear Transformation" linenum="410" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="4" rerandomize="per_student">
   <text>
+    <center>
+      <img src="/static/images/h1lintrans.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
+    </center>
     <p>
-Let </p>
-    <table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
-      <tr>
-        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1\\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right].[/mathjax]</td>
-        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
-      </tr>
-    </table>
+The vectors [mathjaxinline]u,v,w \in \mathbb R^2[/mathjaxinline] are given in the picture above. Recall that [mathjaxinline]\mathbb {P}[/mathjaxinline] is the space of all polynomials. Suppose that [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb {P}[/mathjaxinline] is a linear transformation, and that [mathjaxinline]T(u) = t^2 - 1[/mathjaxinline] and [mathjaxinline]T(v) = -2t + 3[/mathjaxinline]. What is [mathjaxinline]T(w)[/mathjaxinline]? </p>
     <p>
- Find a list of vectors whose span is the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p>
-    <p>
-Enter the list of vectors below, separated by semicolons. For instance, to enter the list [mathjaxinline]\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \right\}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p>
-    <script linenum="2" filename="./solutionsetcheck.tex" type="text/python" system_path="python_lib">
-
-def VectorEntry(ans):
-    import numpy as np
-    import ast
-    test={'ok':False}
-    try:
-        ans=ans.split(";")
-        hold=[]
-        for a in ans:
-            a=a.split(",")
-            sub=[]
-            for i in range(len(a)):
-                if i==0:
-                    sub.append(float(a[i][1:]))
-                elif i==len(a)-1:
-                    sub.append(float(a[i][:-1]))
-                else:
-                    sub.append(float(a[i]))
-            assert len(sub)==4
-            hold.append(np.array(sub))
-        test['ok']=True
-    except AssertionError:
-        test['msg']='One of your vectors is not a 4-tuple'
-    except:
-        test['msg']='Wrong input format'
-    return test  
-def span2(a,b):
-    import numpy as np
-    import ast
-    non=np.nonzero(a)
-    first=non[0][0]
-    den=a[first]
-    num=b[first]
-    quot=num//den
-    if np.array_equal(np.multiply(a,quot),b):
-        return(-1)
-    else:
-        return(1)
-        
-def spangrader(expect,ans):
-    import numpy as np
-    import ast
-    mata=np.array([[1,1,0,-1],[5,6,-1,1]])
-    res={'ok':False}
-    if VectorEntry(ans)['ok']!=True:
-        return(VectorEntry(ans))
-    else:
-        ans=ans.split(";")
-        hold=[]
-        for a in ans:
-            a=a.split(",")
-            sub=[]
-            for i in range(len(a)):
-                if i==0:
-                    sub.append(float(a[i][1:]))
-                elif i==len(a)-1:
-                    sub.append(float(a[i][:-1]))
-                else:
-                    sub.append(float(a[i]))
-            hold.append(np.array(sub))
-        check_len=True
-        check_zero=True
-        check_lin=False
-        veco=np.array([0,0,0,0])
-        new=[]
-        for item in hold:
-            mul=np.dot(mata,item)
-            if np.array_equal(np.dot(mata,item),np.array([0,0])) and not np.array_equal(item,veco):
-                new.append(item)
-            elif not np.array_equal(np.dot(mata,item),np.array([0,0])):
-                check_zero=False
-                res['msg']='At least one of the vectors is not in the null space of A'
-        if len(new)==1 or len(new)==0 and check_zero==True:
-            res['msg']='The set of vectors given does not span the nullspace of A'
-        else:
-            for i in range(len(new)-1):
-                for j in range(i+1,len(new)):
-                    if span2(new[i],new[j])==1:
-                        check_lin=True
-                        break
-            if check_lin==True:
-                res['ok']=True
-            elif check_zero==True and len(new)&gt;=2:
-                res['msg']='No pair of linearly independent vectors found'
-        return res
-
-</script>
-    <p>
-      <customresponse cfn="spangrader" expect="&amp;lt;-1,1,1,0&amp;gt;;&amp;lt;7,-6,0,1&amp;gt;">
-        <textline correct_answer="&amp;lt;-1,1,1,0&amp;gt;;&amp;lt;7,-6,0,1&amp;gt;"/>
-      </customresponse>
+      <formularesponse type="cs" samples="t@1:5#10" answer="-t^2 -4*t + 7">
+        <formulaequationinput size="50">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- We row reduce the matrix [mathjaxinline]A[/mathjaxinline]: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the first row by -5, and add this to the second: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br/><br/>Multiply the second row by -1, and add this to the first: <br/><br/>[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  0 &amp;  1 &amp;  -7 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br/><br/>Ordinarily, to solve a matrix equation, we would row reduce an augmented matrix, with the vector from the right hand side of the equation as the last column of the matrix. However, since the right hand side of the equation is the zero vector, row operations would have no effect on it. This tells us that if [mathjaxinline]A'[/mathjaxinline] is the row-reduced version of [mathjaxinline]A[/mathjaxinline], then the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] is the same as the set of solutions to [mathjaxinline]A'x = \mathbf{0}[/mathjaxinline].<br/>We have 2 free variables; call them [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline]. We can get solutions to our equation by choosing any values we like for [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline], substituting, and solving for [mathjaxinline]x_1[/mathjaxinline] and [mathjaxinline]x_2[/mathjaxinline]. We get [mathjaxinline]x_1 = -x_3 + 7x_4[/mathjaxinline] and [mathjaxinline]x_2 = x_3 - 6x_4[/mathjaxinline]. </p>
-          <p>
-Hence the general solution is </p>
-          <table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+Note from the picture that [mathjaxinline]w = -u + 2v.[/mathjaxinline] Hence </p>
+          <table id="a0000000108" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
-              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] = \left[ \begin{array}{c} -x_3 + 7x_4 \\ x_3 - 6x_4 \\ x_3 \\ x_4 \end{array}\right] = x_3 \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array}\right] + x_4 \left[ \begin{array}{c} 7 \\ - 6 \\ 0 \\ 1 \end{array}\right],[/mathjax]</td>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} T(w) &amp;  = &amp;  T(-u+2v) \\ &amp;  = &amp;  T(-u) + T(2v) \\ &amp;  = &amp;  -T(u) + 2T(v) \\ &amp;  = &amp;  -t^2 -4t + 7. \end{array}[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
             </tr>
           </table>
-          <p>
- for any [mathjaxinline]x_3,x_4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\right\} .[/mathjaxinline] </p>
-          <p>
-(Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.) </p>
         </font>
       </solution>
     </p>

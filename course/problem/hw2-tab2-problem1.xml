@@ -1,0 +1,59 @@
+<problem display_name="Find a Matrix" linenum="28" tex_filename="./hw/hw2.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Suppose that [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] has standard matrix [mathjaxinline]\left[ \begin{array}{cc} 1&amp;  -3 \\ 2 &amp;  1 \end{array} \right],[/mathjaxinline] and [mathjaxinline]S: \mathbb R^3 \rightarrow \mathbb R^2[/mathjaxinline] has standard matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp;  2 &amp;  -1 \\ 1 &amp;  0 &amp;  2 \end{array} \right].[/mathjaxinline] </p>
+    <p>
+What is the standard matrix for [mathjaxinline]T\circ S[/mathjaxinline]? </p>
+    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+          <p>
+Use decimals only. </p>
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[-3,2,-7],[1,4,0]]">
+        <textline correct_answer="[[-3,2,-7],[1,4,0]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The standard matrix for [mathjaxinline]T\circ S[/mathjaxinline] is the standard matrix for [mathjaxinline]T[/mathjaxinline] times the standard matrix for [mathjaxinline]S[/mathjaxinline]. Doing this multiplication results in [mathjaxinline]\left[ \begin{array}{ccc} -3&amp;  2 &amp;  -7 \\ 1 &amp;  4 &amp;  0 \end{array} \right].[/mathjaxinline]  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+</problem>

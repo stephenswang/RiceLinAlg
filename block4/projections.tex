@@ -12,11 +12,12 @@ At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize}
 \item Recognize the properties of orthogonal projections.  
-\item Be able to compute an orthogonal projection. 
+\item Compute an orthogonal projection. 
+\item Use the Gram-Schmidt algorithm to produce an orthogonal basis.  
 \end{itemize}
 
 
-For time budgeting purposes, this sequence has 3 videos totaling 23 minutes, 
+For time budgeting purposes, this sequence has 5 videos totaling 40 minutes, 
 plus some questions.  
 
 
@@ -30,7 +31,7 @@ plus some questions.
 
 \beginedxvertical{Finding Closest Vectors}
 
-\beginedxproblem{Closest Vector}{\dpa4}
+\beginedxproblem{Closest Vector}{\dpa3}
 
 Let $W$ be the subspace of $\R^3$ given by 
 \[ W = \left\{ \left[  \begin{array}{c} a_1 \\ a_2 \\ 0 \end{array} \right] \ : \ a_1, a_2 \in \R \right\}.\]
@@ -184,7 +185,7 @@ the closest vector in $W$ to $v$.
 
 
 
-\beginedxproblem{Projection Practice 1}{\dpa1}
+\beginedxproblem{Projection Practice 1}{\dpa5}
 
 
 Let $W$ be the subspace of $\R^4$ spanned by the list $\{w_1; w_2; w_3\}$, where 
@@ -199,32 +200,50 @@ Let $v = \left[\begin{array}{c} 2 \\ 1 \\ -3 \\ 4
 
 \input{vectorentry.tex}
 
-\edXabox{type="custom" cfn="VectorEntry" expect="[[3],[4],[0]]"}
+\edXabox{type="custom" cfn="VectorEntry" expect="[[0],[-1],[-1],[4]]"}
 
 
 \edXsolution{ 
+We seek the orthogonal projection of $v$ onto $W$.  Since we have an orthogonal basis of $W$, we can
+simply apply the projection formula:
+
+\[
+\begin{array}{rcl}
+\mathrm{Proj}_W(v) & = & \frac{\langle v, w_1 \rangle}{\langle w_1, w_1 \rangle} w_1 + 
+\frac{\langle v, w_2 \rangle}{\langle w_2, w_2 \rangle} w_2 +
+\frac{\langle v, w_3 \rangle}{\langle w_3, w_3 \rangle} w_3  \\
+&  = & \frac{-15}{15} w_1 + \frac{1}{2} w_2 + \frac{5}{10}w_3 \\
+&  = & \left[\begin{array}{c} 0 \\ -1 \\ -1 \\ 4 
+\end{array} \right]. 
+\end{array}
+\]
 }
 
 \endedxproblem
 
 
-\beginedxproblem{Projection Practice 2}{\dpa1}
+\beginedxproblem{Projection Practice 2}{\dpa5}
 
 Recall that $C[0,1]$ is the vector space of continuous functions on the interval $[0,1]$, and that
-we have an inner product on that vector space given by $\langle f, g \rangle = \int_0^1 f(x)g(x) \ dx$.  
+we have an inner product on that vector space given by $\langle f, g \rangle = \int_0^1 f(t)g(t) \ dt$.  
 
 
-Let $W$ be the subspace of $C[0,1]$ which is the span of a single function 
-$f(x) = x$.  
+Let $W$ be the subspace of $C[0,1]$ which is the span of a single function, 
+$f(t) = t$.  
 
-Let $g(x) = x^2$.  What is the orthogonal projection of $g$ onto $W$?  
+Let $g(t) = t^2$.  What is the orthogonal projection of $g$ onto $W$?  
 
-(Don't forget to use * for multiplication.)
+Remember to use * for multiplication.
 
-\edXabox{type="formula" expect="0.75*x" samples="x@1:5#5" feqin="1" tolerance=".01"}\\
+\edXabox{type="formula" expect="0.75*t" samples="t@1:5#5" feqin="1" tolerance=".01"}\\
 
 
-\edXsolution{ 
+\edXsolution{ Again, we have an orthogonal basis of $W$, namely $\{f\}$.  
+So we use the projection formula: the function that we seek is 
+\[
+\frac{\langle g, f \rangle}{\langle f, f \rangle} f = \frac{\int_0^1 t^3 \ dt}{\int_0^1 t^2 \ dt}t= 
+\frac{1/4}{1/3}t = \frac{3}{4}t.  
+\]
 }
 
 \endedxproblem
@@ -282,13 +301,13 @@ And here is a scenario in which $a_1$ could be zero:
 
 
 
-\beginedxproblem{Another Closest Vector?}{\dpa2}
+\beginedxproblem{Another Closest Vector?}{\dpa3}
 
 
 Let $v = \left[ \begin{array}{c} 3 \\ 4 \\ 7 \\ 1 \end{array} \right].$  What is the vector $w\in \R^4$ that 
 is closest to $v$?  
 
-(You should not need to do any projection calculation!)  
+(You should not need to do any calculation!)  
 
 
 
@@ -331,7 +350,12 @@ What is $a_1$?
 
 
 \edXsolution{
-
+We know that $v$ is its own projection onto $W$.  Hence 
+\[
+a_1 w_1 + a_2 w_2 + a_3w_3 = v = \mathrm{Proj}_W(v)  = \frac{\langle v, w_1 \rangle}{\langle w_1, w_1 \rangle} w_1 + 
+\frac{\langle v, w_2 \rangle}{\langle w_2, w_2 \rangle} w_2 +
+\frac{\langle v, w_3 \rangle}{\langle w_3, w_3 \rangle} w_3. \]
+Hence $a_1 = \frac{\langle v, w_1 \rangle}{\langle w_1, w_1 \rangle} = -\frac{7}{4}.$
 }
 
 \endedxproblem
@@ -351,7 +375,7 @@ What is $a_1$?
 
 Let $u_1 = \left[ \begin{array}{c} 1 \\ -1 \\ -1 \\ 1 \end{array} \right]$,
 $u_2 = \left[ \begin{array}{c} 1 \\ 4 \\ 3 \\ -2 \end{array} \right]$,
-and $u_3 = \left[ \begin{array}{c} 0 \\ -7 \\ 2 \\ 3 \end{array} \right]$.  
+and $u_3 = \left[ \begin{array}{c} 0 \\ -7 \\ 0 \\ 1 \end{array} \right]$.  
 
 If we apply the Gram-Schmidt process (as described in the video) to the basis $\{u_1; u_2; u_3\}$,
 we will get $\{w_1; w_2; w_3\}$, where $w_1 = u_1$.  After the second step, we calculate
@@ -363,6 +387,10 @@ $w_2$.  What is it?
 \edXabox{type="custom" cfn="VectorEntry" expect="[[3],[2],[1],[0]]"}
 
 \edXsolution{
+The Gram-Schmidt process gives $w_2 = u_2 - \mathrm{Proj}_{W_1}(u_2)$, where $W_1$ is the span of 
+$w_1$.  This projection is given by 
+\[ \mathrm{Proj}_{W_1}(u_2) = \frac{\langle u_2, w_1 \rangle}{\langle w_1, w_1 \rangle} w_1 = \frac{-8}{4}w_1 = \left[ \begin{array}{c} -2 \\ 2 \\ 2 \\ -2 \end{array} \right],\]
+so $w_2 = u_2 - \mathrm{Proj}_{W_1}(u_2) = \left[ \begin{array}{c} 3 \\ 2 \\ 1 \\ 0 \end{array} \right].$
 
 }
 
@@ -376,10 +404,15 @@ Finish the algorithm to calculate $w_3$.
 \input{vectorentry2.tex}
 
 
-\edXabox{type="custom" cfn="VectorEntry" expect="[[1],[-3],[5],[1]]"}
+\edXabox{type="custom" cfn="VectorEntry" expect="[[1],[-3],[3],[-1]]"}
 
 \edXsolution{
-
+Again, $w_3$ will be $u_3$ minus its projection onto the span of $w_1$ and $w_2$ (which we can call $W_2$). 
+The projection is
+\[ \mathrm{Proj}_{W_2}(u_3) = \frac{\langle u_3, w_1 \rangle}{\langle w_1, w_1 \rangle} w_1 +
+\frac{\langle u_3, w_2 \rangle}{\langle w_2, w_2 \rangle} w_2 = \frac{8}{4}w_1 +  \frac{-14}{14}w_2
+=\left[ \begin{array}{c} -1 \\ -4 \\ -3 \\ 2 \end{array} \right],\]
+so $w_3 = u_3 -\mathrm{Proj}_{W_2}(u_3) = \left[ \begin{array}{c} 1 \\ -3 \\ 3 \\ -1 \end{array} \right].$
 }
 
 \endedxproblem

@@ -1,0 +1,420 @@
+
+
+\beginedxvertical{Page One}
+
+
+\beginedxtext{Row-Reduction Tools}
+
+You may look back at the course material while you take this exam.  
+
+You should feel free to use technology to do row reduction of matrices.  All other computations (including matrix multiplication and inversion) should be done by hand.  
+
+Here are a couple of websites that will do row reduction for you:
+
+\href{https://tinyurl.com/dmokjt}{Linear Algebra Toolkit}
+
+\href{https://www.wolframalpha.com/}{Wolfram Alpha}
+
+
+
+\endedxtext
+
+\beginedxproblem{Allowable Resources}{\dpa2}
+
+On this final exam, students are allowed to use technology to do which of the following operations?  Check all that apply.  
+
+\edXabox{type="oldmultichoice" expect="Row reduce a matrix" options="Row reduce a matrix","Multiply matrices","Invert a matrix","Inner products"}
+
+\edXsolution{ Read the text above!
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Final Page 1}
+
+
+
+
+\beginedxproblem{Systems of Linear Equations}{\dpa1}
+
+True or False: A system of 8 linear equations in 6 variables cannot have a unique solution.  
+
+\edXabox{expect="False" options="True","False"}
+
+True or False: A system of 6 linear equations in 8 variables cannot have a unique solution.  
+
+\edXabox{expect="True" options="True","False"}
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+
+
+
+\beginedxproblem{Row-Reduced Matrix}{\dpa1}
+
+Suppose $T: \R^5 \rightarrow \R^4$ is a linear transformation with standard matrix $A$.  I am not going to tell you what $A$ is,
+but I will tell you that when you row-reduce $A$, the result is the matrix
+\[R = 
+\left[ \begin{array}{ccccc}    
+1 & 2 & 0 & 0 & 3 \\
+0 & 0 & 1 & 0 & -1 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0
+\end{array}
+\right]
+ \]
+
+Answer the following questions about $T$ and/or $A$.  If there is not enough information to tell (e.g., because you only know $R$, not $A$),
+select "Not enough information."
+
+Is $A$ invertible?  
+\edXabox{expect="No" options="Yes","No","Not enough information"}
+
+Are the columns of $A$ linearly dependent?
+\edXabox{expect="Yes" options="Yes","No","Not enough information"}
+
+Is $T$ onto?
+\edXabox{expect="No" options="Yes","No","Not enough information"}
+
+Does the equation $Ax = \veco$ have a unique solution?
+\edXabox{expect="No" options="Yes","No","Not enough information"}
+
+Is the equation $Ax = \left[ \begin{array}{c} 3 \\ 1 \\ 0 \\ 1 \end{array} \right]$ consistent?
+\edXabox{expect="Not enough information" options="Yes","No","Not enough information"}
+
+
+\edXsolution{ 
+  
+}
+ 
+\endedxproblem
+
+
+
+\endedxvertical
+
+\beginedxvertical{Final Page 2}
+
+\beginedxproblem{Row-Reduced Matrix Continued}{\dpa5}
+
+Take the same set-up as the previous problem.  Suppose $T: \R^5 \rightarrow \R^4$ is a linear transformation with standard matrix $A$. When you row-reduce $A$, the result is the matrix
+\[R = 
+\left[ \begin{array}{ccccc}    
+1 & 2 & 0 & 0 & 3 \\
+0 & 0 & 1 & 0 & -1 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 0
+\end{array}
+\right]
+ \]
+
+What is the rank of $T$?  
+
+\edXabox{type="numerical" expect="3"} 
+
+Find a basis for the kernel of $T$.  
+Enter the list of vectors forming the basis below, separated by semicolons.  For instance, 
+to enter the list $\left\{\left[\begin{array}{c} 1 \\ 0 \\ 1
+\end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3
+\end{array} \right] \right\}$, type <1,0,1>;<1,2,3>.  
+
+%requires new grading program
+
+
+\input{solutionsetcheck5.tex}
+
+\edXabox{type="custom" cfn="spangrader" expect="<-2,1,0,0,0>;<-3,0,1,0,1>"}
+
+\edXsolution{ 
+  
+}
+ 
+\endedxproblem
+
+
+
+\beginedxproblem{Linear Transformations}{\dpa3}
+
+
+Let $S: \R^3 \rightarrow \R^2$ be a linear transformation with 
+\[
+S(e_1) = \left[ \begin{array}{c} -1 \\ 4  \end{array} \right],
+S(e_2) = \left[ \begin{array}{c} 2 \\ 1  \end{array} \right],
+S(e_3) = \left[ \begin{array}{c} 3 \\ 3  \end{array} \right]. \]
+
+
+Let $T: \R^2 \rightarrow \R^4$ be a linear transformation with 
+$T(e_1) = \left[ \begin{array}{c} 3 \\ -1 \\ 0 \\ 1 \end{array} \right]$ 
+and $T(e_2) = \left[ \begin{array}{c} 1 \\ 0 \\ 1 \\ -2 \end{array} \right].$
+
+What is the standard matrix for $T\circ S$?  
+ 
+
+\input{matrixentry.tex}
+
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[1,7,12],[1,-2,-3],[4,1,3],[-9,0,-3]]"}
+
+
+\edXsolution{
+}
+
+
+\endedxproblem
+
+
+
+\beginedxproblem{Invertible?}{\dpa1}
+
+True or False: If $A$ is a $6\times 6$ matrix, and none of its columns are a scalar multiple of another,
+then $A$ must be invertible.  
+
+\edXabox{expect="False" options="True","False"}
+
+True or False: If $A$ and $B$ are $6\times 6$ matrices, and $AB = I_6$, then $BA = I_6$.  
+
+\edXabox{expect="True" options="True","False"}
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Invert a Matrix}{\dpa3}
+
+Let $A$ be the matrix
+\[ 
+\left[ 
+\begin{array}{ccc} 1& 1 &  2 \\ 2 & 1 & -3 \\ 1 & -1 & -11 
+\end{array} \right] \]
+
+Enter its inverse, if it has one.  If it does not have
+an inverse, enter [[0]].  
+
+\input{matrixentry3.tex}
+
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[14,-9,5],[-19,13,-7],[3,-2,1]]"}
+
+\edXsolution{
+
+We can check that $A$ row reduces to the identity.  When we row reduce the extended 
+\[\left[ 
+\begin{array}{ccc:ccc} 1& 1 &  2 & 1 & 0 & 0 \\ 2 & 1 & -3 & 0 & 1 & 0 \\ 1 & -1 & -11 & 0 & 0 & 1 
+\end{array} \right],
+\]
+we obtain
+\[\left[ 
+\begin{array}{ccc:ccc} 1& 0 &  0 & 14 & -9 & 5 \\ 0 & 1 & 0 & -19 & 13 & -7 \\ 0 & 0 & 1 & 3 & -2 & 1 
+\end{array} \right],
+\]
+so the inverse is
+\[\left[ 
+\begin{array}{ccc} 14 & -9 & 5 \\  -19 & 13 & -7 \\ 3 & -2 & 1 
+\end{array} \right].
+\]
+}
+
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+\beginedxvertical{Final Page 3}
+
+\beginedxproblem{Subspace?}{\dpa1}
+
+True or False: If $A$ is a $10\times 12$ matrix and $v \in \R^{10}$, and the 
+equation $Ax = v$ has infinitely many solutions, then the set of solutions to that equation forms
+a subspace of $\R^{12}$.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Coordinates}{\dpa3}
+
+
+\begin{center}
+\includesvg[450]{h5coords}
+\end{center}
+
+Let $\mathcal{B} = \{v_1; v_2\}$ be as pictured; this is a basis of $\R^2$.  
+
+Given the vector $w$ in the image, what is $[w]_{\mathcal{B}}$?  
+
+\input{vectorentry.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[5],[3]]"}
+
+
+\edXsolution{
+We can write $w$ as a linear combination of the basis vectors in order:
+$w = 5v_1 + 3v_2$.  Hence $[w]_{\mathcal{B}} =\left[\begin{array}{c}  5  \\ 3 \end{array} \right]$.  
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Span}{\dpa2}
+
+Let $W$ be the span of the vectors 
+\[
+\left[ \begin{array}{c} 1 \\ 2 \\ 1 \\ 4 \\ 3\end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 3 \\ 3 \\ 1 \\ -1\end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ -2 \\ 2 \\ -3 \\ 0 \end{array} \right] ;
+\left[ \begin{array}{c} -1 \\ -7 \\ 4 \\ -6 \\ 4\end{array} \right] ;
+\left[ \begin{array}{c} 3 \\ 4 \\ 5 \\ 9 \\ 9\end{array} \right]
+ \]
+
+What is  the dimension of $W$?
+
+\edXabox{type="numerical" expect="3"} 
+
+\edXsolution{
+If $A$ is the matrix with these five vectors as columns, then the image of $A$ is the same as the span of the five vectors.
+Hence the desired dimension is the rank of $A$.  When we row reduce $A$, we obtain 3 pivots, so the rank is 3.  
+}
+
+\endedxproblem
+
+
+
+\beginedxproblem{Rank}{\dpa2}
+
+Suppose that $T: \R^6 \rightarrow \R^7$ is a linear transformation. Suppose further that we can find two distinct vectors $v_1,v_2 \in \R^6$ such that $T(v_1)$ and $T(v_2)$ are both equal to the same non-zero vector $w \in R^7$.    
+
+What is the strongest conclusion we can make about the rank of $T$?  
+
+
+\edXinline{The rank of $T$ is at least}\edXabox{type="numerical" expect="1" inline="1"} 
+
+\edXinline{and at most} \edXabox{type="numerical" expect="5" inline="1"}.  
+
+\edXsolution{
+Since $T(v_1) = T(v_2)$, we know that $T$ is not into.  Therefore the nullity of $T$ is at least 1.  Since the rank of $T$ plus its nullity must 
+equal 6, the rank is at most 5.  We also know that $w$ is a non-zero vector in the image of $T$.  Hence the image of $T$ is a non-zero
+subspace and has dimension at least 1.  Therefore the rank of $T$ is at least 1.  
+}
+
+\endedxproblem
+
+
+
+
+
+\endedxvertical
+
+\beginedxvertical{Final Page 4}
+
+
+
+\beginedxproblem{Subspace Dimension}{\dpa2}
+
+Let $V$ be a space with an inner product, and let $v\in V$ be a fixed non-zero vector.  Define $W$ to be
+the set of all vectors $w\in V$ with the property that $\langle v,w\rangle = 0$.  
+
+On Homework 4 you proved that $W$ is a subspace of $V$.  In this problem, we'll find its dimension.  
+
+Suppose that $V$ has dimension $n$.  Define the function 
+$T$ with domain $V$ by $T(w) = \langle v, w\rangle$.  $T$ is a linear transformation (you are encouraged to prove this on your own) with
+what codomain?  
+
+\edXabox{type="multichoice" expect="$\R$" options="$V$","$W$","$\R^n$","$\R$","Something else"}
+
+What is the rank of $T$ (your answer can be in terms of $n$)?  
+
+\edXabox{type="formula" expect="1" samples="n@1:5#5" feqin="1" tolerance=".01"}
+
+Note that $W$ is exactly the kernel of $T$.  What is the dimension of $W$?    
+
+\edXabox{type="formula" expect="n-1" samples="n@1:5#5" feqin="1" tolerance=".01"}
+
+\edXsolution{ 
+
+}
+ 
+\endedxproblem
+
+
+
+
+\beginedxproblem{Closest Vector}{\dpa3}
+
+Let $W$ be the subspace of $\R^4$ spanned by the vectors 
+$\left[\begin{array}{c} 
+1 \\ 1 \\ -1 \\ -1 \end{array} \right]$ 
+and 
+$\left[\begin{array}{c} 
+3 \\ 1 \\ 1 \\ 7 \end{array} \right].$
+
+What is the closest element of $W$ to the vector 
+$v =  \left[\begin{array}{c} 
+3 \\ 4 \\ 3 \\ -8 \end{array} \right]?$
+
+
+\input{vectorentry2.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[1],[2],[-3],[-6]]"}
+
+\edXsolution{ 
+
+	
+}
+
+
+\endedxproblem
+
+
+
+\beginedxproblem{Least Squared Quadratic}{\dpa3}
+
+
+Consider all functions of the form $f(x) = ax^2 + c$, where $a$ and $c$ are real numbers.  
+Find a function of that form which achieves
+the least squared vertical distance to the data points $(-1, 1), (0,1), (1, 2),$ and $(2, -1)$. 
+
+Remember to type * for multiplication.
+
+\edXabox{type="formula" expect="-x^2/18+4/3" samples="x@1:5#5" feqin="1" tolerance=".01"}
+
+
+
+\edXsolution{ 
+
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+
+
+
+
+
+

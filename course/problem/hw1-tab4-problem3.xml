@@ -1,0 +1,20 @@
+<problem display_name="Equal Matrix-Vector Products" linenum="440" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 4[/mathjaxinline] matrix whose columns are linearly independent, and [mathjaxinline]Au = Av[/mathjaxinline] for vectors [mathjaxinline]u,v \in \mathbb R^4[/mathjaxinline], then [mathjaxinline]u=v[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Let [mathjaxinline]Au = Av = w[/mathjaxinline]. Since the columns of [mathjaxinline]A[/mathjaxinline] are linearly independent, the equation [mathjaxinline]Ax = w[/mathjaxinline] can have at most one solution. Since [mathjaxinline]u[/mathjaxinline] and [mathjaxinline]v[/mathjaxinline] are both solutions to this equation, they must be equal.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,5 +1,5 @@
-<chapter display_name="Vectors and Matrices" linenum="77" tex_filename="testcourse.tex" refnum="1" start="2018-01-11T16:00">
-  <sequential display_name="Systems of Linear Equations" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
+<chapter display_name="Vectors and Matrices" linenum="106" tex_filename="testcourse.tex" refnum="2" start="2019-09-30T16:00">
+  <sequential display_name="Systems of Linear Equations" linenum="118" tex_filename="testcourse.tex" refnum="1" due="2019-10-14T04:59" graded="true" format="Exercises" url_name="b1lineareqns-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1lineareqns-vertical1">
       <html url_name="b1lineareqns-tab1-text1"/>
     </vertical>
@@ -22,8 +22,12 @@
     <vertical display_name="Elementary Row Operations" refnum="5" url_name="b1lineareqns-vertical5">
       <html url_name="b1lineareqns-tab5-text1"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="6" url_name="b1lineareqns-vertical6">
+      <html url_name="b1lineareqns-tab6-text1"/>
+      <discussion url_name="Discuss_this_Section"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Row-Reduced Form" linenum="122" tex_filename="testcourse.tex" refnum="2" due="2019-12-15T14:15" graded="true" format="Lab" url_name="b1rowreduced-sequential">
+  <sequential display_name="Row-Reduced Form" linenum="152" tex_filename="testcourse.tex" refnum="2" due="2019-10-14T04:59" graded="true" format="Exercises" url_name="b1rowreduced-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1rowreduced-vertical1">
       <html url_name="b1rowreduced-tab1-text1"/>
     </vertical>
@@ -71,8 +75,12 @@
     <vertical display_name="Fields Defined" refnum="10" url_name="b1rowreduced-vertical10">
       <html url_name="b1rowreduced-tab10-text1"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="11" url_name="b1rowreduced-vertical11">
+      <html url_name="b1rowreduced-tab11-text1"/>
+      <discussion url_name="discussion_Discuss_this_Section"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Vectors" linenum="151" tex_filename="testcourse.tex" refnum="3" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1vectors-sequential">
+  <sequential display_name="Vectors" linenum="188" tex_filename="testcourse.tex" refnum="3" due="2019-10-14T04:59" graded="true" format="Exercises" url_name="b1vectors-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1vectors-vertical1">
       <html url_name="b1vectors-tab1-text1"/>
     </vertical>
@@ -96,8 +104,12 @@
       <html url_name="b1vectors-tab6-text1"/>
       <problem url_name="b1vectors-tab6-problem1"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="7" url_name="b1vectors-vertical7">
+      <html url_name="b1vectors-tab7-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Linear Combinations and Span" linenum="180" tex_filename="testcourse.tex" refnum="4" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lincombos-sequential">
+  <sequential display_name="Linear Combinations and Span" linenum="224" tex_filename="testcourse.tex" refnum="4" due="2019-10-14T04:59" graded="true" format="Exercises" url_name="b1lincombos-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1lincombos-vertical1">
       <html url_name="b1lincombos-tab1-text1"/>
     </vertical>
@@ -134,8 +146,12 @@
       <problem url_name="b1lincombos-tab8-problem2"/>
       <problem url_name="b1lincombos-tab8-problem3"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="9" url_name="b1lincombos-vertical9">
+      <html url_name="b1lincombos-tab9-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Matrix-Vector Multiplication" linenum="213" tex_filename="testcourse.tex" refnum="5" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
+  <sequential display_name="Matrix-Vector Multiplication" linenum="264" tex_filename="testcourse.tex" refnum="5" due="2019-10-14T04:59" graded="true" format="Exercises" url_name="b1matrixvector-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1matrixvector-vertical1">
       <html url_name="b1matrixvector-tab1-text1"/>
     </vertical>
@@ -177,8 +193,12 @@
       <problem url_name="b1matrixvector-tab9-problem1"/>
       <problem url_name="b1matrixvector-tab9-problem2"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="10" url_name="b1matrixvector-vertical10">
+      <html url_name="b1matrixvector-tab10-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Linear Independence" linenum="248" tex_filename="testcourse.tex" refnum="6" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1linind-sequential">
+  <sequential display_name="Linear Independence" linenum="296" tex_filename="testcourse.tex" refnum="6" due="2019-10-21T04:59" graded="true" format="Exercises" url_name="b1linind-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1linind-vertical1">
       <html url_name="b1linind-tab1-text1"/>
     </vertical>
@@ -218,8 +238,12 @@
     <vertical display_name="Summarizing" refnum="8" url_name="b1linind-vertical8">
       <video url_name="b1linind-tab8-video1"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="9" url_name="b1linind-vertical9">
+      <html url_name="b1linind-tab9-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Linear Transformations" linenum="281" tex_filename="testcourse.tex" refnum="7" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans-sequential">
+  <sequential display_name="Linear Transformations" linenum="336" tex_filename="testcourse.tex" refnum="7" due="2019-10-21T04:59" graded="true" format="Exercises" url_name="b1lintrans-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1lintrans-vertical1">
       <html url_name="b1lintrans-tab1-text1"/>
     </vertical>
@@ -247,8 +271,12 @@
       <video url_name="b1lintrans-tab7-video1"/>
       <problem url_name="b1lintrans-tab7-problem1"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="8" url_name="b1lintrans-vertical8">
+      <html url_name="b1lintrans-tab8-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Linear Transformations in R^n" linenum="310" tex_filename="testcourse.tex" refnum="8" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1lintrans2-sequential">
+  <sequential display_name="Linear Transformations in R^n" linenum="372" tex_filename="testcourse.tex" refnum="8" due="2019-10-21T04:59" graded="true" format="Exercises" url_name="b1lintrans2-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1lintrans2-vertical1">
       <html url_name="b1lintrans2-tab1-text1"/>
     </vertical>
@@ -286,8 +314,12 @@
       <video url_name="b1lintrans2-tab8-video1"/>
       <problem url_name="b1lintrans2-tab8-problem1"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="9" url_name="b1lintrans2-vertical9">
+      <html url_name="b1lintrans2-tab9-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Into and Onto" linenum="341" tex_filename="testcourse.tex" refnum="9" due="2019-12-18T14:15" graded="true" format="Exercises" url_name="b1intoonto-sequential">
+  <sequential display_name="Into and Onto" linenum="410" tex_filename="testcourse.tex" refnum="9" due="2019-10-21T04:59" graded="true" format="Exercises" url_name="b1intoonto-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b1intoonto-vertical1">
       <html url_name="b1intoonto-tab1-text1"/>
     </vertical>
@@ -328,6 +360,38 @@
       <video url_name="b1intoonto-tab10-video1"/>
       <html url_name="b1intoonto-tab10-text1"/>
       <problem url_name="b1intoonto-tab10-problem1"/>
+    </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="11" url_name="b1intoonto-vertical11">
+      <html url_name="b1intoonto-tab11-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxx"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Homework 1" linenum="456" tex_filename="testcourse.tex" refnum="10" due="2019-10-21T04:59" graded="true" format="Homework" url_name="hw1-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="hw1-vertical1">
+      <html url_name="hw1-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Homework Page 1" refnum="2" url_name="hw1-vertical2">
+      <problem url_name="hw1-tab2-problem1"/>
+      <problem url_name="hw1-tab2-problem2"/>
+      <problem url_name="hw1-tab2-problem3"/>
+    </vertical>
+    <vertical display_name="Homework Page 2" refnum="3" url_name="hw1-vertical3">
+      <problem url_name="hw1-tab3-problem1"/>
+      <problem url_name="hw1-tab3-problem2"/>
+      <problem url_name="hw1-tab3-problem3"/>
+    </vertical>
+    <vertical display_name="Homework Page 3" refnum="4" url_name="hw1-vertical4">
+      <problem url_name="hw1-tab4-problem1"/>
+      <problem url_name="hw1-tab4-problem2"/>
+      <problem url_name="hw1-tab4-problem3"/>
+    </vertical>
+    <vertical display_name="Homework Page 4" refnum="5" url_name="hw1-vertical5">
+      <problem url_name="hw1-tab5-problem1"/>
+      <problem url_name="hw1-tab5-problem2"/>
+    </vertical>
+    <vertical display_name="Discussion" refnum="6" url_name="hw1-vertical6">
+      <html url_name="hw1-tab6-text1"/>
+      <discussion url_name="Discuss_Homework_1"/>
     </vertical>
   </sequential>
 </chapter>

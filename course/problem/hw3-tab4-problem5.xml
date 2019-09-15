@@ -1,0 +1,20 @@
+<problem display_name="Subspace Basis 1" linenum="276" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]V[/mathjaxinline] is finite-dimensional, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline], then every basis of [mathjaxinline]V[/mathjaxinline] must contain a basis of [mathjaxinline]W[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ This is not true. For instance, the standard basis of [mathjaxinline]\mathbb R^2[/mathjaxinline] does not contain a basis of the subspace spanned by [mathjaxinline]\left[ \begin{array}{c} 1 \\ 1 \end{array} \right][/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

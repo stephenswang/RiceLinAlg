@@ -1,16 +1,19 @@
-<problem display_name="Dimension Question 2" linenum="325" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Subspace 2" linenum="414" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 6, then there must exist a basis of [mathjaxinline]V[/mathjaxinline] with exactly 6 vectors. </p>
+True or False: If [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline], and both [mathjaxinline]W[/mathjaxinline] and [mathjaxinline]V[/mathjaxinline] are infinite-dimensional, then [mathjaxinline]W=V[/mathjaxinline]. </p>
     <p>
       <optionresponse>
-        <optioninput options="('True','False')" correct="True"/>
+        <optioninput options="('True','False')" correct="False"/>
       </optionresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ False. The proposition does not apply to infinite-dimensional spaces. For instance, if [mathjaxinline]V[/mathjaxinline] is the vector space of all functions on [mathjaxinline]\mathbb R[/mathjaxinline], and [mathjaxinline]W[/mathjaxinline] is the space of polynomials [mathjaxinline]\mathbb {P}[/mathjaxinline] (which is a subspace of the space of all functions), then both [mathjaxinline]V[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] are infinite-dimensional, but [mathjaxinline]W\ne V[/mathjaxinline].  </p>
+        </font>
       </solution>
     </p>
   </text>

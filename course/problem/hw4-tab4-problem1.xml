@@ -1,0 +1,41 @@
+<problem display_name="Least Squared Line" linenum="201" tex_filename="./hw/hw4.tex" showanswer="finished" attempts="5" rerandomize="per_student">
+  <text>
+    <p>
+Find the equation of the line [mathjaxinline]y=mx + b[/mathjaxinline] that gives the least squared vertical distance to the data points [mathjaxinline](-1, 1), (0, 5), (1, 3), (2, 8), (3, 11), (5, 12)[/mathjaxinline]. </p>
+    <p>
+Remember to type * for multiplication. </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]y=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="1.9*x + 3.5">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Finding [mathjaxinline]m,b[/mathjaxinline] which fit the data exactly would entail solving the matrix-vector equation </p>
+          <table id="a0000000213" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{cc} -1 &amp;  1 \\ 0 &amp;  1 \\ 1 &amp;  1 \\ 2 &amp;  1 \\ 3 &amp;  1 \\ 5 &amp;  1 \end{array} \right] \left[\begin{array}{c} m \\ b \end{array} \right] = \left[\begin{array}{c} 1 \\ 5 \\ 3 \\ 8 \\ 11 \\ 12 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Let [mathjaxinline]A[/mathjaxinline] be the matrix on the left, and let [mathjaxinline]v[/mathjaxinline] be the vector on the right. In order to find the least-squares best fit, we solve [mathjaxinline]A^ tAx = A^ tv[/mathjaxinline]. We can calculate [mathjaxinline](A^ tA)^{-1}[/mathjaxinline] and [mathjaxinline]A^ tv[/mathjaxinline]. We can therefore find the least squares solution </p>
+          <table id="a0000000214" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]x = (A^ tA)^{-1}A^ tv = \left[\begin{array}{c} 1.9 \\ 3.5 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Therefore the desired equation is [mathjaxinline]y = 1.9x + 3.5.[/mathjaxinline]  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

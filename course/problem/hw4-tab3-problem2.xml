@@ -1,0 +1,26 @@
+<problem display_name="Orthogonal Matrices" linenum="164" tex_filename="./hw/hw4.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]v_1 = \left[ \begin{array}{c} 0.8 \\ 0.6 \\ 0 \end{array} \right],[/mathjaxinline] and [mathjaxinline]v_2 = \left[ \begin{array}{c} 0.3 \\ -0.4 \\ \sqrt {3}{2} \end{array} \right].[/mathjaxinline] </p>
+    <p>
+How many [mathjaxinline]3\times 3[/mathjaxinline] orthogonal matrices have [mathjaxinline]v_1[/mathjaxinline] as their first column and [mathjaxinline]v_2[/mathjaxinline] as their second column? Enter 'infinite' if you think there are infinitely many. (Hint: Think geometrically!) </p>
+    <p>
+      <formularesponse type="cs" samples="infinite@1:5#5" answer="2">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ A [mathjaxinline]3\times 3[/mathjaxinline] matrix is orthogonal if and only if its columns form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. Thus, the question is equivalent to asking, how many vectors [mathjaxinline]v_3[/mathjaxinline] are there such that [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
+          <p>
+Notice that [mathjaxinline]\| v_1\|  = \| v_2\|  = 1[/mathjaxinline], and that [mathjaxinline]\langle v_1, v_2 \rangle = 0.[/mathjaxinline] So we are two-thirds of the way to forming an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. If [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is to be orthonormal, we must have [mathjaxinline]v_3[/mathjaxinline] of norm 1, and orthogonal to the plane spanned by [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline]. There are exactly two unit vectors orthogonal to a given plane (one on each side). Thus there are exactly two ways to fill out the third column to make the matrix orthogonal.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

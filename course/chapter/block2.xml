@@ -1,5 +1,5 @@
-<chapter display_name="Matrix Operations" linenum="380" tex_filename="testcourse.tex" refnum="2" start="2018-01-11T16:00">
-  <sequential display_name="Matrix Multiplication" linenum="392" tex_filename="testcourse.tex" refnum="1" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
+<chapter display_name="Matrix Operations" linenum="501" tex_filename="testcourse.tex" refnum="3" start="2019-10-07T05:00">
+  <sequential display_name="Matrix Multiplication" linenum="513" tex_filename="testcourse.tex" refnum="1" due="2019-10-28T04:59" graded="true" format="Exercises" url_name="b2matrixmult-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2matrixmult-vertical1">
       <html url_name="b2matrixmult-tab1-text1"/>
     </vertical>
@@ -42,8 +42,12 @@
       <problem url_name="b2matrixmult-tab9-problem2"/>
       <problem url_name="b2matrixmult-tab9-problem3"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="10" url_name="b2matrixmult-vertical10">
+      <html url_name="b2matrixmult-tab10-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Matrix Inverses" linenum="429" tex_filename="testcourse.tex" refnum="2" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
+  <sequential display_name="Matrix Inverses" linenum="557" tex_filename="testcourse.tex" refnum="2" due="2019-10-28T04:59" graded="true" format="Exercises" url_name="b2matrixinv-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2matrixinv-vertical1">
       <html url_name="b2matrixinv-tab1-text1"/>
     </vertical>
@@ -86,8 +90,12 @@
     <vertical display_name="Some IMT Practice" refnum="11" url_name="b2matrixinv-vertical11">
       <problem url_name="b2matrixinv-tab11-problem1"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="12" url_name="b2matrixinv-vertical12">
+      <html url_name="b2matrixinv-tab12-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="More Matrix Operations" linenum="466" tex_filename="testcourse.tex" refnum="3" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2matrixops-sequential">
+  <sequential display_name="More Matrix Operations" linenum="603" tex_filename="testcourse.tex" refnum="3" due="2019-10-28T04:59" graded="true" format="Exercises" url_name="b2matrixops-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2matrixops-vertical1">
       <html url_name="b2matrixops-tab1-text1"/>
     </vertical>
@@ -128,8 +136,12 @@
       <problem url_name="b2matrixops-tab10-problem1"/>
       <problem url_name="b2matrixops-tab10-problem2"/>
     </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="11" url_name="b2matrixops-vertical11">
+      <html url_name="b2matrixops-tab11-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxxxx"/>
+    </vertical>
   </sequential>
-  <sequential display_name="Leontief Input-Output System" linenum="501" tex_filename="testcourse.tex" refnum="4" due="2019-12-13T14:15" graded="true" format="Exercises" url_name="b2leontief-sequential">
+  <sequential display_name="Leontief Input-Output System" linenum="647" tex_filename="testcourse.tex" refnum="4" due="2019-10-28T04:59" graded="true" format="Exercises" url_name="b2leontief-sequential">
     <vertical display_name="Page One" refnum="1" url_name="b2leontief-vertical1">
       <html url_name="b2leontief-tab1-text1"/>
     </vertical>
@@ -138,6 +150,38 @@
     </vertical>
     <vertical display_name="Leontief Input-Output Model" refnum="3" url_name="b2leontief-vertical3">
       <video url_name="b2leontief-tab3-video1"/>
+    </vertical>
+    <vertical display_name="Discuss This Learning Sequence" refnum="4" url_name="b2leontief-vertical4">
+      <html url_name="b2leontief-tab4-text1"/>
+      <discussion url_name="discussion_Discuss_this_Sectionxxxxxxxxxxx"/>
+    </vertical>
+  </sequential>
+  <sequential display_name="Homework 2" linenum="689" tex_filename="testcourse.tex" refnum="5" due="2019-10-28T04:59" graded="true" format="Homework" url_name="hw2-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="hw2-vertical1">
+      <html url_name="hw2-tab1-text1"/>
+    </vertical>
+    <vertical display_name="Homework Page 1" refnum="2" url_name="hw2-vertical2">
+      <problem url_name="hw2-tab2-problem1"/>
+      <problem url_name="hw2-tab2-problem2"/>
+      <problem url_name="hw2-tab2-problem3"/>
+    </vertical>
+    <vertical display_name="Homework Page 2" refnum="3" url_name="hw2-vertical3">
+      <problem url_name="hw2-tab3-problem1"/>
+      <problem url_name="hw2-tab3-problem2"/>
+    </vertical>
+    <vertical display_name="Homework Page 3" refnum="4" url_name="hw2-vertical4">
+      <problem url_name="hw2-tab4-problem1"/>
+      <problem url_name="hw2-tab4-problem2"/>
+      <problem url_name="hw2-tab4-problem3"/>
+      <problem url_name="hw2-tab4-problem4"/>
+    </vertical>
+    <vertical display_name="Homework Page 4" refnum="5" url_name="hw2-vertical5">
+      <problem url_name="hw2-tab5-problem1"/>
+      <problem url_name="hw2-tab5-problem2"/>
+    </vertical>
+    <vertical display_name="Discussion" refnum="6" url_name="hw2-vertical6">
+      <html url_name="hw2-tab6-text1"/>
+      <discussion url_name="Discuss_Homework_2"/>
     </vertical>
   </sequential>
 </chapter>

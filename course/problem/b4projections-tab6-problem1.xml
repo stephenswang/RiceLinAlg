@@ -1,4 +1,4 @@
-<problem display_name="Incomplete Basis" linenum="241" tex_filename="./block4/projections.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Incomplete Basis" linenum="260" tex_filename="./block4/projections.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Suppose that [mathjaxinline]\{ w_1;w_2\}[/mathjaxinline] forms a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline], and let [mathjaxinline]v[/mathjaxinline] be another vector in [mathjaxinline]\mathbb R^2[/mathjaxinline]. We have drawn [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w_1[/mathjaxinline] below, but have deliberately omitted [mathjaxinline]w_2[/mathjaxinline]. </p>

@@ -1,0 +1,57 @@
+<problem display_name="Standard Matrix" linenum="464" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+For all [mathjaxinline]v\in \mathbb R^2[/mathjaxinline], let [mathjaxinline]T(v)[/mathjaxinline] be the result when [mathjaxinline]v[/mathjaxinline] is reflected across the diagonal line [mathjaxinline]y=-x[/mathjaxinline] and then tripled in length. [mathjaxinline]T[/mathjaxinline] is a linear transformation from [mathjaxinline]\mathbb R^2[/mathjaxinline] to [mathjaxinline]\mathbb R^2[/mathjaxinline]. What is its standard matrix? </p>
+    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Matrix<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p>
+          <p>
+Use decimals only. </p>
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
+    <script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script>
+    <p>
+      <customresponse cfn="MatrixEntry" expect="[[0,-3],[-3,0]]">
+        <textline correct_answer="[[0,-3],[-3,0]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We can see that the reflection of [mathjaxinline]e_1[/mathjaxinline] is [mathjaxinline]-e_2[/mathjaxinline], thus [mathjaxinline]T(e_1) = -3e_2[/mathjaxinline]. Therefore the first column of the standard matrix is [mathjaxinline]-3e_2[/mathjaxinline]. Similarly, the reflection of [mathjaxinline]e_2[/mathjaxinline] is [mathjaxinline]-e_1[/mathjaxinline], so we have [mathjaxinline]T(e_2) = -3e_1[/mathjaxinline], and the second column of the standard matrix is [mathjaxinline]-3e_1[/mathjaxinline]. Therefore the standard matrix is [mathjaxinline]\left[ \begin{array}{cc} 0&amp;  -3 \\ -3 &amp;  0 \end{array} \right].[/mathjaxinline]  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+</problem>

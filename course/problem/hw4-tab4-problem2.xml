@@ -1,0 +1,51 @@
+<problem display_name="Least Squared in Two Variables" linenum="249" tex_filename="./hw/hw4.tex" showanswer="finished" attempts="5" rerandomize="per_student">
+  <text>
+    <p>
+A scientist conjectures that a quantity [mathjaxinline]J[/mathjaxinline] is equal to a combination of a quadratic function of [mathjaxinline]x[/mathjaxinline] and a linear function of [mathjaxinline]y[/mathjaxinline], where [mathjaxinline]x[/mathjaxinline] and [mathjaxinline]y[/mathjaxinline] are independent variables. She gathers the following data: </p>
+    <table id="a0000000215" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{c|c|c} x &amp;  y &amp;  J \\ \hline 0 &amp;  0 &amp;  5 \\ 0 &amp;  1 &amp;  8 \\ 1 &amp;  1 &amp;  9 \\ 1 &amp;  2 &amp;  10 \\ 2 &amp;  0 &amp;  10 \\ 3 &amp;  2 &amp;  20 \end{array}[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+Consider all equations of the form [mathjaxinline]J = ax^2 + bx + cy + d[/mathjaxinline], where [mathjaxinline]a,b,c,d[/mathjaxinline] are real numbers. Find a function of that form which is the least-squares best fit for the given data. </p>
+    <p>
+[You will probably not want to do these calculations by hand!] </p>
+    <p>
+Remember to type * for multiplication. </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]J=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="5*x^2/4-x/4+2*y+5.5">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Finding [mathjaxinline]a,b,c,d[/mathjaxinline] which fit the data exactly would entail solving the matrix-vector equation </p>
+          <table id="a0000000216" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[\begin{array}{cccc} 0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  1 &amp;  1 \\ 1 &amp;  1 &amp;  1 &amp;  1 \\ 1 &amp;  1 &amp;  2 &amp;  1 \\ 4 &amp;  2 &amp;  0 &amp;  1 \\ 9 &amp;  3 &amp;  2 &amp;  1 \end{array} \right] \left[\begin{array}{c} a \\ b \\ c \\ d \end{array} \right] = \left[\begin{array}{c} 5 \\ 8 \\ 9 \\ 10 \\ 10 \\ 20 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Let [mathjaxinline]A[/mathjaxinline] be the matrix on the left, and let [mathjaxinline]v[/mathjaxinline] be the vector on the right. In order to find the least-squares best fit, we solve [mathjaxinline]A^ tAx = A^ tv[/mathjaxinline]. We can calculate [mathjaxinline](A^ tA)^{-1}[/mathjaxinline] and [mathjaxinline]A^ tv[/mathjaxinline]. We can therefore find the least squares solution </p>
+          <table id="a0000000217" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]x = (A^ tA)^{-1}A^ tv = \left[\begin{array}{c} 1.25 \\ -0.25 \\ 2 \\ 5.5 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ Therefore the desired equation is [mathjaxinline]J = 1.25x^2 - 0.25 x + 2y + 5.5.[/mathjaxinline]  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

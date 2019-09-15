@@ -1,0 +1,26 @@
+<problem display_name="Basis" linenum="86" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Is the following list a basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]? </p>
+    <table id="a0000000173" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\{  \left[ \begin{array}{c} 1 \\ 3 \\ -3 \end{array} \right] ; \left[ \begin{array}{c} 2 \\ 4 \\ -2 \end{array} \right] ; \left[ \begin{array}{c} 5 \\ 3 \\ 9 \end{array} \right] \right\}[/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+      <optionresponse>
+        <optioninput options="('Yes','No')" correct="No"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ When we row-reduce the [mathjaxinline]3\times 3[/mathjaxinline] matrix with these three vectors as its columns, we do not get the identity matrix. Therefore this list is not a basis of [mathjaxinline]\mathbb R^3[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

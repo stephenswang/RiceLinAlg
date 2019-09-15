@@ -1,4 +1,4 @@
-<problem display_name="Exploring the formula 1" linenum="71" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Exploring the formula 1" linenum="72" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 The formula given in the video is [mathjaxinline]\displaystyle \sum _{i=1}^ k \langle v, w_ i\rangle w_ i.[/mathjaxinline] Let's examine this a little more closely. </p>

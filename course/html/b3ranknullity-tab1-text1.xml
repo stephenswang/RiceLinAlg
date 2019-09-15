@@ -2,15 +2,13 @@
   <p>
 At the end of this sequence, and after some practice, you should be able to: </p>
   <ul class="itemize">
-    <li/>
-    <li/>
     <li>
       <p>
-Determine the rank and nullity of a linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], given its standard matrix </p>
+Determine the rank and nullity of a linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], given its standard matrix. </p>
     </li>
     <li>
       <p>
-Find bases for the image and kernel of a linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], given its standard matrix </p>
+Find bases for the image and kernel of a linear transformation [mathjaxinline]T: \mathbb R^ n \rightarrow \mathbb R^ m[/mathjaxinline], given its standard matrix. </p>
     </li>
     <li>
       <p>
@@ -18,5 +16,5 @@ Apply the Rank-Nullity Theorem. </p>
     </li>
   </ul>
   <p>
-For time budgeting purposes, this sequence has 2 videos totaling 12 minutes, plus some questions. </p>
+For time budgeting purposes, this sequence has 5 videos totaling 28 minutes, plus some questions. </p>
 </html>

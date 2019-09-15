@@ -1,0 +1,26 @@
+<problem display_name="Kernel" linenum="234" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose that [mathjaxinline]T: \mathbb R^9 \rightarrow \mathbb R^4[/mathjaxinline] is a linear transformation which is not onto. </p>
+    <p>
+What is the strongest conclusion we can make about the kernel of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <p style="display:inline">The dimension of [mathjaxinline]\mathrm{Ker}(T)[/mathjaxinline] is at least</p>
+      <numericalresponse inline="1" answer="6">
+        <textline inline="1">
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p><p style="display:inline">and at most</p><numericalresponse inline="1" answer="9"><textline inline="1"><responseparam type="tolerance" default="0.00001"/></textline></numericalresponse>. </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Since [mathjaxinline]T[/mathjaxinline] is not onto, the rank of [mathjaxinline]T[/mathjaxinline] cannot be 4. Thus the rank is at most 3. Since the rank plus the nullity must equal 9, this means the nullity is at least 6. The kernel is a subspace of [mathjaxinline]\mathbb R^9[/mathjaxinline], so its dimension is at most 9.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

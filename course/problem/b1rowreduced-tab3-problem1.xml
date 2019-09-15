@@ -2,19 +2,19 @@
   <text>
     <p>
 Consider the following matrices. </p>
-    <table id="a0000000022" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000023" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]A = \left[ \begin{array}{ccccc} 1 &amp;  9 &amp;  1 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right], B= \left[ \begin{array}{ccccc} 1 &amp;  0 &amp;  3 &amp;  1 &amp;  0 \\ 0 &amp;  1 &amp;  3 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \end{array} \right][/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
       </tr>
     </table>
-    <table id="a0000000023" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000024" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]C = \left[ \begin{array}{ccccc} 1 &amp;  9 &amp;  0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  -1 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right], D= \left[ \begin{array}{ccccc} 0 &amp;  1 &amp;  3 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
       </tr>
     </table>
-    <table id="a0000000024" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000025" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]E = \left[ \begin{array}{ccccc} 1 &amp;  1 &amp;  0 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \end{array} \right], F= \left[ \begin{array}{ccccc} 0 &amp;  1 &amp;  2 &amp;  0 &amp;  0 \\ 1 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

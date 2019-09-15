@@ -1,0 +1,20 @@
+<problem display_name="Line as Subspace?" linenum="39" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or false: Any line in [mathjaxinline]\mathbb R^3[/mathjaxinline] is a subspace of [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If the line does not contain the zero vector, it is not a subspace.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

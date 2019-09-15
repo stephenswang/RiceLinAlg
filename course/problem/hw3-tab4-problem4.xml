@@ -1,0 +1,26 @@
+<problem display_name="Rank" linenum="252" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose that [mathjaxinline]T: \mathbb R^5 \rightarrow \mathbb R^7[/mathjaxinline] is a linear transformation. Suppose further that we can find two vectors [mathjaxinline]v,w \in \mathbb R^5[/mathjaxinline], neither of which is a scalar multiple of the other, such that [mathjaxinline]T(v) = T(w) = \mathbf{0}[/mathjaxinline]. </p>
+    <p>
+What is the strongest conclusion we can make about the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <p style="display:inline">The rank of [mathjaxinline]T[/mathjaxinline] is at least</p>
+      <numericalresponse inline="1" answer="0">
+        <textline inline="1">
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p><p style="display:inline">and at most</p><numericalresponse inline="1" answer="3"><textline inline="1"><responseparam type="tolerance" default="0.00001"/></textline></numericalresponse>. </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We have [mathjaxinline]v[/mathjaxinline] and [mathjaxinline]w[/mathjaxinline] as linearly independent vectors in [mathjaxinline]\mathbb {Ker}(T).[/mathjaxinline] Therefore the nullity of [mathjaxinline]T[/mathjaxinline] is at least 2. Since the nullity plus rank must equal 5, that means the rank is at most 3.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>
