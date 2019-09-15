@@ -1,0 +1,29 @@
+<chapter display_name="Final Exam" linenum="1188" tex_filename="testcourse.tex" refnum="6" start="2019-11-04T06:00">
+  <sequential display_name="Final Exam" linenum="1196" tex_filename="testcourse.tex" refnum="1" due="2019-11-25T05:59" graded="true" format="Final" url_name="Final-sequential">
+    <vertical display_name="Page One" refnum="1" url_name="Final-vertical1">
+      <html url_name="Final-tab1-text1"/>
+      <problem url_name="Final-tab1-problem1"/>
+    </vertical>
+    <vertical display_name="Final Page 1" refnum="2" url_name="Final-vertical2">
+      <problem url_name="Final-tab2-problem1"/>
+      <problem url_name="Final-tab2-problem2"/>
+    </vertical>
+    <vertical display_name="Final Page 2" refnum="3" url_name="Final-vertical3">
+      <problem url_name="Final-tab3-problem1"/>
+      <problem url_name="Final-tab3-problem2"/>
+      <problem url_name="Final-tab3-problem3"/>
+      <problem url_name="Final-tab3-problem4"/>
+    </vertical>
+    <vertical display_name="Final Page 3" refnum="4" url_name="Final-vertical4">
+      <problem url_name="Final-tab4-problem1"/>
+      <problem url_name="Final-tab4-problem2"/>
+      <problem url_name="Final-tab4-problem3"/>
+      <problem url_name="Final-tab4-problem4"/>
+    </vertical>
+    <vertical display_name="Final Page 4" refnum="5" url_name="Final-vertical5">
+      <problem url_name="Final-tab5-problem1"/>
+      <problem url_name="Final-tab5-problem2"/>
+      <problem url_name="Final-tab5-problem3"/>
+    </vertical>
+  </sequential>
+</chapter>

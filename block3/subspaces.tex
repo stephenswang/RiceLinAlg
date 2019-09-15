@@ -11,13 +11,13 @@
 At the end of this sequence, and after some practice, you should be able to:
 
 \begin{itemize}
-\item 
-
+\item Identify subsets of a vector space which are subspaces.
+\item Prove that some abstractly defined subsets of vector spaces are subspaces.
 
 \end{itemize}
 
 
-For time budgeting purposes, this sequence has X videos totaling X minutes, 
+For time budgeting purposes, this sequence has 3 videos totaling 18 minutes, 
 plus some questions.  
 
 
@@ -248,6 +248,68 @@ $\left[ \begin{array}{c} 0 \\ 3 \\ -1 \end{array} \right]$ are elements of $Z$, 
 
 
 
+
+\endedxvertical
+
+
+
+\beginedxvertical{Other Important Subspaces}
+
+
+
+\beginedxproblem{Kernel}{\dpa1}
+
+Suppose that $T: V\rightarrow W$ is a linear transformation.  
+
+
+Does the kernel of $T$ contain the zero vector of $V$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+Prove (on your own) that the kernel of $T$ is closed under addition.  
+
+\edXabox{expect="I have proven it" options="I have proven it"}
+
+Prove (on your own) that the kernel of $T$ is closed under scalar multiplication.  
+
+\edXabox{expect="I have proven it" options="I have proven it"}
+
+
+Is the kernel of $T$ a subspace of $V$?  
+
+\edXabox{expect="Yes" options="Yes","No"}
+
+
+\edXsolution{ We know $T(\veco) = \veco$, so $\veco \in \mathrm{Ker}(T).$  
+
+If $v_1, v_2 \in \mathrm{Ker}(T)$, then $T(v_1) = T(v_2) = \veco$.  
+Therefore, \[T(v_1+v_2) = T(v_1) + T(v_2) = \veco + \veco = \veco.\]
+We conclude that $v_1+v_2 \in \mathrm{Ker}(T),$ so the kernel is closed under addition.  
+
+Similarly, for any scalar $a$, 
+\[T(av_1) = aT(v_1)= a\veco = \veco,\]
+so the kernel is closed under scalar multiplication.  
+
+Hence it is a subspace of the domain.  
+ }
+ 
+\endedxproblem
+
+
+
+\beginedxtext{Image}
+
+Similarly, try on your own to show that the image of $T$ is a subspace of $W$.  
+
+\endedxtext
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Review Question}
+
 \beginedxproblem{Number of Subspaces}{\dpa1}
 
 True or false: Every non-zero vector space has at least two subspaces.  
@@ -259,7 +321,6 @@ of $V$.  If $V$ is non-zero, then these two subspaces are different from one ano
 }
  
 \endedxproblem
-
 
 
 

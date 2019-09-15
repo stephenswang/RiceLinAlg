@@ -9,9 +9,10 @@ computations should still be done by hand, for now.
 
 Here are a couple of websites that will do row reduction for you:
 
-\href{https://tinyurl.com/3xr6ed}{Linear Algebra Toolkit}
+\href{https://tinyurl.com/dmokjt}{Linear Algebra Toolkit}
 
 \href{https://www.wolframalpha.com/}{Wolfram Alpha}
+
 
 
 \endedxtext
@@ -36,6 +37,33 @@ Enter the correct formula in the form a + b*x + c*x^2  (either exactly or to two
 \edXabox{type="formula" expect="4-2.5*x+0.5*x^2" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
 
 \edXsolution{
+For the parabola to pass through these points, we would need the following equations to be satisfied:
+\[
+\begin{array}{rcccccc}
+11  & = & a & - & 2b & + & 4c \\
+4  & = & a & + & 0b & + & 0c \\
+2  & = & a & + & 1b & + & 1c \\
+1  & = & a & + & 2b & + & 4c 
+\end{array}
+\]
+
+This is a system of four linear equations in three variables $a,b,c,$ represented by the augmented matrix
+\[ \left[ \begin{array}{ccc:c}
+1&-2&4&11 \\
+1&0&0&4\\
+1&1&1&2\\
+1&2&4&1
+\end{array} \right].\]
+When we row-reduce this matrix, we obtain
+\[ \left[ \begin{array}{ccc:c}
+1&0&0&4 \\
+0&1&0&-2.5\\
+0&0&1&0.5\\
+0&0&0&0
+\end{array} \right].\]
+This tells us that when $a=4, b=-2.5, c=0.5,$ the equations are all satisfied.  Therefore
+$y=4 -2.5x + 0.5x^2$ passes through all four points.  
+
 }
 
 \endedxproblem
@@ -54,6 +82,33 @@ Enter the correct formula in the form $a + b*x + c*x^2$, either exactly or to tw
 \edXabox{type="formula" expect="0" samples="x@1:5#5" feqin="1" inline="1" tolerance=".01"}
 
 \edXsolution{
+
+
+For the parabola to pass through these points, we would need the following equations to be satisfied:
+\[
+\begin{array}{rcccccc}
+11  & = & a & - & 2b & + & 4c \\
+4  & = & a & + & 0b & + & 0c \\
+2  & = & a & + & 1b & + & 1c \\
+0  & = & a & + & 3b & + & 9c 
+\end{array}
+\]
+
+This is a system of four linear equations in three variables $a,b,c,$ represented by the augmented matrix
+\[ \left[ \begin{array}{ccc:c}
+1&-2&4&11 \\
+1&0&0&4\\
+1&1&1&2\\
+1&3&9&0
+\end{array} \right].\]
+When we row-reduce this matrix, we obtain
+\[ \left[ \begin{array}{ccc:c}
+1&0&0&0 \\
+0&1&0&0\\
+0&0&1&0\\
+0&0&0&1
+\end{array} \right].\]
+This is an inconsistent system, so there is no quadratic passing through all four points.
 }
 
 \endedxproblem
@@ -83,6 +138,46 @@ dotted lines), set up a system of linear equations for the temperatures, and the
 \edXabox{type="numerical" expect="10" feqin="1" inline="1" tolerance=".01"}
 
 \edXsolution{
+The condition that the four points' temperatures be equal to the average of nearby temperatures are:
+\[
+\begin{array}{rcl}
+A & = & \frac{1}{4}(B + C + 3 + 8) \\
+B & = & \frac{1}{4}(A + C + D + 21) \\
+C & = & \frac{1}{4}(A + B + D + 6) \\
+D & = & \frac{1}{4}(B + C + 12 + 7) 
+\end{array}
+\]
+
+We can manipulate this to get the equations
+\[
+\begin{array}{ccccccccc}
+4A & - & B & -&  C & & & = & 11\\
+-A  & + & 4B & - & C & - & D & = & 21 \\
+-A  & - & B & + & 4C & - & D & = & 6 \\
+  & - & B & - & C & + & 4D & = & 7  
+\end{array}
+\]
+which translates to the augmented matrix 
+\[
+\left[
+\begin{array}{cccc:c}
+4 & -1 & -1 & 0 &  11\\
+-1 & 4 & -1 & -1 & 21 \\
+-1 &-1 &  4 & -1  & 6 \\
+ 0 & -1 & -1 & 4 & 7  
+\end{array}\right].
+\]
+This row reduces to 
+\[
+\left[\begin{array}{cccc:c}
+1 & 0 & 0 & 0 &  8\\
+0& 1 & 0 & 0 & 12 \\
+0 &0 &  1 & 0  & 9 \\
+ 0 & 0 & 0 & 1 & 10  
+\end{array}\right].
+\]
+
+So $(A,B,C,D) = (8,12,9,10)$.  
 }
 
 \endedxproblem
@@ -119,7 +214,7 @@ dotted lines), set up a system of linear equations for the temperatures, and the
 
 \beginedxproblem{Traffic}{\dpa5}
 
-A set of roads and intersections is shown below.  The rate of cars per hour is shown for some roads.  
+A set of one-way roads and intersections is shown below.  The rate of traffic (measured in cars per hour) is shown for some roads.  
 Assume that at each of the six intersections, 
 the flow of traffic into the intersection equals the flow of traffic
 out of the intersection.  This gives a set of linear equations in the seven unknown traffic rates.  
@@ -130,12 +225,131 @@ out of the intersection.  This gives a set of linear equations in the seven unkn
 \end{center}
 
 
-Solve the system in full generality.  Assuming that all rates are non-negative, what is the minimum possible value of $x_7$?  
+Solve the system in full generality.  Assuming that all rates are non-negative, what is the minimum possible value of $x_6$?  
 
 \edXabox{type="numerical" expect="60" feqin="1" tolerance=".01"}
 
 \edXsolution{
+The condition that flow in equals flow out at each intersection gives us six equations:
+\[
+\begin{array}{ccccccc}
+& & x_1 & = & x_2 & + & 100 \\
+x_2 &+& 50 & = & x_3 &+& x_7 \\
+&& x_3 & = & x_4 &+& 130 \\
+x_4 &+& 150 & = & x_5 & & \\
+x_5 &+& x_7 & = & x_6 &+& 90 \\
+x_6 &+& 120 & = & x_1 &&  \\
+\end{array}
+\]
+This can be rearranged into a system of linear equations with the following augmented matrix:
+\[
+\left[
+\begin{array}{ccccccc:c}
+1 & -1 & 0 & 0 & 0 & 0 & 0 & 100 \\
+0 & 1 & -1 & 0 & 0 & 0 & -1 & -50 \\
+0 & 0 & 1 & -1 & 0 & 0 & 0 & 130 \\
+0 & 0 & 0 & 1 & -1 & 0 & 0 & -150 \\
+0 & 0 & 0 & 0 & 1 & -1 & 1 & 90 \\
+-1 & 0 & 0 & 0 & 0 & 1 & 0 & -120 
+\end{array}
+\right],
+\]
+which row-reduces to 
+\[
+\left[
+\begin{array}{ccccccc:c}
+1 & 0 & 0 & 0 & 0 & -1 & 0 & 120 \\
+0 & 1 & 0 & 0 & 0 & -1 & 0 & 20 \\
+0 & 0 & 1 & 0 & 0 & -1 & 1 & 70 \\
+0 & 0 & 0 & 1 & 0 & -1 & 1 & -60 \\
+0 & 0 & 0 & 0 & 1 & -1 & 1 & 90 \\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 
+\end{array}
+\right].
+\]
+We see that $x_6$ and $x_7$ are free variables.  However, the fourth line tells that 
+$x_4 - x_6 + x_7 = -60$, or $x_6 = x_4 + x_7 + 60$.  If all variables are non-negative, then
+$x_6 \ge 60$.  By setting $x_6 = 60$ and $x_7= 0$, all other variables will be non-negative, 
+so 60 is indeed possible, and is therefore the answer.  
 }
+\endedxproblem
+
+
+
+\beginedxproblem{Matrix-Vector Multiplication}{\dpa3}
+
+
+
+Let  $u,v,w$ be three vectors in $\R^4$ with the property that $4u - 3v + 2w = \veco$.  
+Let $A$ be the $4\times 2$ matrix whose columns are $u$ and $v$ (in that order).  
+
+Find a solution to the equation $Ax = w$.  
+
+\input{vectorentry.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[-2],[1.5]]"}
+
+\edXsolution{ 
+We can solve the given equation for $w$: 
+\[ w = -2u + 1.5v.\]  
+This is a linear combination of the columns of $A$; it is $-2$ times the first column of $A$ plus
+$1.5$ times the second column of $A$.  By definition, this is the same as 
+the matrix-vector product $A\left[ \begin{array}{c} -2 \\ 1.5 \end{array}\right].$  
+
+Therefore $x = \left[ \begin{array}{c} -2 \\ 1.5 \end{array}\right]$ is a solution to $Ax = w.$  
+}
+
+
+\endedxproblem
+
+
+
+
+
+
+\beginedxproblem{Find a Solution Set}{\dpa7}
+
+
+Let  \[A = \left[ \begin{array}{cccc} 1 & -2 & 0 & 3\\ 
+1 & -2 & 2 & -1 \\ 2 & -4 & 1 & 4 \end{array} \right].\]  Find a list
+of vectors whose span is the set of solutions to $Ax = \veco$.  
+
+Enter the list of vectors below, separated by semicolons.  For instance, 
+to enter the list $\left\{\left[\begin{array}{c} 1 \\ 0 \\ 1
+\end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3
+\end{array} \right] \right\}$, type <1,0,1>;<1,2,3>.  
+
+%requires new grading program
+
+
+\input{solutionsetcheck2.tex}
+
+\edXabox{type="custom" cfn="spangrader" expect="<2,1,0,0>;<-3,0,2,1>"}
+
+
+\edXsolution{ 
+We row reduce the matrix $A$ to obtain
+\[
+\left[ \begin{array}{cccc} 1 & -2 & 0 & 3 \\  0 & 0 & 1 & -2 \\ 0 & 0 & 0 & 0 \end{array} \right] \] 
+
+We have 2 free variables, $x_2$ and $x_4$. For the non-free variables, we get
+$x_1 = 2x_2 - 3x_4$ and $x_3 = 2x_4$.  
+
+Hence the general solution is \[
+\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] = 
+\left[ \begin{array}{c} 2x_2 - 3x_4 \\ x_2 \\ 2x_4 \\ x_4 \end{array}\right] = 
+x_2 \left[ \begin{array}{c} 2 \\ 1 \\ 0 \\ 0 \end{array}\right] + 
+x_4 \left[ \begin{array}{c} -3 \\ 0 \\ 2 \\ 1 \end{array}\right],
+\]
+for any $x_2,x_4 \in \R$.  Hence the set of solutions is the span of  
+$\left\{ \left[ \begin{array}{c} 2 \\ 1 \\ 0 \\ 0 \end{array} \right]; 
+\left[ \begin{array}{c} -3 \\ 0 \\ 2 \\ 1 \end{array} \right]\right\}.$
+
+(Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.)
+
+}
+
 
 \endedxproblem
 
@@ -144,35 +358,188 @@ Solve the system in full generality.  Assuming that all rates are non-negative, 
 
 \beginedxvertical{Homework Page 3}
 
+\beginedxproblem{Lists of Vectors}{\dpa1}
 
-\beginedxproblem{Cube to Identity}{\dpa7}
+For each of the following lists of vectors in $\R^3$, say whether the list spans $\R^3$, is linearly independent, both, or neither. 
 
-Find a $2\times 2$ matrix $A$ which is not the identity matrix, but which has the property
-that $A^3 = I_2$.  Enter your answer to within two decimal places.  
 
-(Hint: Don't try to solve for the entries of $A$ with algebra.  Think about what you might want $A$ to do geometrically first.)
 
-\input{checkcube.tex}
+\[ \left\{ 
+\left[ \begin{array}{c} 1 \\ 2 \\ 3\end{array} \right] ; 
+\left[ \begin{array}{c} 5 \\ 2 \\ 0\end{array} \right] \right\} \]
 
-\edXabox{type="custom" cfn="cubing" expect="[[-0.5,-0.866],[0.866,-0.5]]"}
+\edXabox{type="multichoice" expect="The list is linearly independent but does not span $\R^3$" options="The list spans $\R^3$ but is not linearly independent","The list is linearly independent but does not span $\R^3$","The list spans $\R^3$ and is linearly independent","The list neither spans $\R^3$ nor is linearly independent"}
 
-\edXsolution{
+\[ \left\{ 
+\left[ \begin{array}{c} 1 \\ 1 \\ 0\end{array} \right] ; 
+\left[ \begin{array}{c} 1 \\ 2 \\ 1\end{array} \right] ;
+\left[ \begin{array}{c} 0 \\ 1 \\ 3\end{array} \right] 
+\right\} \]
 
+\edXabox{type="multichoice" expect="The list spans $\R^3$ and is linearly independent" options="The list spans $\R^3$ but is not linearly independent","The list is linearly independent but does not span $\R^3$","The list spans $\R^3$ and is linearly independent","The list neither spans $\R^3$ nor is linearly independent"}
+
+\[ \left\{ 
+\left[ \begin{array}{c} 1 \\ 0 \\ 2\end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 2 \\ -1\end{array} \right] ;
+\left[ \begin{array}{c} 2 \\ -2 \\ 5\end{array} \right] ;
+\left[ \begin{array}{c} -1 \\ 6 \\ -5\end{array} \right] 
+\right\} \]
+
+\edXabox{type="multichoice" expect="The list neither spans $\R^3$ nor is linearly independent" options="The list spans $\R^3$ but is not linearly independent","The list is linearly independent but does not span $\R^3$","The list spans $\R^3$ and is linearly independent","The list neither spans $\R^3$ nor is linearly independent"}
+
+
+\edXsolution{ 
+In the first example, we see two vectors.  Two vectors are not enough to span $\R^3$.  A pair of vectors
+is linearly independent if and only if neither is a scalar multiple of the other -- so we can see by 
+inspection that this list is linearly independent.  
+
+
+For the other lists, we need to do more calculation.  We can write the vectors as the columns of a matrix, and row-reduce.  If there is a
+pivot in every row, we know that the vectors will span $\R^3$, and if there is a pivot in every column,
+the vectors will be linearly independent.  We see both when we apply this to the second list, so 
+that list is both linearly independent and spans $\R^3$.  
+
+For the third list, after row-reduction we obtain a $3\times 4$ matrix that only has two pivots, so
+this list does not span $\R^3,$ nor is it linearly independent.  (In fact, a list of four vectors in
+$\R^3$ can never be linearly independent!)
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Linear Transformation}{\dpa4}
+
+
+
+\begin{center}
+\includesvg[450]{h1lintrans}
+\end{center}
+
+The vectors $u,v,w \in \R^2$ are given in the picture above.  
+Recall that $\mathbb{P}$ is the space of all polynomials.  
+Suppose that $T: \R^2 \rightarrow \mathbb{P}$ is a linear transformation, and that
+$T(u) = t^2 - 1$ and $T(v) = -2t + 3$.  What is $T(w)$?  
+
+
+\edXabox{type="formula" expect="-t^2 -4*t + 7" samples="t@1:5#10" tolerance=".01" feqin="1" size="50"}
+
+
+\edXsolution{Note from the picture that $w = -u + 2v.$  Hence \[
+\begin{array}{rcl}
+T(w) &  =  & T(-u+2v) \\
+& = & T(-u) + T(2v) \\
+& = & -T(u) + 2T(v) \\
+& = & -t^2 -4t + 7. 
+\end{array}
+\]
+
+}
+
+\endedxproblem
+
+\beginedxproblem{Equal Matrix-Vector Products}{\dpa1}
+
+True or False: If $A$ is a $6\times 4$ matrix whose columns are linearly independent, and 
+$Au = Av$ for vectors $u,v \in \R^4$, then $u=v$.  
+
+
+\edXabox{expect="True" options="True","False"}
+
+
+\edXsolution{ 
+Let $Au = Av = w$.  Since the columns of $A$ are linearly independent, the equation $Ax = w$ can have at most 
+one solution.  Since $u$ and $v$ are both solutions to this equation, they must be equal.  
+}
+
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 4}
+
+
+
+
+\beginedxproblem{Standard Matrix}{\dpa3}
+
+For all $v\in \R^2$, let $T(v)$ be the result when $v$ is reflected across the diagonal line $y=-x$ and
+then tripled in length.    
+$T$ is a linear transformation from $\R^2$ to $\R^2$.  What is its standard matrix?
+ 
+\input{matrixentry.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[0,-3],[-3,0]]"}
+
+
+\edXsolution{ We can see that the reflection of $e_1$ is $-e_2$,  thus $T(e_1) = -3e_2$.  Therefore the first column of the standard matrix is $-3e_2$.  
+Similarly, the reflection of $e_2$ is $-e_1$, so we have $T(e_2) = -3e_1$, and the second column of the standard matrix is $-3e_1$.  
+Therefore the standard matrix is 
+$\left[ 
+\begin{array}{cc} 0& -3 \\ -3 & 0 \end{array} \right].$
 }
 
 
 \endedxproblem
 
 
+\beginedxproblem{Into and Onto}{\dpa1}
+
+Suppose the linear transformation $T: \R^5\rightarrow \R^3$ has a standard matrix $A$ which row reduces
+to have 3 pivots.  What can we conclude about $T$?  
 
 
+\edXabox{type="multichoice" expect="$T$ is onto but not into" options="$T$ is onto but not into","$T$ is into but not onto","$T$ is both into and onto","$T$ is neither into nor onto"}
 
+
+Suppose the linear transformation $T: \R^5\rightarrow \R^3$ has a standard matrix $A$ which row reduces
+to have 2 pivots.  What can we conclude about $T$?  
+
+
+\edXabox{type="multichoice" expect="$T$ is neither into nor onto" options="$T$ is onto but not into","$T$ is into but not onto","$T$ is both into and onto","$T$ is neither into nor onto"}
+
+
+Suppose the linear transformation $T: \R^3\rightarrow \R^5$ has a standard matrix $A$ which row reduces
+to have 3 pivots.  What can we conclude about $T$?  
+
+
+\edXabox{type="multichoice" expect="$T$ is into but not onto" options="$T$ is onto but not into","$T$ is into but not onto","$T$ is both into and onto","$T$ is neither into nor onto"}
+
+
+\edXsolution{ 
+We know that $T$ is into if and only if its standard matrix row-reduces to have a pivot in every column,
+and $T$ is onto if and only if its standard matrix row-reduces to have a pivot in every row.  
+
+In the first example, we have a $3\times 5$ matrix with a pivot in every row but not every column, 
+so $T$ is onto but not into.  (In fact, a linear transformation from $\R^5$ to $\R^3$ can never be into.)
+
+In the second example, we have a $3\times 5$ matrix with only two pivots, therefore it does not have one in every row nor in every column.  
+Thus $T$ is neither into nor onto. 
+
+Finally, we have a $5\times 3$ matrix with a pivot in every column, but not every row.  Thus 
+$T$ is into but not onto.  (In fact, a linear transformation from $\R^3$ to $\R^5$ can never be onto.)
+}
+
+\endedxproblem
 
 
 \endedxvertical
 
 
 
+\beginedxvertical{Discussion}
 
 
+\beginedxtext{Discussion}
+
+Feel free to discuss the homework questions in the forum.  Before creating a new post, please first check to see if there is already a question
+or discussion addressing your topic.  
+
+Also, please do not give away the answers!  
+
+\endedxtext
+
+\edXdiscussion{Discuss Homework 1}{discussion_category="Homework" discussion_topic="HW1" discussion_id="HW1"}
+
+\endedxvertical
 

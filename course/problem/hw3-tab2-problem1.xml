@@ -1,0 +1,20 @@
+<problem display_name="Five-Element Subspace?" linenum="27" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or false: There is no subspace of [mathjaxinline]\mathbb R^5[/mathjaxinline] that contains exactly five elements. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If there is even a single non-zero vector in a subspace, then every scalar multiple of that vector must also be in the subspace. That is an infinite number of vectors.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,30 @@
+<problem display_name="Row-Reduced Matrix" linenum="62" tex_filename="./hw/final.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]T: \mathbb R^5 \rightarrow \mathbb R^4[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. I am not going to tell you what [mathjaxinline]A[/mathjaxinline] is, but I will tell you that when you row-reduce [mathjaxinline]A[/mathjaxinline], the result is the matrix </p>
+    <table id="a0000000218" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+      <tr>
+        <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]R = \left[ \begin{array}{ccccc} 1 &amp;  2 &amp;  0 &amp;  0 &amp;  3 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+        <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+      </tr>
+    </table>
+    <p>
+Answer the following questions about [mathjaxinline]T[/mathjaxinline] and/or [mathjaxinline]A[/mathjaxinline]. If there is not enough information to tell (e.g., because you only know [mathjaxinline]R[/mathjaxinline], not [mathjaxinline]A[/mathjaxinline]), select "Not enough information." </p>
+    <p>
+Is [mathjaxinline]A[/mathjaxinline] invertible? <optionresponse><optioninput options="('Yes','No','Not enough information')" correct="No"/></optionresponse> </p>
+    <p>
+Are the columns of [mathjaxinline]A[/mathjaxinline] linearly dependent? <optionresponse><optioninput options="('Yes','No','Not enough information')" correct="Yes"/></optionresponse> </p>
+    <p>
+Is [mathjaxinline]T[/mathjaxinline] onto? <optionresponse><optioninput options="('Yes','No','Not enough information')" correct="No"/></optionresponse> </p>
+    <p>
+Does the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] have a unique solution? <optionresponse><optioninput options="('Yes','No','Not enough information')" correct="No"/></optionresponse> </p>
+    <p>
+Is the equation [mathjaxinline]Ax = \left[ \begin{array}{c} 3 \\ 1 \\ 0 \\ 1 \end{array} \right][/mathjaxinline] consistent? <optionresponse><optioninput options="('Yes','No','Not enough information')" correct="Not enough information"/></optionresponse> </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

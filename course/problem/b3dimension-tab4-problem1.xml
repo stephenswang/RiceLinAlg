@@ -1,10 +1,13 @@
-<problem display_name="Dimension Question 1" linenum="150" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Two Bases? 1" linenum="122" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
-True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 4, then every list of 4 vectors in [mathjaxinline]V[/mathjaxinline] must be a basis of [mathjaxinline]V[/mathjaxinline]. </p>
+Recall the proposition we just proved: </p>
+    <p><span style="color:#27408C"><b class="bf">Proposition.</b></span> If [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots ; v_ n\}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline], and [mathjaxinline]k&gt;n[/mathjaxinline], then any list of [mathjaxinline]k[/mathjaxinline] vectors in [mathjaxinline]V[/mathjaxinline] must be linearly dependent. </p>
+    <p>
+Now suppose that [mathjaxinline]\mathcal{B}[/mathjaxinline] is a basis of [mathjaxinline]V[/mathjaxinline] with 5 vectors, and let [mathjaxinline]\mathcal{C}[/mathjaxinline] be a list of 7 vectors in [mathjaxinline]V[/mathjaxinline]. Is it possible for [mathjaxinline]\mathcal{C}[/mathjaxinline] to be a basis of [mathjaxinline]V[/mathjaxinline]? </p>
     <p>
       <optionresponse>
-        <optioninput options="('True','False')" correct="False"/>
+        <optioninput options="('Yes','No')" correct="No"/>
       </optionresponse>
     </p>
     <p>
@@ -12,7 +15,7 @@ True or False: If the dimension of [mathjaxinline]V[/mathjaxinline] is 4, then e
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
-False. For example, [mathjaxinline]\mathbb R^4[/mathjaxinline] has dimension 4. The list [mathjaxinline]\{ e_1; 2e_1; 3e_1; 4e_1\}[/mathjaxinline] contains 4 vectors, but they are linearly dependent and thus the list is not a basis of [mathjaxinline]\mathbb R^4[/mathjaxinline].  </p>
+No. Since [mathjaxinline]V[/mathjaxinline] has a basis which contains 5 vectors, the list [mathjaxinline]C[/mathjaxinline], which contains 7 vectors, must be linearly dependent. By definition, a linearly dependent list cannot form a basis.  </p>
         </font>
       </solution>
     </p>

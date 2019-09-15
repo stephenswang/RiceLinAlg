@@ -1,9 +1,9 @@
-<problem display_name="Another Closest Vector?" linenum="285" tex_filename="./block4/projections.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+<problem display_name="Another Closest Vector?" linenum="304" tex_filename="./block4/projections.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]v = \left[ \begin{array}{c} 3 \\ 4 \\ 7 \\ 1 \end{array} \right].[/mathjaxinline] What is the vector [mathjaxinline]w\in \mathbb R^4[/mathjaxinline] that is closest to [mathjaxinline]v[/mathjaxinline]? </p>
     <p>
-(You should not need to do any projection calculation!) </p>
+(You should not need to do any calculation!) </p>
     <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
 def VectorEntry(expect, ans):
 	import ast

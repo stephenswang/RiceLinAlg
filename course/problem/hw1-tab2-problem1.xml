@@ -1,4 +1,4 @@
-<problem display_name="Parabola" linenum="26" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+<problem display_name="Parabola" linenum="27" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
 Is there a quadratic equation of the form [mathjaxinline]y = a + bx + cx^2[/mathjaxinline] satisfied by the four points [mathjaxinline](-2,11), (0,4), (1,2),[/mathjaxinline] and [mathjaxinline](2,1)[/mathjaxinline]? </p>
@@ -15,7 +15,34 @@ Enter the correct formula in the form a + b*x + c*x^2 (either exactly or to two 
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ For the parabola to pass through these points, we would need the following equations to be satisfied: </p>
+          <table id="a0000000088" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcccccc} 11 &amp;  = &amp;  a &amp;  - &amp;  2b &amp;  + &amp;  4c \\ 4 &amp;  = &amp;  a &amp;  + &amp;  0b &amp;  + &amp;  0c \\ 2 &amp;  = &amp;  a &amp;  + &amp;  1b &amp;  + &amp;  1c \\ 1 &amp;  = &amp;  a &amp;  + &amp;  2b &amp;  + &amp;  4c \end{array}[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+This is a system of four linear equations in three variables [mathjaxinline]a,b,c,[/mathjaxinline] represented by the augmented matrix </p>
+          <table id="a0000000089" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc:c} 1&amp; -2&amp; 4&amp; 11 \\ 1&amp; 0&amp; 0&amp; 4\\ 1&amp; 1&amp; 1&amp; 2\\ 1&amp; 2&amp; 4&amp; 1 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ When we row-reduce this matrix, we obtain </p>
+          <table id="a0000000090" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccc:c} 1&amp; 0&amp; 0&amp; 4 \\ 0&amp; 1&amp; 0&amp; -2.5\\ 0&amp; 0&amp; 1&amp; 0.5\\ 0&amp; 0&amp; 0&amp; 0 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ This tells us that when [mathjaxinline]a=4, b=-2.5, c=0.5,[/mathjaxinline] the equations are all satisfied. Therefore [mathjaxinline]y=4 -2.5x + 0.5x^2[/mathjaxinline] passes through all four points. </p>
+        </font>
       </solution>
     </p>
   </text>

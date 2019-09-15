@@ -1,0 +1,55 @@
+<problem display_name="Subspace Dimension" linenum="334" tex_filename="./hw/final.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]V[/mathjaxinline] be a space with an inner product, and let [mathjaxinline]v\in V[/mathjaxinline] be a fixed non-zero vector. Define [mathjaxinline]W[/mathjaxinline] to be the set of all vectors [mathjaxinline]w\in V[/mathjaxinline] with the property that [mathjaxinline]\langle v,w\rangle = 0[/mathjaxinline]. </p>
+    <p>
+On Homework 4 you proved that [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline]. In this problem, we'll find its dimension. </p>
+    <p>
+Suppose that [mathjaxinline]V[/mathjaxinline] has dimension [mathjaxinline]n[/mathjaxinline]. Define the function [mathjaxinline]T[/mathjaxinline] with domain [mathjaxinline]V[/mathjaxinline] by [mathjaxinline]T(w) = \langle v, w\rangle[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is a linear transformation (you are encouraged to prove this on your own) with what codomain? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]V[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]W[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]\mathbb R^ n[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text> Something else</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+What is the rank of [mathjaxinline]T[/mathjaxinline] (your answer can be in terms of [mathjaxinline]n[/mathjaxinline])? </p>
+    <p>
+      <formularesponse type="cs" samples="n@1:5#5" answer="1">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+Note that [mathjaxinline]W[/mathjaxinline] is exactly the kernel of [mathjaxinline]T[/mathjaxinline]. What is the dimension of [mathjaxinline]W[/mathjaxinline]? </p>
+    <p>
+      <formularesponse type="cs" samples="n@1:5#5" answer="n-1">
+        <formulaequationinput>
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

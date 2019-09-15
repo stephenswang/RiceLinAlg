@@ -1,0 +1,20 @@
+<problem display_name="Implies Invertible? 2" linenum="202" tex_filename="./hw/hw2.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If square matrices [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] have the property that [mathjaxinline]AB = I[/mathjaxinline], then [mathjaxinline]BA = I[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If two <span style="color:#99182C">square</span> matrices multiply to be the identity, then they are necessarily inverses of one another. This was proven as part of the Invertible Matrix Theorem.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

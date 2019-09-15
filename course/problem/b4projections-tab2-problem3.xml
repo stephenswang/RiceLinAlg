@@ -1,4 +1,4 @@
-<problem display_name="Exploring the formula 2" linenum="87" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Exploring the formula 2" linenum="88" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
       <p style="display:inline">This means that [mathjaxinline]\displaystyle \sum _{i=1}^ k \langle v, w_ i\rangle w_ i[/mathjaxinline] is</p>

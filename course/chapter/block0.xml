@@ -1,0 +1,28 @@
+<chapter display_name="About the Course" linenum="75" tex_filename="testcourse.tex" refnum="1" start="2019-09-30T16:00">
+  <sequential display_name="About the Course" linenum="89" tex_filename="testcourse.tex" refnum="1" due="2019-12-31T04:59" graded="false" format="Exercises" url_name="b0about-sequential">
+    <vertical display_name="Linear Algebra on EdX" refnum="1" url_name="b0about-vertical1">
+      <html url_name="b0about-tab1-text1"/>
+      <video url_name="b0about-tab1-video1"/>
+    </vertical>
+    <vertical display_name="Course Staff" refnum="2" url_name="b0about-vertical2">
+      <html url_name="b0about-tab2-text1"/>
+      <video url_name="b0about-tab2-video1"/>
+      <html url_name="b0about-tab2-text2"/>
+    </vertical>
+    <vertical display_name="Course Requirements" refnum="3" url_name="b0about-vertical3">
+      <html url_name="b0about-tab3-text1"/>
+    </vertical>
+    <vertical display_name="Course Outline" refnum="4" url_name="b0about-vertical4">
+      <html url_name="b0about-tab4-text1"/>
+    </vertical>
+    <vertical display_name="Discussion Forum" refnum="5" url_name="b0about-vertical5">
+      <html url_name="b0about-tab5-text1"/>
+    </vertical>
+    <vertical display_name="Introduce Yourself" refnum="6" url_name="b0about-vertical6">
+      <html url_name="b0about-tab6-text1"/>
+    </vertical>
+    <vertical display_name="Accessibility" refnum="7" url_name="b0about-vertical7">
+      <html url_name="b0about-tab7-text1"/>
+    </vertical>
+  </sequential>
+</chapter>

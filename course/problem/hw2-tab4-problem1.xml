@@ -1,0 +1,20 @@
+<problem display_name="Implies Invertible? 1" linenum="186" tex_filename="./hw/hw2.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If a matrix [mathjaxinline]A[/mathjaxinline] has linearly independent columns, it must be invertible. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Not necessarily! If [mathjaxinline]A[/mathjaxinline] is known to be square, then having linearly independent columns would be enough to imply invertibility. But we don't know that.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

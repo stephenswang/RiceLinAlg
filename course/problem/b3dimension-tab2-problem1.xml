@@ -1,33 +1,85 @@
-<problem display_name="Where does it live?" linenum="41" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Review Question" linenum="40" tex_filename="./block3/dimension.tex" showanswer="finished" attempts="3" rerandomize="per_student">
   <text>
     <p>
-Suppose [mathjaxinline]\mathcal{B} = \{ v_1; v_2; \ldots v_9\}[/mathjaxinline] is a basis of a vector space [mathjaxinline]V[/mathjaxinline] (over the field [mathjaxinline]\mathbb R[/mathjaxinline]). Let [mathjaxinline]w \in V[/mathjaxinline]. Then [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is an element of what space? </p>
+Suppose [mathjaxinline]\mathcal{B} = \{ v_1; v_2; v_3; v_4\}[/mathjaxinline] is a basis of a vector space [mathjaxinline]V[/mathjaxinline] (over [mathjaxinline]\mathbb R[/mathjaxinline]). </p>
     <p>
-      <multiplechoiceresponse>
-        <choicegroup direction="vertical">
-          <choice correct="false" name="1">
-            <text> [mathjaxinline]V[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="2">
-            <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
-          </choice>
-          <choice correct="true" name="3">
-            <text> [mathjaxinline]\mathbb R^9[/mathjaxinline]</text>
-          </choice>
-          <choice correct="false" name="4">
-            <text> None of the above</text>
-          </choice>
-        </choicegroup>
-      </multiplechoiceresponse>
+Let [mathjaxinline]w = 3v_1 + 2v_3 - v_4.[/mathjaxinline] What is [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline]? </p>
+    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+          <ul class="itemize">
+            <li>
+              <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+            </li>
+            <li>
+              <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+            </li>
+          </ul>
+          <p>
+Use decimals only. </p>
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
+    <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+    <p>
+      <customresponse cfn="VectorEntry" expect="[[3],[0],[2],[-1]]">
+        <textline correct_answer="[[3],[0],[2],[-1]]"/>
+      </customresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
         <font color="blue">
           <p>
- [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline] is defined to be a column of nine scalars; specifically, the nine scalars [mathjaxinline]a_1, a_2, \ldots a_9[/mathjaxinline] such that [mathjaxinline]w = a_1 v_1 + \ldots a_9v_9[/mathjaxinline].  </p>
+ We can write [mathjaxinline]w[/mathjaxinline] as a linear combination of the basis vectors in order: [mathjaxinline]w = 3v_1 + 0v_2 + 2v_3 - v_4.[/mathjaxinline] Hence [mathjaxinline][w]_{\mathcal{B}} =\left[\begin{array}{c} 3 \\ 0 \\ 2 \\ -1 \end{array} \right][/mathjaxinline]. </p>
         </font>
       </solution>
     </p>
   </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
 </problem>

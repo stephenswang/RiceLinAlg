@@ -1,0 +1,30 @@
+<problem display_name="Subspace of Matrices?" linenum="51" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]M_{2\times 2}[/mathjaxinline] denote the vector space of [mathjaxinline]2\times 2[/mathjaxinline] real matrices, and let [mathjaxinline]W[/mathjaxinline] be the set of symmetric [mathjaxinline]2\times 2[/mathjaxinline] real matrices. (Recall that a matrix is symmetric if it is its own transpose.) </p>
+    <p>
+True or false: [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]M_{2\times 2}[/mathjaxinline]. Prove your answer, or come up with a counterexample showing that it is not. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('I have proven it','I found a counterexample')" correct="I have proven it"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Let's check the three criteria for being a subspace. </p>
+          <p>
+The zero matrix is symmetric. </p>
+          <p>
+If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are both symmetric, then [mathjaxinline](A+B)^ t = A^ t + B^ t = A + B,[/mathjaxinline] so [mathjaxinline]A+B[/mathjaxinline] is symmetric. Hence [mathjaxinline]W[/mathjaxinline] is closed under addition. </p>
+          <p>
+If [mathjaxinline]A[/mathjaxinline] is symmetric and [mathjaxinline]c[/mathjaxinline] is a scalar, then [mathjaxinline](cA)^ t = cA^ t = cA,[/mathjaxinline] so [mathjaxinline]cA[/mathjaxinline] is symmetric. Hence [mathjaxinline]W[/mathjaxinline] is closed under scalar multiplication. </p>
+          <p>
+Therefore [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]M_{2\times 2}.[/mathjaxinline] </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

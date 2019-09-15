@@ -1,8 +1,8 @@
-<problem display_name="Projection Practice 1" linenum="187" tex_filename="./block4/projections.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Projection Practice 1" linenum="188" tex_filename="./block4/projections.tex" showanswer="finished" attempts="5" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^4[/mathjaxinline] spanned by the list [mathjaxinline]\{ w_1; w_2; w_3\}[/mathjaxinline], where </p>
-    <table id="a0000000158" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+    <table id="a0000000197" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
       <tr>
         <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]w_1 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ -3 \end{array} \right], w_2 = \left[\begin{array}{c} 1 \\ -1 \\ 0 \\ 0 \end{array} \right], w_3 = \left[\begin{array}{c} 1 \\ 1 \\ 2 \\ 2 \end{array} \right].[/mathjax]</td>
         <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -74,14 +74,23 @@ def VectorEntry(expect, ans):
   	return ret 
 </script>
     <p>
-      <customresponse cfn="VectorEntry" expect="[[3],[4],[0]]">
-        <textline correct_answer="[[3],[4],[0]]"/>
+      <customresponse cfn="VectorEntry" expect="[[0],[-1],[-1],[4]]">
+        <textline correct_answer="[[0],[-1],[-1],[4]]"/>
       </customresponse>
     </p>
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue">
+          <p>
+ We seek the orthogonal projection of [mathjaxinline]v[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline]. Since we have an orthogonal basis of [mathjaxinline]W[/mathjaxinline], we can simply apply the projection formula: </p>
+          <table id="a0000000198" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{rcl} \mathrm{Proj}_ W(v) &amp;  = &amp;  \frac{\langle v, w_1 \rangle }{\langle w_1, w_1 \rangle } w_1 + \frac{\langle v, w_2 \rangle }{\langle w_2, w_2 \rangle } w_2 + \frac{\langle v, w_3 \rangle }{\langle w_3, w_3 \rangle } w_3 \\ &amp;  = &amp;  \frac{-15}{15} w_1 + \frac{1}{2} w_2 + \frac{5}{10}w_3 \\ &amp;  = &amp;  \left[\begin{array}{c} 0 \\ -1 \\ -1 \\ 4 \end{array} \right]. \end{array}[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+        </font>
       </solution>
     </p>
   </text>

@@ -1,0 +1,33 @@
+<problem display_name="Allowable Resources" linenum="22" tex_filename="./hw/final.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+On this final exam, students are allowed to use technology to do which of the following operations? Check all that apply. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="true" name="1">
+            <text>Row reduce a matrix</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>Multiply matrices</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text>Invert a matrix</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text>Inner products</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Read the text above!  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

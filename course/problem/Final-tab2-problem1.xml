@@ -1,0 +1,24 @@
+<problem display_name="Systems of Linear Equations" linenum="41" tex_filename="./hw/final.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: A system of 8 linear equations in 6 variables cannot have a unique solution. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+True or False: A system of 6 linear equations in 8 variables cannot have a unique solution. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

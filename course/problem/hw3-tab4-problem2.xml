@@ -1,0 +1,28 @@
+<problem display_name="Subspace" linenum="213" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]\mathbb R^5[/mathjaxinline], and suppose that [mathjaxinline]e_1, e_3 \in W[/mathjaxinline], but [mathjaxinline]e_2, e_4, e_5 \notin W[/mathjaxinline]. </p>
+    <p>
+What is the strongest statement we can make about the dimension of [mathjaxinline]W[/mathjaxinline]? </p>
+    <p>
+      <p style="display:inline">The dimension of [mathjaxinline]W[/mathjaxinline] is at least</p>
+      <numericalresponse inline="1" answer="2">
+        <textline inline="1">
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p><p style="display:inline">and at most</p><numericalresponse inline="1" answer="4"><textline inline="1"><responseparam type="tolerance" default="0.00001"/></textline></numericalresponse>. </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ [mathjaxinline]\{ e_1; e_3\}[/mathjaxinline] is a linearly independent set inside [mathjaxinline]W[/mathjaxinline], so the dimension of [mathjaxinline]W[/mathjaxinline] is at least 2. However, it can be bigger than that; for instance, if [mathjaxinline]W[/mathjaxinline] is the span of [mathjaxinline]\{ e_1; e_3; e_2-e_4; e_4-e_5\}[/mathjaxinline] it would have dimension 4 (one can check that those four vectors are linearly independent) and satisfy the requirements. </p>
+          <p>
+[mathjaxinline]W[/mathjaxinline] cannot have dimension 5, however, since the only subspace of [mathjaxinline]\mathbb R^5[/mathjaxinline] that has dimension 5 is [mathjaxinline]\mathbb R^5[/mathjaxinline] itself. Thus the maximum is 4.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

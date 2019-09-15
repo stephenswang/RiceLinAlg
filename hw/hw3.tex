@@ -1,0 +1,429 @@
+
+
+\beginedxvertical{Page One}
+
+
+\beginedxtext{Computational Tools}
+
+For this homework, you should feel free to use technology to do row reduction, multiplication, and inversion of matrices.  All other
+computations should still be done by hand, for now.  
+
+Here are a couple of websites that will do some of this for you:
+
+\href{https://tinyurl.com/3xr6ed}{Linear Algebra Toolkit}
+
+\href{https://www.wolframalpha.com/}{Wolfram Alpha}
+
+
+
+\endedxtext
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 1}
+
+
+\beginedxproblem{Five-Element Subspace?}{\dpa1}
+
+True or false: There is no subspace of $\R^5$ that contains exactly five elements.  
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{ If there is even a single non-zero vector in a subspace, then every scalar multiple of that vector must also be in the
+subspace.  That is an infinite  number of vectors.  
+}
+ 
+\endedxproblem
+
+\beginedxproblem{Line as Subspace?}{\dpa1}
+
+True or false: Any line in $\R^3$ is a subspace of $\R^3$.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{ If the line does not contain the zero vector, it is not a subspace.
+}
+ 
+\endedxproblem
+
+
+\beginedxproblem{Subspace of Matrices?}{\dpa1}
+
+Let $M_{2\times 2}$ denote the vector space  of $2\times 2$ real matrices, and let $W$ be the 
+set of symmetric $2\times 2$ real matrices.  (Recall that a matrix is symmetric if it is its own
+transpose.)
+
+
+True or false: $W$ is a subspace of $M_{2\times 2}$.  Prove your answer, or come up with a counterexample showing that it is not.  
+
+\edXabox{expect="I have proven it" options="I have proven it","I found a counterexample"}
+
+\edXsolution{ Let's check the three criteria for being a subspace.  
+
+The zero matrix is symmetric. 
+
+If $A$ and $B$ are both symmetric, then $(A+B)^t = A^t + B^t = A + B,$ so $A+B$ is symmetric.  Hence
+$W$ is closed under addition.  
+
+If $A$ is symmetric and $c$ is a scalar, then $(cA)^t = cA^t = cA,$ so $cA$ is symmetric.  Hence
+$W$ is closed under scalar multiplication.  
+
+Therefore $W$ is a subspace of $M_{2\times 2}.$  
+
+}
+ 
+\endedxproblem
+
+
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 2}
+
+
+\beginedxproblem{Basis}{\dpa1}
+
+Is the following list a basis of $\R^3$?  
+\[ \left\{  \left[ \begin{array}{c} 1 \\ 3 \\ -3 \end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 4 \\ -2 \end{array} \right] ;
+\left[ \begin{array}{c} 5 \\ 3 \\ 9 \end{array} \right]  \right\} \]
+
+
+
+\edXabox{expect="No" options="Yes","No"}
+
+\edXsolution{ 
+When we row-reduce the $3\times 3$ matrix with these three vectors as its columns, we do not get the identity matrix.  
+Therefore this list is not a basis of $\R^3$. 
+}
+
+\endedxproblem
+
+\beginedxproblem{Quick Picks}{\dpa2}
+
+Without doing any row-reduction, you should be able to pick out five of the 
+following lists of vectors that are {\keyb{\bf{not}}} a basis  of $\R^4$.  Which five?  
+
+\begin{itemize}
+
+\item 
+List A:
+$\left\{ \left[ \begin{array}{c} 1 \\ 3 \\ 1 \\4 \end{array} \right]; 
+\left[ \begin{array}{c} 1 \\ 1 \\ 0 \\ 1 \end{array} \right]; 
+\left[ \begin{array}{c} 2 \\ -1 \\ 3 \\ 1 \end{array} \right] \right\}
+$
+
+
+\item
+List B:
+$\left\{\left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 4 \end{array} \right] ; 
+\left[ \begin{array}{c} 3 \\ 1 \\ 3 \\ 1\end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 0 \\ 0 \\ 0\end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 5 \\ 7  \\ 10 \end{array} \right] \right\} $
+
+
+
+\item 
+List C:
+$\left\{
+\left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 4  \end{array} \right] ;
+\left[ \begin{array}{c} 1 \\ 2 \\ 3 \\ 5 \end{array} \right] ;
+\left[ \begin{array}{c} 1 \\ 3 \\ 4 \\ 5  \end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 3 \\ 4 \\ 5 \end{array} \right] \right\} $
+
+\item 
+List D:
+$\left\{\left[ \begin{array}{c} 1 \\ 2 \\ 1 \\ 4\end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 13 \\ 3 \\ 7\end{array} \right] ; 
+\left[ \begin{array}{c} 0 \\ 1 \\ 5 \\ -3\end{array} \right] ;
+\left[ \begin{array}{c} 15 \\ -2 \\ 6 \\ 2\end{array} \right] ;
+\left[ \begin{array}{c} 5 \\ 3 \\ 8 \\ 11\end{array} \right] \right\} $
+
+\item
+List E:
+$\left\{\left[ \begin{array}{c} 0 \\ 1 \\ 1 \\ 1 \end{array} \right] ; 
+\left[ \begin{array}{c} 2 \\ 0 \\ 1 \\ 1 \end{array} \right] ;
+\left[ \begin{array}{c} 0 \\ 3 \\ 0 \\ 1 \end{array} \right] ;
+\left[ \begin{array}{c} 0 \\ 0 \\ 4 \\ 0 \end{array} \right] \right\}
+$
+
+\item 
+List F:
+$\left\{\left[ \begin{array}{c} 1 \\ 1 \\ 1 \\ 1  \end{array} \right] ;
+\left[ \begin{array}{c} 5 \\ 2 \\ -8 \\ 4  \end{array} \right] ;
+\left[ \begin{array}{c} -2 \\ -2 \\ -2 \\ -2 \end{array} \right] ; 
+\left[ \begin{array}{c} 1 \\ 3 \\ 1 \\ 5 \end{array} \right] \right\} $
+
+
+
+
+\item
+List G:
+$\left\{\left[ \begin{array}{c} 1 \\ 0 \\ 1 \\ 1 \end{array} \right] ; 
+\left[ \begin{array}{c} 3 \\ 0 \\ 1 \\ 0 \end{array} \right] ;
+\left[ \begin{array}{c} 1 \\ 0 \\ 2 \\ 4 \end{array} \right] ;
+\left[ \begin{array}{c} 2 \\ 0 \\ -3 \\ 5 \end{array} \right] \right\}
+$
+
+\end{itemize}
+
+
+
+
+\edXabox{type="oldmultichoice" expect="A","B","D","F","G" options="A","B","C","D","E","F","G"}
+
+\edXsolution{ 
+Any basis of $\R^4$ must have exactly 4 vectors.  That rules out A and D as bases.  
+
+A list containing the zero vector cannot be linearly independent.  This rules out B. 
+Similarly, list F has one vector which is a scalar multiple of another, so it too is linearly
+dependent.  
+
+Finally, list G does not span $\R^4$, as you cannot get a vector with a non-zero second
+coordinate as a linear combination.  So G is not a basis of $\R^4$ either.   
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 3}
+
+
+\beginedxproblem{Polynomial Subspace}{\dpa2}
+
+Let $W$ be the set of real polynomials of degree at most 6 which have no terms of odd degree (that is, polynomials 
+such as $3t^6 + 2t^2 -1$ that do not include a $t^5, t^3,$ or $t^1$ term).  This is a subspace of $\mathbb{P_6}$.  
+What is the dimension of $W$?   
+
+\edXabox{type="numerical" expect="4"} 
+
+\edXsolution{
+$W$ is all polynomials of the form $a_0 + a_2t^2 + a_4t^4 + a_6t^6$; i.e., the span of $\{1; t^2; t^4; t^6\}$.  This
+is a linearly independent list which spans $W$, so it is a basis of $W$.  The dimension of $W$ is thus the number of
+elements of that list. 
+}
+
+\endedxproblem
+
+\beginedxproblem{Subspace}{\dpa2}
+
+Suppose $W$ is a subspace of $\R^5$, and suppose that $e_1, e_3 \in W$, but $e_2, e_4, e_5 \notin W$.  
+
+What is the strongest statement we can make about the dimension of $W$?
+
+\edXinline{The dimension of $W$ is at least}\edXabox{type="numerical" expect="2" inline="1"} 
+
+\edXinline{and at most} \edXabox{type="numerical" expect="4" inline="1"}.  
+
+
+\edXsolution{
+$\{e_1; e_3\}$ is a  linearly independent set inside $W$, so the dimension of $W$ is at least 2.  However, it can be bigger than that; for instance, if $W$ is the span of $\{e_1; e_3; e_2-e_4; e_4-e_5\}$ it would have dimension 4 (one can check that those four vectors are linearly independent) and satisfy the requirements.   
+
+$W$ cannot have dimension 5, however, since the only subspace of $\R^5$ that has dimension
+5 is $\R^5$ itself.  Thus the maximum is 4.  
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Kernel}{\dpa2}
+
+Suppose that $T: \R^9 \rightarrow \R^4$ is a linear transformation which is not onto.  
+
+What is the strongest conclusion we can make about the kernel of $T$?  
+
+\edXinline{The dimension of $\mathrm{Ker}(T)$ is at least}\edXabox{type="numerical" expect="6" inline="1"} 
+
+\edXinline{and at most} \edXabox{type="numerical" expect="9" inline="1"}.  
+
+\edXsolution{
+Since $T$ is not onto, the rank of $T$ cannot be 4.  Thus the rank is at most 3.  Since the rank plus the nullity must equal 9, this means
+the nullity is at least 6.  The kernel is a subspace of $\R^9$, so its dimension is at most 9.  
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Rank}{\dpa2}
+
+Suppose that $T: \R^5 \rightarrow \R^7$ is a linear transformation. Suppose further that we can find two vectors $v,w \in \R^5$, neither 
+of which is a scalar multiple of the other, such that $T(v) = T(w) = \veco$.  
+
+What is the strongest conclusion we can make about the rank of $T$?  
+
+
+\edXinline{The rank of $T$ is at least}\edXabox{type="numerical" expect="0" inline="1"} 
+
+\edXinline{and at most} \edXabox{type="numerical" expect="3" inline="1"}.  
+
+\edXsolution{
+We have $v$ and $w$ as linearly independent vectors in $\mathbb{Ker}(T).$  Therefore the nullity of $T$ is at least 2.  Since the nullity plus
+rank must equal 5, that means the rank is at most 3.  
+}
+
+\endedxproblem
+
+
+
+
+
+
+\beginedxproblem{Subspace Basis 1}{\dpa1}
+
+True or False: If $V$ is finite-dimensional, and $W$ is a subspace of $V$, then every basis of $V$ must
+contain a basis of $W$.  
+
+\edXabox{expect="False" options="True","False"}
+
+\edXsolution{
+This is not true.  For instance, the standard basis of $\R^2$ does not contain a basis of the subspace
+spanned by $\left[ \begin{array}{c} 1 \\ 1 \end{array} \right]$.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Subspace Basis 2}{\dpa1}
+
+True or False: If $V$ is finite-dimensional, and $W$ is a subspace of $V$, then every basis of $W$ is contained in some basis of $V$.  
+
+\edXabox{expect="True" options="True","False"}
+
+\edXsolution{
+True.  Any basis of $W$ is linearly independent, and we showed that any linearly independent set in 
+a finite-dimensional space $V$ can 
+be extended to basis of $V$.  
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 4}
+
+
+\beginedxproblem{Kernel Basis}{\dpa5}
+
+Suppose $T: \R^4 \rightarrow \R^4$ is a linear transformation with standard matrix
+\[A = 
+\left[ \begin{array}{cccc}    
+3 & 1 & 1 & -2  \\
+-1 & -2 & 3 & -1  \\
+1 & -3 & 7 & -4  \\
+-3 & 4 & -11 & 7 
+\end{array}
+\right]
+ \]
+
+
+
+Find a basis for the kernel of $T$.  
+Enter the list of vectors forming the basis below, separated by semicolons.  For instance, 
+to enter the list $\left\{\left[\begin{array}{c} 1 \\ 0 \\ 1
+\end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3
+\end{array} \right] \right\}$, type <1,0,1>;<1,2,3>.  
+
+%requires new grading program
+
+
+\input{solutionsetcheck3.tex}
+
+\edXabox{type="custom" cfn="spangrader" expect="<1,-1,0,1>;<-1,2,1,0>"}
+
+
+
+\edXsolution{ 
+ We row reduce $A$ and obtain
+\[\left[ \begin{array}{cccc}    
+1 & 0 & 1 & -1  \\
+0 & 1 & -2 & 1  \\
+0 & 0 & 0 & 0  \\
+0 & 0 & 0 & 0  
+\end{array}
+\right] 
+\]
+
+Therefore, solutions to $Ax = \veco$ must be of the form 
+\[
+\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4
+\end{array} \right] 
+= 
+\left[ \begin{array}{c} -x_3 + x_4 \\ 2x_3 - x_4 \\ x_3 \\ x_4
+\end{array} \right] 
+= x_3 \left[ \begin{array}{c} -1 \\ 2 \\ 1 \\ 0
+\end{array} \right] + x_4 \left[ \begin{array}{c} 1 \\ -1 \\ 0 \\ 1
+\end{array} \right],\]
+where $x_3$ and $x_4$ are free variables.  Hence the list
+\[ \left\{ \left[ \begin{array}{c} -1 \\ 2 \\ 1 \\ 0
+\end{array} \right]; \left[ \begin{array}{c} 1 \\ -1 \\ 0 \\ 1
+\end{array} \right] \right\} \]
+forms a basis of the kernel of $T$.  
+}
+ 
+\endedxproblem
+
+
+\beginedxproblem{Image Basis}{\dpa5}
+
+With $T$ as in the previous problem, 
+find a basis for the image of $T$.  
+Enter the list of vectors forming the basis below, separated by semicolons.  For instance, 
+to enter the list $\left\{\left[\begin{array}{c} 1 \\ 0 \\ 1
+\end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3
+\end{array} \right] \right\}$, type <1,0,1>;<1,2,3>.  
+
+%requires new grading program
+
+
+\input{solutionsetcheck4.tex}
+
+\edXabox{type="custom" cfn="spangrader" expect="<3,-1,1,-3>;<1,-2,-3,4>"}
+
+
+
+\edXsolution{ 
+We again row reduce $A$ as in the previous solution, obtaining 
+ \[\left[ \begin{array}{cccc}    
+1 & 0 & 1 & -1  \\
+0 & 1 & -2 & 1  \\
+0 & 0 & 0 & 0  \\
+0 & 0 & 0 & 0  
+\end{array}
+\right].
+\]
+With pivots in the first two columns, we know that the first two columns of $A$ will form a basis of 
+the image of $T$.  
+}
+ 
+\endedxproblem
+
+\endedxvertical
+
+
+
+\beginedxvertical{Discussion}
+
+
+\beginedxtext{Discussion}
+
+Feel free to discuss the homework questions in the forum.  Before creating a new post, please first check to see if there is already a question
+or discussion addressing your topic.  
+
+Also, please do not give away the answers!  
+
+\endedxtext
+
+\edXdiscussion{Discuss Homework 3}{discussion_category="Homework" discussion_topic="HW3" discussion_id="HW3"}
+
+\endedxvertical
+
+
+
+
+

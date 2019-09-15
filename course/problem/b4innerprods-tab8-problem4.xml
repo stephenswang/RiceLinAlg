@@ -1,4 +1,4 @@
-<problem display_name="Orthogonal or not? 2" linenum="352" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="" rerandomize="per_student">
+<problem display_name="Orthogonal or not? 2" linenum="352" tex_filename="./block4/innerproducts.tex" showanswer="finished" attempts="1" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]f(x) = 1[/mathjaxinline] and let [mathjaxinline]g(x) = \sin x[/mathjaxinline]. </p>
@@ -22,7 +22,7 @@ In the vector space [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline] with inner prod
         <font color="blue">
           <p>
  In the first space [mathjaxinline]C[0,\pi ][/mathjaxinline], we calculate </p>
-          <table id="a0000000152" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <table id="a0000000191" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
               <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle f, g\rangle = \int _0^\pi \sin x \  dx = 2,[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
@@ -30,7 +30,7 @@ In the vector space [mathjaxinline]C[-\pi ,\pi ][/mathjaxinline] with inner prod
           </table>
           <p>
  so [mathjaxinline]f[/mathjaxinline] and [mathjaxinline]g[/mathjaxinline] are not orthogonal. However, in the second space, we have </p>
-          <table id="a0000000153" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+          <table id="a0000000192" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
             <tr>
               <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle f, h\rangle = \int _{-\pi }^\pi \sin x \  dx = 0,[/mathjax]</td>
               <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

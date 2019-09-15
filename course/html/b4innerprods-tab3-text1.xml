@@ -1,7 +1,7 @@
 <html display_name="Property 4" linenum="150" tex_filename="./block4/innerproducts.tex">
   <p>
 One last property of the dot product is that it distributes over addition. In other words, </p>
-  <table id="a0000000144" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+  <table id="a0000000183" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
     <tr>
       <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle u+v, w \rangle = \langle u, w\rangle + \langle v, w \rangle[/mathjax]</td>
       <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>

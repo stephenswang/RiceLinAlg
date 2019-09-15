@@ -1,0 +1,17 @@
+<problem display_name="Subspace?" linenum="241" tex_filename="./hw/final.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]10\times 12[/mathjaxinline] matrix and [mathjaxinline]v \in \mathbb R^{10}[/mathjaxinline], and the equation [mathjaxinline]Ax = v[/mathjaxinline] has infinitely many solutions, then the set of solutions to that equation forms a subspace of [mathjaxinline]\mathbb R^{12}[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="False"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue"/>
+      </solution>
+    </p>
+  </text>
+</problem>

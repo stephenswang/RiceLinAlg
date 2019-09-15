@@ -2,39 +2,352 @@
 
 \beginedxvertical{Page One}
 
-\beginedxtext{Preliminaries}
+
+\beginedxtext{Row-Reduction Tools}
+
+For this homework, you should feel free to use technology to do row reduction of matrices.  All other
+computations should still be done by hand, for now.  
+
+Here are a couple of websites that will do row reduction for you:
+
+\href{https://tinyurl.com/dmokjt}{Linear Algebra Toolkit}
+
+\href{https://www.wolframalpha.com/}{Wolfram Alpha}
+
+
 
 
 \endedxtext
 
-\endedxvertical
-
-\beginedxvertical{Introduction}
-
-
-% \beginedxproblem{Find the Matrix}{\dpa1}
-
-% Suppose $T: \R^3\rightarrow \R^2$ is given by 
-% \[T\left( \left[ \begin{array}{c} a_1 \\ a_2\\ a_3 \end{array} \right] \right) =\left[ \begin{array}{c} 2a_1-a_3 \\ -a_1 + a_2 \end{array} \right] \] 
-% for all vectors $
-
-% What is $T(e_3)$?  
-
-% \input{vectorentry.tex}
-
-% \edXabox{type="custom" cfn="VectorEntry" expect="[[5],[-1],[3]]"}
-
-
-% \edXsolution{ 
-
-% }
-
-
-% \endedxproblem
-
 
 \endedxvertical
 
+\beginedxvertical{Homework Page 1}
+
+
+\beginedxproblem{Find a Matrix}{\dpa3}
+
+Suppose that $T: \R^2 \rightarrow \R^2$ has standard matrix 
+$\left[ 
+\begin{array}{cc} 1& -3 \\ 2 & 1 \end{array} \right],$
+and $S: \R^3 \rightarrow \R^2$ has standard matrix
+$\left[ 
+\begin{array}{ccc} 0& 2 &  -1 \\ 1 & 0 & 2 \end{array} \right].$
+
+What is the standard matrix for $T\circ S$?  
+
+ 
+\input{matrixentry.tex}
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[-3,2,-7],[1,4,0]]"}
+
+
+\edXsolution{
+The standard matrix for $T\circ S$ is the standard matrix for $T$ times the standard matrix for $S$.  
+Doing this multiplication results in $\left[ 
+\begin{array}{ccc} -3& 2 &  -7 \\ 1 & 4 & 0 \end{array} \right].$
+}
+
+
+\endedxproblem
+
+\beginedxproblem{Products}{\dpa2}
+
+Suppose $A = \left[ 
+\begin{array}{ccc} 0& 2 &  -1 \\ 1 & 0 & 2 \end{array} \right]$ and $B = \left[ 
+\begin{array}{cccc} 1&  1& 2 &  -1 \\ 1 & 4 & 3 & 2 \end{array} \right].$
+Click all of the following expressions which are defined.
+
+\edXabox{type="oldmultichoice" expect="$B^tA$","$(BB^tAA^t)^2$" options="$AB$","$(BA)^t$","$B^tA$","$BA^t$","$B^tA^t$","$(BB^tAA^t)^3$"}
+
+\edXsolution{
+The only things we need to pay attention to are the sizes of $A$ and $B$; we see that $A$ is $2\times 3$ and
+$B$  is $2\times 4$.  Hence $AB$ is not defined, nor is $BA$, and hence not $(BA)^t$.  $A^t$ is $3\times 2$
+and $B^t$ is $4\times 2$, so $B^tA$ is defined but $BA^t$ is not, nor is $B^tA^t$.  
+
+Finally, $BB^t$ is $2\times 2$, as is $AA^t$.  Therefore $BB^tAA^t$ is also $2\times 2$ and can be cubed.  
+}
+
+\endedxproblem
+
+
+\beginedxproblem{Cube to Identity}{\dpa7}
+
+Find a $2\times 2$ matrix $A$ which is not the identity matrix, but which has the property
+that $A^3 = I_2$.  Enter your answer to within two decimal places.  
+
+(Hint: Don't try to solve for the entries of $A$ with algebra.  Think about what you might want $A$ to do geometrically first.)
+
+\input{checkcube.tex}
+
+\edXabox{type="custom" cfn="cubing" expect="[[-0.5,-0.866],[0.866,-0.5]]"}
+
+\edXsolution{
+Any such matrix $A$ would be the standard matrix for a linear transformation $T: \R^2
+\rightarrow \R^2$ that has the property that $T \circ T \circ T$ is the identity map.  One
+example of such a linear transformation would be a rotation by $120^{\circ}$.  The standard
+matrix for that rotation is $\left[ \begin{array} {cc} -\frac{1}{2} & -\frac{\sqrt{3}}{2} \\
+\frac{\sqrt{3}}{2} & -\frac{1}{2} \end{array} \right].$  
+}
+
+
+\endedxproblem
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 2}
+
+
+\beginedxproblem{Invert a Matrix}{\dpa3}
+
+For each of the following matrices, enter its inverse, if it has one.  If it does not have
+an inverse, enter [[0]].  
+
+\input{matrixentry3.tex}
+
+$\left[ 
+\begin{array}{ccc} 1& 2 &  -1 \\ 1 & 0 & 2 \end{array} \right]$
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[0]]"}
+
+
+$\left[ 
+\begin{array}{ccc} 1& 3 &  -1 \\ 2 & 2 & 1 \\ 0 & 4 & -3 \end{array} \right]$
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[0]]"}
+
+
+$\left[ 
+\begin{array}{ccc} 1& 1 &  0 \\ 1 & 2 & -3 \\ 1 & 1 & 1 
+\end{array} \right]$
+
+\edXabox{type="custom" cfn="MatrixEntry" expect="[[5,-1,-3],[-4,1,3],[-1,0,1]]"}
+
+\edXsolution{
+The first matrix is not square, so it has no inverse.  
+
+The second matrix is square.  However, when we row reduce it, we do not get the identity matrix.  Therefore it too
+is non-invertible.
+
+The last matrix does row reduce to the identity.  When we row reduce the extended 
+\[\left[ 
+\begin{array}{ccc:ccc} 1& 1 &  0 & 1 & 0 & 0 \\ 1 & 2 & -3 & 0 & 1 & 0 \\ 1 & 1 & 1 & 0 & 0 & 1 
+\end{array} \right],
+\]
+we obtain
+\[\left[ 
+\begin{array}{ccc:ccc} 1& 0 &  0 & 5 & -1 & -3 \\ 0 & 1 & 0 & -4 & 1 & 3 \\ 0 & 0 & 1 & -1 & 0 & 1 
+\end{array} \right],
+\]
+so the inverse is
+\[\left[ 
+\begin{array}{ccc} 5 & -1 & -3 \\  -4 & 1 & 3 \\ -1 & 0 & 1 
+\end{array} \right].
+\]
+}
+
+
+\endedxproblem
+
+
+\beginedxproblem{Solve}{\dpa4}
+
+Suppose that $T:\R^4\rightarrow \R^4$ is a linear transformation with standard matrix $A$.
+Suppose further that we know that $A$ is invertible, and that
+that \[
+A\inv = \left[ 
+\begin{array}{cccc} 1& 1 &  0 & a_1 \\ 1 & 2 & -3 & a_2 \\ 1 & 1 & 1 & a_3 \\ 7 & 0 & 1 & a_4 
+\end{array} \right],
+\]
+for some scalars $a_1, a_2, a_3, a_4$.  
+
+Solve the equation $T(v) = \left[ \begin{array}{c} 3 \\ 2 \\ 1 \\ 0 \end{array} \right]$.
+
+\input{vectorentry.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[5],[4],[6],[22]]"}
+
+
+\edXsolution{
+Solving $T(v) = w$ is equivalent to solving $Av = w$; since $A$ is invertible we know the solution must be
+$v = A\inv w$.  Thus, we multiply $A\inv$ by $\left[ \begin{array}{c} 3 \\ 2 \\ 1 \\ 0 \end{array} \right],$
+and obtain $\left[ \begin{array}{c} 5 \\ 4 \\ 6 \\ 22 \end{array} \right].$  (It does not matter that we don't
+know the $a_i$ since they get multiplied by zero.)  
+}
+
+\endedxproblem
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 3}
+
+\beginedxproblem{Implies Invertible? 1}{\dpa1}
+
+
+True or False: If a matrix $A$ has linearly independent columns, it must be invertible.  
+
+
+\edXabox{expect="False" options="True","False"}
+
+
+\edXsolution{ 
+Not necessarily!  If $A$ is known to be square, then having linearly independent columns would be enough to imply
+invertibility.  But we don't know that.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Implies Invertible? 2}{\dpa1}
+
+True or False: If square matrices $A$ and $B$ have the property that $AB = I$, then $BA = I$.  
+
+\edXabox{expect="True" options="True","False"}
+
+
+\edXsolution{ 
+If two {\keyb{square}} matrices multiply to be the identity, then they are necessarily 
+inverses of one another.  This was proven as part of the Invertible Matrix Theorem. 
+}
+
+\endedxproblem
+
+\beginedxproblem{Implies Invertible? 3}{\dpa1}
+
+True or False: If the columns of an $n\times n$ matrix $A$ span $\R^n$, then $A^tA$ must be invertible.  
+
+\edXabox{expect="True" options="True","False"}
+
+
+\edXsolution{ 
+Since $A$ is square, if its columns span $\R^n$, it must be invertible by the Invertible Matrix Theorem.
+Therefore $A^t$ is invertible.  The product of two invertible matrices is invertible, so $A^tA$ is invertible.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Solutions?}{\dpa1}
+
+True or False: If $A$ is a $4\times 4$ matrix, and the equation 
+$Ax = e_1$ has exactly one solution, then 
+$Ax = e_4$ must have at least one solution.  
+
+
+\edXabox{expect="True" options="True","False"}
+
+
+\edXsolution{ 
+If $Ax = e_1$ has exactly one solution, then $A$ must be invertible by the Invertible Matrix Theorem.  Therefore
+$Ax = v$ has a (unique) solution for every $v \in \R^4$.  
+}
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+\beginedxvertical{Homework Page 4}
+
+\beginedxproblem{Linear Transformation}{\dpa4}
+
+Suppose that $T:\R^3\rightarrow \R^3$ is a linear transformation with the property
+that \[
+\begin{array}{rcl}
+T\left(\left[ \begin{array}{c} 1 \\ 7 \\ 0\end{array} \right]\right) &=& e_1\\ 
+T\left(\left[ \begin{array}{c} 3 \\ 2 \\ 1\end{array} \right]\right) &=& e_2\\ 
+T\left(\left[ \begin{array}{c} 0 \\ 5 \\ 3\end{array} \right]\right) &=& e_3. 
+\end{array}
+\]
+
+Find a vector $w$ such that $T(w) = \left[ \begin{array}{c} 1 \\ 3 \\ -2\end{array} \right]$.
+
+\input{vectorentry2.tex}
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[10],[3],[-3]]"}
+
+Find a vector $w$ such that $T(w) = \left[ \begin{array}{c} 1000 \\ 100 \\ 10 \end{array} \right]$.
+
+
+
+\edXabox{type="custom" cfn="VectorEntry" expect="[[1300],[7250],[130]]"}
+
+
+
+\edXsolution{
+Call the three given vectors $v_1, v_2, v_3,$ such that $T(v_i) = e_i$.  
+Note that \[
+\left[ \begin{array}{c} 1 \\ 3 \\ -2\end{array} \right] = 1e_1 + 3e_2 - 2e_3 = T(v_1 + 3v_2 - 2v_3).\]
+Therefore 
+\[w = v_1 + 3v_2 - 2v_3 = \left[ \begin{array}{c} 10 \\ 3 \\ -3\end{array} \right]  \]
+is a solution to the first equation.  
+
+Similarly, 
+\[w = 1000v_1 + 100v_2 + 10v_3 = \left[ \begin{array}{c} 1300 \\ 7250 \\ 130\end{array} \right]  \]
+is a solution to the second equation.  
+}
+
+\endedxproblem
+
+\beginedxproblem{Invertible?}{\dpa1}
+
+Use the same $T$ as in the previous problem. 
+
+Will $T$ necessarily be invertible, will it necessarily be non-invertible, or is there not enough information?
+Think about how you would prove your answer, or find a counterexample.
+
+\edXabox{type="multichoice" expect="$T$ must be invertible" options="$T$ must be invertible","$T$ must be non-invertible","There is not enough information to determine"}
+
+What is the significance of the $3\times 3$ matrix whose columns (in order) are $
+\left[ \begin{array}{c} 1 \\ 7 \\ 0\end{array} \right], 
+\left[ \begin{array}{c} 3 \\ 2 \\ 1\end{array} \right],$ and
+$\left[ \begin{array}{c} 0 \\ 5 \\ 3\end{array} \right]$?
+
+\edXabox{type="multichoice" expect="It is the standard matrix for $T\inv$" options="It is the standard matrix for $T$","It is the standard matrix for $T\inv$","Neither of the above"}
+
+
+\edXsolution{
+The argument in the previous problem will work no matter what vector is on the right side of the equation; $T(w) = u$ always 
+has a solution, for every $u$.  In other words, $T$ is onto.  
+
+By the Invertible Matrix Theorem, $T$ is therefore invertible.  
+
+Note that 
+\[
+\begin{array}{rcl}  T\inv(e_1) &=& \left[ \begin{array}{c} 1 \\ 7 \\ 0\end{array} \right]\\
+T\inv(e_2) &=& \left[ \begin{array}{c} 3 \\ 2 \\ 1\end{array} \right]\\
+T\inv(e_3) &=& \left[ \begin{array}{c} 0 \\ 5 \\ 3\end{array} \right]
+\end{array} 
+\]
+so these three vectors form the columns of the standard matrix for $T\inv$.  
+}
+
+
+\endedxproblem
+
+
+
+\endedxvertical
+
+
+
+\beginedxvertical{Discussion}
+
+
+\beginedxtext{Discussion}
+
+Feel free to discuss the homework questions in the forum.  Before creating a new post, please first check to see if there is already a question
+or discussion addressing your topic.  
+
+Also, please do not give away the answers!  
+
+\endedxtext
+
+\edXdiscussion{Discuss Homework 2}{discussion_category="Homework" discussion_topic="HW2" discussion_id="HW2"}
+
+\endedxvertical
 
 
 

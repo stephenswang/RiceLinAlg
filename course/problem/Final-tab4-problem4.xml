@@ -1,0 +1,26 @@
+<problem display_name="Rank" linenum="305" tex_filename="./hw/final.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose that [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^7[/mathjaxinline] is a linear transformation. Suppose further that we can find two distinct vectors [mathjaxinline]v_1,v_2 \in \mathbb R^6[/mathjaxinline] such that [mathjaxinline]T(v_1)[/mathjaxinline] and [mathjaxinline]T(v_2)[/mathjaxinline] are both equal to the same non-zero vector [mathjaxinline]w \in R^7[/mathjaxinline]. </p>
+    <p>
+What is the strongest conclusion we can make about the rank of [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <p style="display:inline">The rank of [mathjaxinline]T[/mathjaxinline] is at least</p>
+      <numericalresponse inline="1" answer="1">
+        <textline inline="1">
+          <responseparam type="tolerance" default="0.00001"/>
+        </textline>
+      </numericalresponse>
+    </p>
+    <p><p style="display:inline">and at most</p><numericalresponse inline="1" answer="5"><textline inline="1"><responseparam type="tolerance" default="0.00001"/></textline></numericalresponse>. </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ Since [mathjaxinline]T(v_1) = T(v_2)[/mathjaxinline], we know that [mathjaxinline]T[/mathjaxinline] is not into. Therefore the nullity of [mathjaxinline]T[/mathjaxinline] is at least 1. Since the rank of [mathjaxinline]T[/mathjaxinline] plus its nullity must equal 6, the rank is at most 5. We also know that [mathjaxinline]w[/mathjaxinline] is a non-zero vector in the image of [mathjaxinline]T[/mathjaxinline]. Hence the image of [mathjaxinline]T[/mathjaxinline] is a non-zero subspace and has dimension at least 1. Therefore the rank of [mathjaxinline]T[/mathjaxinline] is at least 1.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

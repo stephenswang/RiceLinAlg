@@ -1,0 +1,41 @@
+<problem display_name="Products" linenum="54" tex_filename="./hw/hw2.tex" showanswer="finished" attempts="2" rerandomize="per_student">
+  <text>
+    <p>
+Suppose [mathjaxinline]A = \left[ \begin{array}{ccc} 0&amp;  2 &amp;  -1 \\ 1 &amp;  0 &amp;  2 \end{array} \right][/mathjaxinline] and [mathjaxinline]B = \left[ \begin{array}{cccc} 1&amp;  1&amp;  2 &amp;  -1 \\ 1 &amp;  4 &amp;  3 &amp;  2 \end{array} \right].[/mathjaxinline] Click all of the following expressions which are defined. </p>
+    <p>
+      <choiceresponse>
+        <checkboxgroup>
+          <choice correct="false" name="1">
+            <text>[mathjaxinline]AB[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text>[mathjaxinline](BA)^ t[/mathjaxinline]</text>
+          </choice>
+          <choice correct="true" name="3">
+            <text>[mathjaxinline]B^ tA[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text>[mathjaxinline]BA^ t[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="5">
+            <text>[mathjaxinline]B^ tA^ t[/mathjaxinline]</text>
+          </choice>
+          <choice correct="false" name="6">
+            <text>[mathjaxinline](BB^ tAA^ t)^3[/mathjaxinline]</text>
+          </choice>
+        </checkboxgroup>
+      </choiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The only things we need to pay attention to are the sizes of [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline]; we see that [mathjaxinline]A[/mathjaxinline] is [mathjaxinline]2\times 3[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] is [mathjaxinline]2\times 4[/mathjaxinline]. Hence [mathjaxinline]AB[/mathjaxinline] is not defined, nor is [mathjaxinline]BA[/mathjaxinline], and hence not [mathjaxinline](BA)^ t[/mathjaxinline]. [mathjaxinline]A^ t[/mathjaxinline] is [mathjaxinline]3\times 2[/mathjaxinline] and [mathjaxinline]B^ t[/mathjaxinline] is [mathjaxinline]4\times 2[/mathjaxinline], so [mathjaxinline]B^ tA[/mathjaxinline] is defined but [mathjaxinline]BA^ t[/mathjaxinline] is not, nor is [mathjaxinline]B^ tA^ t[/mathjaxinline]. </p>
+          <p>
+Finally, [mathjaxinline]BB^ t[/mathjaxinline] is [mathjaxinline]2\times 2[/mathjaxinline], as is [mathjaxinline]AA^ t[/mathjaxinline]. Therefore [mathjaxinline]BB^ tAA^ t[/mathjaxinline] is also [mathjaxinline]2\times 2[/mathjaxinline] and can be cubed.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

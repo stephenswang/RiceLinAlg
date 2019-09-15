@@ -1,0 +1,39 @@
+<problem display_name="Orthonormal Basis" linenum="95" tex_filename="./hw/hw4.tex" showanswer="finished" attempts="5" rerandomize="per_student">
+  <text>
+    <p>
+Recall that [mathjaxinline]\mathbb {P}_1[/mathjaxinline] is the space of polynomials of degree at most one. Use the inner product [mathjaxinline]\langle f, g \rangle = \int _0^1 f(t)g(t) \  dt.[/mathjaxinline] </p>
+    <p>
+The polynomial [mathjaxinline]f(t) = 1[/mathjaxinline] has norm 1 under this inner product. Find a polynomial [mathjaxinline]g \in \mathbb {P}_1[/mathjaxinline] such that [mathjaxinline]\{ f; g\}[/mathjaxinline] forms an orthonormal basis of [mathjaxinline]\mathbb {P}_1[/mathjaxinline]. </p>
+    <p>
+There are multiple possibilities for the linear function [mathjaxinline]g[/mathjaxinline]; enter one that has a positive slope. </p>
+    <p>
+Remember to type * for multiplication. You can type sqrt(3) for [mathjaxinline]\sqrt {3}[/mathjaxinline]. </p>
+    <p>
+      <p style="display:inline">[mathjaxinline]g(t)=[/mathjaxinline] </p>
+      <formularesponse inline="1" type="cs" samples="t@1:5#5" answer="sqrt(6)*t - sqrt(6)/2">
+        <formulaequationinput inline="1">
+          <responseparam type="tolerance" default=".01"/>
+        </formulaequationinput>
+      </formularesponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ The list [mathjaxinline]\{ 1; t\}[/mathjaxinline] forms a basis of [mathjaxinline]\mathbb {P}_1[/mathjaxinline]. It isn't orthonormal, however. To find an orthogonal basis, we can use Gram-Schmidt. Projecting [mathjaxinline]t[/mathjaxinline] onto the span of 1 gives [mathjaxinline]\frac{\langle t, 1\rangle }{\langle 1, 1\rangle } 1 = \int _0^1 t \  dt = \frac{1}{2},[/mathjaxinline] so [mathjaxinline]t-\frac{1}{2}[/mathjaxinline] is orthogonal to 1. </p>
+          <p>
+However, it does not have norm 1. We can calculate that </p>
+          <table id="a0000000211" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left\| t-\frac{1}{2}\right\| ^2 = \int _0^1 \left(t-\frac{1}{2}\right)^2 \  dt = \frac{1}{6},[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ so the norm of [mathjaxinline]t-\frac{1}{2}[/mathjaxinline] is [mathjaxinline]\frac{1}{\sqrt {6}}[/mathjaxinline]. Thus, multiplying by [mathjaxinline]\sqrt {6}[/mathjaxinline] then gives us something with norm 1.  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

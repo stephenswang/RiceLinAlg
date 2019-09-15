@@ -1,4 +1,4 @@
-<problem display_name="Rank and Nullity 2" linenum="86" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+<problem display_name="Rank and Nullity 2" linenum="83" tex_filename="./block3/rankandnullity.tex" showanswer="finished" attempts="2" rerandomize="per_student">
   <text>
     <p>
 Let [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^2[/mathjaxinline] be the transformation that sends all vectors to [mathjaxinline]\mathbf{0}[/mathjaxinline]. </p>

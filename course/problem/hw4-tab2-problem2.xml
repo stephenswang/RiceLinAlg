@@ -1,0 +1,110 @@
+<problem display_name="Decomposition" linenum="55" tex_filename="./hw/hw4.tex" showanswer="finished" attempts="3" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]v = \left[ \begin{array}{c} -1 \\ 7 \\ 2 \\ 10 \end{array} \right][/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} -1 \\ 0 \\ 1 \\ 3 \end{array} \right][/mathjaxinline]. </p>
+    <p>
+Find vectors [mathjaxinline]u_1[/mathjaxinline] and [mathjaxinline]u_2[/mathjaxinline] such that [mathjaxinline]u_1[/mathjaxinline] is a scalar multiple of [mathjaxinline]w[/mathjaxinline], [mathjaxinline]u_2[/mathjaxinline] is orthogonal to [mathjaxinline]w[/mathjaxinline], and [mathjaxinline]v = u_1 + u_2.[/mathjaxinline] </p>
+    <p>
+      <div class="hideshowbox">
+        <h4 onclick="hideshow(this);" style="margin: 0px">How to Enter a Column Vector in R^n<span class="icon-caret-down toggleimage"/></h4>
+        <div class="hideshowcontent">
+          <p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p>
+          <ul class="itemize">
+            <li>
+              <p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p>
+            </li>
+            <li>
+              <p>
+or, you can enter it as &lt;1,2,3&gt; </p>
+            </li>
+          </ul>
+          <p>
+Use decimals only. </p>
+        </div>
+        <p class="hideshowbottom" onclick="hideshow(this);" style="margin: 0px">
+          <a href="javascript: {return false;}">Show</a>
+        </p>
+      </div>
+    </p>
+    <script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script>
+    <p>
+What is [mathjaxinline]u_1[/mathjaxinline]? </p>
+    <p>
+      <customresponse cfn="VectorEntry" expect="[[-3],[0],[3],[9]]">
+        <textline correct_answer="[[-3],[0],[3],[9]]"/>
+      </customresponse>
+    </p>
+    <p>
+What is [mathjaxinline]u_2[/mathjaxinline]? </p>
+    <p>
+      <customresponse cfn="VectorEntry" expect="[[2],[7],[-1],[1]]">
+        <textline correct_answer="[[2],[7],[-1],[1]]"/>
+      </customresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ If we set [mathjaxinline]W[/mathjaxinline] to be the span of [mathjaxinline]w[/mathjaxinline], then the desired [mathjaxinline]u_1[/mathjaxinline] will be the projection of [mathjaxinline]v[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline], since the difference [mathjaxinline]v-u_1[/mathjaxinline] would be orthogonal to [mathjaxinline]w[/mathjaxinline] and hence orthogonal to [mathjaxinline]W[/mathjaxinline]. </p>
+          <p>
+Since [mathjaxinline]\{ w\}[/mathjaxinline] is an orthogonal basis of [mathjaxinline]W[/mathjaxinline], we have </p>
+          <table id="a0000000209" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]u_1 = \frac{\langle v, w\rangle }{\langle w, w\rangle } w = \frac{33}{11}w = \left[ \begin{array}{c} -3 \\ 0 \\ 3 \\ 9 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+Therefore </p>
+          <table id="a0000000210" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]u_2 = v - u_1 = \left[ \begin{array}{c} 2 \\ 7 \\ -1 \\ 1 \end{array} \right].[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+        </font>
+      </solution>
+    </p>
+  </text>
+  <SCRIPT src="/static/latex2edx.js" type="text/javascript"/>
+  <LINK href="/static/latex2edx.css" rel="stylesheet" type="text/css"/>
+</problem>

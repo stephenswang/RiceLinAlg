@@ -9,134 +9,300 @@
 <div><p>
 <course number="Test" display_name="Test LinAlg" attrib_string="semester=&quot;2018_Summer&quot; info_sidebar_name=&quot;Other Documents&quot; start=&quot;2018-01-11T12:00&quot; end=&quot;2019-12-18T18:00&quot; course_image=&quot;rice-logo.jpg&quot; display_coursenumber=&quot;TestLinAlg&quot; course_organization=&quot;TestRice&quot; graceperiod=&quot;1800 seconds&quot; invitation_only=&quot;true&quot; allow_anonymous=&quot;false&quot; mobile_available=&quot;true&quot; org=&quot;Rice&quot;"><p>
 <chapter display_name="Basis and Dimension" attrib_string="url_name=&quot;block3&quot; start=&quot;2018-01-11T16:00&quot;" linenum="75" tex_filename="testcourse2.tex" refnum="1"><p>
-<sequential display_name="Homework 1" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;hw1-sequential&quot;" linenum="93" tex_filename="testcourse2.tex" refnum="1"><p>
+<sequential display_name="HW4" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;hw1-sequential&quot;" linenum="93" tex_filename="testcourse2.tex" refnum="1"><p>
 <vertical display_name="Page One" attrib_string="url_name=&quot;hw1-vertical1&quot;" refnum="1"><p>
-<html display_name="Row-Reduction Tools" attrib_string="url_name=&quot;hw1-tab1-text1&quot;" linenum="5" tex_filename="./hw/hw1.tex"><p>
-For this homework, you should feel free to use technology to do row reduction of matrices. All other computations should still be done by hand, for now. </p><p>
-Here are a couple of websites that will do row reduction for you: </p><p>
+<html display_name="Row-Reduction Tools" attrib_string="url_name=&quot;hw1-tab1-text1&quot;" linenum="6" tex_filename="./hw/hw4.tex"><p>
+For this homework, you should feel free to use technology to do row reduction, multiplication, and inversion of matrices. All other computations should still be done by hand, for now. </p><p>
+Here are a couple of websites that will do some of this for you: </p><p>
 <a href="https://tinyurl.com/3xr6ed" target="_blank">Linear Algebra Toolkit</a>
  </p><p>
 <a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a>
  </p></html></p></vertical>   </p><p>
 <vertical display_name="Homework Page 1" attrib_string="url_name=&quot;hw1-vertical2&quot;" refnum="2"><p>
-<problem display_name="Parabola" attrib_string="url_name=&quot;hw1-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="26" tex_filename="./hw/hw1.tex"><text><p>
-Is there a quadratic equation of the form [mathjaxinline]y = a + bx + cx^2[/mathjaxinline] satisfied by the four points [mathjaxinline](-2,11), (0,4), (1,2),[/mathjaxinline] and [mathjaxinline](2,1)[/mathjaxinline]? </p><p>
-Enter the correct formula in the form a + b*x + c*x^2 (either exactly or to two decimal places). Remember to use * for multiplication. If there is no such equation, enter the number 0. </p><p>
-<p style="display:inline">[mathjaxinline]y=[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="4-2.5*x+0.5*x^2">
-  <formulaequationinput inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </formulaequationinput>
-</formularesponse> </p><p>
+<problem display_name="Subspace?" attrib_string="url_name=&quot;hw1-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="27" tex_filename="./hw/hw4.tex"><text><p>
+Let [mathjaxinline]V[/mathjaxinline] be a space with an inner product, and let [mathjaxinline]v\in V[/mathjaxinline] be a non-zero vector. Define [mathjaxinline]W[/mathjaxinline] to be the set of all vectors [mathjaxinline]w\in V[/mathjaxinline] with the property that [mathjaxinline]\langle v,w\rangle = 0[/mathjaxinline]. </p><p>
+True or false: [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline]. Prove your answer, or come up with a counterexample showing that it is not. </p><p>
+<optionresponse>
+  <optioninput options="('I have proven it','I found a counterexample')" correct="I have proven it"/>
+</optionresponse> </p><p>
 <solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Parabola 2" attrib_string="url_name=&quot;hw1-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="44" tex_filename="./hw/hw1.tex"><text><p>
-Is there a quadratic equation of the form [mathjaxinline]y = a + bx + cx^2[/mathjaxinline] satisfied by the four points [mathjaxinline](-2,11), (0,4), (1,2),[/mathjaxinline] and [mathjaxinline](3,0)[/mathjaxinline]? </p><p>
-Enter the correct formula in the form [mathjaxinline]a + b*x + c*x^2[/mathjaxinline], either exactly or to two decimal places. (Remember to use * for multiplication.) If there is no such equation, enter the number 0. </p><p>
-<p style="display:inline">[mathjaxinline]y=[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="0">
-  <formulaequationinput inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </formulaequationinput>
-</formularesponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Plate Temperature" attrib_string="url_name=&quot;hw1-tab2-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="61" tex_filename="./hw/hw1.tex"><text><p>
-An elliptical metal plate is shown below. We can measure the temperature at six points along its edge. </p><center> <edxxml><img src="/static/images/h1plate.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
-We wish to determine the temperature at some internal points, labelled A, B, C, D. Assuming that the temperature at each of the points is the average of the temperatures at its four neighboring points (as given by the dotted lines), set up a system of linear equations for the temperatures, and then solve it. </p><p>
-<p style="display:inline">[mathjaxinline]A=[/mathjaxinline] </p> <numericalresponse inline="1" answer="8">
-  <textline inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </textline>
-</numericalresponse> </p><p>
-<p style="display:inline">[mathjaxinline]B=[/mathjaxinline] </p> <numericalresponse inline="1" answer="12">
-  <textline inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </textline>
-</numericalresponse> </p><p>
-<p style="display:inline">[mathjaxinline]C=[/mathjaxinline] </p> <numericalresponse inline="1" answer="9">
-  <textline inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </textline>
-</numericalresponse> </p><p>
-<p style="display:inline">[mathjaxinline]D=[/mathjaxinline] </p> <numericalresponse inline="1" answer="10">
-  <textline inline="1">
-    <responseparam type="tolerance" default=".01"/>
-  </textline>
-</numericalresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Homework Page 2" attrib_string="url_name=&quot;hw1-vertical3&quot;" refnum="3"><p>
-<problem display_name="Traffic" attrib_string="url_name=&quot;hw1-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="120" tex_filename="./hw/hw1.tex"><text><p>
-A set of roads and intersections is shown below. The rate of cars per hour is shown for some roads. Assume that at each of the six intersections, the flow of traffic into the intersection equals the flow of traffic out of the intersection. This gives a set of linear equations in the seven unknown traffic rates. </p><center> <edxxml><img src="/static/images/h1traffic.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
-Solve the system in full generality. Assuming that all rates are non-negative, what is the minimum possible value of [mathjaxinline]x_7[/mathjaxinline]? </p><p>
-<numericalresponse answer="60">
-  <textline>
-    <responseparam type="tolerance" default=".01"/>
-  </textline>
-</numericalresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
-<vertical display_name="Homework Page 3" attrib_string="url_name=&quot;hw1-vertical4&quot;" refnum="4"><p>
-<problem display_name="Cube to Identity" attrib_string="url_name=&quot;hw1-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;7&quot; rerandomize=&quot;per_student&quot;" linenum="148" tex_filename="./hw/hw1.tex"><text><p>
-Find a [mathjaxinline]2\times 2[/mathjaxinline] matrix [mathjaxinline]A[/mathjaxinline] which is not the identity matrix, but which has the property that [mathjaxinline]A^3 = I_2[/mathjaxinline]. Enter your answer to within two decimal places. </p><p>
-(Hint: Don't try to solve for the entries of [mathjaxinline]A[/mathjaxinline] with algebra. Think about what you might want [mathjaxinline]A[/mathjaxinline] to do geometrically first.) </p><script linenum="2" filename="./checkcube.tex" type="text/python" system_path="python_lib">
-def cubing(expect,ans):
-    import ast
-    import numpy as np
-    res={'ok':False}
-    if MatrixEntry(expect,ans)['ok']!=True:
-        res['msg']=(MatrixEntry(expect,ans))['msg']
-    else:
-        hold=np.array(eval(ans))
-        mat=hold
-        I=np.identity(2)
-        mat_c=np.linalg.matrix_power(mat,3)
-        diff1=np.subtract(mat_c,I)
-    
-        adiff1=np.absolute(diff1)
-        check1=(adiff1&gt;0.02).any()
-        diff2=np.subtract(mat,I)
-        adiff2=np.absolute(diff2)
-        check2=(adiff2&gt;0.01).any()
-    
+<problem display_name="Decomposition" attrib_string="url_name=&quot;hw1-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="43" tex_filename="./hw/hw4.tex"><text><p>
+Let [mathjaxinline]v = \left[ \begin{array}{c} -1 \\ 7 \\ 2 \\ 10 \end{array} \right][/mathjaxinline] and [mathjaxinline]w = \left[ \begin{array}{c} -1 \\ 0 \\ 1 \\ 3 \end{array} \right][/mathjaxinline]. </p><p>
+Find vectors [mathjaxinline]u_1[/mathjaxinline] and [mathjaxinline]u_2[/mathjaxinline] such that [mathjaxinline]u_1[/mathjaxinline] is a scalar multiple of [mathjaxinline]w[/mathjaxinline], [mathjaxinline]u_2[/mathjaxinline] is orthogonal to [mathjaxinline]w[/mathjaxinline], and [mathjaxinline]v = u_1 + u_2.[/mathjaxinline] </p><p>
+<edxshowhide description="How to Enter a Column Vector in R^n"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
 
-        if check2==False:
-            res['msg']='Answer too close to the identity'
-            
-        elif check1==True:
-            res['msg']='Answer does not cube to the identity'
-            
-        else:
-            res['ok']=True
-    return res
-  
-def MatrixEntry(expect, ans):
-    import ast
-    import numpy as np
-    ret= {'ok':False}
-    
-    
-    try:
-        list_ans = ast.literal_eval(ans)
-        list_expect = ast.literal_eval(expect)
-        matrix_ans = np.matrix(list_ans)
-        matrix_expect = np.matrix(list_expect)
-        if matrix_ans.shape != matrix_expect.shape:
-            ret['msg'] = 'Wrong shape of matrix'
-        
-        else:
-            ret['ok'] = True
-    except SyntaxError:
-        ret['msg'] = 'Wrong input format'
-    return ret
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
 </script><p>
-<customresponse cfn="cubing" expect="[[-0.5,-0.866],[0.866,-0.5]]">
-  <textline correct_answer="[[-0.5,-0.866],[0.866,-0.5]]"/>
+What is [mathjaxinline]u_1[/mathjaxinline]? </p><p>
+<customresponse cfn="VectorEntry" expect="[[-3],[0],[3],[9]]">
+  <textline correct_answer="[[-3],[0],[3],[9]]"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
-<problem display_name="Find a Solution Set" attrib_string="url_name=&quot;hw1-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="169" tex_filename="./hw/hw1.tex"><text><p>
-Let </p><table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7">
+What is [mathjaxinline]u_2[/mathjaxinline]? </p><p>
+<customresponse cfn="VectorEntry" expect="[[2],[7],[-1],[1]]">
+  <textline correct_answer="[[2],[7],[-1],[1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ If we set [mathjaxinline]W[/mathjaxinline] to be the span of [mathjaxinline]w[/mathjaxinline], then the desired [mathjaxinline]u_1[/mathjaxinline] will be the projection of [mathjaxinline]v[/mathjaxinline] onto [mathjaxinline]W[/mathjaxinline], since the difference [mathjaxinline]v-u_1[/mathjaxinline] would be orthogonal to [mathjaxinline]w[/mathjaxinline] and hence orthogonal to [mathjaxinline]W[/mathjaxinline]. </p><p>
+Since [mathjaxinline]\{ w\}[/mathjaxinline] is an orthogonal basis of [mathjaxinline]W[/mathjaxinline], we have </p><table id="a0000000002" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
-    <td class="equation">[mathjax]A = \left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1\\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right].[/mathjax]</td>
+    <td class="equation">[mathjax]u_1 = \frac{\langle v, w\rangle }{\langle w, w\rangle } w = \frac{33}{11}w = \left[ \begin{array}{c} -3 \\ 0 \\ 3 \\ 9 \end{array} \right].[/mathjax]</td>
 </tr>
 </table><p>
- Find a list of vectors whose span is the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline]. </p><p>
-Enter the list of vectors below, separated by semicolons. For instance, to enter the list [mathjaxinline]\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \right\}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p><script linenum="2" filename="./solutionsetcheck.tex" type="text/python" system_path="python_lib">
+Therefore </p><table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]u_2 = v - u_1 = \left[ \begin{array}{c} 2 \\ 7 \\ -1 \\ 1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p><p>
+<problem display_name="Orthonormal Basis" attrib_string="url_name=&quot;hw1-tab2-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="83" tex_filename="./hw/hw4.tex"><text><p>
+Recall that [mathjaxinline]\mathbb {P}_1[/mathjaxinline] is the space of polynomials of degree at most one. Use the inner product [mathjaxinline]\langle f, g \rangle = \int _0^1 f(t)g(t) \  dt.[/mathjaxinline] </p><p>
+The polynomial [mathjaxinline]f(t) = 1[/mathjaxinline] has norm 1 under this inner product. Find a polynomial [mathjaxinline]g \in \mathbb {P}_1[/mathjaxinline] such that [mathjaxinline]\{ f; g\}[/mathjaxinline] forms an orthonormal basis of [mathjaxinline]\mathbb {P}_1[/mathjaxinline]. </p><p>
+There are multiple possibilities for the linear function [mathjaxinline]g[/mathjaxinline]; enter one that has a positive slope. Remember to type * for multiplication. You can type sqrt(3) for [mathjaxinline]\sqrt {3}[/mathjaxinline]. </p><p>
+<p style="display:inline">[mathjaxinline]g(t)=[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="t@1:5#5" answer="sqrt(6)*t - sqrt(6)/2">
+  <formulaequationinput inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ The list [mathjaxinline]\{ 1; t\}[/mathjaxinline] forms a basis of [mathjaxinline]\mathbb {P}_1[/mathjaxinline]. It isn't orthonormal, however. To find an orthogonal basis, we can use Gram-Schmidt. Projecting [mathjaxinline]t[/mathjaxinline] onto the span of 1 gives [mathjaxinline]\frac{\langle t, 1\rangle }{\langle 1, 1\rangle } 1 = \int _0^1 t \  dt = \frac{1}{2},[/mathjaxinline] so [mathjaxinline]t-\frac{1}{2}[/mathjaxinline] is orthogonal to 1. </p><p>
+However, it does not have norm 1. We can calculate that </p><table id="a0000000004" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left\| t-\frac{1}{2}\right\| ^2 = \int _0^1 \left(t-\frac{1}{2}\right)^2 \  dt = \frac{1}{6},[/mathjax]</td>
+</tr>
+</table><p>
+ so the norm of [mathjaxinline]t-\frac{1}{2}[/mathjaxinline] is [mathjaxinline]\frac{1}{\sqrt {6}}[/mathjaxinline]. Thus, multiplying by [mathjaxinline]\sqrt {6}[/mathjaxinline] then gives us something with norm 1.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Homework Page 2" attrib_string="url_name=&quot;hw1-vertical3&quot;" refnum="3"><p>
+<problem display_name="Closest Solution" attrib_string="url_name=&quot;hw1-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;4&quot; rerandomize=&quot;per_student&quot;" linenum="122" tex_filename="./hw/hw4.tex"><text><p>
+Let [mathjaxinline]A = \left[\begin{array}{cc} -2 &amp;  1 \\ 1 &amp;  -1 \\ 1 &amp;  2 \end{array} \right].[/mathjaxinline] </p><p>
+Find the vector [mathjaxinline]x[/mathjaxinline] for which [mathjaxinline]Ax[/mathjaxinline] comes closest to [mathjaxinline]v=\left[ \begin{array}{c} 2 \\ -3 \\ 2 \end{array} \right].[/mathjaxinline] </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[-.6],[1.4]]">
+  <textline correct_answer="[[-.6],[1.4]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We seek the least-squared solution to [mathjaxinline]Ax = v[/mathjaxinline]. We first calculate </p><table id="a0000000005" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]A^ tA = \left[\begin{array}{cc} 6 &amp;  -1 \\ -1 &amp;  6 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><p>
+ and [mathjaxinline]A^ tv = \left[ \begin{array}{c} -5 \\ 9 \end{array} \right].[/mathjaxinline] </p><p>
+The least-squared solution is then [mathjaxinline](A^ tA)^{-1}A^ tv = \left[ \begin{array}{c} -0.6 \\ 1.4 \end{array} \right].[/mathjaxinline] </p></font></solution></p></text></problem></p><p>
+<problem display_name="Orthogonal Matrices" attrib_string="url_name=&quot;hw1-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="150" tex_filename="./hw/hw4.tex"><text><p>
+Let [mathjaxinline]v_1 = \left[ \begin{array}{c} 0.8 \\ 0.6 \\ 0 \end{array} \right],[/mathjaxinline] and [mathjaxinline]v_2 = \left[ \begin{array}{c} 0.3 \\ -0.4 \\ \sqrt {3}{2} \end{array} \right].[/mathjaxinline] </p><p>
+How many [mathjaxinline]3\times 3[/mathjaxinline] orthogonal matrices have [mathjaxinline]v_1[/mathjaxinline] as their first column and [mathjaxinline]v_2[/mathjaxinline] as their second column? Enter 'infinite' if you think there are infinitely many. (Hint: Think geometrically!) </p><p>
+<formularesponse type="cs" samples="infinite@1:5#5" answer="2">
+  <formulaequationinput>
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ A [mathjaxinline]3\times 3[/mathjaxinline] matrix is orthogonal if and only if its columns form an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. Thus, the question is equivalent to asking, how many vectors [mathjaxinline]v_3[/mathjaxinline] are there such that [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. </p><p>
+Notice that [mathjaxinline]\| v_1\|  = \| v_2\|  = 1[/mathjaxinline], and that [mathjaxinline]\langle v_1, v_2 \rangle = 0.[/mathjaxinline] So we are two-thirds of the way to forming an orthonormal basis of [mathjaxinline]\mathbb R^3[/mathjaxinline]. If [mathjaxinline]\{ v_1; v_2; v_3\}[/mathjaxinline] is to be orthonormal, we must have [mathjaxinline]v_3[/mathjaxinline] of norm 1, and orthogonal to the plane spanned by [mathjaxinline]v_1[/mathjaxinline] and [mathjaxinline]v_2[/mathjaxinline]. There are exactly two unit vectors orthogonal to a given plane (one on each side). Thus there are exactly two ways to fill out the third column to make the matrix orthogonal.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Homework Page 3" attrib_string="url_name=&quot;hw1-vertical4&quot;" refnum="4"><p>
+<problem display_name="Least Squared Line" attrib_string="url_name=&quot;hw1-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="187" tex_filename="./hw/hw4.tex"><text><p>
+Find the equation of the line [mathjaxinline]y=mx + b[/mathjaxinline] that gives the least squared vertical distance to the data points [mathjaxinline](-1, 1), (0, 5), (1, 3), (2, 8), (3, 11), (5, 12)[/mathjaxinline]. </p><p>
+Remember to type * for multiplication. </p><p>
+<p style="display:inline">[mathjaxinline]y=[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="1.9*x + 3.5">
+  <formulaequationinput inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Finding [mathjaxinline]m,b[/mathjaxinline] which fit the data exactly would entail solving the matrix-vector equation </p><table id="a0000000006" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{cc} -1 &amp;  1 \\ 0 &amp;  1 \\ 1 &amp;  1 \\ 2 &amp;  1 \\ 3 &amp;  1 \\ 5 &amp;  1 \end{array} \right] \left[\begin{array}{c} m \\ b \end{array} \right] = \left[\begin{array}{c} 1 \\ 5 \\ 3 \\ 8 \\ 11 \\ 12 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+ Let [mathjaxinline]A[/mathjaxinline] be the matrix on the left, and let [mathjaxinline]v[/mathjaxinline] be the vector on the right. In order to find the least-squares best fit, we solve [mathjaxinline]A^ tAx = A^ tv[/mathjaxinline]. We can calculate [mathjaxinline](A^ tA)^{-1}[/mathjaxinline] and [mathjaxinline]A^ tv[/mathjaxinline]. We can therefore find the least squares solution </p><table id="a0000000007" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]x = (A^ tA)^{-1}A^ tv = \left[\begin{array}{c} 1.9 \\ 3.5 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+ Therefore the desired equation is [mathjaxinline]y = 1.9x + 3.5.[/mathjaxinline]  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Least Squared in Two Variables" attrib_string="url_name=&quot;hw1-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="235" tex_filename="./hw/hw4.tex"><text><p>
+A scientist conjectures that a quantity [mathjaxinline]J[/mathjaxinline] is equal to a combination of a quadratic function of [mathjaxinline]x[/mathjaxinline] and a linear function of [mathjaxinline]y[/mathjaxinline], where [mathjaxinline]x[/mathjaxinline] and [mathjaxinline]y[/mathjaxinline] are independent variables. She gathers the following data: </p><table id="a0000000008" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\begin{array}{c|c|c} x &amp;  y &amp;  J \\ \hline 0 &amp;  0 &amp;  5 \\ 0 &amp;  1 &amp;  8 \\ 1 &amp;  1 &amp;  9 \\ 1 &amp;  2 &amp;  10 \\ 2 &amp;  0 &amp;  10 \\ 3 &amp;  2 &amp;  20 \end{array}[/mathjax]</td>
+</tr>
+</table><p>
+Consider all equations of the form [mathjaxinline]J = ax^2 + bx + cy + d[/mathjaxinline], where [mathjaxinline]a,b,c,d[/mathjaxinline] are real numbers. Find a function of that form which is the least-squares best fit for the given data. </p><p>
+[You will probably not want to do these calculations by hand!] </p><p>
+Remember to type * for multiplication. </p><p>
+<p style="display:inline">[mathjaxinline]J=[/mathjaxinline] </p> <formularesponse inline="1" type="cs" samples="x@1:5#5" answer="5*x^2/4-x/4+2*y+5.5">
+  <formulaequationinput inline="1">
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Finding [mathjaxinline]a,b,c,d[/mathjaxinline] which fit the data exactly would entail solving the matrix-vector equation </p><table id="a0000000009" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[\begin{array}{cccc} 0 &amp;  0 &amp;  0 &amp;  1 \\ 0 &amp;  0 &amp;  1 &amp;  1 \\ 1 &amp;  1 &amp;  1 &amp;  1 \\ 1 &amp;  1 &amp;  2 &amp;  1 \\ 4 &amp;  2 &amp;  0 &amp;  1 \\ 9 &amp;  3 &amp;  2 &amp;  1 \end{array} \right] \left[\begin{array}{c} a \\ b \\ c \\ d \end{array} \right] = \left[\begin{array}{c} 5 \\ 8 \\ 9 \\ 10 \\ 10 \\ 20 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+ Let [mathjaxinline]A[/mathjaxinline] be the matrix on the left, and let [mathjaxinline]v[/mathjaxinline] be the vector on the right. In order to find the least-squares best fit, we solve [mathjaxinline]A^ tAx = A^ tv[/mathjaxinline]. We can calculate [mathjaxinline](A^ tA)^{-1}[/mathjaxinline] and [mathjaxinline]A^ tv[/mathjaxinline]. We can therefore find the least squares solution </p><table id="a0000000010" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]x = (A^ tA)^{-1}A^ tv = \left[\begin{array}{c} 1.25 \\ -0.25 \\ 2 \\ 5.5 \end{array} \right].[/mathjax]</td>
+</tr>
+</table><p>
+ Therefore the desired equation is [mathjaxinline]J = 1.25x^2 - 0.25 x + 2y + 5.5.[/mathjaxinline]  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Discussion" attrib_string="url_name=&quot;hw1-vertical5&quot;" refnum="5"><p>
+<html display_name="Discussion" attrib_string="url_name=&quot;hw1-tab5-text1&quot;" linenum="304" tex_filename="./hw/hw4.tex"><p>
+Feel free to discuss the homework questions in the forum. Before creating a new post, please first check to see if there is already a question or discussion addressing your topic. </p><p>
+Also, please do not give away the answers! </p></html></p><p>
+<discussion display_name="Discuss Homework 4" attrib_string="discussion_category=&quot;Homework&quot; discussion_topic=&quot;HW4&quot; discussion_id=&quot;HW4&quot;"></discussion></p></vertical>   </p></sequential> </p><p>
+<sequential display_name="Final" attrib_string="due=&quot;2019-12-13T14:15&quot; graded=&quot;true&quot; format=&quot;Exercises&quot; url_name=&quot;hw4-sequential&quot;" linenum="128" tex_filename="testcourse2.tex" refnum="2"><p>
+<vertical display_name="Page One" attrib_string="url_name=&quot;hw4-vertical1&quot;" refnum="1"><p>
+<html display_name="Row-Reduction Tools" attrib_string="url_name=&quot;hw4-tab1-text1&quot;" linenum="6" tex_filename="./hw/final.tex"><p>
+You may look back at the course material while you take this exam. </p><p>
+You should feel free to use technology to do row reduction of matrices. All other computations (including matrix multiplication and inversion) should be done by hand. </p><p>
+Here are a couple of websites that will do row reduction for you: </p><p>
+<a href="https://tinyurl.com/dmokjt" target="_blank">Linear Algebra Toolkit</a>
+ </p><p>
+<a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a>
+ </p></html></p><p>
+<problem display_name="Allowable Resources" attrib_string="url_name=&quot;hw4-tab1-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="22" tex_filename="./hw/final.tex"><text><p>
+On this final exam, students are allowed to use technology to do which of the following operations? Check all that apply. </p><p>
+<choiceresponse>
+  <checkboxgroup>
+    <choice correct="true" name="1">
+      <text>Row reduce a matrix</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text>Multiply matrices</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text>Invert a matrix</text>
+    </choice>
+    <choice correct="false" name="4">
+      <text>Inner products</text>
+    </choice>
+  </checkboxgroup>
+</choiceresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Read the text above!  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Final Page 1" attrib_string="url_name=&quot;hw4-vertical2&quot;" refnum="2"><p>
+<problem display_name="Systems of Linear Equations" attrib_string="url_name=&quot;hw4-tab2-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="41" tex_filename="./hw/final.tex"><text><p>
+True or False: A system of 8 linear equations in 6 variables cannot have a unique solution. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+True or False: A system of 6 linear equations in 8 variables cannot have a unique solution. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Row-Reduced Matrix" attrib_string="url_name=&quot;hw4-tab2-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="62" tex_filename="./hw/final.tex"><text><p>
+Suppose [mathjaxinline]T: \mathbb R^5 \rightarrow \mathbb R^4[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. I am not going to tell you what [mathjaxinline]A[/mathjaxinline] is, but I will tell you that when you row-reduce [mathjaxinline]A[/mathjaxinline], the result is the matrix </p><table id="a0000000011" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]R = \left[ \begin{array}{ccccc} 1 &amp;  2 &amp;  0 &amp;  0 &amp;  3 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+Answer the following questions about [mathjaxinline]T[/mathjaxinline] and/or [mathjaxinline]A[/mathjaxinline]. If there is not enough information to tell (e.g., because you only know [mathjaxinline]R[/mathjaxinline], not [mathjaxinline]A[/mathjaxinline]), select "Not enough information." </p><p>
+Is [mathjaxinline]A[/mathjaxinline] invertible? <optionresponse>
+  <optioninput options="('Yes','No','Not enough information')" correct="No"/>
+</optionresponse> </p><p>
+Are the columns of [mathjaxinline]A[/mathjaxinline] linearly dependent? <optionresponse>
+  <optioninput options="('Yes','No','Not enough information')" correct="Yes"/>
+</optionresponse> </p><p>
+Is [mathjaxinline]T[/mathjaxinline] onto? <optionresponse>
+  <optioninput options="('Yes','No','Not enough information')" correct="No"/>
+</optionresponse> </p><p>
+Does the equation [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] have a unique solution? <optionresponse>
+  <optioninput options="('Yes','No','Not enough information')" correct="No"/>
+</optionresponse> </p><p>
+Is the equation [mathjaxinline]Ax = \left[ \begin{array}{c} 3 \\ 1 \\ 0 \\ 1 \end{array} \right][/mathjaxinline] consistent? <optionresponse>
+  <optioninput options="('Yes','No','Not enough information')" correct="Not enough information"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Final Page 2" attrib_string="url_name=&quot;hw4-vertical3&quot;" refnum="3"><p>
+<problem display_name="Row-Reduced Matrix Continued" attrib_string="url_name=&quot;hw4-tab3-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;5&quot; rerandomize=&quot;per_student&quot;" linenum="107" tex_filename="./hw/final.tex"><text><p>
+Take the same set-up as the previous problem. Suppose [mathjaxinline]T: \mathbb R^5 \rightarrow \mathbb R^4[/mathjaxinline] is a linear transformation with standard matrix [mathjaxinline]A[/mathjaxinline]. When you row-reduce [mathjaxinline]A[/mathjaxinline], the result is the matrix </p><table id="a0000000012" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]R = \left[ \begin{array}{ccccc} 1 &amp;  2 &amp;  0 &amp;  0 &amp;  3 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+What is the rank of [mathjaxinline]T[/mathjaxinline]? </p><p>
+<numericalresponse answer="3">
+  <textline>
+    <responseparam type="tolerance" default="0.00001"/>
+  </textline>
+</numericalresponse> </p><p>
+Find a basis for the kernel of [mathjaxinline]T[/mathjaxinline]. Enter the list of vectors forming the basis below, separated by semicolons. For instance, to enter the list [mathjaxinline]\left\{ \left[\begin{array}{c} 1 \\ 0 \\ 1 \end{array} \right]; \left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right] \right\}[/mathjaxinline], type &lt;1,0,1&gt;;&lt;1,2,3&gt;. </p><script linenum="2" filename="./solutionsetcheck5.tex" type="text/python" system_path="python_lib">
 
 def VectorEntry(ans):
     import numpy as np
@@ -155,11 +321,14 @@ def VectorEntry(ans):
                     sub.append(float(a[i][:-1]))
                 else:
                     sub.append(float(a[i]))
-            assert len(sub)==4
+            assert len(sub)==5
             hold.append(np.array(sub))
-        test['ok']=True
+        if len(hold)==2:
+            test['ok']=True
+        else:
+            test['msg']='You gave the wrong number of vectors'        
     except AssertionError:
-        test['msg']='One of your vectors is not a 4-tuple'
+        test['msg']='One of your vectors is not a 5-tuple'
     except:
         test['msg']='Wrong input format'
     return test  
@@ -179,7 +348,7 @@ def span2(a,b):
 def spangrader(expect,ans):
     import numpy as np
     import ast
-    mata=np.array([[1,1,0,-1],[5,6,-1,1]])
+    mata=np.array([[1,2,0,0,3],[0,0,1,0,-1],[0,0,0,1,0],[0,0,0,0,0]])
     res={'ok':False}
     if VectorEntry(ans)['ok']!=True:
         return(VectorEntry(ans))
@@ -200,17 +369,17 @@ def spangrader(expect,ans):
         check_len=True
         check_zero=True
         check_lin=False
-        veco=np.array([0,0,0,0])
+        veco=np.array([0,0,0,0,0])
         new=[]
         for item in hold:
             mul=np.dot(mata,item)
-            if np.array_equal(np.dot(mata,item),np.array([0,0])) and not np.array_equal(item,veco):
+            if np.array_equal(np.dot(mata,item),np.array([0,0,0,0])) and not np.array_equal(item,veco):
                 new.append(item)
-            elif not np.array_equal(np.dot(mata,item),np.array([0,0])):
+            elif not np.array_equal(np.dot(mata,item),np.array([0,0,0,0])):
                 check_zero=False
-                res['msg']='At least one of the vectors is not in the null space of A'
-        if len(new)==1 or len(new)==0 and check_zero==True:
-            res['msg']='The set of vectors given does not span the nullspace of A'
+                res['msg']='At least one of the vectors is not in the kernel'
+        if (len(new)==1 or len(new)==0) and check_zero==True:
+            res['msg']='The set of vectors given does not span the kernel'
         else:
             for i in range(len(new)-1):
                 for j in range(i+1,len(new)):
@@ -220,22 +389,282 @@ def spangrader(expect,ans):
             if check_lin==True:
                 res['ok']=True
             elif check_zero==True and len(new)&gt;=2:
-                res['msg']='No pair of linearly independent vectors found'
+                res['msg']='You may have linearly dependent vectors'
         return res
 
 </script><p>
-<customresponse cfn="spangrader" expect="&amp;lt;-1,1,1,0&amp;gt;;&amp;lt;7,-6,0,1&amp;gt;">
-  <textline correct_answer="&amp;lt;-1,1,1,0&amp;gt;;&amp;lt;7,-6,0,1&amp;gt;"/>
+<customresponse cfn="spangrader" expect="&amp;lt;-2,1,0,0,0&amp;gt;;&amp;lt;-3,0,1,0,1&amp;gt;">
+  <textline correct_answer="&amp;lt;-2,1,0,0,0&amp;gt;;&amp;lt;-3,0,1,0,1&amp;gt;"/>
 </customresponse> </p><p>
-<solution><font color="blue">Answer: </font><font color="blue"><p>
- We row reduce the matrix [mathjaxinline]A[/mathjaxinline]: <br /><br />[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 5 &amp;  6 &amp;  -1 &amp;  1 \end{array} \right][/mathjaxinline] <br /><br />Multiply the first row by -5, and add this to the second: <br /><br />[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  1 &amp;  0 &amp;  -1 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br /><br />Multiply the second row by -1, and add this to the first: <br /><br />[mathjaxinline]\left[ \begin{array}{cccc} 1 &amp;  0 &amp;  1 &amp;  -7 \\ 0 &amp;  1 &amp;  -1 &amp;  6 \end{array} \right][/mathjaxinline] <br /><br />Ordinarily, to solve a matrix equation, we would row reduce an augmented matrix, with the vector from the right hand side of the equation as the last column of the matrix. However, since the right hand side of the equation is the zero vector, row operations would have no effect on it. This tells us that if [mathjaxinline]A'[/mathjaxinline] is the row-reduced version of [mathjaxinline]A[/mathjaxinline], then the set of solutions to [mathjaxinline]Ax = \mathbf{0}[/mathjaxinline] is the same as the set of solutions to [mathjaxinline]A'x = \mathbf{0}[/mathjaxinline].<br />We have 2 free variables; call them [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline]. We can get solutions to our equation by choosing any values we like for [mathjaxinline]x_3[/mathjaxinline] and [mathjaxinline]x_4[/mathjaxinline], substituting, and solving for [mathjaxinline]x_1[/mathjaxinline] and [mathjaxinline]x_2[/mathjaxinline]. We get [mathjaxinline]x_1 = -x_3 + 7x_4[/mathjaxinline] and [mathjaxinline]x_2 = x_3 - 6x_4[/mathjaxinline]. </p><p>
-Hence the general solution is </p><table id="a0000000003" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Linear Transformations" attrib_string="url_name=&quot;hw4-tab3-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="145" tex_filename="./hw/final.tex"><text><p>
+Let [mathjaxinline]S: \mathbb R^3 \rightarrow \mathbb R^2[/mathjaxinline] be a linear transformation with </p><table id="a0000000013" class="equation" width="100%" cellspacing="0" cellpadding="7">
 <tr>
-    <td class="equation">[mathjax]\left[ \begin{array}{c} x_1 \\ x_2 \\ x_3 \\ x_4 \end{array}\right] = \left[ \begin{array}{c} -x_3 + 7x_4 \\ x_3 - 6x_4 \\ x_3 \\ x_4 \end{array}\right] = x_3 \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array}\right] + x_4 \left[ \begin{array}{c} 7 \\ - 6 \\ 0 \\ 1 \end{array}\right],[/mathjax]</td>
+    <td class="equation">[mathjax]S(e_1) = \left[ \begin{array}{c} -1 &amp;  4 \end{array} \right], S(e_2) = \left[ \begin{array}{c} 2 &amp;  1 \end{array} \right], S(e_3) = \left[ \begin{array}{c} 3 &amp;  3 \end{array} \right].[/mathjax]</td>
 </tr>
 </table><p>
- for any [mathjaxinline]x_3,x_4 \in \mathbb R[/mathjaxinline]. Hence the set of solutions is the span of [mathjaxinline]\left\{  \left[ \begin{array}{c} -1 \\ 1 \\ 1 \\ 0 \end{array} \right]; \left[ \begin{array}{c} 7 \\ -6 \\ 0 \\ 1 \end{array} \right]\right\} .[/mathjaxinline] </p><p>
-(Note that this is not the only list that spans the solution set, but it is the one that is simplest to find.) </p></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
+Let [mathjaxinline]T: \mathbb R^2 \rightarrow \mathbb R^4[/mathjaxinline] be a linear transformation with [mathjaxinline]T(e_1) = \left[ \begin{array}{c} 3 &amp;  -1 &amp;  0 &amp;  1 \end{array} \right][/mathjaxinline] and [mathjaxinline]T(e_2) = \left[ \begin{array}{c} 1 &amp;  0 &amp;  1 &amp;  -2 \end{array} \right].[/mathjaxinline] </p><p>
+What is the standard matrix for [mathjaxinline]T\circ S[/mathjaxinline]? </p><p>
+<edxshowhide description="How to Enter a Matrix"><p>
+To enter the matrix [mathjaxinline]\left[ \begin{array}{ccc} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline], type [[0,1,2],[1,2,3]]. (Type the same thing if you want to enter the augmented matrix [mathjaxinline]\left[ \begin{array}{cc:c} 0&amp; 1&amp; 2 \\ 1&amp; 2&amp; 3 \end{array} \right][/mathjaxinline].) </p><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="1" filename="./matrixentry2.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Wrong shape of matrix'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[1,7,12],[1,-2,-3],[4,1,3],[-9,0,-3]]">
+  <textline correct_answer="[[1,7,12],[1,-2,-3],[4,1,3],[-9,0,-3]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Invertible?" attrib_string="url_name=&quot;hw4-tab3-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="176" tex_filename="./hw/final.tex"><text><p>
+True or False: If [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]6\times 6[/mathjaxinline] matrix, and none of its columns are a scalar multiple of another, then [mathjaxinline]A[/mathjaxinline] must be invertible. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+True or False: If [mathjaxinline]A[/mathjaxinline] and [mathjaxinline]B[/mathjaxinline] are [mathjaxinline]6\times 6[/mathjaxinline] matrices, and [mathjaxinline]AB = I_6[/mathjaxinline], then [mathjaxinline]BA = I_6[/mathjaxinline]. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="True"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Invert a Matrix" attrib_string="url_name=&quot;hw4-tab3-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="196" tex_filename="./hw/final.tex"><text><p>
+Let [mathjaxinline]A[/mathjaxinline] be the matrix </p><table id="a0000000014" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc} 1&amp;  1 &amp;  2 \\ 2 &amp;  1 &amp;  -3 \\ 1 &amp;  -1 &amp;  -11 \end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+Enter its inverse, if it has one. If it does not have an inverse, enter [[0]]. </p><script linenum="1" filename="./matrixentry3.tex" type="text/python" system_path="python_lib">
+def MatrixEntry(expect, ans):
+  	import ast
+	import numpy as np 
+	ret= {'ok':False}
+  	atol = 0.01
+  	try:
+		list_ans = ast.literal_eval(ans)
+		list_expect = ast.literal_eval(expect)
+  		matrix_ans = np.matrix(list_ans)
+  		matrix_expect = np.matrix(list_expect) 
+  		if matrix_ans.shape != matrix_expect.shape:
+  			ret['msg'] = 'Something is wrong'
+  		elif np.allclose(matrix_ans, matrix_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+  			ret['msg'] = 'Something is wrong'
+	except SyntaxError:
+		ret['msg'] = 'Wrong input format'
+  	return ret
+</script><p>
+<customresponse cfn="MatrixEntry" expect="[[14,-9,5],[-19,13,-7],[3,-2,1]]">
+  <textline correct_answer="[[14,-9,5],[-19,13,-7],[3,-2,1]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+We can check that [mathjaxinline]A[/mathjaxinline] row reduces to the identity. When we row reduce the extended </p><table id="a0000000015" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc:ccc} 1&amp;  1 &amp;  2 &amp;  1 &amp;  0 &amp;  0 \\ 2 &amp;  1 &amp;  -3 &amp;  0 &amp;  1 &amp;  0 \\ 1 &amp;  -1 &amp;  -11 &amp;  0 &amp;  0 &amp;  1 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><p>
+ we obtain </p><table id="a0000000016" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc:ccc} 1&amp;  0 &amp;  0 &amp;  14 &amp;  -9 &amp;  5 \\ 0 &amp;  1 &amp;  0 &amp;  -19 &amp;  13 &amp;  -7 \\ 0 &amp;  0 &amp;  1 &amp;  3 &amp;  -2 &amp;  1 \end{array} \right],[/mathjax]</td>
+</tr>
+</table><p>
+ so the inverse is </p><table id="a0000000017" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{ccc} 14 &amp;  -9 &amp;  5 \\ -19 &amp;  13 &amp;  -7 \\ 3 &amp;  -2 &amp;  1 \end{array} \right].[/mathjax]</td>
+</tr>
+</table></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Final Page 3" attrib_string="url_name=&quot;hw4-vertical4&quot;" refnum="4"><p>
+<problem display_name="Subspace?" attrib_string="url_name=&quot;hw4-tab4-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;1&quot; rerandomize=&quot;per_student&quot;" linenum="241" tex_filename="./hw/final.tex"><text><p>
+True or False: If [mathjaxinline]A[/mathjaxinline] is a [mathjaxinline]10\times 12[/mathjaxinline] matrix and [mathjaxinline]v \in \mathbb R^{10}[/mathjaxinline], and the equation [mathjaxinline]Ax = v[/mathjaxinline] has infinitely many solutions, then the set of solutions to that equation forms a subspace of [mathjaxinline]\mathbb R^{12}[/mathjaxinline]. </p><p>
+<optionresponse>
+  <optioninput options="('True','False')" correct="False"/>
+</optionresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Coordinates" attrib_string="url_name=&quot;hw4-tab4-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="256" tex_filename="./hw/final.tex"><text><center> <edxxml><img src="/static/images/h5coords.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px" /></edxxml> </center><p>
+Let [mathjaxinline]\mathcal{B} = \{ v_1; v_2\}[/mathjaxinline] be as pictured; this is a basis of [mathjaxinline]\mathbb R^2[/mathjaxinline]. </p><p>
+Given the vector [mathjaxinline]w[/mathjaxinline] in the image, what is [mathjaxinline][w]_{\mathcal{B}}[/mathjaxinline]? </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[5],[3]]">
+  <textline correct_answer="[[5],[3]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ We can write [mathjaxinline]w[/mathjaxinline] as a linear combination of the basis vectors in order: [mathjaxinline]w = 5v_1 + 3v_2[/mathjaxinline]. Hence [mathjaxinline][w]_{\mathcal{B}} =\left[\begin{array}{c} 5 \\ 3 \end{array} \right][/mathjaxinline].  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Span" attrib_string="url_name=&quot;hw4-tab4-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="281" tex_filename="./hw/final.tex"><text><p>
+Let [mathjaxinline]W[/mathjaxinline] be the span of the vectors </p><table id="a0000000018" class="equation" width="100%" cellspacing="0" cellpadding="7">
+<tr>
+    <td class="equation">[mathjax]\left[ \begin{array}{c} 1 \\ 2 \\ 1 \\ 4 \\ 3\end{array} \right] ; \left[ \begin{array}{c} 2 \\ 3 \\ 3 \\ 1 \\ -1\end{array} \right] ; \left[ \begin{array}{c} 0 \\ -2 \\ 2 \\ -3 \\ 0 \end{array} \right] ; \left[ \begin{array}{c} -1 \\ -7 \\ 4 \\ -6 \\ 4\end{array} \right] ; \left[ \begin{array}{c} 3 \\ 4 \\ 5 \\ 9 \\ 9\end{array} \right][/mathjax]</td>
+</tr>
+</table><p>
+What is the dimension of [mathjaxinline]W[/mathjaxinline]? </p><p>
+<numericalresponse answer="3">
+  <textline>
+    <responseparam type="tolerance" default="0.00001"/>
+  </textline>
+</numericalresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ If [mathjaxinline]A[/mathjaxinline] is the matrix with these five vectors as columns, then the image of [mathjaxinline]A[/mathjaxinline] is the same as the span of the five vectors. Hence the desired dimension is the rank of [mathjaxinline]A[/mathjaxinline]. When we row reduce [mathjaxinline]A[/mathjaxinline], we obtain 3 pivots, so the rank is 3.  </p></font></solution></p></text></problem></p><p>
+<problem display_name="Rank" attrib_string="url_name=&quot;hw4-tab4-problem4&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="305" tex_filename="./hw/final.tex"><text><p>
+Suppose that [mathjaxinline]T: \mathbb R^6 \rightarrow \mathbb R^7[/mathjaxinline] is a linear transformation. Suppose further that we can find two distinct vectors [mathjaxinline]v_1,v_2 \in \mathbb R^6[/mathjaxinline] such that [mathjaxinline]T(v_1)[/mathjaxinline] and [mathjaxinline]T(v_2)[/mathjaxinline] are both equal to the same non-zero vector [mathjaxinline]w \in R^7[/mathjaxinline]. </p><p>
+What is the strongest conclusion we can make about the rank of [mathjaxinline]T[/mathjaxinline]? </p><p>
+<p style="display:inline">The rank of [mathjaxinline]T[/mathjaxinline] is at least</p><numericalresponse inline="1" answer="1">
+  <textline inline="1">
+    <responseparam type="tolerance" default="0.00001"/>
+  </textline>
+</numericalresponse> </p><p>
+<p style="display:inline">and at most</p> <numericalresponse inline="1" answer="5">
+  <textline inline="1">
+    <responseparam type="tolerance" default="0.00001"/>
+  </textline>
+</numericalresponse>. </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"><p>
+ Since [mathjaxinline]T(v_1) = T(v_2)[/mathjaxinline], we know that [mathjaxinline]T[/mathjaxinline] is not into. Therefore the nullity of [mathjaxinline]T[/mathjaxinline] is at least 1. Since the rank of [mathjaxinline]T[/mathjaxinline] plus its nullity must equal 6, the rank is at most 5. We also know that [mathjaxinline]w[/mathjaxinline] is a non-zero vector in the image of [mathjaxinline]T[/mathjaxinline]. Hence the image of [mathjaxinline]T[/mathjaxinline] is a non-zero subspace and has dimension at least 1. Therefore the rank of [mathjaxinline]T[/mathjaxinline] is at least 1.  </p></font></solution></p></text></problem></p></vertical>   </p><p>
+<vertical display_name="Final Page 4" attrib_string="url_name=&quot;hw4-vertical5&quot;" refnum="5"><p>
+<problem display_name="Subspace Dimension" attrib_string="url_name=&quot;hw4-tab5-problem1&quot; showanswer=&quot;finished&quot; attempts=&quot;2&quot; rerandomize=&quot;per_student&quot;" linenum="334" tex_filename="./hw/final.tex"><text><p>
+Let [mathjaxinline]V[/mathjaxinline] be a space with an inner product, and let [mathjaxinline]v\in V[/mathjaxinline] be a fixed non-zero vector. Define [mathjaxinline]W[/mathjaxinline] to be the set of all vectors [mathjaxinline]w\in V[/mathjaxinline] with the property that [mathjaxinline]\langle v,w\rangle = 0[/mathjaxinline]. </p><p>
+On Homework 4 you proved that [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline]. In this problem, we'll find its dimension. </p><p>
+Suppose that [mathjaxinline]V[/mathjaxinline] has dimension [mathjaxinline]n[/mathjaxinline]. Define the function [mathjaxinline]T[/mathjaxinline] with domain [mathjaxinline]V[/mathjaxinline] by [mathjaxinline]T(w) = \langle v, w\rangle[/mathjaxinline]. [mathjaxinline]T[/mathjaxinline] is a linear transformation (you are encouraged to prove this on your own) with what codomain? </p><p>
+<multiplechoiceresponse>
+  <choicegroup direction="vertical">
+    <choice correct="false" name="1">
+      <text> [mathjaxinline]V[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="2">
+      <text> [mathjaxinline]W[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="3">
+      <text> [mathjaxinline]\mathbb R^ n[/mathjaxinline]</text>
+    </choice>
+    <choice correct="true" name="4">
+      <text> [mathjaxinline]\mathbb R[/mathjaxinline]</text>
+    </choice>
+    <choice correct="false" name="5">
+      <text> Something else</text>
+    </choice>
+  </choicegroup>
+</multiplechoiceresponse> </p><p>
+What is the rank of [mathjaxinline]T[/mathjaxinline] (your answer can be in terms of [mathjaxinline]n[/mathjaxinline])? </p><p>
+<formularesponse type="cs" samples="n@1:5#5" answer="1">
+  <formulaequationinput>
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+Note that [mathjaxinline]W[/mathjaxinline] is exactly the kernel of [mathjaxinline]T[/mathjaxinline]. What is the dimension of [mathjaxinline]W[/mathjaxinline]? </p><p>
+<formularesponse type="cs" samples="n@1:5#5" answer="n-1">
+  <formulaequationinput>
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Closest Vector" attrib_string="url_name=&quot;hw4-tab5-problem2&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="364" tex_filename="./hw/final.tex"><text><p>
+Let [mathjaxinline]W[/mathjaxinline] be the subspace of [mathjaxinline]\mathbb R^4[/mathjaxinline] spanned by the vectors [mathjaxinline]\left[\begin{array}{c} 1 \\ 1 \\ -1 \\ -1 \end{array} \right][/mathjaxinline] and [mathjaxinline]\left[\begin{array}{c} 3 \\ 1 \\ 1 \\ 7 \end{array} \right].[/mathjaxinline] </p><p>
+What is the closest element of [mathjaxinline]W[/mathjaxinline] to the vector [mathjaxinline]v = \left[\begin{array}{c} 3 \\ 4 \\ 3 \\ -8 \end{array} \right]?[/mathjaxinline] </p><p>
+<edxshowhide description="How to Enter a Column Vector in R^n"><p>
+To enter a vector in [mathjaxinline]\mathbb R^ n[/mathjaxinline] such as [mathjaxinline]\left[\begin{array}{c} 1 \\ 2 \\ 3 \end{array} \right][/mathjaxinline], you can either: </p><ul class="itemize">
+
+<li><p>
+enter it as you would a [mathjaxinline]3\times 1[/mathjaxinline] matrix: [[1],[2],[3]] </p></li>
+<li><p>
+or, you can enter it as &lt;1,2,3&gt; </p></li>
+</ul><p>
+Use decimals only. </p></edxshowhide> </p><script linenum="2" filename="./vectorentry2.tex" type="text/python" system_path="python_lib">
+def VectorEntry(expect, ans):
+	import ast
+	import numpy as np 
+  	atol = 0.01
+	list_expect = ast.literal_eval(expect)
+	vec_expect = np.matrix(list_expect)
+  	ret = {"ok":False}
+	try:
+  		# input format [[1],[2],[3]]
+		list_ans = ast.literal_eval(ans)
+		vec_ans = np.matrix(list_ans)
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,atol,1e-08):
+  			ret['ok'] = True
+  		else:
+  		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong'   			
+	#except SyntaxError:
+		#ret['msg'] = 'Wrong input format'
+	except SyntaxError:
+  		# input format &amp;lt;1,2,3&amp;gt;
+		list_ans = ans.replace('&amp;lt;', '[').replace('&amp;gt;', ']')
+		list_ans = ast.literal_eval(list_ans)
+		vec_ans = np.transpose(np.matrix(list_ans))
+  		if vec_ans.shape != vec_expect.shape:
+  			ret['msg'] = 'Wrong shape of vector!'
+  		elif np.allclose(vec_ans, vec_expect,0.01,1e-08):
+  			ret['ok'] = True
+  		else:
+    		# More error message. Will improve this part
+  			ret['msg'] = 'something is wrong' 
+  	except:
+  		ret['msg'] = 'Wrong input format'
+  	return ret 
+</script><p>
+<customresponse cfn="VectorEntry" expect="[[1],[2],[-3],[-6]]">
+  <textline correct_answer="[[1],[2],[-3],[-6]]"/>
+</customresponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p><p>
+<problem display_name="Least Squared Quadratic" attrib_string="url_name=&quot;hw4-tab5-problem3&quot; showanswer=&quot;finished&quot; attempts=&quot;3&quot; rerandomize=&quot;per_student&quot;" linenum="393" tex_filename="./hw/final.tex"><text><p>
+Consider all functions of the form [mathjaxinline]f(x) = ax^2 + c[/mathjaxinline], where [mathjaxinline]a[/mathjaxinline] and [mathjaxinline]c[/mathjaxinline] are real numbers. Find a function of that form which achieves the least squared vertical distance to the data points [mathjaxinline](-1, 1), (0,1), (1, 2),[/mathjaxinline] and [mathjaxinline](2, -1)[/mathjaxinline]. </p><p>
+<formularesponse type="cs" samples="x@1:5#5" answer="-x^2/18+4/3">
+  <formulaequationinput>
+    <responseparam type="tolerance" default=".01"/>
+  </formulaequationinput>
+</formularesponse> </p><p>
+<solution><font color="blue">Answer: </font><font color="blue"></font></solution></p></text></problem></p></vertical>   </p></sequential> </p></chapter> </p></course> </p></div>
 
 
 

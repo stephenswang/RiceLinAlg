@@ -1,0 +1,79 @@
+<problem display_name="Into and Onto" linenum="486" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Suppose the linear transformation [mathjaxinline]T: \mathbb R^5\rightarrow \mathbb R^3[/mathjaxinline] has a standard matrix [mathjaxinline]A[/mathjaxinline] which row reduces to have 3 pivots. What can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="true" name="1">
+            <text> [mathjaxinline]T[/mathjaxinline] is onto but not into</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]T[/mathjaxinline] is into but not onto</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]T[/mathjaxinline] is both into and onto</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> [mathjaxinline]T[/mathjaxinline] is neither into nor onto</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+Suppose the linear transformation [mathjaxinline]T: \mathbb R^5\rightarrow \mathbb R^3[/mathjaxinline] has a standard matrix [mathjaxinline]A[/mathjaxinline] which row reduces to have 2 pivots. What can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]T[/mathjaxinline] is onto but not into</text>
+          </choice>
+          <choice correct="false" name="2">
+            <text> [mathjaxinline]T[/mathjaxinline] is into but not onto</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]T[/mathjaxinline] is both into and onto</text>
+          </choice>
+          <choice correct="true" name="4">
+            <text> [mathjaxinline]T[/mathjaxinline] is neither into nor onto</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+Suppose the linear transformation [mathjaxinline]T: \mathbb R^3\rightarrow \mathbb R^5[/mathjaxinline] has a standard matrix [mathjaxinline]A[/mathjaxinline] which row reduces to have 3 pivots. What can we conclude about [mathjaxinline]T[/mathjaxinline]? </p>
+    <p>
+      <multiplechoiceresponse>
+        <choicegroup direction="vertical">
+          <choice correct="false" name="1">
+            <text> [mathjaxinline]T[/mathjaxinline] is onto but not into</text>
+          </choice>
+          <choice correct="true" name="2">
+            <text> [mathjaxinline]T[/mathjaxinline] is into but not onto</text>
+          </choice>
+          <choice correct="false" name="3">
+            <text> [mathjaxinline]T[/mathjaxinline] is both into and onto</text>
+          </choice>
+          <choice correct="false" name="4">
+            <text> [mathjaxinline]T[/mathjaxinline] is neither into nor onto</text>
+          </choice>
+        </choicegroup>
+      </multiplechoiceresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ We know that [mathjaxinline]T[/mathjaxinline] is into if and only if its standard matrix row-reduces to have a pivot in every column, and [mathjaxinline]T[/mathjaxinline] is onto if and only if its standard matrix row-reduces to have a pivot in every row. </p>
+          <p>
+In the first example, we have a [mathjaxinline]3\times 5[/mathjaxinline] matrix with a pivot in every row but not every column, so [mathjaxinline]T[/mathjaxinline] is onto but not into. (In fact, a linear transformation from [mathjaxinline]\mathbb R^5[/mathjaxinline] to [mathjaxinline]\mathbb R^3[/mathjaxinline] can never be into.) </p>
+          <p>
+In the second example, we have a [mathjaxinline]3\times 5[/mathjaxinline] matrix with only two pivots, therefore it does not have one in every row nor in every column. Thus [mathjaxinline]T[/mathjaxinline] is neither into nor onto. </p>
+          <p>
+Finally, we have a [mathjaxinline]5\times 3[/mathjaxinline] matrix with a pivot in every column, but not every row. Thus [mathjaxinline]T[/mathjaxinline] is into but not onto. (In fact, a linear transformation from [mathjaxinline]\mathbb R^3[/mathjaxinline] to [mathjaxinline]\mathbb R^5[/mathjaxinline] can never be onto.)  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

@@ -1,0 +1,20 @@
+<problem display_name="Subspace Basis 2" linenum="270" tex_filename="./hw/hw3.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+True or False: If [mathjaxinline]V[/mathjaxinline] is finite-dimensional, and [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline], then every basis of [mathjaxinline]W[/mathjaxinline] is contained in some basis of [mathjaxinline]V[/mathjaxinline]. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('True','False')" correct="True"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ True. Any basis of [mathjaxinline]W[/mathjaxinline] is linearly independent, and we showed that any linearly independent set in a finite-dimensional space [mathjaxinline]V[/mathjaxinline] can be extended to basis of [mathjaxinline]V[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

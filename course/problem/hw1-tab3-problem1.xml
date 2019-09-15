@@ -1,12 +1,12 @@
-<problem display_name="Traffic" linenum="120" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="5" rerandomize="per_student">
+<problem display_name="Traffic" linenum="215" tex_filename="./hw/hw1.tex" showanswer="finished" attempts="5" rerandomize="per_student">
   <text>
     <p>
-A set of roads and intersections is shown below. The rate of cars per hour is shown for some roads. Assume that at each of the six intersections, the flow of traffic into the intersection equals the flow of traffic out of the intersection. This gives a set of linear equations in the seven unknown traffic rates. </p>
+A set of one-way roads and intersections is shown below. The rate of traffic (measured in cars per hour) is shown for some roads. Assume that at each of the six intersections, the flow of traffic into the intersection equals the flow of traffic out of the intersection. This gives a set of linear equations in the seven unknown traffic rates. </p>
     <center>
       <img src="/static/images/h1traffic.svg" width="450 px" style="margin: 10px 25px 25px 25px; border:0px"/>
     </center>
     <p>
-Solve the system in full generality. Assuming that all rates are non-negative, what is the minimum possible value of [mathjaxinline]x_7[/mathjaxinline]? </p>
+Solve the system in full generality. Assuming that all rates are non-negative, what is the minimum possible value of [mathjaxinline]x_6[/mathjaxinline]? </p>
     <p>
       <numericalresponse answer="60">
         <textline>
@@ -17,7 +17,7 @@ Solve the system in full generality. Assuming that all rates are non-negative, w
     <p>
       <solution>
         <font color="blue">Answer: </font>
-        <font color="blue"/>
+        <font color="blue"> The condition that flow in equals flow out at each intersection gives us six equations: <table id="a0000000098" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\begin{array}{ccccccc}&amp; &amp;  x_1 &amp;  = &amp;  x_2 &amp;  + &amp;  100 \\ x_2 &amp; +&amp;  50 &amp;  = &amp;  x_3 &amp; +&amp;  x_7 \\ &amp; &amp;  x_3 &amp;  = &amp;  x_4 &amp; +&amp;  130 \\ x_4 &amp; +&amp;  150 &amp;  = &amp;  x_5 &amp; &amp; \\ x_5 &amp; +&amp;  x_7 &amp;  = &amp;  x_6 &amp; +&amp;  90 \\ x_6 &amp; +&amp;  120 &amp;  = &amp;  x_1 &amp; &amp; \\ \end{array}[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> This can be rearranged into a system of linear equations with the following augmented matrix: <table id="a0000000099" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccccccc:c} 1 &amp;  -1 &amp;  0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 &amp;  100 \\ 0 &amp;  1 &amp;  -1 &amp;  0 &amp;  0 &amp;  0 &amp;  -1 &amp;  -50 \\ 0 &amp;  0 &amp;  1 &amp;  -1 &amp;  0 &amp;  0 &amp;  0 &amp;  130 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  -1 &amp;  0 &amp;  0 &amp;  -150 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 &amp;  -1 &amp;  1 &amp;  90 \\ -1 &amp;  0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 &amp;  -120 \end{array} \right],[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> which row-reduces to <table id="a0000000100" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto"><tr><td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\left[ \begin{array}{ccccccc:c} 1 &amp;  0 &amp;  0 &amp;  0 &amp;  0 &amp;  -1 &amp;  0 &amp;  120 \\ 0 &amp;  1 &amp;  0 &amp;  0 &amp;  0 &amp;  -1 &amp;  0 &amp;  20 \\ 0 &amp;  0 &amp;  1 &amp;  0 &amp;  0 &amp;  -1 &amp;  1 &amp;  70 \\ 0 &amp;  0 &amp;  0 &amp;  1 &amp;  0 &amp;  -1 &amp;  1 &amp;  -60 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  1 &amp;  -1 &amp;  1 &amp;  90 \\ 0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 &amp;  0 \end{array} \right].[/mathjax]</td><td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/></tr></table> We see that [mathjaxinline]x_6[/mathjaxinline] and [mathjaxinline]x_7[/mathjaxinline] are free variables. However, the fourth line tells that [mathjaxinline]x_4 - x_6 + x_7 = -60[/mathjaxinline], or [mathjaxinline]x_6 = x_4 + x_7 + 60[/mathjaxinline]. If all variables are non-negative, then [mathjaxinline]x_6 \ge 60[/mathjaxinline]. By setting [mathjaxinline]x_6 = 60[/mathjaxinline] and [mathjaxinline]x_7= 0[/mathjaxinline], all other variables will be non-negative, so 60 is indeed possible, and is therefore the answer.  </font>
       </solution>
     </p>
   </text>

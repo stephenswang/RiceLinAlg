@@ -1,0 +1,46 @@
+<problem display_name="Subspace?" linenum="27" tex_filename="./hw/hw4.tex" showanswer="finished" attempts="1" rerandomize="per_student">
+  <text>
+    <p>
+Let [mathjaxinline]V[/mathjaxinline] be a space with an inner product, and let [mathjaxinline]v\in V[/mathjaxinline] be a non-zero vector. Define [mathjaxinline]W[/mathjaxinline] to be the set of all vectors [mathjaxinline]w\in V[/mathjaxinline] with the property that [mathjaxinline]\langle v,w\rangle = 0[/mathjaxinline]. </p>
+    <p>
+True or false: [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline]. Prove your answer, or come up with a counterexample showing that it is not. </p>
+    <p>
+      <optionresponse>
+        <optioninput options="('I have proven it','I found a counterexample')" correct="I have proven it"/>
+      </optionresponse>
+    </p>
+    <p>
+      <solution>
+        <font color="blue">Answer: </font>
+        <font color="blue">
+          <p>
+ [mathjaxinline]W[/mathjaxinline] is in fact a subspace of [mathjaxinline]V[/mathjaxinline]. We can check the three criteria: </p>
+          <p>
+We know [mathjaxinline]\langle v, \mathbf{0}\rangle = 0[/mathjaxinline], so [mathjaxinline]\mathbf{0}\in W[/mathjaxinline]. </p>
+          <p>
+If [mathjaxinline]w_1, w_2 \in W[/mathjaxinline], then </p>
+          <table id="a0000000207" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle v, w_1 + w_2 \rangle = \langle v, w_1 \rangle + \langle v, w_2 \rangle = 0 + 0 = 0,[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ so [mathjaxinline]w_1 + w_2 \in W[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] is closed under addition. </p>
+          <p>
+If [mathjaxinline]w\in W[/mathjaxinline] and [mathjaxinline]a[/mathjaxinline] is a scalar, then </p>
+          <table id="a0000000208" class="equation" width="100%" cellspacing="0" cellpadding="7" style="table-layout:auto">
+            <tr>
+              <td class="equation" style="width:80%;vertical-align:middle;text-align:center;border-style:hidden">[mathjax]\langle v, aw\rangle = a\langle v, w \rangle = a0 = 0,[/mathjax]</td>
+              <td class="eqnnum" style="width:20%;vertical-align:middle;text-align:left;border-style:hidden"/>
+            </tr>
+          </table>
+          <p>
+ so [mathjaxinline]aw \in W[/mathjaxinline] and [mathjaxinline]W[/mathjaxinline] is closed under scalar multiplication. </p>
+          <p>
+Hence [mathjaxinline]W[/mathjaxinline] is a subspace of [mathjaxinline]V[/mathjaxinline].  </p>
+        </font>
+      </solution>
+    </p>
+  </text>
+</problem>

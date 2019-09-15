@@ -1,0 +1,8 @@
+<course number="355x" display_name="RiceX Linear Algebra" semester="2019_Fall" info_sidebar_name="Other Documents" start="2019-10-01T05:00" end="2019-12-31T23:00" course_image="355x-0.jpg" display_coursenumber="RiceX355.1" course_organization="Rice" graceperiod="1800 seconds" invitation_only="true" allow_anonymous="false" mobile_available="true" org="Rice">
+  <chapter url_name="block0"/>
+  <chapter url_name="block1"/>
+  <chapter url_name="block2"/>
+  <chapter url_name="block3"/>
+  <chapter url_name="block4"/>
+  <chapter url_name="final"/>
+</course>
